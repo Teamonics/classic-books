@@ -174,6 +174,12 @@ export function adapt(rawDir: string): WorkIR {
         pushLine(joint[3]!);
         continue;
       }
+      // Speaker prefix alone on its own line; speech begins on the next line.
+      const bare = s.match(/^([A-Z]{2,}[A-Z .]*?)\.$/);
+      if (bare && SPEAKERS[bare[1]!.replace(/[^A-Z]/g, "")]) {
+        startSpeech(bare[1]!.trim());
+        continue;
+      }
       const inline = s.match(/^([A-Z]{2,}[A-Z .]*?)\.\s+(.*)$/);
       if (inline && SPEAKERS[inline[1]!.replace(/[^A-Z]/g, "")]) {
         startSpeech(inline[1]!.trim());

@@ -1,0 +1,93 @@
+/* Four curated themes: fg/bg/link designed together (locked decision). */
+:root,
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --fg: #1c1b1a;
+  --muted: #6f6a63;
+  --accent: #8a3324;
+  --rule: #e4e0da;
+  --raised: #f6f4f1;
+}
+:root[data-theme="sepia"] {
+  --bg: #f5ecd9;
+  --fg: #3d3427;
+  --muted: #857a66;
+  --accent: #8a4b24;
+  --rule: #e0d4bb;
+  --raised: #efe4cc;
+}
+:root[data-theme="dark"] {
+  --bg: #17181c;
+  --fg: #d6d3cd;
+  --muted: #8b877f;
+  --accent: #d9a05b;
+  --rule: #2b2d33;
+  --raised: #1f2126;
+}
+:root[data-theme="contrast"] {
+  --bg: #000000;
+  --fg: #ffffff;
+  --muted: #d0d0d0;
+  --accent: #ffd400;
+  --rule: #666666;
+  --raised: #101010;
+}
+
+:root {
+  --measure: 66ch;
+  --line-height: 1.6;
+  --serif: "Iowan Old Style", "Palatino", "Charter", Georgia, serif;
+  --sans: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --dyslexic: "Atkinson Hyperlegible", var(--sans);
+  --reading-font: var(--serif);
+}
+:root[data-font="sans"] {
+  --reading-font: var(--sans);
+}
+:root[data-font="dyslexic"] {
+  --reading-font: var(--dyslexic);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--reading-font);
+  line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+a {
+  color: var(--accent);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+.ui {
+  font-family: var(--sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

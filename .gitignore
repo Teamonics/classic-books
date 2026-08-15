@@ -1,3 +1,6 @@
 node_modules/
 .DS_Store
 *.log
+app/build/
+app/.svelte-kit/
+app/static/data
