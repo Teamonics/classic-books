@@ -16,6 +16,7 @@ import { adapt as adaptMorshead } from "./adapters/pg-morshead-aeschylus.ts";
 import { adapt as adaptWsEuripides } from "./adapters/ws-euripides.ts";
 import { adapt as adaptSeVerse } from "./adapters/se-verse.ts";
 import { adapt as adaptWsProse } from "./adapters/ws-prose.ts";
+import { adapt as adaptMontaigne } from "./adapters/pg-montaigne.ts";
 
 const ROOT = resolve(import.meta.dirname, "..", "..");
 const BUILD = join(ROOT, "build");
@@ -31,6 +32,7 @@ const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[]; so
   "ws-euripides": adaptWsEuripides,
   "se-verse": adaptSeVerse,
   "ws-prose": adaptWsProse,
+  "pg-montaigne": adaptMontaigne,
 };
 
 // Golden facts checked on every build; extend per work as they are ingested.

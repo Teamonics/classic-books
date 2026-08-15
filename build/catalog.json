@@ -913,6 +913,18 @@
       "words": 137352
     },
     {
+      "slug": "essays",
+      "author": "michel-de-montaigne",
+      "authorName": "Michel de Montaigne",
+      "title": "Essays",
+      "composedYear": 1580,
+      "era": "renaissance",
+      "translator": "Charles Cotton, ed. Hazlitt",
+      "manifestFile": "manifest.ce9dfc490a66.json",
+      "chunks": 125,
+      "words": 500829
+    },
+    {
       "slug": "the-two-gentlemen-of-verona",
       "author": "william-shakespeare",
       "authorName": "William Shakespeare",

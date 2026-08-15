@@ -1714,4 +1714,17 @@ export const works: WorkConfig[] = [
     translator: "H. A. J. Munro",
     refScheme: { primary: "book.paragraph", aliases: [], lineation: null },
   },
+  {
+    slug: "essays",
+    author: "michel-de-montaigne",
+    authorName: "Michel de Montaigne",
+    title: "Essays",
+    composedYear: 1580,
+    era: "renaissance",
+    adapter: "pg-montaigne",
+    rawDir: "raw/pg/montaigne",
+    sourceFile: "pg3600.html",
+    translator: "Charles Cotton, ed. Hazlitt",
+    refScheme: { primary: "book.chapter", aliases: [], lineation: null },
+  },
 ];
