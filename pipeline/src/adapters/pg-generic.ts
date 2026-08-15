@@ -19,11 +19,11 @@ import { collapseWs, inlineText, romanToInt } from "../util.ts";
 // Anything the walk does not recognise is reported, not silently dropped.
 
 export interface PgGenericOptions {
-  headingLevel?: 2 | 3;
+  headingLevel?: 2 | 3 | 4 | 5;
   bookPattern?: string;
   stopAt?: string;
   skipHeadings?: string;
-  refMode?: "slug" | "index" | "roman";
+  refMode?: "slug" | "index" | "roman" | "number";
   // When the transcription's heading levels do not identify divisions
   // reliably, name the divisions outright. Spinoza needs this: the source
   // simply has no "PART V" heading, only its subtitle.
@@ -32,6 +32,11 @@ export interface PgGenericOptions {
   // Rabelais numbers its chapters "Chapter 1.V.—…". Two capture groups,
   // book then chapter.
   refPattern?: string;
+  // One PG volume can hold several works (the Eleven Comedies carries five
+  // plays each). A work takes the slice from its own title heading up to the
+  // next one.
+  sliceFrom?: string;
+  sliceUntil?: string;
 }
 
 const DEFAULT_SKIP = /^(contents?|table of contents|footnotes?|list of illustrations|index|transcriber|the full project gutenberg)/i;
@@ -62,6 +67,9 @@ export function adapt(
   const skipRe = cfg.skipHeadings ? new RegExp(cfg.skipHeadings, "i") : DEFAULT_SKIP;
   const divisionRe = cfg.divisionPattern ? new RegExp(cfg.divisionPattern, "i") : null;
   const refRe = cfg.refPattern ? new RegExp(cfg.refPattern, "i") : null;
+  const sliceFromRe = cfg.sliceFrom ? new RegExp(cfg.sliceFrom, "i") : null;
+  const sliceUntilRe = cfg.sliceUntil ? new RegExp(cfg.sliceUntil, "i") : null;
+  let active = !sliceFromRe;
 
   const html = readFileSync(join(rawDir, opts.sourceFile!), "utf-8");
   const { document } = parseHTML(html);
@@ -80,11 +88,23 @@ export function adapt(
 
   // A division must carry real text. Title-page fragments and a bare
   // "CONTENTS" line are apparatus that some transcriptions leave at h2.
+  const wordsIn = (bs: Block[]): number => {
+    let n = 0;
+    for (const b of bs) {
+      if (b.type === "verse") for (const l of b.lines) n += l.text.match(/\S+/g)?.length ?? 0;
+      else if (b.type === "quote" || b.type === "speech") n += wordsIn(b.blocks);
+      else if (b.type !== "heading") n += (b as { text: string }).text.match(/\S+/g)?.length ?? 0;
+    }
+    return n;
+  };
+
   const isSubstantive = (d: Division): boolean => {
+    // Poems arrive as quoted verse rather than paragraphs, so every kind of
+    // text counts here — Milton's shorter poems were being dropped when only
+    // prose did.
+    if (wordsIn(d.blocks) < 25) return false;
     const paras = d.blocks.filter((b) => b.type === "para") as { text: string }[];
-    const words = paras.reduce((n, b) => n + (b.text.match(/\S+/g)?.length ?? 0), 0);
-    if (words < 25) return false;
-    return !(paras.length === 1 && /^contents$/i.test(paras[0]!.text.trim()));
+    return !(paras.length === 1 && d.blocks.length === 1 && /^contents$/i.test(paras[0]!.text.trim()));
   };
 
   const flush = () => {
@@ -115,6 +135,10 @@ export function adapt(
         }
       }
       ref = `${book}.${chapter}`;
+    } else if (cfg.refMode === "number") {
+      // "QUESTION 12" -> 12; the Summa is cited by question number
+      const n = text.match(/(\d+)/);
+      ref = n ? n[1]! : slugify(text);
     } else if (cfg.refMode === "roman") {
       const n = text.match(/\b([IVXLC]+)\b/);
       ref = n ? String(romanToInt(n[1]!)) : slugify(text);
@@ -128,13 +152,24 @@ export function adapt(
   const body = document.querySelector("body");
   if (!body) throw new Error("no body");
 
-  for (const el of body.querySelectorAll("h1, h2, h3, h4, p, pre, blockquote")) {
+  for (const el of body.querySelectorAll("h1, h2, h3, h4, h5, h6, p, pre, blockquote")) {
     if (stopped) break;
     const tag = el.tagName.toLowerCase();
     const text = collapseWs(el.textContent ?? "");
 
-    if (/^h[1-4]$/.test(tag)) {
+    if (/^h[1-6]$/.test(tag)) {
       if (!text) continue;
+      if (sliceFromRe) {
+        if (!active) {
+          if (sliceFromRe.test(text)) active = true;
+          else continue;
+        } else if (sliceUntilRe?.test(text) && !sliceFromRe.test(text)) {
+          // The volume repeats a play's own title above its dialogue, so
+          // only a *different* work's title ends the slice.
+          stopped = true;
+          break;
+        }
+      }
       if (stopRe.test(text)) {
         stopped = true;
         break;
@@ -160,7 +195,7 @@ export function adapt(
       continue;
     }
 
-    if (!current) continue;
+    if (!active || !current) continue;
 
     if (tag === "pre") {
       const lines = (el.textContent ?? "")

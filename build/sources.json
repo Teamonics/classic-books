@@ -794,6 +794,19 @@
     ]
   },
   {
+    "slug": "the-acharnians",
+    "title": "The Acharnians",
+    "translator": "The Athenian Society",
+    "manifestFile": "manifest.52a3264369fa.json",
+    "source": "project-gutenberg",
+    "pgId": 8688,
+    "url": "https://www.gutenberg.org/cache/epub/8688/pg8688-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1912,
+    "translationPublished": 1912,
+    "licenseBasis": "US PD; translation 1912, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
     "slug": "hecuba",
     "title": "Hecuba",
     "translator": "Arthur S. Way",
@@ -896,6 +909,19 @@
     ]
   },
   {
+    "slug": "the-knights",
+    "title": "The Knights",
+    "translator": "The Athenian Society",
+    "manifestFile": "manifest.cca336b98ea6.json",
+    "source": "project-gutenberg",
+    "pgId": 8688,
+    "url": "https://www.gutenberg.org/cache/epub/8688/pg8688-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1912,
+    "translationPublished": 1912,
+    "licenseBasis": "US PD; translation 1912, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
     "slug": "the-suppliants",
     "title": "The Suppliants",
     "translator": "Edward P. Coleridge",
@@ -996,6 +1022,45 @@
         "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
       }
     ]
+  },
+  {
+    "slug": "the-clouds",
+    "title": "The Clouds",
+    "translator": "The Athenian Society",
+    "manifestFile": "manifest.202753a59d25.json",
+    "source": "project-gutenberg",
+    "pgId": 8688,
+    "url": "https://www.gutenberg.org/cache/epub/8688/pg8688-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1912,
+    "translationPublished": 1912,
+    "licenseBasis": "US PD; translation 1912, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "the-wasps",
+    "title": "The Wasps",
+    "translator": "The Athenian Society",
+    "manifestFile": "manifest.dba72ef3dfe5.json",
+    "source": "project-gutenberg",
+    "pgId": 8689,
+    "url": "https://www.gutenberg.org/cache/epub/8689/pg8689-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1912,
+    "translationPublished": 1912,
+    "licenseBasis": "US PD; translation 1912, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "peace",
+    "title": "Peace",
+    "translator": "The Athenian Society",
+    "manifestFile": "manifest.1f573da625f1.json",
+    "source": "project-gutenberg",
+    "pgId": 8688,
+    "url": "https://www.gutenberg.org/cache/epub/8688/pg8688-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1912,
+    "translationPublished": 1912,
+    "licenseBasis": "US PD; translation 1912, corporate/translator PD; PG boilerplate stripped at build"
   },
   {
     "slug": "electra",
@@ -1623,6 +1688,32 @@
     ]
   },
   {
+    "slug": "lysistrata",
+    "title": "Lysistrata",
+    "translator": "The Athenian Society",
+    "manifestFile": "manifest.53f15efd32ab.json",
+    "source": "project-gutenberg",
+    "pgId": 8688,
+    "url": "https://www.gutenberg.org/cache/epub/8688/pg8688-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1912,
+    "translationPublished": 1912,
+    "licenseBasis": "US PD; translation 1912, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "thesmophoriazusae",
+    "title": "Thesmophoriazusae",
+    "translator": "The Athenian Society",
+    "manifestFile": "manifest.9f898eb62d42.json",
+    "source": "project-gutenberg",
+    "pgId": 8689,
+    "url": "https://www.gutenberg.org/cache/epub/8689/pg8689-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1912,
+    "translationPublished": 1912,
+    "licenseBasis": "US PD; translation 1912, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
     "slug": "electra",
     "title": "Electra",
     "translator": "Francis Storr",
@@ -2187,6 +2278,19 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1893"
   },
   {
+    "slug": "ecclesiazusae",
+    "title": "Ecclesiazusae",
+    "translator": "The Athenian Society",
+    "manifestFile": "manifest.c3e7e8c603f2.json",
+    "source": "project-gutenberg",
+    "pgId": 8689,
+    "url": "https://www.gutenberg.org/cache/epub/8689/pg8689-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1912,
+    "translationPublished": 1912,
+    "licenseBasis": "US PD; translation 1912, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
     "slug": "protagoras",
     "title": "Protagoras",
     "translator": "Benjamin Jowett",
@@ -2198,6 +2302,19 @@
     "translatorDied": 1893,
     "translationPublished": 1871,
     "licenseBasis": "SE CC0; translation US PD + translator d. 1893"
+  },
+  {
+    "slug": "plutus",
+    "title": "Plutus",
+    "translator": "The Athenian Society",
+    "manifestFile": "manifest.cd794b438d96.json",
+    "source": "project-gutenberg",
+    "pgId": 8689,
+    "url": "https://www.gutenberg.org/cache/epub/8689/pg8689-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1912,
+    "translationPublished": 1912,
+    "licenseBasis": "US PD; translation 1912, corporate/translator PD; PG boilerplate stripped at build"
   },
   {
     "slug": "gorgias",
@@ -2678,6 +2795,58 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1909"
   },
   {
+    "slug": "summa-theologica-1",
+    "title": "Summa Theologica, Part I",
+    "translator": "Fathers of the English Dominican Province",
+    "manifestFile": "manifest.026c877ec44c.json",
+    "source": "project-gutenberg",
+    "pgId": 17611,
+    "url": "https://www.gutenberg.org/cache/epub/17611/pg17611-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1925,
+    "translationPublished": 1911,
+    "licenseBasis": "US PD; translation 1911, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "summa-theologica-1-2",
+    "title": "Summa Theologica, Part I-II",
+    "translator": "Fathers of the English Dominican Province",
+    "manifestFile": "manifest.b382bd54f35a.json",
+    "source": "project-gutenberg",
+    "pgId": 17897,
+    "url": "https://www.gutenberg.org/cache/epub/17897/pg17897-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1925,
+    "translationPublished": 1911,
+    "licenseBasis": "US PD; translation 1911, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "summa-theologica-2-2",
+    "title": "Summa Theologica, Part II-II",
+    "translator": "Fathers of the English Dominican Province",
+    "manifestFile": "manifest.d49e1f6b1fa8.json",
+    "source": "project-gutenberg",
+    "pgId": 18755,
+    "url": "https://www.gutenberg.org/cache/epub/18755/pg18755-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1925,
+    "translationPublished": 1911,
+    "licenseBasis": "US PD; translation 1911, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "summa-theologica-3",
+    "title": "Summa Theologica, Part III",
+    "translator": "Fathers of the English Dominican Province",
+    "manifestFile": "manifest.1e6ab8c0d784.json",
+    "source": "project-gutenberg",
+    "pgId": 19950,
+    "url": "https://www.gutenberg.org/cache/epub/19950/pg19950-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1925,
+    "translationPublished": 1911,
+    "licenseBasis": "US PD; translation 1911, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
     "slug": "the-divine-comedy",
     "title": "The Divine Comedy",
     "translator": "Henry Wadsworth Longfellow",
@@ -2733,7 +2902,7 @@
     "slug": "gargantua-and-pantagruel",
     "title": "Gargantua and Pantagruel",
     "translator": "Urquhart and Motteux",
-    "manifestFile": "manifest.4c8e86808f8f.json",
+    "manifestFile": "manifest.435d0d86a29b.json",
     "source": "project-gutenberg",
     "pgId": 1200,
     "url": "https://www.gutenberg.org/cache/epub/1200/pg1200-images.html",
@@ -3302,6 +3471,19 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1895"
   },
   {
+    "slug": "areopagitica",
+    "title": "Areopagitica",
+    "translator": null,
+    "manifestFile": "manifest.62a612689f6e.json",
+    "source": "project-gutenberg",
+    "pgId": 608,
+    "url": "https://www.gutenberg.org/cache/epub/608/pg608-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1644,
+    "licenseBasis": "US PD; original English work; PG boilerplate stripped at build"
+  },
+  {
     "slug": "leviathan",
     "title": "Leviathan",
     "translator": null,
@@ -3315,6 +3497,19 @@
     "licenseBasis": "SE CC0; original English work"
   },
   {
+    "slug": "the-provincial-letters",
+    "title": "The Provincial Letters",
+    "translator": "Thomas M'Crie",
+    "manifestFile": "manifest.fff575c87c60.json",
+    "source": "project-gutenberg",
+    "pgId": 73959,
+    "url": "https://www.gutenberg.org/cache/epub/73959/pg73959-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1875,
+    "translationPublished": 1856,
+    "licenseBasis": "US PD; translation 1856, corporate/translator PD; PG boilerplate stripped at build"
+  },
+  {
     "slug": "paradise-lost",
     "title": "Paradise Lost",
     "translator": null,
@@ -3326,6 +3521,19 @@
     "translatorDied": null,
     "translationPublished": 1667,
     "licenseBasis": "SE CC0; original English work"
+  },
+  {
+    "slug": "poetical-works",
+    "title": "Poetical Works",
+    "translator": null,
+    "manifestFile": "manifest.20923ac2e23f.json",
+    "source": "project-gutenberg",
+    "pgId": 1745,
+    "url": "https://www.gutenberg.org/cache/epub/1745/pg1745-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1673,
+    "licenseBasis": "US PD; original English work; PG boilerplate stripped at build"
   },
   {
     "slug": "ethics",
@@ -3354,6 +3562,32 @@
     "licenseBasis": "SE CC0; original English work"
   },
   {
+    "slug": "essay-concerning-human-understanding",
+    "title": "An Essay Concerning Human Understanding, Volume 1",
+    "translator": null,
+    "manifestFile": "manifest.0a422bcdf6f1.json",
+    "source": "project-gutenberg",
+    "pgId": 10615,
+    "url": "https://www.gutenberg.org/cache/epub/10615/pg10615-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1690,
+    "licenseBasis": "US PD; original English work; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "essay-concerning-human-understanding-2",
+    "title": "An Essay Concerning Human Understanding, Volume 2",
+    "translator": null,
+    "manifestFile": "manifest.8c5dbe4be9a5.json",
+    "source": "project-gutenberg",
+    "pgId": 10616,
+    "url": "https://www.gutenberg.org/cache/epub/10616/pg10616-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1690,
+    "licenseBasis": "US PD; original English work; PG boilerplate stripped at build"
+  },
+  {
     "slug": "principles-of-human-knowledge",
     "title": "A Treatise Concerning the Principles of Human Knowledge",
     "translator": null,
@@ -3378,6 +3612,19 @@
     "translatorDied": null,
     "translationPublished": 1726,
     "licenseBasis": "SE CC0; original English work"
+  },
+  {
+    "slug": "a-treatise-of-human-nature",
+    "title": "A Treatise of Human Nature",
+    "translator": null,
+    "manifestFile": "manifest.0eb733fa8561.json",
+    "source": "project-gutenberg",
+    "pgId": 4705,
+    "url": "https://www.gutenberg.org/cache/epub/4705/pg4705-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1739,
+    "licenseBasis": "US PD; original English work; PG boilerplate stripped at build"
   },
   {
     "slug": "enquiry-human-understanding",

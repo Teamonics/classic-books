@@ -241,6 +241,18 @@
       "words": 10549
     },
     {
+      "slug": "the-acharnians",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "The Acharnians",
+      "composedYear": -425,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.52a3264369fa.json",
+      "chunks": 3,
+      "words": 13591
+    },
+    {
       "slug": "hecuba",
       "author": "euripides",
       "authorName": "Euripides",
@@ -253,6 +265,18 @@
       "words": 10532
     },
     {
+      "slug": "the-knights",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "The Knights",
+      "composedYear": -424,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.cca336b98ea6.json",
+      "chunks": 2,
+      "words": 17278
+    },
+    {
       "slug": "the-suppliants",
       "author": "euripides",
       "authorName": "Euripides",
@@ -263,6 +287,42 @@
       "manifestFile": "manifest.bbc57525b1dc.json",
       "chunks": 1,
       "words": 11090
+    },
+    {
+      "slug": "the-clouds",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "The Clouds",
+      "composedYear": -423,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.202753a59d25.json",
+      "chunks": 3,
+      "words": 18580
+    },
+    {
+      "slug": "the-wasps",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "The Wasps",
+      "composedYear": -422,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.dba72ef3dfe5.json",
+      "chunks": 3,
+      "words": 18778
+    },
+    {
+      "slug": "peace",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "Peace",
+      "composedYear": -421,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.1f573da625f1.json",
+      "chunks": 3,
+      "words": 15993
     },
     {
       "slug": "electra",
@@ -347,6 +407,30 @@
       "manifestFile": "manifest.365c885f9972.json",
       "chunks": 1,
       "words": 13011
+    },
+    {
+      "slug": "lysistrata",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "Lysistrata",
+      "composedYear": -411,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.53f15efd32ab.json",
+      "chunks": 2,
+      "words": 15838
+    },
+    {
+      "slug": "thesmophoriazusae",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "Thesmophoriazusae",
+      "composedYear": -411,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.9f898eb62d42.json",
+      "chunks": 3,
+      "words": 14072
     },
     {
       "slug": "electra",
@@ -541,6 +625,18 @@
       "words": 12500
     },
     {
+      "slug": "ecclesiazusae",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "Ecclesiazusae",
+      "composedYear": -391,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.c3e7e8c603f2.json",
+      "chunks": 4,
+      "words": 15005
+    },
+    {
       "slug": "protagoras",
       "author": "plato",
       "authorName": "Plato",
@@ -551,6 +647,18 @@
       "manifestFile": "manifest.4d54cd331bc3.json",
       "chunks": 2,
       "words": 27910
+    },
+    {
+      "slug": "plutus",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "Plutus",
+      "composedYear": -388,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.cd794b438d96.json",
+      "chunks": 2,
+      "words": 14266
     },
     {
       "slug": "gorgias",
@@ -889,6 +997,54 @@
       "words": 441275
     },
     {
+      "slug": "summa-theologica-1",
+      "author": "thomas-aquinas",
+      "authorName": "Thomas Aquinas",
+      "title": "Summa Theologica, Part I",
+      "composedYear": 1268,
+      "era": "medieval",
+      "translator": "Fathers of the English Dominican Province",
+      "manifestFile": "manifest.026c877ec44c.json",
+      "chunks": 118,
+      "words": 499284
+    },
+    {
+      "slug": "summa-theologica-1-2",
+      "author": "thomas-aquinas",
+      "authorName": "Thomas Aquinas",
+      "title": "Summa Theologica, Part I-II",
+      "composedYear": 1271,
+      "era": "medieval",
+      "translator": "Fathers of the English Dominican Province",
+      "manifestFile": "manifest.b382bd54f35a.json",
+      "chunks": 114,
+      "words": 496270
+    },
+    {
+      "slug": "summa-theologica-2-2",
+      "author": "thomas-aquinas",
+      "authorName": "Thomas Aquinas",
+      "title": "Summa Theologica, Part II-II",
+      "composedYear": 1272,
+      "era": "medieval",
+      "translator": "Fathers of the English Dominican Province",
+      "manifestFile": "manifest.d49e1f6b1fa8.json",
+      "chunks": 188,
+      "words": 726399
+    },
+    {
+      "slug": "summa-theologica-3",
+      "author": "thomas-aquinas",
+      "authorName": "Thomas Aquinas",
+      "title": "Summa Theologica, Part III",
+      "composedYear": 1273,
+      "era": "medieval",
+      "translator": "Fathers of the English Dominican Province",
+      "manifestFile": "manifest.1e6ab8c0d784.json",
+      "chunks": 90,
+      "words": 477686
+    },
+    {
       "slug": "the-divine-comedy",
       "author": "dante-alighieri",
       "authorName": "Dante Alighieri",
@@ -944,9 +1100,9 @@
       "composedYear": 1564,
       "era": "renaissance",
       "translator": "Urquhart and Motteux",
-      "manifestFile": "manifest.4c8e86808f8f.json",
-      "chunks": 267,
-      "words": 311872
+      "manifestFile": "manifest.435d0d86a29b.json",
+      "chunks": 268,
+      "words": 311972
     },
     {
       "slug": "essays",
@@ -1465,6 +1621,18 @@
       "words": 422013
     },
     {
+      "slug": "areopagitica",
+      "author": "john-milton",
+      "authorName": "John Milton",
+      "title": "Areopagitica",
+      "composedYear": 1644,
+      "era": "early-modern",
+      "translator": null,
+      "manifestFile": "manifest.62a612689f6e.json",
+      "chunks": 1,
+      "words": 18003
+    },
+    {
       "slug": "leviathan",
       "author": "thomas-hobbes",
       "authorName": "Thomas Hobbes",
@@ -1477,6 +1645,18 @@
       "words": 206694
     },
     {
+      "slug": "the-provincial-letters",
+      "author": "blaise-pascal",
+      "authorName": "Blaise Pascal",
+      "title": "The Provincial Letters",
+      "composedYear": 1657,
+      "era": "early-modern",
+      "translator": "Thomas M'Crie",
+      "manifestFile": "manifest.fff575c87c60.json",
+      "chunks": 22,
+      "words": 122241
+    },
+    {
       "slug": "paradise-lost",
       "author": "john-milton",
       "authorName": "John Milton",
@@ -1487,6 +1667,18 @@
       "manifestFile": "manifest.9b2ebab66a0d.json",
       "chunks": 12,
       "words": 82070
+    },
+    {
+      "slug": "poetical-works",
+      "author": "john-milton",
+      "authorName": "John Milton",
+      "title": "Poetical Works",
+      "composedYear": 1673,
+      "era": "early-modern",
+      "translator": null,
+      "manifestFile": "manifest.20923ac2e23f.json",
+      "chunks": 69,
+      "words": 142844
     },
     {
       "slug": "ethics",
@@ -1513,6 +1705,30 @@
       "words": 101585
     },
     {
+      "slug": "essay-concerning-human-understanding",
+      "author": "john-locke",
+      "authorName": "John Locke",
+      "title": "An Essay Concerning Human Understanding, Volume 1",
+      "composedYear": 1690,
+      "era": "early-modern",
+      "translator": null,
+      "manifestFile": "manifest.0a422bcdf6f1.json",
+      "chunks": 39,
+      "words": 148249
+    },
+    {
+      "slug": "essay-concerning-human-understanding-2",
+      "author": "john-locke",
+      "authorName": "John Locke",
+      "title": "An Essay Concerning Human Understanding, Volume 2",
+      "composedYear": 1690,
+      "era": "early-modern",
+      "translator": null,
+      "manifestFile": "manifest.8c5dbe4be9a5.json",
+      "chunks": 32,
+      "words": 124275
+    },
+    {
       "slug": "principles-of-human-knowledge",
       "author": "george-berkeley",
       "authorName": "George Berkeley",
@@ -1535,6 +1751,18 @@
       "manifestFile": "manifest.45873de57e5f.json",
       "chunks": 41,
       "words": 103945
+    },
+    {
+      "slug": "a-treatise-of-human-nature",
+      "author": "david-hume",
+      "authorName": "David Hume",
+      "title": "A Treatise of Human Nature",
+      "composedYear": 1739,
+      "era": "eighteenth-century",
+      "translator": null,
+      "manifestFile": "manifest.0eb733fa8561.json",
+      "chunks": 93,
+      "words": 223740
     },
     {
       "slug": "enquiry-human-understanding",
