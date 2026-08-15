@@ -44,7 +44,6 @@ Skeat's Middle English.
 | Homer, Iliad | Samuel Butler (prose) | PG **#2199** | Butler d. 1902 |
 | Homer, Odyssey | Samuel Butler | PG **#1727** | d. 1902 |
 | Aeschylus (7 plays) | **E. D. A. Morshead** (verse) | PG **#8604** (Oresteia) + **#8714** (other four) | d. 1912 — clear everywhere. *Chosen over Cookson: one translator, all seven plays, clean digital text.* |
-| Euripides (all plays) | Edward P. Coleridge (prose) | WS *The Plays of Euripides* (1891) | d. 1936 |
 | Aristophanes, Frogs | **B. B. Rogers** (verse) | PG **#7998** (verified Rogers in the file) | d. 1919 |
 | Herodotus | George Rawlinson | WS *The History of Herodotus* (complete) | d. 1902 |
 | Thucydides | Crawley **unrevised** | SE (opf sources = PG #7142 + 1874 IA scan → pre-Feetham, verified) | d. 1893 |
@@ -105,12 +104,28 @@ Skeat's Middle English.
 
 | Work | Reason |
 |---|---|
+| **Euripides (all 19 plays)** | No single public-domain translation exists as complete clean digital text. Verified 2026-08-15: Coleridge (the 1952 set's pick, d. 1936) has only **10** plays transcribed on Wikisource; Way (d. 1930, clear since 2001) has **16**; their union covers 18, leaving *Cyclops*, for which Shelley's translation exists separately. Assembling all 19 therefore means (a) a Wikisource adapter for proofread-page markup, and (b) mixing three translators within one author, recorded per play. Plan below; not yet built. |
 | **Plotinus, Enneads** | Their MacKenna & **Page** text: Page was alive in 1969 (revising the 4th ed.), so life+70 runs into the 2040s+. No PD-everywhere complete alternative exists. |
 | **Rousseau** | Cole (their pick and SE's) d. 1959 → protected until 2030. Tozer alternative exists only as page scans. Revisit 2030 or when a clean Tozer text appears. |
 | **Montesquieu, Spirit of Laws** | Nugent translation is PD but not on PG/WS as clean text — scan-only. Revisit. |
 | **Pascal, Pensées** | PG #18269 carries no translator attribution in the file; it is believed to be W. F. Trotter (their pick) but his death date is unverified. Do not ship until attribution + death date are confirmed. |
 | Aristotle, Hegel, Goethe, Boswell | Already deferred in the brief (Ross EU-protected; Priest's Faust 1941 is US-protected to 2037; substitutes are later work). |
 | All mathematics & natural science | Deferred per brief (second rendering path). |
+
+## Euripides plan (when built)
+
+Preferred order per play, so the Franklin/1952 choice wins where it exists:
+
+1. **Coleridge** (prose, d. 1936) — Alcestis, Helen, Heracleidae, Hippolytus,
+   Ion, Medea, Rhesus, The Bacchantes, The Suppliants, The Trojan Women.
+2. **Way** (verse, d. 1930) — Andromache, Electra, Hecuba, Iphigeneia at
+   Aulis, Iphigeneia in Taurica, Orestes, The Madness of Herakles, The
+   Phoenician Maidens.
+3. **Shelley** (d. 1822) — Cyclops.
+
+All three are public domain in the US and in life+70 jurisdictions. Each
+play's translator is recorded individually in sources.json and shown on the
+colophon, because the set is not by one hand.
 
 ## Verification debt (resolve at ingest, recorded in sources.json)
 
