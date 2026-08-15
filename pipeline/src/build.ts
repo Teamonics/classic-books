@@ -13,11 +13,12 @@ import { adapt as adaptSeProse } from "./adapters/se-prose.ts";
 import { adapt as adaptSeDrama } from "./adapters/se-drama.ts";
 import { adapt as adaptSePlato } from "./adapters/se-plato.ts";
 import { adapt as adaptMorshead } from "./adapters/pg-morshead-aeschylus.ts";
+import { adapt as adaptWsEuripides } from "./adapters/ws-euripides.ts";
 
 const ROOT = resolve(import.meta.dirname, "..", "..");
 const BUILD = join(ROOT, "build");
 
-const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[]; sourceFile?: string; playTitle?: string }) => WorkIR> = {
+const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[]; sourceFile?: string; playTitle?: string; mode?: "verse" | "prose" }) => WorkIR> = {
   "se-divine-comedy": adaptDante,
   "pg-butler-homer": adaptButlerHomer,
   "pg-the-frogs": adaptFrogs,
@@ -25,6 +26,7 @@ const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[]; so
   "se-drama": adaptSeDrama,
   "se-plato": adaptSePlato,
   "pg-morshead-aeschylus": adaptMorshead,
+  "ws-euripides": adaptWsEuripides,
 };
 
 // Golden facts checked on every build; extend per work as they are ingested.
@@ -63,7 +65,7 @@ const goldens: Record<string, (ir: WorkIR) => string[]> = {
 function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
   const adapter = adapters[cfg.adapter];
   if (!adapter) throw new Error(`no adapter: ${cfg.adapter}`);
-  const ir = adapter(join(ROOT, cfg.rawDir), { skipFiles: cfg.skipFiles, sourceFile: cfg.sourceFile, playTitle: cfg.playTitle });
+  const ir = adapter(join(ROOT, cfg.rawDir), { skipFiles: cfg.skipFiles, sourceFile: cfg.sourceFile, playTitle: cfg.playTitle, mode: cfg.mode });
 
   if (cfg.expectDivisions !== undefined && ir.divisions.length !== cfg.expectDivisions) {
     throw new Error(
@@ -84,7 +86,7 @@ function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
     ...(d.notes?.length ? { notes: d.notes } : {}),
   }));
 
-  const workDir = join(BUILD, "works", cfg.slug);
+  const workDir = join(BUILD, "works", cfg.author, cfg.slug);
   rmSync(workDir, { recursive: true, force: true });
   mkdirSync(join(workDir, "chunks"), { recursive: true });
 
@@ -157,6 +159,9 @@ const ERAS: { id: string; label: string }[] = [
 ];
 
 function main() {
+  // Wipe the work tree so renames and re-homed directories cannot leave
+  // orphans behind (the build output is committed, so stale files would ship).
+  rmSync(join(BUILD, "works"), { recursive: true, force: true });
   const catalog: unknown[] = [];
   const sources: unknown[] = [];
   const manifests = new Map<string, Manifest>();

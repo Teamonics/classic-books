@@ -25,7 +25,7 @@
     dlState = "unknown";
     if (!offlineSupported()) return;
     let cancelled = false;
-    getWork(slug).then(async ({ manifest }) => {
+    getWork(slug, author).then(async ({ manifest }) => {
       const yes = await isWorkDownloaded(manifest);
       if (!cancelled) dlState = yes ? "yes" : "no";
     });
@@ -63,7 +63,7 @@
 </script>
 
 <main>
-  {#await getWork(slug)}
+  {#await getWork(slug, author)}
     <p class="ui muted">Loading…</p>
   {:then { manifest }}
     {@const pos = getPosition(slug)}

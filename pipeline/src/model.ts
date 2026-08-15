@@ -139,6 +139,7 @@ export interface WorkConfig {
   skipFiles?: string[]; // extra source files to skip (adapter-specific)
   sourceFile?: string; // single file within a shared snapshot (Plato)
   playTitle?: string; // heading of one play inside a multi-play volume
+  mode?: "verse" | "prose"; // whether the translation is verse or prose
   expectDivisions?: number; // golden check: exact division count
 }
 

@@ -55,7 +55,7 @@
   async function load(target: string) {
     error = null;
     try {
-      const { manifest: m } = await getWork(slug);
+      const { manifest: m } = await getWork(slug, author);
       manifest = m;
       const resolved = resolveRef(m, target) ?? { chunkRef: m.toc[0]!.ref };
       const chunk = await getChunk(m, resolved.chunkRef);

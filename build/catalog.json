@@ -109,6 +109,18 @@
       "words": 9396
     },
     {
+      "slug": "rhesus",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Rhesus",
+      "composedYear": -450,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.84141a69b250.json",
+      "chunks": 1,
+      "words": 8412
+    },
+    {
       "slug": "ajax",
       "author": "sophocles",
       "authorName": "Sophocles",
@@ -133,6 +145,30 @@
       "words": 9977
     },
     {
+      "slug": "alcestis",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Alcestis",
+      "composedYear": -438,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.f414efe6fd07.json",
+      "chunks": 1,
+      "words": 9951
+    },
+    {
+      "slug": "medea",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Medea",
+      "composedYear": -431,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.f346adea33b0.json",
+      "chunks": 1,
+      "words": 11926
+    },
+    {
       "slug": "histories",
       "author": "herodotus",
       "authorName": "Herodotus",
@@ -143,6 +179,18 @@
       "manifestFile": "manifest.9e4efb838aff.json",
       "chunks": 10,
       "words": 285975
+    },
+    {
+      "slug": "heracleidae",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "The Children of Heracles",
+      "composedYear": -430,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.88fdf3aa3383.json",
+      "chunks": 1,
+      "words": 8072
     },
     {
       "slug": "oedipus-rex",
@@ -157,6 +205,18 @@
       "words": 12389
     },
     {
+      "slug": "hippolytus",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Hippolytus",
+      "composedYear": -428,
+      "era": "classical-greece",
+      "translator": "Edward P. Coleridge",
+      "manifestFile": "manifest.28f35b9d2d55.json",
+      "chunks": 1,
+      "words": 12248
+    },
+    {
       "slug": "the-trachiniae",
       "author": "sophocles",
       "authorName": "Sophocles",
@@ -167,6 +227,114 @@
       "manifestFile": "manifest.39a4bb59d15d.json",
       "chunks": 3,
       "words": 10116
+    },
+    {
+      "slug": "andromache",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Andromache",
+      "composedYear": -425,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.fba52016a955.json",
+      "chunks": 1,
+      "words": 10549
+    },
+    {
+      "slug": "hecuba",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Hecuba",
+      "composedYear": -424,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.f54793c39121.json",
+      "chunks": 1,
+      "words": 10532
+    },
+    {
+      "slug": "the-suppliants",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "The Suppliants",
+      "composedYear": -423,
+      "era": "classical-greece",
+      "translator": "Edward P. Coleridge",
+      "manifestFile": "manifest.bbc57525b1dc.json",
+      "chunks": 1,
+      "words": 11090
+    },
+    {
+      "slug": "electra",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Electra",
+      "composedYear": -420,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.3ec7eb9375ea.json",
+      "chunks": 1,
+      "words": 10994
+    },
+    {
+      "slug": "heracles",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "The Madness of Heracles",
+      "composedYear": -416,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.acedc2f60d2c.json",
+      "chunks": 1,
+      "words": 11628
+    },
+    {
+      "slug": "the-trojan-women",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "The Trojan Women",
+      "composedYear": -415,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.95525bda2122.json",
+      "chunks": 1,
+      "words": 9967
+    },
+    {
+      "slug": "iphigenia-in-tauris",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Iphigenia in Tauris",
+      "composedYear": -414,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.ae0f5ea3ff14.json",
+      "chunks": 1,
+      "words": 11676
+    },
+    {
+      "slug": "ion",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Ion",
+      "composedYear": -413,
+      "era": "classical-greece",
+      "translator": "Edward P. Coleridge",
+      "manifestFile": "manifest.2455453eb17e.json",
+      "chunks": 1,
+      "words": 14996
+    },
+    {
+      "slug": "helen",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Helen",
+      "composedYear": -412,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.365c885f9972.json",
+      "chunks": 1,
+      "words": 13011
     },
     {
       "slug": "electra",
@@ -181,6 +349,18 @@
       "words": 11693
     },
     {
+      "slug": "the-phoenician-women",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "The Phoenician Women",
+      "composedYear": -410,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.4b5bf834484a.json",
+      "chunks": 1,
+      "words": 14336
+    },
+    {
       "slug": "philoctetes",
       "author": "sophocles",
       "authorName": "Sophocles",
@@ -193,6 +373,18 @@
       "words": 11951
     },
     {
+      "slug": "orestes",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Orestes",
+      "composedYear": -408,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.5d7594770cee.json",
+      "chunks": 1,
+      "words": 13906
+    },
+    {
       "slug": "the-frogs",
       "author": "aristophanes",
       "authorName": "Aristophanes",
@@ -203,6 +395,30 @@
       "manifestFile": "manifest.7d33d1cba854.json",
       "chunks": 1,
       "words": 13175
+    },
+    {
+      "slug": "the-bacchae",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "The Bacchae",
+      "composedYear": -405,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.844d3c437181.json",
+      "chunks": 1,
+      "words": 11665
+    },
+    {
+      "slug": "iphigenia-in-aulis",
+      "author": "euripides",
+      "authorName": "Euripides",
+      "title": "Iphigenia in Aulis",
+      "composedYear": -405,
+      "era": "classical-greece",
+      "translator": "Arthur S. Way",
+      "manifestFile": "manifest.658e2e348238.json",
+      "chunks": 1,
+      "words": 13003
     },
     {
       "slug": "oedipus-at-colonus",

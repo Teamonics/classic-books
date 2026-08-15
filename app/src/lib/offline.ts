@@ -1,4 +1,5 @@
 import { browser } from "$app/environment";
+import { workDir } from "./data";
 import type { Manifest } from "./types";
 
 const DATA = "cb-data-v1";
@@ -8,7 +9,7 @@ export function offlineSupported(): boolean {
 }
 
 export function workUrls(manifest: Manifest): string[] {
-  const base = `/data/works/${manifest.slug}`;
+  const base = workDir(manifest);
   const urls = Object.values(manifest.chunkFiles).map((f) => `${base}/chunks/${f}`);
   for (const shard of manifest.search ?? []) urls.push(`${base}/${shard}`);
   return urls;

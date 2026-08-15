@@ -1,5 +1,6 @@
 import { tokenize, stem, buildGroupLookup } from "$search/text";
 import synonyms from "$search/synonyms.json";
+import { workDir } from "./data";
 import type { Manifest, SearchIndex } from "./types";
 
 const groupOf = buildGroupLookup(synonyms as Record<string, string[]>);
@@ -7,11 +8,11 @@ const groupOf = buildGroupLookup(synonyms as Record<string, string[]>);
 const shardCache = new Map<string, Promise<SearchIndex>>();
 
 function loadShard(manifest: Manifest, file: string): Promise<SearchIndex> {
-  const key = `${manifest.slug}/${file}`;
+  const key = `${manifest.author}/${manifest.slug}/${file}`;
   if (!shardCache.has(key)) {
     shardCache.set(
       key,
-      fetch(`/data/works/${manifest.slug}/${file}`).then((r) => {
+      fetch(`${workDir(manifest)}/${file}`).then((r) => {
         if (!r.ok) throw new Error(`${r.status} loading search index`);
         return r.json();
       }),

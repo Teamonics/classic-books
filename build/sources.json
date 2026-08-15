@@ -117,6 +117,108 @@
     "licenseBasis": "US PD + translator d. 1912; PG boilerplate stripped at build"
   },
   {
+    "slug": "rhesus",
+    "title": "Rhesus",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.84141a69b250.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
     "slug": "ajax",
     "title": "Ajax",
     "translator": "Francis Storr",
@@ -143,6 +245,210 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
   },
   {
+    "slug": "alcestis",
+    "title": "Alcestis",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.f414efe6fd07.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "medea",
+    "title": "Medea",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.f346adea33b0.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
     "slug": "histories",
     "title": "Histories",
     "translator": "G. C. Macaulay",
@@ -154,6 +460,108 @@
     "translatorDied": 1915,
     "translationPublished": 1890,
     "licenseBasis": "SE CC0; translation US PD + translator d. 1915"
+  },
+  {
+    "slug": "heracleidae",
+    "title": "The Children of Heracles",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.88fdf3aa3383.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
   },
   {
     "slug": "oedipus-rex",
@@ -169,6 +577,108 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
   },
   {
+    "slug": "hippolytus",
+    "title": "Hippolytus",
+    "translator": "Edward P. Coleridge",
+    "manifestFile": "manifest.28f35b9d2d55.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
     "slug": "the-trachiniae",
     "title": "The Trachiniae",
     "translator": "Francis Storr",
@@ -180,6 +690,924 @@
     "translatorDied": 1919,
     "translationPublished": 1912,
     "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
+  },
+  {
+    "slug": "andromache",
+    "title": "Andromache",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.fba52016a955.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "hecuba",
+    "title": "Hecuba",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.f54793c39121.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "the-suppliants",
+    "title": "The Suppliants",
+    "translator": "Edward P. Coleridge",
+    "manifestFile": "manifest.bbc57525b1dc.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "electra",
+    "title": "Electra",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.3ec7eb9375ea.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "heracles",
+    "title": "The Madness of Heracles",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.acedc2f60d2c.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "the-trojan-women",
+    "title": "The Trojan Women",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.95525bda2122.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "iphigenia-in-tauris",
+    "title": "Iphigenia in Tauris",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.ae0f5ea3ff14.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "ion",
+    "title": "Ion",
+    "translator": "Edward P. Coleridge",
+    "manifestFile": "manifest.2455453eb17e.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "helen",
+    "title": "Helen",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.365c885f9972.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
   },
   {
     "slug": "electra",
@@ -195,6 +1623,108 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
   },
   {
+    "slug": "the-phoenician-women",
+    "title": "The Phoenician Women",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.4b5bf834484a.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
     "slug": "philoctetes",
     "title": "Philoctetes",
     "translator": "Francis Storr",
@@ -208,6 +1738,108 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
   },
   {
+    "slug": "orestes",
+    "title": "Orestes",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.5d7594770cee.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
     "slug": "the-frogs",
     "title": "The Frogs",
     "translator": "Benjamin Bickley Rogers",
@@ -219,6 +1851,210 @@
     "translatorDied": 1919,
     "translationPublished": 1902,
     "licenseBasis": "US PD + translator d. 1919; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "the-bacchae",
+    "title": "The Bacchae",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.844d3c437181.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
+  },
+  {
+    "slug": "iphigenia-in-aulis",
+    "title": "Iphigenia in Aulis",
+    "translator": "Arthur S. Way",
+    "manifestFile": "manifest.658e2e348238.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "Tragedies of Euripides (Way)/Alcestis",
+        "file": "alcestis.html",
+        "revid": 15089093
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Medea",
+        "file": "medea.html",
+        "revid": 15089092
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Children of Herakles",
+        "file": "the-children-of-herakles.html",
+        "revid": 15089084
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Andromache",
+        "file": "andromache.html",
+        "revid": 15089085
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Hecuba",
+        "file": "hecuba.html",
+        "revid": 15089090
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Electra",
+        "file": "electra.html",
+        "revid": 15089082
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Madness of Herakles",
+        "file": "the-madness-of-herakles.html",
+        "revid": 15089080
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Daughters of Troy",
+        "file": "the-daughters-of-troy.html",
+        "revid": 15089083
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia in Taurica",
+        "file": "iphigeneia-in-taurica.html",
+        "revid": 15089075
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Helen",
+        "file": "helen.html",
+        "revid": 15089081
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Phoenician Maidens",
+        "file": "the-phoenician-maidens.html",
+        "revid": 15089077
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Orestes",
+        "file": "orestes.html",
+        "revid": 15089076
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/The Bacchanals",
+        "file": "the-bacchanals.html",
+        "revid": 15089073
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Iphigeneia at Aulis",
+        "file": "iphigeneia-at-aulis.html",
+        "revid": 15089074
+      },
+      {
+        "title": "Tragedies of Euripides (Way)/Rhesus",
+        "file": "rhesus.html",
+        "revid": 15089072
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Ion",
+        "file": "ion.html",
+        "revid": 10770586
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/The Suppliants",
+        "file": "the-suppliants.html",
+        "revid": 10778764
+      },
+      {
+        "title": "The Plays of Euripides (Coleridge)/Hippolytus",
+        "file": "hippolytus-coleridge.html",
+        "revid": 10778754,
+        "note": "Way's Hippolytus is only partly transcribed on Wikisource (59KB vs ~237KB for a complete play); Coleridge's is complete."
+      }
+    ]
   },
   {
     "slug": "oedipus-at-colonus",
