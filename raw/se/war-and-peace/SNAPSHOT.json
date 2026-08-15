@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/leo-tolstoy_war-and-peace_louise-maude_aylmer-maude",
+  "commit": "53ec5870bee8c8d0d213c090c5ff78d52f474c9d",
+  "retrieved": "2026-08-15",
+  "translator": "Louise and Aylmer Maude",
+  "translatorDied": 1939,
+  "translationPublished": 1923,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1939"
+}

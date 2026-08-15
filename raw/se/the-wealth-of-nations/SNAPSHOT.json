@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/adam-smith_the-wealth-of-nations",
+  "commit": "37329eebd99003a7759b174227875ddd8d37f131",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1776,
+  "licenseBasis": "SE CC0; original English work"
+}

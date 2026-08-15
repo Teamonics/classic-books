@@ -1,0 +1,217 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+/* SE standard CSS */
+/* bridgeheads */
+[epub|type~="se:bridgehead"]{
+	display: inline-block;
+	font-style: italic;
+	max-width: 60%;
+	text-align: justify;
+	text-indent: 0;
+}
+/* end bridgeheads */
+
+/* images */
+figure{
+	break-inside: avoid;
+	margin: 1em 2.5em;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-height: 100vh;
+	max-width: 100%;
+}
+
+figcaption{
+	font-size: smaller;
+	font-style: italic;
+	margin: 1em;
+	text-align: center;
+}
+
+figure.full-page{
+	break-after: page;
+	break-before: page;
+}
+/* end of images */
+
+/* verse/song/poetry */
+[epub|type~="z3998:hymn"] p,
+[epub|type~="z3998:song"] p,
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:verse"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:hymn"] p > span,
+[epub|type~="z3998:song"] p > span,
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:hymn"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+p span.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+
+p span.i4{
+	padding-left: 5em;
+	text-indent: -1em;
+}
+
+p span.i6{
+	padding-left: 7em;
+	text-indent: -1em;
+}
+
+p span.i8{
+	padding-left: 9em;
+	text-indent: -1em;
+}
+/* end verse/song/poetry */
+
+/* vertical elision in verse */
+span.elision{
+	margin: .5em;
+	margin-left: 3em;
+}
+/* end of vertical elision in verse */
+/* end of SE standard CSS */
+
+/* production-specific CSS */
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}
+
+footer,
+#preface-2 [epub|type~="z3998:postscript"] p:last-child{
+	margin-top: 1em;
+	text-align: right;
+}
+
+q{
+	font-style: italic;
+}
+
+section{
+	break-after: page;
+}
+
+table{
+	font-variant-numeric: tabular-nums;
+	margin: 1em auto;
+}
+
+/* year asides */
+span.timeline{
+	float: right;
+	font-size: smaller;
+	margin: .5em 0 .5em 1em;
+	text-align: right;
+	text-indent: 0;
+}
+
+/* non-English blockquotes and text in blockquotes */
+blockquote[xml|lang],
+blockquote > p[xml|lang],
+span[xml|lang]{
+	font-style: italic;
+}
+
+blockquote[xml|lang] em,
+blockquote[xml|lang] i,
+blockquote[xml|lang] strong,
+[xml|lang] > em,
+[xml|lang] > strong{
+	font-style: normal;
+}
+/* end of non-English blockquotes */
+
+/* location-specific */
+#preface-1 hr + p{
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+#preface-2 [epub|type~="z3998:postscript"],
+#preface-4 [epub|type~="z3998:postscript"]{
+	margin: 1em 0;
+	text-align: initial;
+}
+
+#chapter-43 hr + p{
+	margin-bottom: 1em;
+}
+
+#chapter-61 > section[epub|type~="z3998:subchapter"] > header{
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+section[epub|type~="endnotes"] > ol > li > ol{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#note-1006 table th{
+	font-weight: normal;
+	padding-right: 1em;
+	text-align: center;
+}
+
+#note-1006 table > thead > tr:last-of-type{
+	font-size: smaller;
+}
+
+#note-6121 table td:nth-child(2){
+	text-align: center;
+}
+
+#note-6121 table td:first-child,
+#note-8692 table td{
+	text-align: right;
+}
+
+#note-7290 table{
+	border-collapse: collapse;
+}
+
+#note-7290 table,
+#note-7290 table th,
+#note-7290 table td{
+	border: 1px solid;
+}
+
+#note-8692 tfoot td{
+	border-top: 1px solid;
+}
+
+#note-8692 tfoot th{
+	text-indent: 1em;
+}
+/* end of location-specific */

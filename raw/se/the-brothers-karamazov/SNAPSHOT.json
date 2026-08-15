@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/fyodor-dostoevsky_the-brothers-karamazov_constance-garnett",
+  "commit": "babab9265e619f8245f2d7d957f64f4aa29fa992",
+  "retrieved": "2026-08-15",
+  "translator": "Constance Garnett",
+  "translatorDied": 1946,
+  "translationPublished": 1912,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1946"
+}

@@ -48,6 +48,18 @@
     "words": 201818
   },
   {
+    "slug": "discourses",
+    "author": "epictetus",
+    "authorName": "Epictetus",
+    "title": "Discourses",
+    "composedYear": 108,
+    "era": "imperial-rome",
+    "translator": "George Long",
+    "manifestFile": "manifest.b770e744d709.json",
+    "chunks": 6,
+    "words": 120159
+  },
+  {
     "slug": "meditations",
     "author": "marcus-aurelius",
     "authorName": "Marcus Aurelius",
@@ -58,6 +70,18 @@
     "manifestFile": "manifest.f9ea6f95761e.json",
     "chunks": 12,
     "words": 45360
+  },
+  {
+    "slug": "the-city-of-god",
+    "author": "augustine-of-hippo",
+    "authorName": "Augustine of Hippo",
+    "title": "The City of God",
+    "composedYear": 426,
+    "era": "late-antiquity",
+    "translator": "Marcus Dods et al.",
+    "manifestFile": "manifest.7d33662df937.json",
+    "chunks": 23,
+    "words": 441275
   },
   {
     "slug": "the-divine-comedy",
@@ -84,6 +108,18 @@
     "words": 34610
   },
   {
+    "slug": "don-quixote",
+    "author": "miguel-de-cervantes-saavedra",
+    "authorName": "Miguel de Cervantes Saavedra",
+    "title": "Don Quixote",
+    "composedYear": 1615,
+    "era": "renaissance",
+    "translator": "John Ormsby",
+    "manifestFile": "manifest.0a1be23e76ed.json",
+    "chunks": 132,
+    "words": 422013
+  },
+  {
     "slug": "leviathan",
     "author": "thomas-hobbes",
     "authorName": "Thomas Hobbes",
@@ -96,6 +132,54 @@
     "words": 206694
   },
   {
+    "slug": "gullivers-travels",
+    "author": "jonathan-swift",
+    "authorName": "Jonathan Swift",
+    "title": "Gulliver's Travels",
+    "composedYear": 1726,
+    "era": "eighteenth-century",
+    "translator": null,
+    "manifestFile": "manifest.709426ddb3dc.json",
+    "chunks": 41,
+    "words": 103945
+  },
+  {
+    "slug": "the-wealth-of-nations",
+    "author": "adam-smith",
+    "authorName": "Adam Smith",
+    "title": "The Wealth of Nations",
+    "composedYear": 1776,
+    "era": "eighteenth-century",
+    "translator": null,
+    "manifestFile": "manifest.a637be22e0a3.json",
+    "chunks": 42,
+    "words": 389140
+  },
+  {
+    "slug": "the-federalist-papers",
+    "author": "alexander-hamilton",
+    "authorName": "Hamilton, Madison, and Jay",
+    "title": "The Federalist Papers",
+    "composedYear": 1788,
+    "era": "eighteenth-century",
+    "translator": null,
+    "manifestFile": "manifest.18a19dd2eb9e.json",
+    "chunks": 87,
+    "words": 194189
+  },
+  {
+    "slug": "decline-and-fall",
+    "author": "edward-gibbon",
+    "authorName": "Edward Gibbon",
+    "title": "The History of the Decline and Fall of the Roman Empire",
+    "composedYear": 1789,
+    "era": "eighteenth-century",
+    "translator": null,
+    "manifestFile": "manifest.4a5181fccca7.json",
+    "chunks": 76,
+    "words": 1095714
+  },
+  {
     "slug": "moby-dick",
     "author": "herman-melville",
     "authorName": "Herman Melville",
@@ -106,5 +190,41 @@
     "manifestFile": "manifest.3d3f63ba1404.json",
     "chunks": 139,
     "words": 208885
+  },
+  {
+    "slug": "on-liberty",
+    "author": "john-stuart-mill",
+    "authorName": "John Stuart Mill",
+    "title": "On Liberty",
+    "composedYear": 1859,
+    "era": "nineteenth-century",
+    "translator": null,
+    "manifestFile": "manifest.4d76da55703b.json",
+    "chunks": 8,
+    "words": 50720
+  },
+  {
+    "slug": "war-and-peace",
+    "author": "leo-tolstoy",
+    "authorName": "Leo Tolstoy",
+    "title": "War and Peace",
+    "composedYear": 1869,
+    "era": "nineteenth-century",
+    "translator": "Louise and Aylmer Maude",
+    "manifestFile": "manifest.25b44a1fe620.json",
+    "chunks": 365,
+    "words": 562661
+  },
+  {
+    "slug": "the-brothers-karamazov",
+    "author": "fyodor-dostoevsky",
+    "authorName": "Fyodor Dostoevsky",
+    "title": "The Brothers Karamazov",
+    "composedYear": 1880,
+    "era": "nineteenth-century",
+    "translator": "Constance Garnett",
+    "manifestFile": "manifest.16728175dd5b.json",
+    "chunks": 97,
+    "words": 349434
   }
 ]

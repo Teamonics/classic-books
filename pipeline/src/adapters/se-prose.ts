@@ -62,7 +62,6 @@ export function adapt(rawDir: string, opts: { skipFiles?: string[] } = {}): Work
       const pushInline = (el: any, role?: "argument" | "summary") => {
         const { text, marks } = inlineText(el);
         if (!text) return;
-        for (const m of marks) if (m.k === "note" && m.ref) noteIds.push(m.ref);
         if (role) blocks.push({ type: "para", role, text, ...(marks.length ? { marks } : {}) });
         else {
           paraNo += 1;
@@ -70,14 +69,20 @@ export function adapt(rawDir: string, opts: { skipFiles?: string[] } = {}): Work
         }
       };
 
+      // Single exhaustive pass over the finished block tree: collecting note
+      // refs at each push site is too easy to forget (nested summaries did).
       const collectNoteIds = (bs: Block[]) => {
         for (const b of bs) {
-          if (b.type === "verse") for (const l of b.lines) for (const m of l.marks ?? []) {
-            if (m.k === "note" && m.ref) noteIds.push(m.ref);
-          }
-          else if (b.type === "quote" || b.type === "speech") collectNoteIds(b.blocks);
-          else for (const m of (b as { marks?: { k: string; ref?: string }[] }).marks ?? []) {
-            if (m.k === "note" && m.ref) noteIds.push(m.ref!);
+          if (b.type === "verse") {
+            for (const l of b.lines) for (const m of l.marks ?? []) {
+              if (m.k === "note" && m.ref) noteIds.push(m.ref);
+            }
+          } else if (b.type === "quote" || b.type === "speech") {
+            collectNoteIds(b.blocks);
+          } else {
+            for (const m of (b as { marks?: { k: string; ref?: string }[] }).marks ?? []) {
+              if (m.k === "note" && m.ref) noteIds.push(m.ref);
+            }
           }
         }
       };
@@ -93,12 +98,25 @@ export function adapt(rawDir: string, opts: { skipFiles?: string[] } = {}): Work
             pushInline(child);
           } else if (tag === "blockquote") {
             const q = parseBlockquote(child);
-            if (q) {
-              collectNoteIds([q]);
-              blocks.push(q);
-            }
+            if (q) blocks.push(q);
           } else if (tag === "ol" || tag === "ul") {
             for (const li of child.children) pushInline(li);
+          } else if (tag === "dl") {
+            // Definition lists are lookup tables in these texts (e.g. Pierre's
+            // gematria in War and Peace). The block model has no table type,
+            // so pairs are flattened into one readable paragraph rather than
+            // dropped.
+            const pairs: string[] = [];
+            for (const dt of child.querySelectorAll("dt")) {
+              const term = collapseWs(dt.textContent ?? "");
+              const dd = dt.parentElement?.querySelector("dd");
+              const def = collapseWs(dd?.textContent ?? "");
+              if (term) pairs.push(def ? `${term} = ${def}` : term);
+            }
+            if (pairs.length) {
+              paraNo += 1;
+              blocks.push({ type: "para", n: paraNo, text: pairs.join(", ") });
+            }
           } else if (tag === "footer") {
             // signature/valediction lines (e.g. a dedication's sign-off)
             for (const p of child.querySelectorAll("p")) pushInline(p);
@@ -120,13 +138,9 @@ export function adapt(rawDir: string, opts: { skipFiles?: string[] } = {}): Work
         }
       };
 
-      if (summary) {
-        blocks.push(summary);
-        for (const m of (summary as { marks?: { k: string; ref?: string }[] }).marks ?? []) {
-          if (m.k === "note" && m.ref) noteIds.push(m.ref);
-        }
-      }
+      if (summary) blocks.push(summary);
       walkBody(section);
+      collectNoteIds(blocks);
 
       const hasContent = blocks.some((b) => b.type !== "heading");
       if (!hasContent) {

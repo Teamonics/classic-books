@@ -1,0 +1,70 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+blockquote[xml|lang]{
+	font-style: italic;
+}
+
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}
+
+/* Begin bridgehead formatting */
+[epub|type~="se:bridgehead"]{
+	display: inline-block;
+	font-style: italic;
+	max-width: 60%;
+	text-align: justify;
+	text-indent: 0;
+}
+
+[epub|type~="se:bridgehead"] i{
+	font-style: normal;
+}
+/* End bridgehead formatting */
+
+/* Begin poetry formatting */
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:verse"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+
+p span.i11{
+	padding-left: 12em;
+	text-indent: -1em;
+}
+/* End poetry formatting */
+
+[epub|type~="z3998:signature"]{
+	font-variant: small-caps;
+}
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}

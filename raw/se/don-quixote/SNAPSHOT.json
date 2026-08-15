@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/miguel-de-cervantes-saavedra_don-quixote_john-ormsby",
+  "commit": "02af6f98dee7dd1123cbe5cdad64464e4f23d666",
+  "retrieved": "2026-08-15",
+  "translator": "John Ormsby",
+  "translatorDied": 1895,
+  "translationPublished": 1885,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1895"
+}

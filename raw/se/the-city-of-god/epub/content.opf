@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/augustine-of-hippo/the-city-of-god/marcus-dods_george-wilson_j-j-smith</dc:identifier>
+		<dc:date>2026-01-03T20:46:11Z</dc:date>
+		<meta property="dcterms:modified">2026-01-03T20:46:11Z</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
+		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
+		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
+		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">The City of God</dc:title>
+		<meta property="file-as" refines="#title">City of God, The</meta>
+		<meta property="title-type" refines="#title">main</meta>
+		<dc:title id="fulltitle">On the City of God Against the Pagans</dc:title>
+		<meta property="file-as" refines="#fulltitle">On the City of God Against the Pagans</meta>
+		<meta property="title-type" refines="#fulltitle">expanded</meta>
+		<meta property="dcterms:alternative" refines="#title">De civitate Dei</meta>
+		<meta property="dcterms:alternative" refines="#title">De civitate Dei contra paganos</meta>
+		<dc:subject id="subject-1">Apologetics -- Early works to 1800</dc:subject>
+		<dc:subject id="subject-2">Kingdom of God -- Early works to 1800</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">sh94000014</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">sh2008122893</meta>
+		<meta property="schema:genre">Nonfiction</meta>
+		<meta property="schema:genre">Philosophy</meta>
+		<meta property="schema:genre">Spirituality</meta>
+		<meta id="collection-1" property="belongs-to-collection">Encyclopædia Britannica’s Great Books of the Western World</meta>
+		<meta property="collection-type" refines="#collection-1">set</meta>
+		<meta property="schema:abstract">Bishop Augustine of Hippo provides a defense of the Christian faith against its pagan critics, as well as explaining God’s work and purposes in world history, from beginning to end.</meta>
+		<dc:description>
+			&lt;p&gt;In 410 CE, Rome was sacked by the Visigoths, leaving the inhabitants of the Roman Empire in a state of deep shock. Some Romans began theorizing that the calamity occurred because many in the empire had chosen to become Christian rather than participate in traditional Roman religion. In response, over the course of thirteen years the Christian bishop &lt;a href="https://standardebooks.org/ebooks/augustine-of-hippo"&gt;Augustine of Hippo&lt;/a&gt; wrote &lt;i&gt;The City of God&lt;/i&gt;.&lt;/p&gt;
+			&lt;p&gt;In the first part, comprising the first ten books, Augustine critiques pagan religion and philosophy. Utilizing sources from well-respected Roman historians and philosophers, he works to show that the Roman gods didn’t save Rome from previous calamities or moral decay, and that worshiping the Roman gods can’t bring temporal or eternal happiness. He also responds to critiques of Christianity from pagan philosophers, working to dismantle their objections to Christian philosophy, while also affirming much that he finds true, especially in Platonism.&lt;/p&gt;
+			&lt;p&gt;In the second part, Augustine traces the origin and final destiny of the world, framing this history as the founding, progress, and end of two “cities”: the City of God (ruled by God), and the Earthly City (ruled by the devil). He explores the creation of the world, addresses the origin of evil, sin, and death, and then looks at the parallel histories of both cities, utilizing both Biblical and secular histories. Then he addresses the final judgment, making the case for why the inhabitants of the Earthly City are ultimately pursuing eternal misery, when pursuing God would bring eternal happiness.&lt;/p&gt;
+			&lt;p&gt;&lt;i&gt;The City of God&lt;/i&gt; is a wide-ranging book of history, apologetics, and political and moral philosophy. It also covers many important topics in theology, such as the problem of evil, and issues regarding free will, and divine omniscience and omnipotence. It’s one of the most influential books in Western history, and continues to have an impact to the present day.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>https://www.gutenberg.org/ebooks/45304</dc:source>
+		<dc:source>https://www.gutenberg.org/ebooks/45305</dc:source>
+		<!--Volume 1-->
+		<dc:source>https://archive.org/details/cityofgodtransla01auguuoft</dc:source>
+		<!--Volume 2-->
+		<dc:source>https://archive.org/details/TheCityOfGodV2</dc:source>
+		<meta property="schema:wordCount">444136</meta>
+		<meta property="schema:educationalLevel">54.8</meta>
+		<link href="https://en.wikipedia.org/wiki/The_City_of_God" rel="schema:sameAs"/>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/augustine-of-hippo_the-city-of-god_marcus-dods_george-wilson_j-j-smith" refines="#vcs-repository" rel="schema:codeRepository"/>
+		<dc:creator id="author">Augustine of Hippo</dc:creator>
+		<meta property="file-as" refines="#author">Augustine of Hippo</meta>
+		<meta property="schema:alternateName" refines="#author">Aurelius Augustinus Hipponensis</meta>
+		<link href="https://en.wikipedia.org/wiki/Augustine_of_Hippo" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n80126290.html" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<dc:contributor id="translator-1">Marcus Dods</dc:contributor>
+		<meta property="file-as" refines="#translator-1">Dods, Marcus</meta>
+		<link href="https://en.wikipedia.org/wiki/Marcus_Dods_(theologian_born_1834)" refines="#translator-1" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n81035975.html" refines="#translator-1" rel="schema:sameAs"/>
+		<meta property="role" refines="#translator-1" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#translator-1" scheme="marc:relators">trl</meta>
+		<meta property="role" refines="#translator-1" scheme="marc:relators">wpr</meta>
+		<dc:contributor id="translator-2">George Wilson</dc:contributor>
+		<meta property="file-as" refines="#translator-2">Wilson, George</meta>
+		<meta property="schema:alternateName" refines="#translator-2">George Wilson of Glenluce</meta>
+		<link href="https://en.wikipedia.org/wiki/George_Wilson_of_Glenluce" refines="#translator-2" rel="schema:sameAs"/>
+		<meta property="role" refines="#translator-2" scheme="marc:relators">trl</meta>
+		<dc:contributor id="translator-3">J. J. Smith</dc:contributor>
+		<meta property="file-as" refines="#translator-3">Smith, J. J.</meta>
+		<meta property="role" refines="#translator-3" scheme="marc:relators">trl</meta>
+		<dc:contributor id="artist">Jan van Eyck</dc:contributor>
+		<meta property="file-as" refines="#artist">van Eyck, Jan</meta>
+		<link href="https://en.wikipedia.org/wiki/Jan_van_Eyck" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n50048855.html" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="transcriber-1">Douglas L. Alley, III</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Alley, III, Douglas L.</meta>
+		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-2">Charlene Taylor</dc:contributor>
+		<meta property="file-as" refines="#transcriber-2">Taylor, Charlene</meta>
+		<meta property="role" refines="#transcriber-2" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-3">Joe C.</dc:contributor>
+		<meta property="file-as" refines="#transcriber-3">C., Joe</meta>
+		<meta property="role" refines="#transcriber-3" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-4">Distributed Proofreaders</dc:contributor>
+		<meta property="file-as" refines="#transcriber-4">Distributed Proofreaders</meta>
+		<link href="https://www.pgdp.net/" refines="#transcriber-4" rel="schema:url"/>
+		<meta property="role" refines="#transcriber-4" scheme="marc:relators">trc</meta>
+		<dc:contributor id="producer-1">Devin O’Bannon</dc:contributor>
+		<meta property="file-as" refines="#producer-1">O’Bannon, Devin</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<dc:contributor id="producer-2">Alex Cabal</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Cabal, Alex</meta>
+		<link href="https://alexcabal.com/" refines="#producer-2" rel="schema:url"/>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/book-1.xhtml" id="book-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-2.xhtml" id="book-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-3.xhtml" id="book-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-4.xhtml" id="book-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-5.xhtml" id="book-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-6.xhtml" id="book-6.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-7.xhtml" id="book-7.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-8.xhtml" id="book-8.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-9.xhtml" id="book-9.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-10.xhtml" id="book-10.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-11.xhtml" id="book-11.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-12.xhtml" id="book-12.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-13.xhtml" id="book-13.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-14.xhtml" id="book-14.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-15.xhtml" id="book-15.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-16.xhtml" id="book-16.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-17.xhtml" id="book-17.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-18.xhtml" id="book-18.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-19.xhtml" id="book-19.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-20.xhtml" id="book-20.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-21.xhtml" id="book-21.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-22.xhtml" id="book-22.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/part-1.xhtml" id="part-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-2.xhtml" id="part-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/preface.xhtml" id="preface.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="imprint.xhtml"/>
+		<itemref idref="preface.xhtml"/>
+		<itemref idref="halftitlepage.xhtml"/>
+		<itemref idref="part-1.xhtml"/>
+		<itemref idref="book-1.xhtml"/>
+		<itemref idref="book-2.xhtml"/>
+		<itemref idref="book-3.xhtml"/>
+		<itemref idref="book-4.xhtml"/>
+		<itemref idref="book-5.xhtml"/>
+		<itemref idref="book-6.xhtml"/>
+		<itemref idref="book-7.xhtml"/>
+		<itemref idref="book-8.xhtml"/>
+		<itemref idref="book-9.xhtml"/>
+		<itemref idref="book-10.xhtml"/>
+		<itemref idref="part-2.xhtml"/>
+		<itemref idref="book-11.xhtml"/>
+		<itemref idref="book-12.xhtml"/>
+		<itemref idref="book-13.xhtml"/>
+		<itemref idref="book-14.xhtml"/>
+		<itemref idref="book-15.xhtml"/>
+		<itemref idref="book-16.xhtml"/>
+		<itemref idref="book-17.xhtml"/>
+		<itemref idref="book-18.xhtml"/>
+		<itemref idref="book-19.xhtml"/>
+		<itemref idref="book-20.xhtml"/>
+		<itemref idref="book-21.xhtml"/>
+		<itemref idref="book-22.xhtml"/>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
+</package>

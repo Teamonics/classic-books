@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/adam-smith/the-wealth-of-nations</dc:identifier>
+		<dc:date>2021-10-05T23:09:21Z</dc:date>
+		<meta property="dcterms:modified">2021-10-05T23:09:21Z</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
+		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
+		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
+		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">The Wealth of Nations</dc:title>
+		<meta property="file-as" refines="#title">Wealth of Nations, The</meta>
+		<meta property="title-type" refines="#title">main</meta>
+		<dc:title id="fulltitle">An Inquiry Into The Nature and Causes Of The Wealth Of Nations</dc:title>
+		<meta property="file-as" refines="#fulltitle">Inquiry Into The Nature and Causes Of The Wealth Of Nations, An</meta>
+		<meta property="title-type" refines="#fulltitle">expanded</meta>
+		<dc:subject id="subject-1">Economics</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">sh85040850</meta>
+		<meta property="schema:genre">Philosophy</meta>
+		<meta id="collection-1" property="belongs-to-collection">Encyclopædia Britannica’s Great Books of the Western World</meta>
+		<meta property="collection-type" refines="#collection-1">set</meta>
+		<meta property="schema:abstract">Adam Smith lays the foundation of classical economics.</meta>
+		<dc:description>
+			&lt;p&gt;&lt;i&gt;The Wealth of Nations&lt;/i&gt; is economist &lt;a href="https://standardebooks.org/ebooks/adam-smith"&gt;Adam Smith’s&lt;/a&gt; magnum opus and the foundational text of what today we call classical economics. Its publication ushered in a new era of thinking and discussion about how economies function, a sea change away from the older, increasingly irrelevant mercantilist and physiocratic views of economics towards a new practical application of economics for the birth of the industrial era. Its scope is vast, touching on concepts like free markets, supply and demand, division of labor, war, and public debt. Its fundamental message is that the wealth of a nation is measured not by the gold in the monarch’s treasury, but by its national income, which in turn is produced by labor, land, and capital.&lt;/p&gt;
+			&lt;p&gt;Some ten years in the writing, &lt;i&gt;The Wealth of Nations&lt;/i&gt; is the product of almost two decades of notes, study, and discussion. It was released to glowing praise, selling out its first print run in just six months and going through five subsequent editions and countless reprintings in Smith’s lifetime. It began inspiring legislators almost immediately and continued to do so well into the 1800s, and influenced thinkers ranging from &lt;a href="https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison"&gt;Alexander Hamilton&lt;/a&gt; to &lt;a href="https://standardebooks.org/ebooks/karl-marx_friedrich-engels"&gt;Karl Marx&lt;/a&gt;.&lt;/p&gt;
+			&lt;p&gt;Today, it is the second-most-cited book in the social sciences that was published before 1950, and its legacy as a foundational text places it in the stratosphere of civilization-changing books like &lt;i&gt;Principia Mathematica&lt;/i&gt; and &lt;i&gt;&lt;a href="https://standardebooks.org/ebooks/charles-darwin/the-origin-of-species"&gt;The Origin of Species&lt;/a&gt;&lt;/i&gt;.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>https://oll.libertyfund.org/title/smith-an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations-cannan-ed-in-2-vols</dc:source>
+		<dc:source>https://www.google.com/books/edition/An_Inquiry_Into_the_Nature_and_Causes_of/ogs_AQAAMAAJ</dc:source>
+		<meta property="schema:wordCount">394119</meta>
+		<meta property="schema:educationalLevel">50.3</meta>
+		<link href="https://en.wikipedia.org/wiki/The_Wealth_of_Nations" rel="schema:sameAs"/>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/adam-smith_the-wealth-of-nations" refines="#vcs-repository" rel="schema:codeRepository"/>
+		<dc:creator id="author">Adam Smith</dc:creator>
+		<meta property="file-as" refines="#author">Smith, Adam</meta>
+		<link href="https://en.wikipedia.org/wiki/Adam_Smith" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n80032761.html" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<meta property="role" refines="#editor" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#editor" scheme="marc:relators">edt</meta>
+		<meta property="role" refines="#editor" scheme="marc:relators">win</meta>
+		<meta property="role" refines="#editor" scheme="marc:relators">win</meta>
+		<meta property="role" refines="#editor" scheme="marc:relators">wpr</meta>
+		<dc:contributor id="editor">Edwin Cannan</dc:contributor>
+		<meta property="file-as" refines="#editor">Cannan, Edwin</meta>
+		<link href="https://en.wikipedia.org/wiki/Edwin_Cannan" refines="#editor" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n80001176.html" refines="#editor" rel="schema:sameAs"/>
+		<dc:contributor id="artist">Canaletto</dc:contributor>
+		<meta property="file-as" refines="#artist">Canaletto</meta>
+		<meta property="schema:alternateName" refines="#artist">Giovanni Antonio Canal</meta>
+		<link href="https://en.wikipedia.org/wiki/Canaletto" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79065963.html" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="transcriber-1">Online Library of Liberty</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Online Library of Liberty</meta>
+		<link href="https://oll.libertyfund.org/" refines="#transcriber-1" rel="schema:url"/>
+		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
+		<dc:contributor id="sponsor">Threadable</dc:contributor>
+		<meta property="file-as" refines="#sponsor">Threadable</meta>
+		<meta property="role" refines="#sponsor" scheme="marc:relators">spn</meta>
+		<dc:contributor id="producer-1">Alex Cabal</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Cabal, Alex</meta>
+		<link href="https://alexcabal.com/" refines="#producer-1" rel="schema:url"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/appendix.xhtml" id="appendix.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-1.xhtml" id="book-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-2-introduction.xhtml" id="book-2-introduction.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-2.xhtml" id="book-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-3.xhtml" id="book-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-4-introduction.xhtml" id="book-4-introduction.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-4.xhtml" id="book-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-5.xhtml" id="book-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-1.xhtml" id="chapter-1-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-2.xhtml" id="chapter-1-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-3.xhtml" id="chapter-1-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-4.xhtml" id="chapter-1-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-5.xhtml" id="chapter-1-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-6.xhtml" id="chapter-1-6.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-7.xhtml" id="chapter-1-7.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-8.xhtml" id="chapter-1-8.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-9.xhtml" id="chapter-1-9.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-10.xhtml" id="chapter-1-10.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-11.xhtml" id="chapter-1-11.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-1.xhtml" id="chapter-2-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-2.xhtml" id="chapter-2-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-3.xhtml" id="chapter-2-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-4.xhtml" id="chapter-2-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-5.xhtml" id="chapter-2-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-3-1.xhtml" id="chapter-3-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-3-2.xhtml" id="chapter-3-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-3-3.xhtml" id="chapter-3-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-3-4.xhtml" id="chapter-3-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4-1.xhtml" id="chapter-4-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4-2.xhtml" id="chapter-4-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4-3.xhtml" id="chapter-4-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4-4.xhtml" id="chapter-4-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4-5.xhtml" id="chapter-4-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4-6.xhtml" id="chapter-4-6.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4-7.xhtml" id="chapter-4-7.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4-8.xhtml" id="chapter-4-8.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-4-9.xhtml" id="chapter-4-9.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-5-1.xhtml" id="chapter-5-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-5-2.xhtml" id="chapter-5-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-5-3.xhtml" id="chapter-5-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/editors-introduction.xhtml" id="editors-introduction.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/introduction.xhtml" id="introduction.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="imprint.xhtml"/>
+		<itemref idref="editors-introduction.xhtml"/>
+		<itemref idref="introduction.xhtml"/>
+		<itemref idref="halftitlepage.xhtml"/>
+		<itemref idref="book-1.xhtml"/>
+		<itemref idref="chapter-1-1.xhtml"/>
+		<itemref idref="chapter-1-2.xhtml"/>
+		<itemref idref="chapter-1-3.xhtml"/>
+		<itemref idref="chapter-1-4.xhtml"/>
+		<itemref idref="chapter-1-5.xhtml"/>
+		<itemref idref="chapter-1-6.xhtml"/>
+		<itemref idref="chapter-1-7.xhtml"/>
+		<itemref idref="chapter-1-8.xhtml"/>
+		<itemref idref="chapter-1-9.xhtml"/>
+		<itemref idref="chapter-1-10.xhtml"/>
+		<itemref idref="chapter-1-11.xhtml"/>
+		<itemref idref="book-2.xhtml"/>
+		<itemref idref="book-2-introduction.xhtml"/>
+		<itemref idref="chapter-2-1.xhtml"/>
+		<itemref idref="chapter-2-2.xhtml"/>
+		<itemref idref="chapter-2-3.xhtml"/>
+		<itemref idref="chapter-2-4.xhtml"/>
+		<itemref idref="chapter-2-5.xhtml"/>
+		<itemref idref="book-3.xhtml"/>
+		<itemref idref="chapter-3-1.xhtml"/>
+		<itemref idref="chapter-3-2.xhtml"/>
+		<itemref idref="chapter-3-3.xhtml"/>
+		<itemref idref="chapter-3-4.xhtml"/>
+		<itemref idref="book-4.xhtml"/>
+		<itemref idref="book-4-introduction.xhtml"/>
+		<itemref idref="chapter-4-1.xhtml"/>
+		<itemref idref="chapter-4-2.xhtml"/>
+		<itemref idref="chapter-4-3.xhtml"/>
+		<itemref idref="chapter-4-4.xhtml"/>
+		<itemref idref="chapter-4-5.xhtml"/>
+		<itemref idref="chapter-4-6.xhtml"/>
+		<itemref idref="chapter-4-7.xhtml"/>
+		<itemref idref="chapter-4-8.xhtml"/>
+		<itemref idref="chapter-4-9.xhtml"/>
+		<itemref idref="book-5.xhtml"/>
+		<itemref idref="chapter-5-1.xhtml"/>
+		<itemref idref="chapter-5-2.xhtml"/>
+		<itemref idref="chapter-5-3.xhtml"/>
+		<itemref idref="appendix.xhtml"/>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
+</package>

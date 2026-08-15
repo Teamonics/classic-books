@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/epictetus_discourses_george-long",
+  "commit": "218406b563346743af3ece4a22723a245b0ccb22",
+  "retrieved": "2026-08-15",
+  "translator": "George Long",
+  "translatorDied": 1879,
+  "translationPublished": 1877,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1879"
+}

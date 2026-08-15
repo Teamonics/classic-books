@@ -52,6 +52,19 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1893; unrevised Crawley, pre-Feetham"
   },
   {
+    "slug": "discourses",
+    "title": "Discourses",
+    "translator": "George Long",
+    "manifestFile": "manifest.b770e744d709.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/epictetus_discourses_george-long",
+    "commit": "218406b563346743af3ece4a22723a245b0ccb22",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1879,
+    "translationPublished": 1877,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1879"
+  },
+  {
     "slug": "meditations",
     "title": "Meditations",
     "translator": "George Long",
@@ -63,6 +76,19 @@
     "translatorDied": 1879,
     "translationPublished": 1862,
     "licenseBasis": "SE CC0; translation US PD + translator d. 1879"
+  },
+  {
+    "slug": "the-city-of-god",
+    "title": "The City of God",
+    "translator": "Marcus Dods et al.",
+    "manifestFile": "manifest.7d33662df937.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/augustine-of-hippo_the-city-of-god_marcus-dods_george-wilson_j-j-smith",
+    "commit": "cce2c3e510fb4d08e86e842b27bf6302818214e4",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1909,
+    "translationPublished": 1871,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1909"
   },
   {
     "slug": "the-divine-comedy",
@@ -91,6 +117,19 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1927"
   },
   {
+    "slug": "don-quixote",
+    "title": "Don Quixote",
+    "translator": "John Ormsby",
+    "manifestFile": "manifest.0a1be23e76ed.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/miguel-de-cervantes-saavedra_don-quixote_john-ormsby",
+    "commit": "02af6f98dee7dd1123cbe5cdad64464e4f23d666",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1895,
+    "translationPublished": 1885,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1895"
+  },
+  {
     "slug": "leviathan",
     "title": "Leviathan",
     "translator": null,
@@ -101,6 +140,58 @@
     "retrieved": "2026-08-15",
     "translatorDied": null,
     "translationPublished": 1651,
+    "licenseBasis": "SE CC0; original English work"
+  },
+  {
+    "slug": "gullivers-travels",
+    "title": "Gulliver's Travels",
+    "translator": null,
+    "manifestFile": "manifest.709426ddb3dc.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/jonathan-swift_gullivers-travels",
+    "commit": "b446d2a0a6621b37e56200c933882bc649824ae4",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1726,
+    "licenseBasis": "SE CC0; original English work"
+  },
+  {
+    "slug": "the-wealth-of-nations",
+    "title": "The Wealth of Nations",
+    "translator": null,
+    "manifestFile": "manifest.a637be22e0a3.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/adam-smith_the-wealth-of-nations",
+    "commit": "37329eebd99003a7759b174227875ddd8d37f131",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1776,
+    "licenseBasis": "SE CC0; original English work"
+  },
+  {
+    "slug": "the-federalist-papers",
+    "title": "The Federalist Papers",
+    "translator": null,
+    "manifestFile": "manifest.18a19dd2eb9e.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/alexander-hamilton_john-jay_james-madison_the-federalist-papers",
+    "commit": "75f7b50db76aa0f3b6114933d33fa4354034a909",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1788,
+    "licenseBasis": "SE CC0; original English work"
+  },
+  {
+    "slug": "decline-and-fall",
+    "title": "The History of the Decline and Fall of the Roman Empire",
+    "translator": null,
+    "manifestFile": "manifest.4a5181fccca7.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/edward-gibbon_the-history-of-the-decline-and-fall-of-the-roman-empire",
+    "commit": "ec919d33d4846a011987c4fee189ce63857a41d8",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1789,
     "licenseBasis": "SE CC0; original English work"
   },
   {
@@ -115,5 +206,44 @@
     "translatorDied": null,
     "translationPublished": 1851,
     "licenseBasis": "SE CC0; original English work"
+  },
+  {
+    "slug": "on-liberty",
+    "title": "On Liberty",
+    "translator": null,
+    "manifestFile": "manifest.4d76da55703b.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/john-stuart-mill_on-liberty",
+    "commit": "20cc924bdeb681a03121520ec2e987f39c2d2f83",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1859,
+    "licenseBasis": "SE CC0; original English work"
+  },
+  {
+    "slug": "war-and-peace",
+    "title": "War and Peace",
+    "translator": "Louise and Aylmer Maude",
+    "manifestFile": "manifest.25b44a1fe620.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/leo-tolstoy_war-and-peace_louise-maude_aylmer-maude",
+    "commit": "53ec5870bee8c8d0d213c090c5ff78d52f474c9d",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1939,
+    "translationPublished": 1923,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1939"
+  },
+  {
+    "slug": "the-brothers-karamazov",
+    "title": "The Brothers Karamazov",
+    "translator": "Constance Garnett",
+    "manifestFile": "manifest.16728175dd5b.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/fyodor-dostoevsky_the-brothers-karamazov_constance-garnett",
+    "commit": "babab9265e619f8245f2d7d957f64f4aa29fa992",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1946,
+    "translationPublished": 1912,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1946"
   }
 ]
