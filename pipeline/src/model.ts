@@ -141,6 +141,7 @@ export interface WorkConfig {
   sourceFile?: string; // single file within a shared snapshot (Plato)
   playTitle?: string; // heading of one play inside a multi-play volume
   mode?: "verse" | "prose"; // whether the translation is verse or prose
+  pg?: Record<string, unknown>; // pg-generic per-work parsing options
   expectDivisions?: number; // golden check: exact division count
 }
 

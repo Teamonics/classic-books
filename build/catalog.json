@@ -793,6 +793,18 @@
       "words": 107463
     },
     {
+      "slug": "lives",
+      "author": "plutarch",
+      "authorName": "Plutarch",
+      "title": "Parallel Lives",
+      "composedYear": 100,
+      "era": "imperial-rome",
+      "translator": "John Dryden, ed. Clough",
+      "manifestFile": "manifest.7bea67fc276a.json",
+      "chunks": 68,
+      "words": 740162
+    },
+    {
       "slug": "discourses",
       "author": "epictetus",
       "authorName": "Epictetus",
@@ -853,6 +865,18 @@
       "words": 45360
     },
     {
+      "slug": "confessions",
+      "author": "augustine-of-hippo",
+      "authorName": "Augustine of Hippo",
+      "title": "Confessions",
+      "composedYear": 400,
+      "era": "late-antiquity",
+      "translator": "E. B. Pusey",
+      "manifestFile": "manifest.df751edc4319.json",
+      "chunks": 13,
+      "words": 111775
+    },
+    {
       "slug": "the-city-of-god",
       "author": "augustine-of-hippo",
       "authorName": "Augustine of Hippo",
@@ -911,6 +935,18 @@
       "manifestFile": "manifest.82b8975eabd1.json",
       "chunks": 145,
       "words": 137352
+    },
+    {
+      "slug": "gargantua-and-pantagruel",
+      "author": "francois-rabelais",
+      "authorName": "François Rabelais",
+      "title": "Gargantua and Pantagruel",
+      "composedYear": 1564,
+      "era": "renaissance",
+      "translator": "Urquhart and Motteux",
+      "manifestFile": "manifest.4c8e86808f8f.json",
+      "chunks": 267,
+      "words": 311872
     },
     {
       "slug": "essays",
@@ -1273,6 +1309,18 @@
       "words": 26009
     },
     {
+      "slug": "the-advancement-of-learning",
+      "author": "francis-bacon",
+      "authorName": "Francis Bacon",
+      "title": "The Advancement of Learning",
+      "composedYear": 1605,
+      "era": "early-modern",
+      "translator": null,
+      "manifestFile": "manifest.4066e8b065bb.json",
+      "chunks": 3,
+      "words": 83701
+    },
+    {
       "slug": "macbeth",
       "author": "william-shakespeare",
       "authorName": "William Shakespeare",
@@ -1441,6 +1489,18 @@
       "words": 82070
     },
     {
+      "slug": "ethics",
+      "author": "benedictus-de-spinoza",
+      "authorName": "Baruch Spinoza",
+      "title": "Ethics",
+      "composedYear": 1677,
+      "era": "early-modern",
+      "translator": "R. H. M. Elwes",
+      "manifestFile": "manifest.18f5d2c2e862.json",
+      "chunks": 5,
+      "words": 87905
+    },
+    {
       "slug": "two-treatises-of-government",
       "author": "john-locke",
       "authorName": "John Locke",
@@ -1451,6 +1511,18 @@
       "manifestFile": "manifest.976985fa3faa.json",
       "chunks": 31,
       "words": 101585
+    },
+    {
+      "slug": "principles-of-human-knowledge",
+      "author": "george-berkeley",
+      "authorName": "George Berkeley",
+      "title": "A Treatise Concerning the Principles of Human Knowledge",
+      "composedYear": 1710,
+      "era": "eighteenth-century",
+      "translator": null,
+      "manifestFile": "manifest.3f938b35cfd5.json",
+      "chunks": 4,
+      "words": 37135
     },
     {
       "slug": "gullivers-travels",
@@ -1525,6 +1597,18 @@
       "words": 389140
     },
     {
+      "slug": "critique-of-pure-reason",
+      "author": "immanuel-kant",
+      "authorName": "Immanuel Kant",
+      "title": "Critique of Pure Reason",
+      "composedYear": 1781,
+      "era": "eighteenth-century",
+      "translator": "J. M. D. Meiklejohn",
+      "manifestFile": "manifest.ab5c13a9241d.json",
+      "chunks": 90,
+      "words": 195936
+    },
+    {
       "slug": "the-federalist-papers",
       "author": "alexander-hamilton",
       "authorName": "Hamilton, Madison, and Jay",
@@ -1535,6 +1619,18 @@
       "manifestFile": "manifest.c739bb9cf22e.json",
       "chunks": 87,
       "words": 194189
+    },
+    {
+      "slug": "critique-of-practical-reason",
+      "author": "immanuel-kant",
+      "authorName": "Immanuel Kant",
+      "title": "Critique of Practical Reason",
+      "composedYear": 1788,
+      "era": "eighteenth-century",
+      "translator": "T. K. Abbott",
+      "manifestFile": "manifest.179b4ead4cc5.json",
+      "chunks": 39,
+      "words": 62435
     },
     {
       "slug": "decline-and-fall",
