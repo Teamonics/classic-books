@@ -46,15 +46,15 @@ Skeat's Middle English.
 | Euripides (18 of 19) | **Arthur S. Way** (verse, 15 plays); **E. P. Coleridge** (prose: Ion, The Suppliants, Hippolytus) | WS, pinned revids | Way d. 1930, Coleridge d. 1936. *Way's Hippolytus is only partly transcribed on WS, hence Coleridge's. Cyclops is in neither: still out.* |
 | Aeschylus (7 plays) | **E. D. A. Morshead** (verse) | PG **#8604** (Oresteia) + **#8714** (other four) | d. 1912 — clear everywhere. *Chosen over Cookson: one translator, all seven plays, clean digital text.* |
 | Aristophanes, Frogs | **B. B. Rogers** (verse) | PG **#7998** (verified Rogers in the file) | d. 1919 |
-| Herodotus | George Rawlinson | WS *The History of Herodotus* (complete) | d. 1902 |
+| Herodotus | **G. C. Macaulay** (shipped) | SE | d. 1915. *Rawlinson (the 1952 set's pick) is also complete on Wikisource — 9 books — and is a clean swap whenever you want it; Macaulay was already built from SE and is left in place rather than replaced unasked.* |
 | Thucydides | Crawley **unrevised** | SE (opf sources = PG #7142 + 1874 IA scan → pre-Feetham, verified) | d. 1893 |
 | Plato, Dialogues | Benjamin Jowett | SE | d. 1893 |
-| Lucretius | H. A. J. Munro | WS *On the Nature of Things* (1907 ed.) | d. 1885 |
+| Lucretius | H. A. J. Munro | WS, pinned revids — argument + 6 books | d. 1885 |
 | Epictetus, Discourses + short works | George Long | SE | d. 1879 |
 | Marcus Aurelius | George Long | SE | d. 1879 |
 | Plutarch, Lives (complete) | Dryden, ed. Clough | PG **#674** | Clough d. 1861 |
-| Tacitus, Annals | Church & Brodribb | WS *The Annals* | d. 1912 / 1905 |
-| Tacitus, Histories | Church & Brodribb | WS *The Histories* (1876) | same |
+| Tacitus, Annals | Church & Brodribb | WS, pinned revids — 12 surviving books (1–6, 11–16) | d. 1912 / 1905 |
+| Tacitus, Histories | Church & Brodribb | WS, pinned revids — all 5 surviving books | same |
 | Augustine, Confessions | E. B. Pusey | PG **#3296** | d. 1882 |
 | Augustine, City of God | Marcus Dods et al. | SE | d. 1909 |
 | Aquinas, Summa | Dominican Fathers, **unrevised** | PG **#17611, #17897, #18755, #19950** (+ Supplement, ID to confirm at ingest) | corporate trans. 1911–25 |

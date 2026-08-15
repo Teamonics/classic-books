@@ -2408,6 +2408,52 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1893"
   },
   {
+    "slug": "on-the-nature-of-things",
+    "title": "On the Nature of Things",
+    "translator": "H. A. J. Munro",
+    "manifestFile": "manifest.e5a9a8372d69.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "On the Nature of Things (Munro)/Argument",
+        "file": "argument.html",
+        "revid": 15607945
+      },
+      {
+        "title": "On the Nature of Things (Munro)/Book 1",
+        "file": "book-1.html",
+        "revid": 15604783
+      },
+      {
+        "title": "On the Nature of Things (Munro)/Book 2",
+        "file": "book-2.html",
+        "revid": 15604784
+      },
+      {
+        "title": "On the Nature of Things (Munro)/Book 3",
+        "file": "book-3.html",
+        "revid": 15604785
+      },
+      {
+        "title": "On the Nature of Things (Munro)/Book 4",
+        "file": "book-4.html",
+        "revid": 15604787
+      },
+      {
+        "title": "On the Nature of Things (Munro)/Book 5",
+        "file": "book-5.html",
+        "revid": 15604788
+      },
+      {
+        "title": "On the Nature of Things (Munro)/Book 6",
+        "file": "book-6.html",
+        "revid": 15604789
+      }
+    ]
+  },
+  {
     "slug": "the-eclogues",
     "title": "The Eclogues",
     "translator": "John Dryden",
@@ -2458,6 +2504,113 @@
     "translatorDied": 1879,
     "translationPublished": 1877,
     "licenseBasis": "SE CC0; translation US PD + translator d. 1879"
+  },
+  {
+    "slug": "the-histories",
+    "title": "The Histories",
+    "translator": "Church and Brodribb",
+    "manifestFile": "manifest.bdc90b3b1b55.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "The Histories (Tacitus)/Book 1",
+        "file": "book-1.html",
+        "revid": 13888412
+      },
+      {
+        "title": "The Histories (Tacitus)/Book 2",
+        "file": "book-2.html",
+        "revid": 13888416
+      },
+      {
+        "title": "The Histories (Tacitus)/Book 3",
+        "file": "book-3.html",
+        "revid": 13888429
+      },
+      {
+        "title": "The Histories (Tacitus)/Book 4",
+        "file": "book-4.html",
+        "revid": 13888430
+      },
+      {
+        "title": "The Histories (Tacitus)/Book 5",
+        "file": "book-5.html",
+        "revid": 13888431
+      }
+    ]
+  },
+  {
+    "slug": "the-annals",
+    "title": "The Annals",
+    "translator": "Church and Brodribb",
+    "manifestFile": "manifest.e14cda682e87.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-15",
+    "pages": [
+      {
+        "title": "The Annals (Tacitus)/Book 1",
+        "file": "book-1.html",
+        "revid": 14891473
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 2",
+        "file": "book-2.html",
+        "revid": 5525221
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 3",
+        "file": "book-3.html",
+        "revid": 3755509
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 4",
+        "file": "book-4.html",
+        "revid": 12910221
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 5",
+        "file": "book-5.html",
+        "revid": 12622594
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 6",
+        "file": "book-6.html",
+        "revid": 11374012
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 11",
+        "file": "book-11.html",
+        "revid": 3764418
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 12",
+        "file": "book-12.html",
+        "revid": 3773637
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 13",
+        "file": "book-13.html",
+        "revid": 12622598
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 14",
+        "file": "book-14.html",
+        "revid": 15882026
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 15",
+        "file": "book-15.html",
+        "revid": 15815493
+      },
+      {
+        "title": "The Annals (Tacitus)/Book 16",
+        "file": "book-16.html",
+        "revid": 13622161
+      }
+    ]
   },
   {
     "slug": "epictetus-short-works",

@@ -745,6 +745,18 @@
       "words": 100049
     },
     {
+      "slug": "on-the-nature-of-things",
+      "author": "lucretius",
+      "authorName": "Lucretius",
+      "title": "On the Nature of Things",
+      "composedYear": -55,
+      "era": "imperial-rome",
+      "translator": "H. A. J. Munro",
+      "manifestFile": "manifest.e5a9a8372d69.json",
+      "chunks": 7,
+      "words": 98364
+    },
+    {
       "slug": "the-eclogues",
       "author": "virgil",
       "authorName": "Virgil",
@@ -791,6 +803,30 @@
       "manifestFile": "manifest.b879153c5b77.json",
       "chunks": 6,
       "words": 120159
+    },
+    {
+      "slug": "the-histories",
+      "author": "tacitus",
+      "authorName": "Tacitus",
+      "title": "The Histories",
+      "composedYear": 109,
+      "era": "imperial-rome",
+      "translator": "Church and Brodribb",
+      "manifestFile": "manifest.bdc90b3b1b55.json",
+      "chunks": 5,
+      "words": 98913
+    },
+    {
+      "slug": "the-annals",
+      "author": "tacitus",
+      "authorName": "Tacitus",
+      "title": "The Annals",
+      "composedYear": 117,
+      "era": "imperial-rome",
+      "translator": "Church and Brodribb",
+      "manifestFile": "manifest.e14cda682e87.json",
+      "chunks": 12,
+      "words": 158603
     },
     {
       "slug": "epictetus-short-works",

@@ -1,0 +1,32 @@
+{
+  "source": "wikisource",
+  "url": "https://en.wikisource.org/",
+  "retrieved": "2026-08-15",
+  "pages": [
+    {
+      "title": "The Histories (Tacitus)/Book 1",
+      "file": "book-1.html",
+      "revid": 13888412
+    },
+    {
+      "title": "The Histories (Tacitus)/Book 2",
+      "file": "book-2.html",
+      "revid": 13888416
+    },
+    {
+      "title": "The Histories (Tacitus)/Book 3",
+      "file": "book-3.html",
+      "revid": 13888429
+    },
+    {
+      "title": "The Histories (Tacitus)/Book 4",
+      "file": "book-4.html",
+      "revid": 13888430
+    },
+    {
+      "title": "The Histories (Tacitus)/Book 5",
+      "file": "book-5.html",
+      "revid": 13888431
+    }
+  ]
+}
