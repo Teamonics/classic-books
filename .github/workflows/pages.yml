@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # lets you deploy by hand from the Actions tab
+
+# Allow the workflow to publish Pages, and let a newer deploy supersede an
+# older one rather than queueing behind it.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install
+        working-directory: app
+        run: npm ci
+
+      # BASE_PATH must match the site's subdirectory. For a project page at
+      # https://USER.github.io/REPO/ that is /REPO, which is what this derives.
+      # For a user/org site (USER.github.io) or a custom domain, set
+      # BASE_PATH to an empty string instead.
+      - name: Build
+        working-directory: app
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}
+        run: npm run build
+
+      - name: Check the corpus was published
+        run: |
+          test -f app/build/data/catalog.json || { echo "no catalog in the site"; exit 1; }
+          test -f app/build/.nojekyll || { echo "missing .nojekyll: Pages would delete _app/"; exit 1; }
+          test -f app/build/404.html || { echo "missing 404.html: deep links would fail"; exit 1; }
+          echo "works published: $(ls app/build/data/works | wc -l) authors"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
