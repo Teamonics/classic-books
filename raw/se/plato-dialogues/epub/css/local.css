@@ -1,0 +1,265 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+/* CSS for block-level italics */
+body [xml|lang]{
+	font-style: italic;
+}
+/* End CSS for block-level italics */
+
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}
+
+/* All dedications */
+section[epub|type~="dedication"]{
+	text-align: center;
+}
+
+section[epub|type~="dedication"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+}
+
+@supports(display: flex){
+	section[epub|type~="dedication"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	section[epub|type~="dedication"] > *{
+		margin: 0;
+	}
+}
+/* End all dedications */
+
+/* Start poetry/verse css */
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+span.elision{
+	margin: .5em;
+	margin-left: 3em;
+}
+/* End poetry/verse css */
+
+/* Start play & drama css */
+[epub|type~="z3998:drama"] table{
+	border-collapse: collapse;
+	margin: 1em auto;
+	width: 100%;
+}
+
+[epub|type~="z3998:drama"] tr:first-child td{
+	padding-top: 0;
+}
+
+[epub|type~="z3998:drama"] tr:last-child td{
+	padding-bottom: 0;
+}
+
+[epub|type~="z3998:drama"] td{
+	padding: .5em;
+	vertical-align: top;
+}
+
+[epub|type~="z3998:drama"] td:last-child{
+	padding-right: 0;
+}
+
+[epub|type~="z3998:drama"] td:first-child{
+	padding-left: 0;
+}
+
+[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
+	hyphens: none;
+	-epub-hyphens: none;
+	text-align: right;
+	width: 20%;
+}
+
+[epub|type~="z3998:stage-direction"]{
+	font-style: italic;
+}
+
+[epub|type~="z3998:stage-direction"] [epub|type~="z3998:persona"],
+i [epub|type~="z3998:persona"]{
+	font-style: normal;
+}
+
+[epub|type~="z3998:stage-direction"]::before{
+	content: "(";
+	font-style: normal;
+}
+
+[epub|type~="z3998:stage-direction"]::after{
+	content: ")";
+	font-style: normal;
+}
+
+[epub|type~="z3998:persona"]{
+	font-variant: all-small-caps;
+}
+
+[epub|type~="z3998:dramatis-personae"]{
+	text-align: center;
+}
+
+[epub|type~="z3998:dramatis-personae"] p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul li{
+	font-style: italic;
+	margin: 1em;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul + p{
+	margin-top: 2em;
+}
+/* End play & drama css */
+
+/* All epigraphs */
+[epub|type~="epigraph"]{
+	font-style: italic;
+	hyphens: none;
+	-epub-hyphens: none;
+}
+
+[epub|type~="epigraph"] i{
+	font-style: normal;
+}
+
+[epub|type~="epigraph"] cite{
+	font-style: normal;
+	font-variant: small-caps;
+	margin-top: 1em;
+}
+
+[epub|type~="epigraph"] cite i{
+	font-style: italic;
+}
+/* End all epigraphs */
+
+/* Epigraphs in section headers */
+section > header [epub|type~="epigraph"]{
+	display: inline-block;
+	margin: auto;
+	max-width: 80%;
+	text-align: initial;
+}
+
+section > header [epub|type~="epigraph"] + *{
+	margin-top: 3em;
+}
+
+@supports(display: table){
+	section > header [epub|type~="epigraph"]{
+		display: table;
+	}
+}
+/* End epigraphs in section headers */
+
+/* "Connected" or "traced" list elements in the Sophist Introduction */
+#sophist ul:first-of-type{
+	list-style-type: none;
+	text-align: center;
+}
+
+#sophist ul:first-of-type li:before{
+	content: "|";
+}
+/* End Sophist list CSS */
+
+/* Insert page breaks before the actual text of each Dialogue and the book divisions of the Republic and the Laws */
+section[id*="book"],
+section[id$="text"]{
+	break-before: page;
+}
+/* End page break CSS */
+
+/* Set apart the "narration" in the Apology Introduction, the theses in the Gorgias Introduction, and the fractions in the Timaeus */
+#apology-introduction p:nth-of-type(15),
+.thesis,
+.fractions,
+.analogy{
+	margin: 1em;
+	text-align: center;
+	text-indent: 0;
+}
+/* End Apology narration CSS */
+
+/* Custom CSS for "hypotheses" with specialized indentation listed in the Parmenides introduction */
+.hypothesis-i1{
+	margin-left: 5em;
+	text-indent: -2em;
+}
+
+.hypothesis-i2{
+	margin-left: 6em;
+	text-indent: -2em;
+}
+
+.hypothesis-i4{
+	margin-left: 8em;
+	text-indent: -2em;
+}
+
+.hypothesis-i6{
+	margin-left: 10em;
+	text-indent: -2em;
+}
+/* End hypotheses CSS */
+
+/* Add overbars to numbers */
+.overbar{
+	text-decoration: overline;
+}
+/* End overbar CSS */
+
+@media(max-width: 400px){
+	[epub|type~="z3998:drama"] td,
+	[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"],
+	[epub|type~="z3998:drama"] td:last-child{
+		display: block;
+		padding: 0;
+		text-align: initial;
+		width: 100%;
+	}
+
+	[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
+		break-after: avoid;
+		margin-top: 1.5em;
+	}
+
+	/* Rows that are only stage direction get a top margin. */
+	[epub|type~="z3998:drama"] td:first-child:not([epub|type]) + td{
+		margin-top: 1.5em;
+	}
+}

@@ -137,6 +137,7 @@ export interface WorkConfig {
   translator: string | null;
   refScheme: RefScheme;
   skipFiles?: string[]; // extra source files to skip (adapter-specific)
+  sourceFile?: string; // single file within a shared snapshot (Plato)
   expectDivisions?: number; // golden check: exact division count
 }
 

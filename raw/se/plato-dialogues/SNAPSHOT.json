@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/plato_dialogues_benjamin-jowett",
+  "commit": "3700f00244e92204892dff90b14bc62d80cd96f4",
+  "retrieved": "2026-08-15",
+  "translator": "Benjamin Jowett",
+  "translatorDied": 1893,
+  "translationPublished": 1871,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1893"
+}
