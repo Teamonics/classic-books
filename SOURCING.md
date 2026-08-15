@@ -43,7 +43,7 @@ Skeat's Middle English.
 |---|---|---|---|
 | Homer, Iliad | Samuel Butler (prose) | PG **#2199** | Butler d. 1902 |
 | Homer, Odyssey | Samuel Butler | PG **#1727** | d. 1902 |
-| Aeschylus (7 plays) | G. M. Cookson (verse) | WS *Four Plays of Aeschylus* now; remaining 3 from IA scan | **Cookson 1867–1951** (verified via Wikisource author page) → clear since 2022 |
+| Aeschylus (7 plays) | **E. D. A. Morshead** (verse) | PG **#8604** (Oresteia) + **#8714** (other four) | d. 1912 — clear everywhere. *Chosen over Cookson: one translator, all seven plays, clean digital text.* |
 | Euripides (all plays) | Edward P. Coleridge (prose) | WS *The Plays of Euripides* (1891) | d. 1936 |
 | Aristophanes, Frogs | **B. B. Rogers** (verse) | PG **#7998** (verified Rogers in the file) | d. 1919 |
 | Herodotus | George Rawlinson | WS *The History of Herodotus* (complete) | d. 1902 |
@@ -118,8 +118,8 @@ Skeat's Middle English.
 2. Confirm the Summa Supplement's PG ID and completeness of the 4 parts.
 3. Confirm marxists.org Capital v1 is the complete unrevised 1887 Moore-Aveling
    and free of MIA-added copyrighted apparatus.
-4. Identify which 4 plays are in WS's Cookson volume; locate the other 3
-   (IA scan of his 1922 two-volume *Plays of Aeschylus*).
+4. ~~Cookson volumes~~ — resolved: Morshead's two PG volumes cover all seven
+   extant plays; Cookson is no longer needed.
 5. PG IDs asserted but not opened this session: Milton #1745 contents,
    Mill's Utilitarianism, Bacon's New Atlantis, Chaucer Troilus (Skeat).
 6. W. F. Trotter's death date (gates Pensées).

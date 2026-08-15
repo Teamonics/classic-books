@@ -12,17 +12,19 @@ import { adapt as adaptFrogs } from "./adapters/pg-the-frogs.ts";
 import { adapt as adaptSeProse } from "./adapters/se-prose.ts";
 import { adapt as adaptSeDrama } from "./adapters/se-drama.ts";
 import { adapt as adaptSePlato } from "./adapters/se-plato.ts";
+import { adapt as adaptMorshead } from "./adapters/pg-morshead-aeschylus.ts";
 
 const ROOT = resolve(import.meta.dirname, "..", "..");
 const BUILD = join(ROOT, "build");
 
-const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[]; sourceFile?: string }) => WorkIR> = {
+const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[]; sourceFile?: string; playTitle?: string }) => WorkIR> = {
   "se-divine-comedy": adaptDante,
   "pg-butler-homer": adaptButlerHomer,
   "pg-the-frogs": adaptFrogs,
   "se-prose": adaptSeProse,
   "se-drama": adaptSeDrama,
   "se-plato": adaptSePlato,
+  "pg-morshead-aeschylus": adaptMorshead,
 };
 
 // Golden facts checked on every build; extend per work as they are ingested.
@@ -61,7 +63,7 @@ const goldens: Record<string, (ir: WorkIR) => string[]> = {
 function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
   const adapter = adapters[cfg.adapter];
   if (!adapter) throw new Error(`no adapter: ${cfg.adapter}`);
-  const ir = adapter(join(ROOT, cfg.rawDir), { skipFiles: cfg.skipFiles, sourceFile: cfg.sourceFile });
+  const ir = adapter(join(ROOT, cfg.rawDir), { skipFiles: cfg.skipFiles, sourceFile: cfg.sourceFile, playTitle: cfg.playTitle });
 
   if (cfg.expectDivisions !== undefined && ir.divisions.length !== cfg.expectDivisions) {
     throw new Error(
