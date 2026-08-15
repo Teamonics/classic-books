@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/william-shakespeare_julius-caesar",
+  "commit": "2831e935db5c8c308b527ba6b68f96cbef2bbf8f",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1600,
+  "licenseBasis": "SE CC0; original English work"
+}

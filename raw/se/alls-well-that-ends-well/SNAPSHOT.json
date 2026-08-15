@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/william-shakespeare_alls-well-that-ends-well",
+  "commit": "44f0fff696f3796938fdd4ece088f4d72b02c467",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1600,
+  "licenseBasis": "SE CC0; original English work"
+}

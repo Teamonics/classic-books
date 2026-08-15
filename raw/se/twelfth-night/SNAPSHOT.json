@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/william-shakespeare_twelfth-night",
+  "commit": "3a029eb0b0f3dd763ebceb3ea909db4c87e7eb57",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1600,
+  "licenseBasis": "SE CC0; original English work"
+}

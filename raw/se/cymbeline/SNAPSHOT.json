@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/william-shakespeare_cymbeline",
+  "commit": "53c0fb4e559e84ac4056bd821b5f7115b1dd8983",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1600,
+  "licenseBasis": "SE CC0; original English work"
+}

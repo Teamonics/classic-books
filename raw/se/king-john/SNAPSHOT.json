@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/william-shakespeare_king-john",
+  "commit": "45a08477fe9db8f87194e08b0db3fa0c22ecc139",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1600,
+  "licenseBasis": "SE CC0; original English work"
+}

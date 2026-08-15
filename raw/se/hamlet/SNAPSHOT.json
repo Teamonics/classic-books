@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/william-shakespeare_hamlet",
+  "commit": "b3c7d4d2bf126256d45a11650c7ec9e54cf2fc69",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1601,
+  "licenseBasis": "SE CC0; original English work"
+}

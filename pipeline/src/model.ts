@@ -119,7 +119,10 @@ export interface RefScheme {
   aliases: string[];
   // "translation" = line numbers follow the translation's own lineation,
   // not the original language's. null for prose schemes.
-  lineation: "translation" | "original" | null;
+  // "edition": line numbers are this edition's own count (Shakespeare:
+  // print editions number prose by typeset line, which reflowable text
+  // cannot reproduce).
+  lineation: "translation" | "original" | "edition" | null;
 }
 
 export interface WorkConfig {

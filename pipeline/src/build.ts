@@ -9,6 +9,7 @@ import { adapt as adaptDante } from "./adapters/se-divine-comedy.ts";
 import { adapt as adaptIliad } from "./adapters/pg-the-iliad.ts";
 import { adapt as adaptFrogs } from "./adapters/pg-the-frogs.ts";
 import { adapt as adaptSeProse } from "./adapters/se-prose.ts";
+import { adapt as adaptSeDrama } from "./adapters/se-drama.ts";
 
 const ROOT = resolve(import.meta.dirname, "..", "..");
 const BUILD = join(ROOT, "build");
@@ -18,6 +19,7 @@ const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[] }) 
   "pg-the-iliad": adaptIliad,
   "pg-the-frogs": adaptFrogs,
   "se-prose": adaptSeProse,
+  "se-drama": adaptSeDrama,
 };
 
 // Golden facts checked on every build; extend per work as they are ingested.
