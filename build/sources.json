@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "the-iliad",
+    "title": "The Iliad",
+    "translator": "Samuel Butler",
+    "manifestFile": "manifest.49218616c4a4.json",
+    "source": "project-gutenberg",
+    "pgId": 2199,
+    "url": "https://www.gutenberg.org/cache/epub/2199/pg2199-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1902,
+    "translationPublished": 1898,
+    "licenseBasis": "US PD (1898) + translator d. 1902; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "the-frogs",
+    "title": "The Frogs",
+    "translator": "Benjamin Bickley Rogers",
+    "manifestFile": "manifest.bee49ae08cc1.json",
+    "source": "project-gutenberg",
+    "pgId": 7998,
+    "url": "https://www.gutenberg.org/cache/epub/7998/pg7998-images.html",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1919,
+    "translationPublished": 1902,
+    "licenseBasis": "US PD + translator d. 1919; PG boilerplate stripped at build"
+  },
+  {
+    "slug": "the-divine-comedy",
+    "title": "The Divine Comedy",
+    "translator": "Henry Wadsworth Longfellow",
+    "manifestFile": "manifest.7206a25bde14.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/dante-alighieri_the-divine-comedy_henry-wadsworth-longfellow",
+    "commit": "6e26716c1ce7943548d77be31f0203b4ad72cf3b",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1882,
+    "translationPublished": 1867,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1882"
+  }
+]

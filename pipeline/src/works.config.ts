@@ -1,0 +1,40 @@
+import type { WorkConfig } from "./model.ts";
+
+export const works: WorkConfig[] = [
+  {
+    slug: "the-iliad",
+    author: "homer",
+    authorName: "Homer",
+    title: "The Iliad",
+    composedYear: -750,
+    era: "archaic-greece",
+    adapter: "pg-the-iliad",
+    rawDir: "raw/pg/the-iliad",
+    translator: "Samuel Butler",
+    refScheme: { primary: "book.paragraph", aliases: [], lineation: null },
+  },
+  {
+    slug: "the-frogs",
+    author: "aristophanes",
+    authorName: "Aristophanes",
+    title: "The Frogs",
+    composedYear: -405,
+    era: "classical-greece",
+    adapter: "pg-the-frogs",
+    rawDir: "raw/pg/the-frogs",
+    translator: "Benjamin Bickley Rogers",
+    refScheme: { primary: "line", aliases: [], lineation: "translation" },
+  },
+  {
+    slug: "the-divine-comedy",
+    author: "dante-alighieri",
+    authorName: "Dante Alighieri",
+    title: "The Divine Comedy",
+    composedYear: 1320,
+    era: "medieval",
+    adapter: "se-divine-comedy",
+    rawDir: "raw/se/the-divine-comedy",
+    translator: "Henry Wadsworth Longfellow",
+    refScheme: { primary: "cantica.canto:line", aliases: [], lineation: "translation" },
+  },
+];

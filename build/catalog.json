@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "the-iliad",
+    "author": "homer",
+    "authorName": "Homer",
+    "title": "The Iliad",
+    "composedYear": -750,
+    "era": "archaic-greece",
+    "translator": "Samuel Butler",
+    "manifestFile": "manifest.49218616c4a4.json",
+    "chunks": 24,
+    "words": 152638
+  },
+  {
+    "slug": "the-frogs",
+    "author": "aristophanes",
+    "authorName": "Aristophanes",
+    "title": "The Frogs",
+    "composedYear": -405,
+    "era": "classical-greece",
+    "translator": "Benjamin Bickley Rogers",
+    "manifestFile": "manifest.bee49ae08cc1.json",
+    "chunks": 1,
+    "words": 13187
+  },
+  {
+    "slug": "the-divine-comedy",
+    "author": "dante-alighieri",
+    "authorName": "Dante Alighieri",
+    "title": "The Divine Comedy",
+    "composedYear": 1320,
+    "era": "medieval",
+    "translator": "Henry Wadsworth Longfellow",
+    "manifestFile": "manifest.7206a25bde14.json",
+    "chunks": 103,
+    "words": 112563
+  }
+]

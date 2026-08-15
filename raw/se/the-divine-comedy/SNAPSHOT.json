@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/dante-alighieri_the-divine-comedy_henry-wadsworth-longfellow",
+  "commit": "6e26716c1ce7943548d77be31f0203b4ad72cf3b",
+  "retrieved": "2026-08-15",
+  "translator": "Henry Wadsworth Longfellow",
+  "translatorDied": 1882,
+  "translationPublished": 1867,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1882"
+}
