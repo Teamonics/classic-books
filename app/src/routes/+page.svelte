@@ -54,6 +54,10 @@
   {:catch e}
     <p class="ui center">Could not load the catalog: {e.message}</p>
   {/await}
+
+  <footer class="ui">
+    <a href="/about">About &amp; sources</a>
+  </footer>
 </main>
 
 <style>
@@ -132,5 +136,13 @@
     color: var(--accent);
     font-size: 0.78rem;
     font-weight: 600;
+  }
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  footer a {
+    color: var(--muted);
   }
 </style>

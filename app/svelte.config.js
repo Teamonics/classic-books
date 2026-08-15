@@ -15,6 +15,12 @@ const config = {
       // never disagree.
       $search: "../pipeline/src/search",
     },
+    paths: {
+      // Absolute asset URLs: the SPA fallback document is served for nested
+      // routes (by hosts and by the service worker), where relative paths
+      // would resolve against the deep path and 404.
+      relative: false,
+    },
   },
 };
 

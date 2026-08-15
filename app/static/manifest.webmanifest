@@ -1,0 +1,12 @@
+{
+  "name": "Classic Books",
+  "short_name": "Classics",
+  "description": "The classics of the Western canon, beautifully readable. Free, offline, no account.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5ecd9",
+  "theme_color": "#f5ecd9",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

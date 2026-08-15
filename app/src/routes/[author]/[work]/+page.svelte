@@ -11,10 +11,44 @@
     download,
   } from "$lib/annotations.svelte";
   import SearchPanel from "$lib/components/SearchPanel.svelte";
+  import { offlineSupported, downloadWork, isWorkDownloaded, removeWorkDownload } from "$lib/offline";
   import type { Manifest } from "$lib/types";
 
   const slug = $derived(page.params.work!);
   const author = $derived(page.params.author!);
+
+  let dlState = $state<"unknown" | "no" | "downloading" | "yes">("unknown");
+  let dlProgress = $state(0);
+
+  // Resolve offline-download state once per work (getWork is cached).
+  $effect(() => {
+    dlState = "unknown";
+    if (!offlineSupported()) return;
+    let cancelled = false;
+    getWork(slug).then(async ({ manifest }) => {
+      const yes = await isWorkDownloaded(manifest);
+      if (!cancelled) dlState = yes ? "yes" : "no";
+    });
+    return () => {
+      cancelled = true;
+    };
+  });
+
+  async function toggleDownload(manifest: Manifest) {
+    if (dlState === "yes") {
+      await removeWorkDownload(manifest);
+      dlState = "no";
+    } else {
+      dlState = "downloading";
+      dlProgress = 0;
+      try {
+        await downloadWork(manifest, (done, total) => (dlProgress = Math.round((done / total) * 100)));
+        dlState = "yes";
+      } catch {
+        dlState = "no";
+      }
+    }
+  }
   const hls = $derived(highlightsFor(slug));
   const bms = $derived(bookmarksFor(slug));
 
@@ -40,17 +74,20 @@
       <p class="byline ui">
         {manifest.authorName}{manifest.translator ? ` · translated by ${manifest.translator}` : ""}
       </p>
-      {#if pos}
-        <p class="resume ui">
+      <p class="resume ui">
+        {#if pos}
           <a class="button" href={`/${author}/${slug}/${pos.ref}`}>
             Continue — {progressLabel(manifest, slug)}
           </a>
-        </p>
-      {:else}
-        <p class="resume ui">
+        {:else}
           <a class="button" href={`/${author}/${slug}/${manifest.toc[0]!.ref}`}>Start reading</a>
-        </p>
-      {/if}
+        {/if}
+        {#if offlineSupported()}
+          <button class="offline" onclick={() => toggleDownload(manifest)} disabled={dlState === "downloading" || dlState === "unknown"}>
+            {#if dlState === "yes"}Available offline ✓{:else if dlState === "downloading"}Downloading… {dlProgress}%{:else}Download for offline{/if}
+          </button>
+        {/if}
+      </p>
     </header>
     {#if manifest.search}
       <SearchPanel {manifest} {author} />
@@ -138,6 +175,19 @@
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.9rem;
+  }
+  .offline {
+    margin-left: 0.6rem;
+    border: 1px solid var(--rule);
+    background: var(--raised);
+    border-radius: 8px;
+    padding: 0.45rem 0.9rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  .offline:disabled {
+    opacity: 0.7;
+    cursor: default;
   }
   .toc {
     list-style: none;
