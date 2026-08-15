@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/karl-marx_friedrich-engels_the-communist-manifesto_samuel-moore",
+  "commit": "e1d7184530f6ab2a5f9dfc9bf88800372d6b2844",
+  "retrieved": "2026-08-15",
+  "translator": "Samuel Moore",
+  "translatorDied": 1911,
+  "translationPublished": 1888,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1911"
+}

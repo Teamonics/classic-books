@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/john-milton/paradise-lost</dc:identifier>
+		<dc:date>2019-08-26T21:08:27Z</dc:date>
+		<meta property="dcterms:modified">2019-08-26T21:08:27Z</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
+		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
+		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
+		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">Paradise Lost</dc:title>
+		<meta property="file-as" refines="#title">Paradise Lost</meta>
+		<dc:subject id="subject-1">Fall of man -- Poetry</dc:subject>
+		<dc:subject id="subject-2">Adam (Biblical figure) -- Poetry</dc:subject>
+		<dc:subject id="subject-3">Eve (Biblical figure) -- Poetry</dc:subject>
+		<dc:subject id="subject-4">Bible. Genesis -- History of Biblical events -- Poetry</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">sh2008103487</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">Unknown</meta>
+		<meta property="authority" refines="#subject-3">LCSH</meta>
+		<meta property="term" refines="#subject-3">Unknown</meta>
+		<meta property="authority" refines="#subject-4">LCSH</meta>
+		<meta property="term" refines="#subject-4">Unknown</meta>
+		<meta property="schema:genre">Fiction</meta>
+		<meta property="schema:genre">Poetry</meta>
+		<meta property="schema:genre">Spirituality</meta>
+		<meta property="schema:additionalType">http://schema.org/Collection</meta>
+		<meta id="collection-1" property="belongs-to-collection">The Telegraph’s Greatest Villains in Literature</meta>
+		<meta property="collection-type" refines="#collection-1">set</meta>
+		<meta property="group-position" refines="#collection-1">1</meta>
+		<meta id="collection-2" property="belongs-to-collection">Encyclopædia Britannica’s Great Books of the Western World</meta>
+		<meta property="collection-type" refines="#collection-2">set</meta>
+		<meta property="schema:abstract">A dramatic imagining in blank verse of the rebellion of Satan against God, Satan’s overthrow, and the Fall of Man.</meta>
+		<dc:description>
+			&lt;p&gt;&lt;i&gt;Paradise Lost&lt;/i&gt; is an epic poem written by the Puritan English poet &lt;a href="https://standardebooks.org/ebooks/john-milton"&gt;John Milton&lt;/a&gt; between 1658 and 1663, and published in 1667. This is a period of English history which encompasses the end of Oliver Cromwell’s Commonwealth and the restoration of the monarchy in 1660.&lt;/p&gt;
+			&lt;p&gt;Perhaps reflecting some of his country’s turmoil during Milton’s life, &lt;i&gt;Paradise Lost&lt;/i&gt; deals with revolution in Heaven by Satan and his followers against God, their defeat and banishment to Hell, and their subsequent plotting of revenge, leading ultimately to Satan beguiling Eve in Paradise to taste the fruit of the Tree of Knowledge against the explicit command of God. Milton’s vivid and poetic description of these events is both dramatic and compelling. The work gained swift acceptance and has always remained a popular and important part of English literature.&lt;/p&gt;
+			&lt;p&gt;Originally published in ten books, a second edition was published in 1674 arranged into twelve books, the form in which it appears here. This Standard Ebooks edition is based on a 1910 edition edited by A. W. Verity.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>https://catalog.hathitrust.org/Record/000634929</dc:source>
+		<meta property="schema:wordCount">82188</meta>
+		<meta property="schema:educationalLevel">48.2</meta>
+		<link href="https://en.wikipedia.org/wiki/Paradise_Lost" rel="schema:sameAs"/>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/john-milton_paradise-lost" refines="#vcs-repository" rel="schema:codeRepository"/>
+		<dc:creator id="author">John Milton</dc:creator>
+		<meta property="file-as" refines="#author">Milton, John</meta>
+		<link href="https://en.wikipedia.org/wiki/John_Milton" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n78095532.html" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<dc:contributor id="artist">Tiziano Vecellio</dc:contributor>
+		<meta property="file-as" refines="#artist">Vecellio, Tiziano</meta>
+		<link href="https://en.wikipedia.org/wiki/Titian" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79074519.html" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="producer-1">David Grigg</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Grigg, David</meta>
+		<link href="https://thegriggs.org/david/" refines="#producer-1" rel="schema:url"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">trc</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<dc:contributor id="producer-2">Alex Cabal</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Cabal, Alex</meta>
+		<link href="https://alexcabal.com/" refines="#producer-2" rel="schema:url"/>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/book-1.xhtml" id="book-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-2.xhtml" id="book-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-3.xhtml" id="book-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-4.xhtml" id="book-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-5.xhtml" id="book-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-6.xhtml" id="book-6.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-7.xhtml" id="book-7.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-8.xhtml" id="book-8.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-9.xhtml" id="book-9.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-10.xhtml" id="book-10.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-11.xhtml" id="book-11.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-12.xhtml" id="book-12.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="imprint.xhtml"/>
+		<itemref idref="book-1.xhtml"/>
+		<itemref idref="book-2.xhtml"/>
+		<itemref idref="book-3.xhtml"/>
+		<itemref idref="book-4.xhtml"/>
+		<itemref idref="book-5.xhtml"/>
+		<itemref idref="book-6.xhtml"/>
+		<itemref idref="book-7.xhtml"/>
+		<itemref idref="book-8.xhtml"/>
+		<itemref idref="book-9.xhtml"/>
+		<itemref idref="book-10.xhtml"/>
+		<itemref idref="book-11.xhtml"/>
+		<itemref idref="book-12.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
+</package>

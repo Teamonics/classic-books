@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/virgil_the-georgics_john-dryden",
+  "commit": "92e2bb9e3c97d3dbc52abc50d949e2a44e3eb42e",
+  "retrieved": "2026-08-15",
+  "translator": "John Dryden",
+  "translatorDied": 1700,
+  "translationPublished": 1697,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1700"
+}

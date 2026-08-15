@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/virgil_the-eclogues_john-dryden",
+  "commit": "8ff43f2c33126b1578b6ffd3c304293a51b9134c",
+  "retrieved": "2026-08-15",
+  "translator": "John Dryden",
+  "translatorDied": 1700,
+  "translationPublished": 1697,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1700"
+}

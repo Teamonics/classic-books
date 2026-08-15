@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/william-shakespeare_poetry",
+  "commit": "aadf4878778840f9ee5efd2a7b96eb7951c52a90",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1609,
+  "licenseBasis": "SE CC0; original English work"
+}

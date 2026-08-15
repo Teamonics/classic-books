@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/epictetus_short-works_george-long",
+  "commit": "8c154d40a6f85e32a5711001a28c1b55ab56d3c8",
+  "retrieved": "2026-08-15",
+  "translator": "George Long",
+  "translatorDied": 1879,
+  "translationPublished": 1877,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1879"
+}

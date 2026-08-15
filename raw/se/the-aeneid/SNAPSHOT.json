@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/virgil_the-aeneid_john-dryden",
+  "commit": "ecfb92a0862e5b3b823c2e44edfde134794c95d4",
+  "retrieved": "2026-08-15",
+  "translator": "John Dryden",
+  "translatorDied": 1700,
+  "translationPublished": 1697,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1700"
+}

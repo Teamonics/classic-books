@@ -1,0 +1,101 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+/* Bridgehead */
+[epub|type~="se:bridgehead"]{
+	display: inline-block;
+	font-style: italic;
+	max-width: 60%;
+	text-align: justify;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] [epub|type~="se:bridgehead"]{
+	text-align: justify;
+}
+/* End bridgehead */
+
+/* Poem */
+[epub|type~="z3998:poem"] hgroup p{
+	text-align: center;
+}
+
+[epub|type~="z3998:poem"] p,
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p > span,
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+[epub|type~="z3998:poem"] p + p span:first-child{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+/* End poem */
+
+/* Drama */
+[epub|type~="z3998:drama"] table{
+	border-collapse: collapse;
+	margin: 1em auto;
+	width: 100%;
+}
+
+[epub|type~="z3998:drama"] tr:first-child td{
+	padding-top: 0;
+}
+
+[epub|type~="z3998:drama"] tr:last-child td{
+	padding-bottom: 0;
+}
+
+[epub|type~="z3998:drama"] td{
+	padding: .5em;
+	vertical-align: top;
+}
+
+[epub|type~="z3998:drama"] td:last-child{
+	padding-right: 0;
+}
+
+[epub|type~="z3998:drama"] td:first-child{
+	padding-left: 0;
+}
+
+[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
+	hyphens: none;
+	-epub-hyphens: none;
+	text-align: right;
+	width: 20%;
+}
+
+[epub|type~="z3998:persona"]{
+	font-variant: all-small-caps;
+}
+
+@media(max-width: 400px){
+	[epub|type~="z3998:drama"] td,
+	[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"],
+	[epub|type~="z3998:drama"] td:last-child{
+		display: block;
+		padding: 0;
+		text-align: initial;
+		width: 100%;
+	}
+
+	[epub|type~="z3998:drama"] td[epub|type~="z3998:persona"]{
+		break-after: avoid;
+		margin-top: 1.5em;
+	}
+}
+/* End drama */

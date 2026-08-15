@@ -313,6 +313,18 @@
       "words": 11676
     },
     {
+      "slug": "the-birds",
+      "author": "aristophanes",
+      "authorName": "Aristophanes",
+      "title": "The Birds",
+      "composedYear": -414,
+      "era": "classical-greece",
+      "translator": "The Athenian Society",
+      "manifestFile": "manifest.9db13535c83c.json",
+      "chunks": 2,
+      "words": 16208
+    },
+    {
       "slug": "ion",
       "author": "euripides",
       "authorName": "Euripides",
@@ -733,6 +745,42 @@
       "words": 100049
     },
     {
+      "slug": "the-eclogues",
+      "author": "virgil",
+      "authorName": "Virgil",
+      "title": "The Eclogues",
+      "composedYear": -38,
+      "era": "imperial-rome",
+      "translator": "John Dryden",
+      "manifestFile": "manifest.af448f11bdcd.json",
+      "chunks": 10,
+      "words": 5286
+    },
+    {
+      "slug": "the-georgics",
+      "author": "virgil",
+      "authorName": "Virgil",
+      "title": "The Georgics",
+      "composedYear": -29,
+      "era": "imperial-rome",
+      "translator": "John Dryden",
+      "manifestFile": "manifest.3e863945cc98.json",
+      "chunks": 4,
+      "words": 24857
+    },
+    {
+      "slug": "the-aeneid",
+      "author": "virgil",
+      "authorName": "Virgil",
+      "title": "The Aeneid",
+      "composedYear": -19,
+      "era": "imperial-rome",
+      "translator": "John Dryden",
+      "manifestFile": "manifest.d706e3075f57.json",
+      "chunks": 12,
+      "words": 107463
+    },
+    {
       "slug": "discourses",
       "author": "epictetus",
       "authorName": "Epictetus",
@@ -740,9 +788,21 @@
       "composedYear": 108,
       "era": "imperial-rome",
       "translator": "George Long",
-      "manifestFile": "manifest.4fb77340a700.json",
+      "manifestFile": "manifest.b879153c5b77.json",
       "chunks": 6,
       "words": 120159
+    },
+    {
+      "slug": "epictetus-short-works",
+      "author": "epictetus",
+      "authorName": "Epictetus",
+      "title": "Short Works",
+      "composedYear": 125,
+      "era": "imperial-rome",
+      "translator": "George Long",
+      "manifestFile": "manifest.9d5acc62efa2.json",
+      "chunks": 2,
+      "words": 16429
     },
     {
       "slug": "meditations",
@@ -764,7 +824,7 @@
       "composedYear": 426,
       "era": "late-antiquity",
       "translator": "Marcus Dods et al.",
-      "manifestFile": "manifest.52778013f6d3.json",
+      "manifestFile": "manifest.01251351f75a.json",
       "chunks": 23,
       "words": 441275
     },
@@ -781,6 +841,18 @@
       "words": 112563
     },
     {
+      "slug": "the-canterbury-tales",
+      "author": "geoffrey-chaucer",
+      "authorName": "Geoffrey Chaucer",
+      "title": "The Canterbury Tales",
+      "composedYear": 1400,
+      "era": "medieval",
+      "translator": null,
+      "manifestFile": "manifest.316ed344c955.json",
+      "chunks": 25,
+      "words": 151068
+    },
+    {
       "slug": "the-prince",
       "author": "niccolo-machiavelli",
       "authorName": "Niccolò Machiavelli",
@@ -788,9 +860,21 @@
       "composedYear": 1513,
       "era": "renaissance",
       "translator": "W. K. Marriott",
-      "manifestFile": "manifest.67397b758d9a.json",
+      "manifestFile": "manifest.1dc401b4272f.json",
       "chunks": 29,
       "words": 34610
+    },
+    {
+      "slug": "discourses-on-livy",
+      "author": "niccolo-machiavelli",
+      "authorName": "Niccolò Machiavelli",
+      "title": "Discourses on Livy",
+      "composedYear": 1531,
+      "era": "renaissance",
+      "translator": "Ninian Hill Thomson",
+      "manifestFile": "manifest.82b8975eabd1.json",
+      "chunks": 145,
+      "words": 137352
     },
     {
       "slug": "the-two-gentlemen-of-verona",
@@ -1201,6 +1285,18 @@
       "words": 17474
     },
     {
+      "slug": "shakespeare-poetry",
+      "author": "william-shakespeare",
+      "authorName": "William Shakespeare",
+      "title": "Poetry",
+      "composedYear": 1609,
+      "era": "renaissance",
+      "translator": null,
+      "manifestFile": "manifest.8b61b5393460.json",
+      "chunks": 6,
+      "words": 48604
+    },
+    {
       "slug": "cymbeline",
       "author": "william-shakespeare",
       "authorName": "William Shakespeare",
@@ -1268,7 +1364,7 @@
       "composedYear": 1615,
       "era": "renaissance",
       "translator": "John Ormsby",
-      "manifestFile": "manifest.9f5ee0d2e32d.json",
+      "manifestFile": "manifest.e4c3d73a6393.json",
       "chunks": 132,
       "words": 422013
     },
@@ -1285,6 +1381,30 @@
       "words": 206694
     },
     {
+      "slug": "paradise-lost",
+      "author": "john-milton",
+      "authorName": "John Milton",
+      "title": "Paradise Lost",
+      "composedYear": 1667,
+      "era": "early-modern",
+      "translator": null,
+      "manifestFile": "manifest.9b2ebab66a0d.json",
+      "chunks": 12,
+      "words": 82070
+    },
+    {
+      "slug": "two-treatises-of-government",
+      "author": "john-locke",
+      "authorName": "John Locke",
+      "title": "Two Treatises of Government",
+      "composedYear": 1689,
+      "era": "early-modern",
+      "translator": null,
+      "manifestFile": "manifest.976985fa3faa.json",
+      "chunks": 31,
+      "words": 101585
+    },
+    {
       "slug": "gullivers-travels",
       "author": "jonathan-swift",
       "authorName": "Jonathan Swift",
@@ -1297,6 +1417,54 @@
       "words": 103945
     },
     {
+      "slug": "enquiry-human-understanding",
+      "author": "david-hume",
+      "authorName": "David Hume",
+      "title": "An Enquiry Concerning Human Understanding",
+      "composedYear": 1748,
+      "era": "eighteenth-century",
+      "translator": null,
+      "manifestFile": "manifest.07f51f1bed6f.json",
+      "chunks": 12,
+      "words": 47875
+    },
+    {
+      "slug": "tom-jones",
+      "author": "henry-fielding",
+      "authorName": "Henry Fielding",
+      "title": "The History of Tom Jones",
+      "composedYear": 1749,
+      "era": "eighteenth-century",
+      "translator": null,
+      "manifestFile": "manifest.eea5da89b9e7.json",
+      "chunks": 227,
+      "words": 344428
+    },
+    {
+      "slug": "theory-of-moral-sentiments",
+      "author": "adam-smith",
+      "authorName": "Adam Smith",
+      "title": "The Theory of Moral Sentiments",
+      "composedYear": 1759,
+      "era": "eighteenth-century",
+      "translator": null,
+      "manifestFile": "manifest.194d799a3e5d.json",
+      "chunks": 58,
+      "words": 160177
+    },
+    {
+      "slug": "tristram-shandy",
+      "author": "laurence-sterne",
+      "authorName": "Laurence Sterne",
+      "title": "The Life and Opinions of Tristram Shandy",
+      "composedYear": 1767,
+      "era": "eighteenth-century",
+      "translator": null,
+      "manifestFile": "manifest.fbf7d0bab962.json",
+      "chunks": 323,
+      "words": 185369
+    },
+    {
       "slug": "the-wealth-of-nations",
       "author": "adam-smith",
       "authorName": "Adam Smith",
@@ -1304,7 +1472,7 @@
       "composedYear": 1776,
       "era": "eighteenth-century",
       "translator": null,
-      "manifestFile": "manifest.618d03132756.json",
+      "manifestFile": "manifest.2331db9c1291.json",
       "chunks": 42,
       "words": 389140
     },
@@ -1328,9 +1496,21 @@
       "composedYear": 1789,
       "era": "eighteenth-century",
       "translator": null,
-      "manifestFile": "manifest.1b558fdb7aea.json",
+      "manifestFile": "manifest.271afe13c7fc.json",
       "chunks": 76,
       "words": 1095714
+    },
+    {
+      "slug": "the-communist-manifesto",
+      "author": "karl-marx",
+      "authorName": "Marx and Engels",
+      "title": "The Communist Manifesto",
+      "composedYear": 1848,
+      "era": "nineteenth-century",
+      "translator": "Samuel Moore",
+      "manifestFile": "manifest.5794d90387ce.json",
+      "chunks": 6,
+      "words": 13119
     },
     {
       "slug": "moby-dick",
@@ -1357,6 +1537,18 @@
       "words": 50720
     },
     {
+      "slug": "crime-and-punishment",
+      "author": "fyodor-dostoevsky",
+      "authorName": "Fyodor Dostoevsky",
+      "title": "Crime and Punishment",
+      "composedYear": 1866,
+      "era": "nineteenth-century",
+      "translator": "Constance Garnett",
+      "manifestFile": "manifest.c32f900f7223.json",
+      "chunks": 41,
+      "words": 205080
+    },
+    {
       "slug": "war-and-peace",
       "author": "leo-tolstoy",
       "authorName": "Leo Tolstoy",
@@ -1367,6 +1559,42 @@
       "manifestFile": "manifest.3f063b3bc191.json",
       "chunks": 365,
       "words": 562661
+    },
+    {
+      "slug": "the-subjection-of-women",
+      "author": "john-stuart-mill",
+      "authorName": "John Stuart Mill",
+      "title": "The Subjection of Women",
+      "composedYear": 1869,
+      "era": "nineteenth-century",
+      "translator": null,
+      "manifestFile": "manifest.f04275f8e684.json",
+      "chunks": 4,
+      "words": 43568
+    },
+    {
+      "slug": "mill-autobiography",
+      "author": "john-stuart-mill",
+      "authorName": "John Stuart Mill",
+      "title": "Autobiography",
+      "composedYear": 1873,
+      "era": "nineteenth-century",
+      "translator": null,
+      "manifestFile": "manifest.f4ff631e38ca.json",
+      "chunks": 7,
+      "words": 73917
+    },
+    {
+      "slug": "anna-karenina",
+      "author": "leo-tolstoy",
+      "authorName": "Leo Tolstoy",
+      "title": "Anna Karenina",
+      "composedYear": 1878,
+      "era": "nineteenth-century",
+      "translator": "Constance Garnett",
+      "manifestFile": "manifest.51ca3ef77bbe.json",
+      "chunks": 239,
+      "words": 349947
     },
     {
       "slug": "the-brothers-karamazov",

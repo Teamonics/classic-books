@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/john-locke_two-treatises-of-government",
+  "commit": "bcce28e1d0f075db4c18c651f7c66fefaa126ef2",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1689,
+  "licenseBasis": "SE CC0; original English work"
+}

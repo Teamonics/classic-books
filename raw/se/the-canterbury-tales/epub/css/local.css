@@ -1,0 +1,66 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+blockquote[xml|lang],
+dfn{
+	font-style: italic;
+}
+
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}
+
+hr{
+	border: none;
+	margin: .5em auto;
+}
+
+/* Poem, verse */
+[epub|type~="z3998:poem"] p,
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p > span,
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+[epub|type~="z3998:poem"] p > span:first-child{
+	/* Indent the first line of stanzas */
+	text-indent: 0;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i5{
+	padding-left: 6em;
+	text-indent: -1em;
+}
+
+span.elision{
+	margin: .5em;
+	margin-left: 3em;
+}
+
+/* Chaucer’s Tale of Sir Thopas */
+#chaucers-tale-of-sir-thopas-body p > span:first-child{
+	text-indent: -1em;
+}
+
+#chaucers-tale-of-sir-thopas-body p + p{
+	margin-top: 1em;
+}
+/* End poem, verse */

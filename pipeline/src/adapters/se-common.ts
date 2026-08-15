@@ -88,6 +88,9 @@ export function parseBlockquote(bq: any): Block | null {
 export function headerTitle(section: any): { title: string | null; summary: Block | null } {
   const header = section.querySelector(":scope > header, :scope > hgroup, :scope > h2, :scope > h3, :scope > h4");
   if (!header) return { title: null, summary: null };
+  // A heading can carry a noteref; its printed numeral is presentation, and
+  // would otherwise end up glued to the title ("The Knight's Tale277").
+  for (const a of header.querySelectorAll('a[epub\\:type~="noteref"]')) a.remove();
   let summary: Block | null = null;
   const bridge = section.querySelector('[epub\\:type="se:bridgehead"]');
   if (bridge) {

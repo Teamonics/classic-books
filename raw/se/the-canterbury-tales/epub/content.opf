@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/geoffrey-chaucer/the-canterbury-tales</dc:identifier>
+		<dc:date>2023-05-01T21:20:30Z</dc:date>
+		<meta property="dcterms:modified">2023-05-01T21:20:30Z</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
+		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
+		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
+		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">The Canterbury Tales</dc:title>
+		<meta property="file-as" refines="#title">Canterbury Tales, The</meta>
+		<dc:subject id="subject-1">Chaucer, Geoffrey, -1400</dc:subject>
+		<dc:subject id="subject-2">Christian pilgrims and pilgrimages -- Poetry</dc:subject>
+		<dc:subject id="subject-3">English poetry -- Middle English, 1100-1500</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">Unknown</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">sh2008100692</meta>
+		<meta property="authority" refines="#subject-3">LCSH</meta>
+		<meta property="term" refines="#subject-3">sh85043933</meta>
+		<meta property="schema:genre">Poetry</meta>
+		<meta id="collection-3" property="belongs-to-collection">Encyclopædia Britannica’s Great Books of the Western World</meta>
+		<meta property="collection-type" refines="#collection-3">set</meta>
+		<meta property="schema:abstract">A group of pilgrims trade tales as they travel through medieval England.</meta>
+		<dc:description>
+			&lt;p&gt;&lt;i&gt;The Canterbury Tales&lt;/i&gt; is a collection of twenty-four stories written in Middle English by &lt;a href="https://standardebooks.org/ebooks/geoffrey-chaucer"&gt;Geoffrey Chaucer&lt;/a&gt;. The tales are presented as a storytelling contest by a group of pilgrims on a journey from Southwark to the shrine of Saint Thomas Becket at Canterbury Cathedral. Each pilgrim tells a story to pass the time, and their tales range from bawdy and humorous to serious and moralistic.&lt;/p&gt;
+			&lt;p&gt;The stories provide valuable insights into medieval English society as they explore social class, religion, and morality. The pilgrims represent a cross-section of medieval English society: they include a knight, a prioress, a miller, a cook, a merchant, a monk, a nun, a pardoner, a friar, and a host, among others. Religion and morals play an important part of these stories, as the characters are often judged according to their actions and adherence to moral principles.&lt;/p&gt;
+			&lt;p&gt;Chaucer also contributed significantly to the development of the English language by introducing new vocabulary and expressions, and by helping to establish English as a literary language. Before the &lt;i&gt;Tales&lt;/i&gt;, most literary works were written in Latin or French, languages which were considered more prestigious than English. But by writing the widely read and admired &lt;i&gt;Tales&lt;/i&gt; in Middle English, Chaucer helped establish English as a legitimate literary language. He drew on a wide range of sources for his lexicon, including Latin, French, and Italian, as well as regional dialects and slang. In doing so he created new words and phrases by combining existing words in new ways. All told, the &lt;i&gt;Canterbury Tales&lt;/i&gt; paved the way for future writers to write serious literary works in English, and contributed to the language’s development into a language of literature.&lt;/p&gt;
+			&lt;p&gt;This edition of &lt;i&gt;The Canterbury Tales&lt;/i&gt; is based on an edition edited by David Laing Purves, which preserves the original Middle English language and provides historical context for editorial decisions. By maintaining the language of the original text, Purves allows readers to experience the work as it was intended to be read by Chaucer’s contemporaries, providing insight into the language and culture of the time. Other editions may differ significantly in their presentation of the language; since the &lt;i&gt;Tales&lt;/i&gt; were transcribed, re-transcribed, printed, and re-printed over hundreds of years and across many changes in the language, there are many different ways of presenting the uniqueness of Chaucer’s English.&lt;/p&gt;
+			&lt;p&gt;This edition includes extensive notes on the language, historical context, and literary sources, providing readers with a deeper understanding of the cultural and historical context in which the work was written. Scholars have used Purves’ edition as a basis for further study and analysis of Chaucer’s work, making it an important resource for anyone interested in the study of medieval literature.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>https://www.gutenberg.org/ebooks/2383</dc:source>
+		<dc:source>https://catalog.hathitrust.org/Record/102667113</dc:source>
+		<meta property="schema:wordCount">156383</meta>
+		<meta property="schema:educationalLevel">71.89</meta>
+		<link href="https://en.wikipedia.org/wiki/The_Canterbury_Tales" rel="schema:sameAs"/>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/geoffrey-chaucer_the-canterbury-tales" refines="#vcs-repository" rel="schema:codeRepository"/>
+		<dc:creator id="author">Geoffrey Chaucer</dc:creator>
+		<meta property="file-as" refines="#author">Chaucer, Geoffrey</meta>
+		<link href="https://en.wikipedia.org/wiki/Geoffrey_Chaucer" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79027228.html" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<dc:contributor id="editor">David Laing Purves</dc:contributor>
+		<meta property="file-as" refines="#editor">Purves, David Laing</meta>
+		<link href="https://id.loc.gov/authorities/names/n85252372.html" refines="#editor" rel="schema:sameAs"/>
+		<meta property="role" refines="#editor" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#editor" scheme="marc:relators">edt</meta>
+		<dc:contributor id="artist">Hans Thoma</dc:contributor>
+		<meta property="file-as" refines="#artist">Thoma, Hans</meta>
+		<link href="https://en.wikipedia.org/wiki/Hans_Thoma" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n84020178.html" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="transcriber-1">Donal O’Danachair</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">O’Danachair, Donal</meta>
+		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
+		<dc:contributor id="producer-1">Emma Sweeney</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Sweeney, Emma</meta>
+		<link href="https://www.linkedin.com/in/emma-sweeney-554927190/" refines="#producer-1" rel="schema:url"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">trc</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<dc:contributor id="producer-2">Alex Cabal</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Cabal, Alex</meta>
+		<link href="https://alexcabal.com/" refines="#producer-2" rel="schema:url"/>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/chaucers-tale-of-meliboeus.xhtml" id="chaucers-tale-of-meliboeus.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chaucers-tale-of-sir-thopas.xhtml" id="chaucers-tale-of-sir-thopas.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/prologue.xhtml" id="prologue.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-canons-yeomans-tale.xhtml" id="the-canons-yeomans-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-clerks-tale.xhtml" id="the-clerks-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-cooks-tale.xhtml" id="the-cooks-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-doctors-tale.xhtml" id="the-doctors-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-franklins-tale.xhtml" id="the-franklins-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-friars-tale.xhtml" id="the-friars-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-knights-tale.xhtml" id="the-knights-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-man-of-laws-tale.xhtml" id="the-man-of-laws-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-manciples-tale.xhtml" id="the-manciples-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-merchants-tale.xhtml" id="the-merchants-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-millers-tale.xhtml" id="the-millers-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-monks-tale.xhtml" id="the-monks-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-nuns-priests-tale.xhtml" id="the-nuns-priests-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-pardoners-tale.xhtml" id="the-pardoners-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-parsons-tale.xhtml" id="the-parsons-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-prioresss-tale.xhtml" id="the-prioresss-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-reeves-tale.xhtml" id="the-reeves-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-second-nuns-tale.xhtml" id="the-second-nuns-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-shipmans-tale.xhtml" id="the-shipmans-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-sompnours-tale.xhtml" id="the-sompnours-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-squires-tale.xhtml" id="the-squires-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-wife-of-baths-tale.xhtml" id="the-wife-of-baths-tale.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="imprint.xhtml"/>
+		<itemref idref="prologue.xhtml"/>
+		<itemref idref="the-knights-tale.xhtml"/>
+		<itemref idref="the-millers-tale.xhtml"/>
+		<itemref idref="the-reeves-tale.xhtml"/>
+		<itemref idref="the-cooks-tale.xhtml"/>
+		<itemref idref="the-man-of-laws-tale.xhtml"/>
+		<itemref idref="the-wife-of-baths-tale.xhtml"/>
+		<itemref idref="the-friars-tale.xhtml"/>
+		<itemref idref="the-sompnours-tale.xhtml"/>
+		<itemref idref="the-clerks-tale.xhtml"/>
+		<itemref idref="the-merchants-tale.xhtml"/>
+		<itemref idref="the-squires-tale.xhtml"/>
+		<itemref idref="the-franklins-tale.xhtml"/>
+		<itemref idref="the-doctors-tale.xhtml"/>
+		<itemref idref="the-pardoners-tale.xhtml"/>
+		<itemref idref="the-shipmans-tale.xhtml"/>
+		<itemref idref="the-prioresss-tale.xhtml"/>
+		<itemref idref="chaucers-tale-of-sir-thopas.xhtml"/>
+		<itemref idref="chaucers-tale-of-meliboeus.xhtml"/>
+		<itemref idref="the-monks-tale.xhtml"/>
+		<itemref idref="the-nuns-priests-tale.xhtml"/>
+		<itemref idref="the-second-nuns-tale.xhtml"/>
+		<itemref idref="the-canons-yeomans-tale.xhtml"/>
+		<itemref idref="the-manciples-tale.xhtml"/>
+		<itemref idref="the-parsons-tale.xhtml"/>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
+</package>

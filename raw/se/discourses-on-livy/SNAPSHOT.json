@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/niccolo-machiavelli_discourses-on-livy_ninian-hill-thomson",
+  "commit": "7d750e7bf132199c93113a3a73e88faa635ddcc9",
+  "retrieved": "2026-08-15",
+  "translator": "Ninian Hill Thomson",
+  "translatorDied": 1911,
+  "translationPublished": 1883,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1911"
+}

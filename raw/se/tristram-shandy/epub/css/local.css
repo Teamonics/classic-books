@@ -1,0 +1,597 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+@font-face{
+	font-family: "Standard Blackletter";
+	font-weight: 700;
+	src: url("../fonts/standard-blackletter.otf") format("opentype");
+}
+
+i b{
+	font-style: normal;
+}
+
+rt{
+	font-size: 1em;
+	ruby-align: center;
+}
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+blockquote header{
+	font-variant: small-caps;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+figure{
+	break-inside: avoid;
+	margin: 1em 2.5em;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-height: 100vh;
+	max-width: 100%;
+}
+
+figure.full-page{
+	break-after: page;
+	break-before: page;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+td{
+	border: 0;
+	padding: 0 .5em 0 0;
+}
+
+.blackletter{
+	font-family: "Standard Blackletter", serif;
+	font-variant: normal;
+	font-weight: 700;
+}
+
+.short-indent{
+	text-indent: 3em;
+}
+
+.indent{
+	margin-left: 6.5em;
+	text-indent: 0;
+}
+
+.indent + p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:salutation"] + p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:signature"],
+[epub|type~="z3998:salutation"]{
+	font-variant: small-caps;
+}
+
+[epub|type~="z3998:recipient"]{
+	font-style: italic;
+	font-variant: normal;
+}
+
+[epub|type~="z3998:verse"] footer{
+	text-align: center;
+}
+
+[epub|type~="z3998:song"] > p,
+[epub|type~="z3998:verse"] > p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:song"] > p > span,
+[epub|type~="z3998:verse"] > p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:song"] > p > span + br,
+[epub|type~="z3998:verse"] > p > span + br{
+	display: none;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+/* All epigraphs */
+[epub|type~="epigraph"]{
+	font-style: italic;
+	hyphens: none;
+	-epub-hyphens: none;
+}
+
+[epub|type~="epigraph"] cite{
+	font-style: normal;
+	font-variant: small-caps;
+	margin-top: 1em;
+}
+
+[epub|type~="epigraph"] cite i{
+	font-style: italic;
+}
+/* End all epigraphs */
+
+/* Full-page epigraphs */
+section[epub|type~="epigraph"]{
+	text-align: center;
+}
+
+section[epub|type~="epigraph"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+	text-align: initial;
+}
+
+@supports(display: flex){
+	section[epub|type~="epigraph"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	section[epub|type~="epigraph"] > *{
+		margin: 0;
+	}
+}
+/* End full-page epigraphs */
+
+[epub|type~="dedication"] footer > p:first-child{
+	margin-left: 40%;
+	text-align: center;
+}
+
+#chapter-1-4 > p > span{
+	display: block;
+}
+
+@supports(display: flex){
+	#chapter-1-4 > p > span{
+		align-items: center;
+		display: flex;
+		margin-left: 1em;
+		text-indent: 0;
+	}
+
+	#chapter-1-4 > p > span::before{
+		border-bottom: 1px solid;
+		content: "";
+		height: 0;
+		width: 20%;
+	}
+
+	#chapter-1-4 > p > span::after{
+		border-bottom: 1px solid;
+		content: "";
+		flex-grow: 1;
+		height: 0;
+	}
+}
+
+#chapter-1-8 footer > p:first-child{
+	font-style: italic;
+}
+
+#chapter-1-9 blockquote{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#chapter-1-9 blockquote > p:first-child{
+	text-indent: 2em;
+}
+
+#chapter-1-12 blockquote{
+	text-align: center;
+}
+
+#chapter-1-12 blockquote > p{
+	display: inline-block;
+	text-indent: 0;
+}
+
+#chapter-1-12 blockquote:first-of-type > p{
+	border: 1px solid;
+	padding: .5em 1em;
+}
+
+#chapter-2-17 blockquote header b{
+	text-transform: uppercase;
+}
+
+#chapter-2-17 blockquote > header > p + p{
+	font-style: italic;
+	font-variant: normal;
+	margin-top: .5em;
+}
+
+#chapter-2-17 blockquote > header em{
+	font-style: normal;
+}
+
+#chapter-2-17 blockquote{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#chapter-2-17 blockquote ~ blockquote p:last-child{
+	margin-top: .5em;
+	text-align: center;
+	text-indent: 0;
+}
+
+@supports(display: flex){
+	#chapter-3-11-la > p > span{
+		display: flex;
+		justify-content: space-around;
+		text-indent: 0;
+	}
+}
+
+#chapter-4-1 header i{
+	font-variant: normal;
+}
+
+@supports(display: flex){
+	#chapter-4-12 p:last-child{
+		align-items: center;
+		display: flex;
+		text-indent: 0;
+	}
+
+	#chapter-4-12 p:last-child > span:first-child > span{
+		display: block;
+		white-space: nowrap;
+	}
+
+	#chapter-4-12 p:last-child > span:nth-child(2){
+		font-size: 2em;
+		margin: 0 .25em;
+	}
+}
+
+@supports(display: flex){
+	#chapter-4-27 > p > b{
+		align-items: center;
+		display: flex;
+	}
+
+	#chapter-4-27 > p > b::after{
+		border-bottom: 1px solid;
+		content: "";
+		flex-grow: 1;
+		height: 0;
+	}
+
+	#chapter-4-27 > p > span{
+		align-items: center;
+		display: flex;
+	}
+
+	#chapter-4-27 > p > span::before{
+		content: "​"; /* zero-width space to fix line-height of parent row */
+	}
+
+	#chapter-4-27 > p > span::after{
+		border-bottom: 1px solid;
+		content: "";
+		flex-grow: 1;
+		height: 0;
+	}
+}
+
+#slawkenbergius-en [epub|type~="z3998:recipient"]{
+	font-style: normal;
+	text-indent: 2em;
+}
+
+#slawkenbergius-en > p:last-child{
+	margin-top: 1em;
+	text-align: center;
+	text-indent: 0;
+}
+
+#slawkenbergius-en > p:last-child > b:first-child{
+	font-variant: all-small-caps;
+}
+
+@supports(display: flex){
+	#chapter-5-1-the-fragment p:first-of-type{
+		text-indent: 0;
+	}
+
+	#chapter-5-1-the-fragment p:first-of-type > span{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@supports(display: flex){
+	#chapter-5-10 p > span{
+		display: flex;
+		justify-content: space-between;
+		white-space: nowrap;
+	}
+}
+
+#chapter-5-27 p > span,
+#chapter-5-31 p > span,
+#chapter-5-32 p > span{
+	display: table;
+	width: 100%;
+}
+
+#chapter-5-27 p > span > span,
+#chapter-5-31 p > span > span,
+#chapter-5-32 p > span > span{
+	display: table-cell;
+}
+
+@supports(display: flex){
+	#chapter-5-27 p > span,
+	#chapter-5-31 p > span,
+	#chapter-5-32 p > span{
+		display: flex;
+		justify-content: space-between;
+		text-indent: 0;
+	}
+}
+
+#chapter-5-37 p > span{
+	display: inline-block;
+	text-align: center;
+	width: 5em;
+}
+
+#chapter-6-11 blockquote{
+	margin: 0;
+	text-align: center;
+	text-indent: 0;
+}
+
+#chapter-6-14 p > span:first-of-type > span{
+	display: inline-block;
+	text-align: center;
+	text-indent: 0;
+	width: 5em;
+}
+
+@supports(display: flex){
+	#chapter-6-14 p > span ~ span{
+		display: flex;
+		justify-content: space-between;
+		text-indent: 0;
+	}
+
+	#chapter-6-14 p > span:last-child > span{
+		flex-grow: 1;
+	}
+
+	#chapter-6-14 p > span:last-child > span:last-child{
+		flex-grow: 4;
+	}
+}
+
+@supports(display: flex){
+	#chapter-6-17 p > span{
+		display: flex;
+		justify-content: space-between;
+		text-indent: 0;
+	}
+
+	#chapter-6-17 p > span:last-child > span:last-child{
+		margin-right: 42.25%;
+	}
+}
+
+#chapter-6-19 ul{
+	list-style-type: none;
+	margin: 0 0 0 3em;
+	padding: 0;
+}
+
+#chapter-6-19 ul + p{
+	text-indent: 1em;
+}
+
+#chapter-6-19 div{
+	display: flex;
+}
+
+#chapter-6-19 > div > p{
+	white-space: nowrap;
+}
+
+#chapter-6-19 > div > ul{
+	margin-left: .5em;
+}
+
+#chapter-6-19 > div:first-of-type li:last-child,
+#chapter-6-19 > div:last-of-type li:last-child{
+	margin-left: -2em;
+}
+
+#chapter-6-31 blockquote > p{
+	text-align: center;
+	text-indent: 0;
+}
+
+#chapter-6-34 p > span{
+	display: inline-block;
+	text-align: center;
+	text-indent: 0;
+	width: 3em;
+}
+
+#chapter-6-38 > div{
+	break-after: page;
+	break-before: page;
+	min-height: 10em;
+}
+
+@supports(display: flex){
+	#chapter-6-39 p > span{
+		display: flex;
+		justify-content: space-between;
+		text-indent: 0;
+	}
+
+	#chapter-6-39 p > span:last-child > span:last-child{
+		margin-right: 28.25%;
+	}
+}
+
+#illustration-5{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+@supports(display: flex){
+	#chapter-7-8 p:nth-last-child(2){
+		align-items: center;
+		display: flex;
+		text-indent: 0;
+	}
+
+	#chapter-7-8 p:nth-last-child(2) > span:nth-child(2){
+		font-size: 2em;
+		margin: 0 .25em;
+	}
+
+	#chapter-7-8 p:nth-last-child(2) > span:last-child > span{
+		display: block;
+	}
+
+	#chapter-7-8 p:last-child{
+		text-indent: 0;
+	}
+}
+
+#chapter-7-10 tr:first-child{
+	font-style: italic;
+}
+
+#chapter-7-18 [epub|type~="z3998:verse"] p,
+#chapter-7-32 blockquote p,
+#chapter-7-43 blockquote:first-of-type p{
+	font-variant: all-small-caps;
+	text-align: center;
+}
+
+#chapter-7-19 blockquote p{
+	text-align: center;
+	text-indent: 0;
+}
+
+#chapter-7-25 td[rowspan]{
+	font-size: 3em;
+	padding: 0 .25em;
+}
+
+#chapter-7-26 .followon::before{
+	content: "⸺⁠Why, ’tis a strange story!";
+	visibility: hidden;
+}
+
+#chapter-7-30 blockquote p{
+	font-variant: small-caps;
+	text-align: center;
+}
+
+@supports(display: flex){
+	#chapter-7-31 p:nth-last-child(5){
+		align-items: center;
+		display: flex;
+	}
+
+	#chapter-7-31 p:nth-last-child(5) > span:first-child > span{
+		display: block;
+	}
+
+	#chapter-7-31 p:nth-last-child(5) > span:nth-child(2){
+		font-size: 2em;
+		margin: 0 .25em;
+	}
+}
+
+#chapter-7-35 blockquote > p{
+	text-align: center;
+	text-indent: 0;
+}
+
+#chapter-7-43 [epub|type~="z3998:song"]{
+	font-variant: small-caps;
+}
+
+#chapter-8-11 .followon::before{
+	content: "’Tis all ";
+	visibility: hidden;
+}
+
+#chapter-8-13 p > span{
+	display: inline-block;
+	text-indent: 0;
+	width: 1.2em;
+}
+
+#chapter-8-19 blockquote > p{
+	font-variant: small-caps;
+	text-align: center;
+	text-indent: 0;
+}
+
+#chapter-8-20 p > span{
+	display: inline-block;
+	text-align: center;
+	text-indent: 0;
+	width: 2em;
+}
+
+#illustration-6 img{
+	width: 80%;
+}
+
+#chapter-9-20 blockquote{
+	font-style: italic;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#chapter-9-20 > p > span,
+#chapter-9-22 > p > span,
+#chapter-9-28 > p > span{
+	display: inline-block;
+	text-align: center;
+	text-indent: 0;
+	width: 3em;
+}

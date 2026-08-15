@@ -1,0 +1,103 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+article,
+[epub|type~="prologue"],
+#venus-and-adonis-dedication,
+#sonnets,
+#sonnets header{
+	break-after: page;
+}
+
+[epub|type~="prologue"] + section{
+	margin-top: 3em;
+}
+
+/* epigraph */
+[epub|type~="epigraph"]{
+	font-style: italic;
+	hyphens: none;
+	-epub-hyphens: none;
+}
+
+article > header [epub|type~="epigraph"]{
+	display: inline-block;
+	margin: auto;
+	max-width: 80%;
+	text-align: initial;
+}
+
+@supports(display: table){
+	article > header [epub|type~="epigraph"]{
+		display: table;
+	}
+}
+/* end epigraph */
+
+/* dedication */
+#sonnets [epub|type~="dedication"],
+#venus-and-adonis [epub|type~="dedication"] header,
+#the-rape-of-lucrece [epub|type~="dedication"] > p{
+	font-variant: small-caps;
+	text-align: center;
+}
+
+#venus-and-adonis [epub|type~="dedication"] > p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+header blockquote p{
+	text-align: initial;
+}
+
+#venus-and-adonis [epub|type~="dedication"] header + p{
+	font-variant: small-caps;
+}
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+[epub|type~="z3998:signature"]{
+	font-variant: small-caps;
+}
+
+[epub|type~="dedication"] + section{
+	margin-top: 3em;
+}
+/* end dedication */
+
+/* poem */
+[epub|type~="z3998:poem"] p,
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:poem"] p > span,
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br{
+	display: none;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+span.elision{
+	margin: .5em;
+	margin-left: 3em;
+}
+/* end poem */

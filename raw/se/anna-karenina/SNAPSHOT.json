@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/leo-tolstoy_anna-karenina_constance-garnett",
+  "commit": "c6784ae91fcff91f5916c838236cd165999f87b2",
+  "retrieved": "2026-08-15",
+  "translator": "Constance Garnett",
+  "translatorDied": 1946,
+  "translationPublished": 1901,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1946"
+}

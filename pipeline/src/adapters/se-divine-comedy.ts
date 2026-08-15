@@ -34,7 +34,7 @@ function parseVerseSection(section: any): { blocks: Block[]; noteIds: string[]; 
         n: lineNo,
         text,
         ...(marks.length ? { marks } : {}),
-        ...(indentMatch ? { indent: Number(indentMatch[1]) } : {}),
+        ...(indentMatch ? { indent: Math.min(6, Number(indentMatch[1])) } : {}),
       });
     }
     if (lines.length) blocks.push({ type: "verse", lines });

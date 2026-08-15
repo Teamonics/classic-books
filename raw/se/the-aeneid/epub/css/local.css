@@ -1,0 +1,50 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+/* Bridgehead */
+[epub|type~="se:bridgehead"]{
+	display: inline-block;
+	font-style: italic;
+	max-width: 60%;
+	text-align: justify;
+	text-indent: 0;
+}
+/* End bridgehead */
+
+/* Poem */
+[epub|type~="z3998:poem"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:poem"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br{
+	display: none;
+}
+/* End poem */
+
+/* Epic poem adjustments */
+[epub|type~="se:bridgehead"]{
+	/* Override text-align: initial; imposed by the parent z3998:poem style */
+	text-align: justify !important;
+}
+
+[epub|type~="z3998:poem"] p > span:first-child{
+	/* Prevents indent in first stanza. */
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] header + p > span:first-child{
+	/* Indent the first line of stanzas. */
+	text-indent: -1em;
+}
+/* End epic poem adjustments */

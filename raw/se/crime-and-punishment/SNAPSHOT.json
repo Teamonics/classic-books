@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/fyodor-dostoevsky_crime-and-punishment_constance-garnett",
+  "commit": "637d82f31b44a0a0abc73bd3dd8f8b51b2d349d5",
+  "retrieved": "2026-08-15",
+  "translator": "Constance Garnett",
+  "translatorDied": 1946,
+  "translationPublished": 1914,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1946"
+}

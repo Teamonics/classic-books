@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/john-locke/two-treatises-of-government</dc:identifier>
+		<dc:date>2025-01-02T16:48:33Z</dc:date>
+		<meta property="dcterms:modified">2025-01-02T16:48:33Z</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
+		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
+		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
+		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">Two Treatises of Government</dc:title>
+		<meta property="file-as" refines="#title">Two Treatises of Government</meta>
+		<meta property="dcterms:alternative" refines="#title">2 Treatises of Government</meta>
+		<meta property="title-type" refines="#title">main</meta>
+		<dc:title id="subtitle">In the Former the False Principles and Foundation of Sir Robert Filmer and His Followers Are Detected and Overthrown. The Latter Is an Essay Concerning the True Original Extent and End of Civil Government.</dc:title>
+		<meta property="file-as" refines="#subtitle">In the Former the False Principles and Foundation of Sir Robert Filmer and His Followers Are Detected and Overthrown. The Latter Is an Essay Concerning the True Original Extent and End of Civil Government.</meta>
+		<meta property="title-type" refines="#subtitle">subtitle</meta>
+		<dc:title id="fulltitle">Two Treatises of Government: In the Former the False Principles and Foundation of Sir Robert Filmer and His Followers Are Detected and Overthrown. The Latter Is an Essay Concerning the True Original Extent and End of Civil Government.</dc:title>
+		<meta property="file-as" refines="#fulltitle">Two Treatises of Government: In the Former the False Principles and Foundation of Sir Robert Filmer and His Followers Are Detected and Overthrown. The Latter Is an Essay Concerning the True Original Extent and End of Civil Government.</meta>
+		<meta property="title-type" refines="#fulltitle">expanded</meta>
+		<dc:subject id="subject-1">Political science -- Early works to 1800</dc:subject>
+		<dc:subject id="subject-2">Toleration -- Early works to 1800</dc:subject>
+		<dc:subject id="subject-3">Liberty -- Early works to 1800</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">sh85104443</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">sh2010116600</meta>
+		<meta property="authority" refines="#subject-3">LCSH</meta>
+		<meta property="term" refines="#subject-3">sh2009129646</meta>
+		<meta property="schema:genre">Nonfiction</meta>
+		<meta property="schema:genre">Philosophy</meta>
+		<meta id="collection-1" property="belongs-to-collection">Encyclopædia Britannica’s Great Books of the Western World</meta>
+		<meta property="collection-type" refines="#collection-1">set</meta>
+		<meta property="schema:hasPart" refines="#collection-1" id="collection-1-entry-1">schema:hasPart</meta>
+		<meta property="rdf:type" refines="#collection-1-entry-1">http://schema.org/CreativeWork</meta>
+		<meta property="schema:name" refines="#collection-1-entry-1">Concerning Civil Government, Second Essay</meta>
+		<meta property="schema:abstract">Locke critiques the concepts of absolute monarchy and divine right, arguing instead for a government founded on natural rights, individual freedom, and the consent of the governed, which protects the fundamental rights of life, liberty, and property.</meta>
+		<dc:description>
+			&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/john-locke"&gt;John Locke’s&lt;/a&gt; &lt;i&gt;Two Treatises of Government&lt;/i&gt; is a foundational text in liberal political thought, which challenged the then-prevailing theories of divine right and absolute monarchy. The work is divided into two treatises, with the first primarily focused on refuting Sir Robert Filmer’s book &lt;i&gt;Patriarcha&lt;/i&gt;, which advocates for absolute monarchical power based on the supposed divine right of kings. Locke dismantles Filmer’s claims, demonstrating the lack of scriptural support for inherited political authority, and distinguishing between political power and paternal power.&lt;/p&gt;
+			&lt;p&gt;In the second treatise, Locke articulates his own theory of government, grounded in natural law and individual rights. He posits that all individuals are born free and equal, possessing inalienable rights to life, liberty, and property. Locke discusses the concept of the state of nature, where individuals are governed by natural law, and argues that legitimate government arises from the consent of the governed. He discusses how the social contract establishes the moral foundation for political authority.&lt;/p&gt;
+			&lt;p&gt;Locke proposes that should a government fail to protect the rights of the people or violates the social contract, citizens have the right and duty to revolt and establish a new government. His ideas about government by consent, the right to private property, and the right to revolution have profoundly influenced modern democratic thought and the development of liberal political theory, laying the groundwork for later political movements advocating for democracy and human rights.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>https://oll.libertyfund.org/titles/hollis-the-two-treatises-of-civil-government-hollis-ed</dc:source>
+		<dc:source>https://archive.org/details/twotreatisesgov00lockgoog</dc:source>
+		<meta property="schema:wordCount">101888</meta>
+		<meta property="schema:educationalLevel">38.36</meta>
+		<link href="https://en.wikipedia.org/wiki/Two_Treatises_of_Government" rel="schema:sameAs"/>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/john-locke_two-treatises-of-government" refines="#vcs-repository" rel="schema:codeRepository"/>
+		<dc:creator id="author">John Locke</dc:creator>
+		<meta property="file-as" refines="#author">Locke, John</meta>
+		<link href="https://en.wikipedia.org/wiki/John_Locke" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79090225.html" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">wpr</meta>
+		<dc:contributor id="artist">Gerrit van Vucht</dc:contributor>
+		<meta property="file-as" refines="#artist">van Vucht, Gerrit</meta>
+		<link href="https://id.loc.gov/authorities/names/nr2003020839.html" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="transcriber">The Online Library of Liberty</dc:contributor>
+		<meta property="file-as" refines="#transcriber">Online Library of Liberty, The</meta>
+		<link href="https://oll.libertyfund.org/" refines="#transcriber" rel="schema:url"/>
+		<meta property="role" refines="#transcriber" scheme="marc:relators">trc</meta>
+		<dc:contributor id="producer-1">Paul Bryan</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Bryan, Paul</meta>
+		<link href="https://pbryan.ca/" refines="#producer-1" rel="schema:url"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<dc:contributor id="producer-2">Lukas Bystricky</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Bystricky, Lukas</meta>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/book-1.xhtml" id="book-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-2.xhtml" id="book-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-1.xhtml" id="chapter-1-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-2.xhtml" id="chapter-1-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-3.xhtml" id="chapter-1-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-4.xhtml" id="chapter-1-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-5.xhtml" id="chapter-1-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-6.xhtml" id="chapter-1-6.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-7.xhtml" id="chapter-1-7.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-8.xhtml" id="chapter-1-8.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-9.xhtml" id="chapter-1-9.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-10.xhtml" id="chapter-1-10.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-1-11.xhtml" id="chapter-1-11.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-1.xhtml" id="chapter-2-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-2.xhtml" id="chapter-2-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-3.xhtml" id="chapter-2-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-4.xhtml" id="chapter-2-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-5.xhtml" id="chapter-2-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-6.xhtml" id="chapter-2-6.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-7.xhtml" id="chapter-2-7.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-8.xhtml" id="chapter-2-8.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-9.xhtml" id="chapter-2-9.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-10.xhtml" id="chapter-2-10.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-11.xhtml" id="chapter-2-11.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-12.xhtml" id="chapter-2-12.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-13.xhtml" id="chapter-2-13.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-14.xhtml" id="chapter-2-14.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-15.xhtml" id="chapter-2-15.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-16.xhtml" id="chapter-2-16.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-17.xhtml" id="chapter-2-17.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-18.xhtml" id="chapter-2-18.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/chapter-2-19.xhtml" id="chapter-2-19.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/preface.xhtml" id="preface.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="imprint.xhtml"/>
+		<itemref idref="preface.xhtml"/>
+		<itemref idref="halftitlepage.xhtml"/>
+		<itemref idref="book-1.xhtml"/>
+		<itemref idref="chapter-1-1.xhtml"/>
+		<itemref idref="chapter-1-2.xhtml"/>
+		<itemref idref="chapter-1-3.xhtml"/>
+		<itemref idref="chapter-1-4.xhtml"/>
+		<itemref idref="chapter-1-5.xhtml"/>
+		<itemref idref="chapter-1-6.xhtml"/>
+		<itemref idref="chapter-1-7.xhtml"/>
+		<itemref idref="chapter-1-8.xhtml"/>
+		<itemref idref="chapter-1-9.xhtml"/>
+		<itemref idref="chapter-1-10.xhtml"/>
+		<itemref idref="chapter-1-11.xhtml"/>
+		<itemref idref="book-2.xhtml"/>
+		<itemref idref="chapter-2-1.xhtml"/>
+		<itemref idref="chapter-2-2.xhtml"/>
+		<itemref idref="chapter-2-3.xhtml"/>
+		<itemref idref="chapter-2-4.xhtml"/>
+		<itemref idref="chapter-2-5.xhtml"/>
+		<itemref idref="chapter-2-6.xhtml"/>
+		<itemref idref="chapter-2-7.xhtml"/>
+		<itemref idref="chapter-2-8.xhtml"/>
+		<itemref idref="chapter-2-9.xhtml"/>
+		<itemref idref="chapter-2-10.xhtml"/>
+		<itemref idref="chapter-2-11.xhtml"/>
+		<itemref idref="chapter-2-12.xhtml"/>
+		<itemref idref="chapter-2-13.xhtml"/>
+		<itemref idref="chapter-2-14.xhtml"/>
+		<itemref idref="chapter-2-15.xhtml"/>
+		<itemref idref="chapter-2-16.xhtml"/>
+		<itemref idref="chapter-2-17.xhtml"/>
+		<itemref idref="chapter-2-18.xhtml"/>
+		<itemref idref="chapter-2-19.xhtml"/>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
+</package>

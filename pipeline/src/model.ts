@@ -33,7 +33,8 @@ export const ParaBlock = z.object({
 
 export const VerseLine = z.object({
   n: z.number().int().positive().optional(), // line number within division (or work)
-  indent: z.number().int().min(1).max(3).optional(), // hanging/metrical indent level
+  indent: z.number().int().min(1).max(6).optional(), // metrical indent depth
+  // (Chaucer's tail-rhyme stanzas in Sir Thopas go deeper than lyric verse)
   part: z.enum(["start", "mid", "end"]).optional(), // antilabe: partial verse line
   ...textFields,
 });

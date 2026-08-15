@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/geoffrey-chaucer_the-canterbury-tales",
+  "commit": "5c1161365c4f1ded11f1f91576e94eb7c932a6e5",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1400,
+  "licenseBasis": "SE CC0; original English work"
+}

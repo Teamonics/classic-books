@@ -144,9 +144,11 @@ export function adapt(rawDir: string, opts: { skipFiles?: string[] } = {}): Work
 
       const hasContent = blocks.some((b) => b.type !== "heading");
       if (!hasContent) {
-        // a part/volume header page: becomes title context for what follows
-        if (/part|volume|division|book/.test(epubType) || /^(part|book|volume)-/.test(id)) {
-          partLabel = headTitle ?? humanize(id);
+        // A titled section with no text of its own is a divider page (a
+        // part, book, or section header); it becomes the running context for
+        // the divisions that follow. Untitled and empty is a real problem.
+        if (headTitle) {
+          partLabel = headTitle;
           continue;
         }
         problems.push(`${file}#${id}: empty section (type=${epubType})`);

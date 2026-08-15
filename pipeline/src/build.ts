@@ -14,6 +14,7 @@ import { adapt as adaptSeDrama } from "./adapters/se-drama.ts";
 import { adapt as adaptSePlato } from "./adapters/se-plato.ts";
 import { adapt as adaptMorshead } from "./adapters/pg-morshead-aeschylus.ts";
 import { adapt as adaptWsEuripides } from "./adapters/ws-euripides.ts";
+import { adapt as adaptSeVerse } from "./adapters/se-verse.ts";
 
 const ROOT = resolve(import.meta.dirname, "..", "..");
 const BUILD = join(ROOT, "build");
@@ -27,6 +28,7 @@ const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[]; so
   "se-plato": adaptSePlato,
   "pg-morshead-aeschylus": adaptMorshead,
   "ws-euripides": adaptWsEuripides,
+  "se-verse": adaptSeVerse,
 };
 
 // Golden facts checked on every build; extend per work as they are ingested.
