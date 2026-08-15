@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getCatalog } from "$lib/data";
+  import { getCatalog, shelfByEra, type ShelfAuthorGroup } from "$lib/catalog";
   import { getPosition } from "$lib/progress.svelte";
   import type { CatalogEntry } from "$lib/types";
 
@@ -7,6 +7,7 @@
     "archaic-greece": "#7d5ba6",
     "classical-greece": "#3a6ea5",
     "imperial-rome": "#a63d40",
+    "late-antiquity": "#7a5c3e",
     medieval: "#8a4b24",
     renaissance: "#b0803c",
     "early-modern": "#4a7c59",
@@ -18,14 +19,18 @@
     return y < 0 ? `${-y} BC` : `${y}`;
   }
 
-  function href(w: CatalogEntry): string {
-    return `/${w.author}/${w.slug}`;
+  function spanLabel(works: CatalogEntry[]): string {
+    const years = works.map((w) => w.composedYear);
+    const lo = Math.min(...years);
+    const hi = Math.max(...years);
+    return lo === hi ? yearLabel(lo) : `${yearLabel(lo)}–${yearLabel(hi)}`;
   }
 
-  function continueHref(w: CatalogEntry): string | null {
-    const pos = getPosition(w.slug);
-    return pos ? `/${w.author}/${w.slug}/${pos.ref}` : null;
+  function resumed(works: CatalogEntry[]): CatalogEntry | null {
+    return works.find((w) => getPosition(w.slug)) ?? null;
   }
+
+  let expanded = $state<Record<string, boolean>>({});
 </script>
 
 <main>
@@ -37,25 +42,81 @@
   {#await getCatalog()}
     <p class="ui center">Loading the shelf…</p>
   {:then catalog}
-    <ol class="shelf">
-      {#each catalog as w}
-        <li>
-          <a class="book" href={href(w)} style:--era={eraColors[w.era] ?? "var(--accent)"}>
-            <span class="band" aria-hidden="true"></span>
-            <span class="meta">
-              <span class="title">{w.title}</span>
-              <span class="author ui">{w.authorName}</span>
-              <span class="detail ui">
-                {yearLabel(w.composedYear)}{w.translator ? ` · tr. ${w.translator}` : ""}
-              </span>
-              {#if continueHref(w)}
-                <span class="continue ui">Continue reading →</span>
+    {#if catalog.paths?.length}
+      <section class="paths">
+        <h2 class="ui sectionhead">Where to begin</h2>
+        <ul class="pathlist">
+          {#each catalog.paths as p}
+            <li>
+              <a href={`/paths/${p.slug}`}>
+                <span class="ptitle">{p.title}</span>
+                <span class="pblurb">{p.blurb}</span>
+                <span class="pmeta ui">{p.steps.length} readings · {p.works} works</span>
+              </a>
+            </li>
+          {/each}
+        </ul>
+      </section>
+    {/if}
+
+    {#each shelfByEra(catalog) as { era, groups }}
+      <section class="era">
+        <h2 class="ui sectionhead">{era.label}</h2>
+        <ol class="shelf">
+          {#each groups as g}
+            {@const single = g.works.length === 1}
+            {@const open = expanded[g.author]}
+            <li class:wide={!single}>
+              {#if single}
+                {@const w = g.works[0]!}
+                <a class="book" href={`/${w.author}/${w.slug}`} style:--era={eraColors[era.id] ?? "var(--accent)"}>
+                  <span class="band" aria-hidden="true"></span>
+                  <span class="meta">
+                    <span class="title">{w.title}</span>
+                    <span class="author ui">{w.authorName}</span>
+                    <span class="detail ui">
+                      {yearLabel(w.composedYear)}{w.translator ? ` · tr. ${w.translator}` : ""}
+                    </span>
+                    {#if getPosition(w.slug)}<span class="continue ui">Continue reading →</span>{/if}
+                  </span>
+                </a>
+              {:else}
+                <div class="book group" style:--era={eraColors[era.id] ?? "var(--accent)"}>
+                  <span class="band" aria-hidden="true"></span>
+                  <div class="meta">
+                    <span class="title">{g.authorName}</span>
+                    <span class="detail ui">{g.works.length} works · {spanLabel(g.works)}</span>
+                    {#if resumed(g.works)}
+                      {@const r = resumed(g.works)!}
+                      <a class="continue ui" href={`/${r.author}/${r.slug}`}>Continue {r.title} →</a>
+                    {/if}
+                    <button
+                      class="expand ui"
+                      aria-expanded={open ? "true" : "false"}
+                      onclick={() => (expanded = { ...expanded, [g.author]: !open })}
+                    >
+                      {open ? "Hide" : "Show all"}
+                    </button>
+                    {#if open}
+                      <ul class="sublist">
+                        {#each g.works as w}
+                          <li>
+                            <a href={`/${w.author}/${w.slug}`}>
+                              {w.title}
+                              <span class="subyear ui">{yearLabel(w.composedYear)}</span>
+                            </a>
+                          </li>
+                        {/each}
+                      </ul>
+                    {/if}
+                  </div>
+                </div>
               {/if}
-            </span>
-          </a>
-        </li>
-      {/each}
-    </ol>
+            </li>
+          {/each}
+        </ol>
+      </section>
+    {/each}
   {:catch e}
     <p class="ui center">Could not load the catalog: {e.message}</p>
   {/await}
@@ -89,6 +150,53 @@
     text-align: center;
     color: var(--muted);
   }
+  .sectionhead {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 2.2rem 0 0.9rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .pathlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 0.9rem;
+  }
+  .pathlist a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: inherit;
+    background: var(--raised);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem;
+    height: 100%;
+  }
+  .pathlist a:hover {
+    border-color: var(--accent);
+  }
+  .ptitle {
+    font-weight: 600;
+    font-size: 1.02rem;
+  }
+  .pblurb {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+  .pmeta {
+    font-size: 0.72rem;
+    color: var(--accent);
+    margin-top: 0.2rem;
+  }
   .shelf {
     list-style: none;
     margin: 0;
@@ -96,6 +204,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     gap: 1rem;
+    align-items: start;
+  }
+  .shelf li.wide {
+    grid-column: span 1;
   }
   .book {
     display: flex;
@@ -106,9 +218,10 @@
     border-radius: 8px;
     overflow: hidden;
     min-height: 7.5rem;
+    height: 100%;
     transition: transform 100ms ease, box-shadow 100ms ease;
   }
-  .book:hover {
+  a.book:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   }
@@ -122,6 +235,7 @@
     flex-direction: column;
     gap: 0.15rem;
     padding: 0.9rem 1rem;
+    min-width: 0;
   }
   .title {
     font-size: 1.05rem;
@@ -141,6 +255,39 @@
     color: var(--accent);
     font-size: 0.78rem;
     font-weight: 600;
+  }
+  .expand {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    border: 1px solid var(--rule);
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  .sublist {
+    list-style: none;
+    margin: 0.6rem 0 0;
+    padding: 0;
+  }
+  .sublist a {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.85rem;
+    padding: 0.22rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sublist a:hover {
+    color: var(--accent);
+  }
+  .subyear {
+    color: var(--muted);
+    font-size: 0.7rem;
+    flex: none;
   }
   footer {
     margin-top: 3rem;

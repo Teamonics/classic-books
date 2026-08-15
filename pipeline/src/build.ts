@@ -5,6 +5,7 @@ import { works } from "./works.config.ts";
 import { contentHash, stableJson, wordCount } from "./util.ts";
 import { validateWork } from "./validate.ts";
 import { buildIndexes, validateIndexes } from "./search/index.ts";
+import { buildPaths } from "./paths.ts";
 import { adapt as adaptDante } from "./adapters/se-divine-comedy.ts";
 import { adapt as adaptIliad } from "./adapters/pg-the-iliad.ts";
 import { adapt as adaptFrogs } from "./adapters/pg-the-frogs.ts";
@@ -140,9 +141,23 @@ function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
   };
 }
 
+// Era labels drive the bookshelf's grouping, in chronological order.
+const ERAS: { id: string; label: string }[] = [
+  { id: "archaic-greece", label: "Archaic Greece" },
+  { id: "classical-greece", label: "Classical Greece" },
+  { id: "imperial-rome", label: "Rome" },
+  { id: "late-antiquity", label: "Late Antiquity" },
+  { id: "medieval", label: "The Middle Ages" },
+  { id: "renaissance", label: "The Renaissance" },
+  { id: "early-modern", label: "The Early Modern Age" },
+  { id: "eighteenth-century", label: "The Eighteenth Century" },
+  { id: "nineteenth-century", label: "The Nineteenth Century" },
+];
+
 function main() {
   const catalog: unknown[] = [];
   const sources: unknown[] = [];
+  const manifests = new Map<string, Manifest>();
   const sorted = [...works].sort((a, b) => a.composedYear - b.composedYear);
   for (const cfg of sorted) {
     process.stdout.write(`building ${cfg.slug}… `);
@@ -161,11 +176,21 @@ function main() {
       words: manifest.toc.reduce((n, t) => n + t.words, 0),
     });
     sources.push(src);
+    manifests.set(cfg.slug, manifest);
     console.log(`ok (${manifest.toc.length} chunks)`);
   }
-  writeFileSync(join(BUILD, "catalog.json"), JSON.stringify(catalog, null, 2));
+
+  const usedEras = new Set(catalog.map((w) => (w as { era: string }).era));
+  for (const era of usedEras) {
+    if (!ERAS.some((e) => e.id === era)) throw new Error(`unlabelled era: ${era}`);
+  }
+  const paths = buildPaths(join(ROOT, "paths"), manifests);
+  writeFileSync(
+    join(BUILD, "catalog.json"),
+    JSON.stringify({ works: catalog, eras: ERAS.filter((e) => usedEras.has(e.id)), paths }, null, 2),
+  );
   writeFileSync(join(BUILD, "sources.json"), JSON.stringify(sources, null, 2));
-  console.log("build complete");
+  console.log(`build complete: ${catalog.length} works, ${paths.length} reading paths`);
 }
 
 main();

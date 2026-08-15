@@ -1,8 +1,9 @@
+import { getCatalog } from "./catalog";
 import type { CatalogEntry, Chunk, Manifest } from "./types";
 
 const manifestCache = new Map<string, Promise<Manifest>>();
 const chunkCache = new Map<string, Promise<Chunk>>();
-let catalogPromise: Promise<CatalogEntry[]> | null = null;
+
 
 async function getJson<T>(url: string): Promise<T> {
   const res = await fetch(url);
@@ -10,14 +11,9 @@ async function getJson<T>(url: string): Promise<T> {
   return res.json();
 }
 
-export function getCatalog(): Promise<CatalogEntry[]> {
-  catalogPromise ??= getJson<CatalogEntry[]>("/data/catalog.json");
-  return catalogPromise;
-}
-
 export async function getWork(slug: string): Promise<{ entry: CatalogEntry; manifest: Manifest }> {
   const catalog = await getCatalog();
-  const entry = catalog.find((w) => w.slug === slug);
+  const entry = catalog.works.find((w: CatalogEntry) => w.slug === slug);
   if (!entry) throw new Error(`unknown work: ${slug}`);
   if (!manifestCache.has(slug)) {
     manifestCache.set(slug, getJson<Manifest>(`/data/works/${slug}/${entry.manifestFile}`));

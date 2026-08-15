@@ -1,0 +1,49 @@
+{
+  "slug": "start-here",
+  "title": "Start Here",
+  "blurb": "Seven short readings, none longer than an evening, chosen because they need no preparation and pay off immediately. If you have never read any of this, start at the top.",
+  "steps": [
+    {
+      "work": "apology",
+      "ref": "1",
+      "label": "Socrates on trial",
+      "blurb": "A man explains, to the people about to execute him, why he will not stop asking questions. The founding document of the examined life, and startlingly readable."
+    },
+    {
+      "work": "crito",
+      "ref": "1",
+      "label": "Why he stayed",
+      "blurb": "His friends have bribed the guards; escape is arranged. Socrates argues himself into remaining. Read it right after the Apology."
+    },
+    {
+      "work": "meditations",
+      "ref": "2",
+      "label": "An emperor's notebook",
+      "blurb": "Marcus Aurelius wrote these to himself, never for us. Book II is where the voice arrives: begin the morning by saying to thyself…"
+    },
+    {
+      "work": "the-iliad",
+      "ref": "1",
+      "label": "The quarrel that starts it",
+      "blurb": "Two proud men fight over a prize and the whole war stalls. Butler's prose moves fast; you can read Book I tonight."
+    },
+    {
+      "work": "macbeth",
+      "ref": "1.7",
+      "label": "A man talks himself into murder",
+      "blurb": "The shortest way into Shakespeare: one scene, one soliloquy, and you can hear a mind working against itself."
+    },
+    {
+      "work": "the-divine-comedy",
+      "ref": "inferno.1",
+      "label": "Lost in the dark wood",
+      "blurb": "Midway through life, a man finds himself lost. Longfellow's opening canto, with the line numbers that let you cite it forever."
+    },
+    {
+      "work": "the-prince",
+      "ref": "17",
+      "label": "Feared or loved?",
+      "blurb": "The most quoted chapter in political thought, and shorter than the arguments about it."
+    }
+  ]
+}

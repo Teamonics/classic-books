@@ -1,0 +1,15 @@
+{
+  "slug": "stoicism-30-days",
+  "title": "Stoicism in Thirty Days",
+  "blurb": "A month with the two Stoics who wrote to be used rather than admired: Epictetus, a former slave who taught, and Marcus Aurelius, an emperor who took notes. Alternating books, roughly twenty minutes a day. Read a little and stop; that is how these were meant to work.",
+  "steps": [
+    { "work": "discourses", "ref": "1", "label": "Days 1–5 · What is up to us", "blurb": "Epictetus opens with the only distinction that matters to him: some things are in our power and some are not. Everything else follows from it." },
+    { "work": "meditations", "ref": "2", "label": "Days 6–8 · Begin the morning", "blurb": "Marcus rehearses the day's irritations before they arrive. Notice that he is talking to himself, not to you." },
+    { "work": "discourses", "ref": "2", "label": "Days 9–13 · Training", "blurb": "How to practice when nothing has gone wrong yet, so that you have something to draw on when it does." },
+    { "work": "meditations", "ref": "4", "label": "Days 14–16 · The retreat within", "blurb": "The famous passage about retiring into yourself, and the running argument about death that Marcus never finishes." },
+    { "work": "discourses", "ref": "3", "label": "Days 17–21 · On freedom", "blurb": "Epictetus on what a free person actually is, written by someone who had been owned." },
+    { "work": "meditations", "ref": "6", "label": "Days 22–24 · On other people", "blurb": "The books where Marcus is hardest on himself about being hard on others." },
+    { "work": "discourses", "ref": "4", "label": "Days 25–28 · Living it", "blurb": "The last book, and the most practical: what the doctrine looks like on an ordinary afternoon." },
+    { "work": "meditations", "ref": "12", "label": "Days 29–30 · Leaving", "blurb": "The final book, written near the end of his life on campaign. Read it slowly." }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "the-greeks",
+  "title": "The Greek Sequence",
+  "blurb": "Homer to Plato in the order the Greeks themselves would have recognized: the poems everyone knew by heart, then the history that questioned them, then the philosophy that questioned everything. Ten sittings.",
+  "steps": [
+    {
+      "work": "the-iliad",
+      "ref": "1",
+      "label": "The wrath of Achilles",
+      "blurb": "Every Greek in this path grew up on these lines. Start where they started."
+    },
+    {
+      "work": "the-iliad",
+      "ref": "6",
+      "label": "Hector and Andromache",
+      "blurb": "The war seen from inside a marriage. The scene that makes the Iliad more than a battle poem."
+    },
+    {
+      "work": "the-iliad",
+      "ref": "24",
+      "label": "Priam in the tent",
+      "blurb": "An old king kisses the hands that killed his son. Nothing in Western literature has surpassed this ending."
+    },
+    {
+      "work": "histories",
+      "ref": "1",
+      "label": "Herodotus asks why",
+      "blurb": "The first history: gossip, geography, and a serious question about why Greeks and Persians came to blows."
+    },
+    {
+      "work": "history-of-the-peloponnesian-war",
+      "ref": "3",
+      "label": "Thucydides answers colder",
+      "blurb": "A generation later, history without gods. Pericles' funeral oration and the plague that follows it."
+    },
+    {
+      "work": "the-frogs",
+      "ref": "play",
+      "label": "Comedy judges tragedy",
+      "blurb": "Dionysus goes to Hades to bring back a poet, and Aeschylus and Euripides argue about what literature is for. Athens laughing at itself."
+    },
+    {
+      "work": "apology",
+      "ref": "1",
+      "label": "The trial",
+      "blurb": "Athens puts its most annoying citizen to death. Philosophy's founding scene."
+    },
+    {
+      "work": "symposium",
+      "ref": "1",
+      "label": "A dinner about love",
+      "blurb": "Seven speeches at a drinking party, each wrong in an interesting way, then Socrates."
+    },
+    {
+      "work": "republic",
+      "ref": "7",
+      "label": "The cave",
+      "blurb": "Prisoners watching shadows on a wall. Read this book alone if you read nothing else of the Republic."
+    },
+    {
+      "work": "phaedo",
+      "ref": "1",
+      "label": "The last afternoon",
+      "blurb": "Socrates' final conversation, and his death. The Greek sequence closes where it must."
+    }
+  ]
+}
