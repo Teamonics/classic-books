@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import type { Chunk, Manifest, WorkConfig, WorkIR } from "./model.ts";
 import { works } from "./works.config.ts";
@@ -116,6 +116,15 @@ function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
     return name;
   });
 
+  // Exact byte totals so the reader can tell someone what an offline
+  // download will cost before they tap it, and separate the text from the
+  // search index, which is optional.
+  const chunkBytes = Object.values(chunkFiles).reduce(
+    (n, f) => n + statSync(join(workDir, "chunks", f)).size,
+    0,
+  );
+  const searchBytes = indexNames.reduce((n, f) => n + statSync(join(workDir, f)).size, 0);
+
   const manifest: Manifest = {
     schema: 1,
     slug: cfg.slug,
@@ -129,6 +138,7 @@ function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
     toc: ir.divisions.map((d) => ({ ref: d.ref, title: d.title, words: wordCount(d.blocks) })),
     chunkFiles,
     search: indexNames,
+    bytes: { chunks: chunkBytes, search: searchBytes },
   };
 
   const errors = validateWork(manifest, chunks);

@@ -58,6 +58,7 @@ export interface Manifest {
   toc: TocEntry[];
   chunkFiles: Record<string, string>;
   search?: string[];
+  bytes?: { chunks: number; search: number };
 }
 
 export interface SearchIndex {

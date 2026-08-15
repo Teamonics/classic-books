@@ -158,4 +158,7 @@ export interface Manifest {
   toc: { ref: string; title: string; words: number }[];
   chunkFiles: Record<string, string>; // ref -> hashed filename
   search?: string[]; // hashed search-index shard filenames, in chunk order
+  // uncompressed sizes; Cache Storage keeps bodies decoded, so these are
+  // what an offline download actually occupies
+  bytes?: { chunks: number; search: number };
 }

@@ -11,23 +11,38 @@
     download,
   } from "$lib/annotations.svelte";
   import SearchPanel from "$lib/components/SearchPanel.svelte";
-  import { offlineSupported, downloadWork, isWorkDownloaded, removeWorkDownload } from "$lib/offline";
+  import {
+    offlineSupported,
+    downloadWork,
+    workDownloadState,
+    removeWorkDownload,
+    requestPersistence,
+    isPersisted,
+    formatBytes,
+    type DownloadState,
+  } from "$lib/offline";
   import type { Manifest } from "$lib/types";
 
   const slug = $derived(page.params.work!);
   const author = $derived(page.params.author!);
 
-  let dlState = $state<"unknown" | "no" | "downloading" | "yes">("unknown");
+  let dl = $state<DownloadState | null>(null);
+  let downloading = $state(false);
   let dlProgress = $state(0);
+  let wantSearch = $state(false);
+  let evictable = $state(false); // downloaded, but the browser may clear it
 
   // Resolve offline-download state once per work (getWork is cached).
   $effect(() => {
-    dlState = "unknown";
+    dl = null;
     if (!offlineSupported()) return;
     let cancelled = false;
     getWork(slug, author).then(async ({ manifest }) => {
-      const yes = await isWorkDownloaded(manifest);
-      if (!cancelled) dlState = yes ? "yes" : "no";
+      const state = await workDownloadState(manifest);
+      if (cancelled) return;
+      dl = state;
+      wantSearch = state.search;
+      evictable = state.text && !(await isPersisted());
     });
     return () => {
       cancelled = true;
@@ -35,18 +50,28 @@
   });
 
   async function toggleDownload(manifest: Manifest) {
-    if (dlState === "yes") {
+    if (dl?.text) {
       await removeWorkDownload(manifest);
-      dlState = "no";
-    } else {
-      dlState = "downloading";
-      dlProgress = 0;
-      try {
-        await downloadWork(manifest, (done, total) => (dlProgress = Math.round((done / total) * 100)));
-        dlState = "yes";
-      } catch {
-        dlState = "no";
-      }
+      dl = { text: false, search: false };
+      evictable = false;
+      return;
+    }
+    downloading = true;
+    dlProgress = 0;
+    // Ask to keep the download: without this the browser may evict it, which
+    // defeats the point of downloading for a journey.
+    const persisted = await requestPersistence();
+    try {
+      await downloadWork(manifest, {
+        search: wantSearch,
+        onProgress: (done, total) => (dlProgress = Math.round((done / total) * 100)),
+      });
+      dl = { text: true, search: wantSearch };
+      evictable = !persisted;
+    } catch {
+      dl = await workDownloadState(manifest);
+    } finally {
+      downloading = false;
     }
   }
   const hls = $derived(highlightsFor(slug));
@@ -83,11 +108,35 @@
           <a class="button" href={`/${author}/${slug}/${manifest.toc[0]!.ref}`}>Start reading</a>
         {/if}
         {#if offlineSupported()}
-          <button class="offline" onclick={() => toggleDownload(manifest)} disabled={dlState === "downloading" || dlState === "unknown"}>
-            {#if dlState === "yes"}Available offline ✓{:else if dlState === "downloading"}Downloading… {dlProgress}%{:else}Download for offline{/if}
+          <button class="offline" onclick={() => toggleDownload(manifest)} disabled={downloading || dl === null}>
+            {#if downloading}
+              Downloading… {dlProgress}%
+            {:else if dl?.text}
+              Available offline ✓
+            {:else if manifest.bytes}
+              Download for offline ({formatBytes(manifest.bytes.chunks + (wantSearch ? manifest.bytes.search : 0))})
+            {:else}
+              Download for offline
+            {/if}
           </button>
         {/if}
       </p>
+      {#if offlineSupported() && dl !== null}
+        <p class="offlinenote ui">
+          {#if !dl.text && manifest.search?.length && manifest.bytes}
+            <label>
+              <input type="checkbox" bind:checked={wantSearch} />
+              Include search index (+{formatBytes(manifest.bytes.search)}) — only needed to
+              search this work while offline
+            </label>
+          {:else if dl.text && !dl.search && manifest.search?.length}
+            Text only; searching this work needs a connection.
+          {/if}
+          {#if evictable}
+            <span class="warn">Your browser may clear downloads if you don’t visit for a while.</span>
+          {/if}
+        </p>
+      {/if}
     </header>
     {#if manifest.search}
       <SearchPanel {manifest} {author} />
@@ -188,6 +237,23 @@
   .offline:disabled {
     opacity: 0.7;
     cursor: default;
+  }
+  .offlinenote {
+    margin: 0.5rem 0 0;
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .offlinenote label {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    cursor: pointer;
+  }
+  .offlinenote .warn {
+    display: block;
+    margin-top: 0.2rem;
+    color: var(--accent);
   }
   .toc {
     list-style: none;
