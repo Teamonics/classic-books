@@ -147,4 +147,5 @@ export interface Manifest {
   refScheme: RefScheme;
   toc: { ref: string; title: string; words: number }[];
   chunkFiles: Record<string, string>; // ref -> hashed filename
+  search?: string; // hashed search-index filename
 }

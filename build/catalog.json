@@ -7,7 +7,7 @@
     "composedYear": -750,
     "era": "archaic-greece",
     "translator": "Samuel Butler",
-    "manifestFile": "manifest.49218616c4a4.json",
+    "manifestFile": "manifest.ca1e35158ad1.json",
     "chunks": 24,
     "words": 152638
   },
@@ -19,7 +19,7 @@
     "composedYear": -405,
     "era": "classical-greece",
     "translator": "Benjamin Bickley Rogers",
-    "manifestFile": "manifest.9755d7a36103.json",
+    "manifestFile": "manifest.a9b5bd236cc6.json",
     "chunks": 1,
     "words": 13175
   },
@@ -31,7 +31,7 @@
     "composedYear": 1320,
     "era": "medieval",
     "translator": "Henry Wadsworth Longfellow",
-    "manifestFile": "manifest.7206a25bde14.json",
+    "manifestFile": "manifest.5b6b5f5c9a2b.json",
     "chunks": 103,
     "words": 112563
   }

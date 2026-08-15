@@ -10,6 +10,7 @@
     exportMarkdown,
     download,
   } from "$lib/annotations.svelte";
+  import SearchPanel from "$lib/components/SearchPanel.svelte";
   import type { Manifest } from "$lib/types";
 
   const slug = $derived(page.params.work!);
@@ -51,6 +52,9 @@
         </p>
       {/if}
     </header>
+    {#if manifest.search}
+      <SearchPanel {manifest} {author} />
+    {/if}
     {#if bms.length || hls.length}
       <section class="annots">
         <div class="annhead">

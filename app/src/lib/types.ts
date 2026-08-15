@@ -57,6 +57,14 @@ export interface Manifest {
   refScheme: { primary: string; aliases: string[]; lineation: "translation" | "original" | null };
   toc: TocEntry[];
   chunkFiles: Record<string, string>;
+  search?: string;
+}
+
+export interface SearchIndex {
+  schema: 1;
+  work: string;
+  terms: string[];
+  postings: number[][];
 }
 
 export interface CatalogEntry {

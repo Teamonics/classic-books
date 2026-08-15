@@ -10,6 +10,11 @@ const config = {
       // Cloudflare Pages/Netlify serve this for unknown paths.
       fallback: "index.html",
     }),
+    alias: {
+      // Query-side analysis imports the indexer's own code so the two can
+      // never disagree.
+      $search: "../pipeline/src/search",
+    },
   },
 };
 
