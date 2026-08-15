@@ -2,16 +2,28 @@
   import BlockView from "./BlockView.svelte";
   import Inline from "./Inline.svelte";
   import type { Block } from "$lib/types";
+  import { blockText, childWindows, sliceRanges, type HlRange } from "$lib/blocktext";
 
   let {
     block,
     index,
+    hls,
     onnote,
   }: {
     block: Block;
     index?: number;
+    hls?: HlRange[];
     onnote?: (ref: string) => void;
   } = $props();
+
+  const lineWindows = $derived(
+    block.type === "verse" ? childWindows(block.lines.map((l) => l.text)) : [],
+  );
+  const nestedWindows = $derived(
+    block.type === "speech" || block.type === "quote"
+      ? childWindows(block.blocks.map(blockText))
+      : [],
+  );
 </script>
 
 {#if block.type === "para"}
@@ -22,38 +34,51 @@
     data-para={block.n}
   >
     {#if block.n !== undefined}<span class="pn ui" aria-hidden="true">{block.n}</span>{/if}
-    <Inline text={block.text} marks={block.marks} {onnote} />
+    <Inline text={block.text} marks={block.marks} {hls} {onnote} />
   </p>
 {:else if block.type === "verse"}
   <div class="verse" data-block={index}>
-    {#each block.lines as line}
+    {#each block.lines as line, li}
       <p class="line" class:i1={line.indent === 1} class:i2={line.indent === 2} data-line={line.n}>
         {#if line.n !== undefined && line.n % 5 === 0}
           <span class="ln ui" aria-hidden="true">{line.n}</span>
         {/if}
-        <Inline text={line.text} marks={line.marks} {onnote} />
+        <Inline
+          text={line.text}
+          marks={line.marks}
+          hls={sliceRanges(hls, lineWindows[li]!.start, lineWindows[li]!.len)}
+          {onnote}
+        />
       </p>
     {/each}
   </div>
 {:else if block.type === "speech"}
   <div class="speech" data-block={index}>
     <p class="speaker ui">{block.speaker}</p>
-    {#each block.blocks as b}
-      <BlockView block={b} {onnote} />
+    {#each block.blocks as b, bi}
+      <BlockView
+        block={b}
+        hls={sliceRanges(hls, nestedWindows[bi]!.start, nestedWindows[bi]!.len)}
+        {onnote}
+      />
     {/each}
   </div>
 {:else if block.type === "stage"}
   <p class="stage" data-block={index}>
-    <Inline text={block.text} marks={block.marks} {onnote} />
+    <Inline text={block.text} marks={block.marks} {hls} {onnote} />
   </p>
 {:else if block.type === "heading"}
   <h3 class="heading" data-block={index}>
-    <Inline text={block.text} marks={block.marks} {onnote} />
+    <Inline text={block.text} marks={block.marks} {hls} {onnote} />
   </h3>
 {:else if block.type === "quote"}
   <blockquote class="quote" data-block={index}>
-    {#each block.blocks as b}
-      <BlockView block={b} {onnote} />
+    {#each block.blocks as b, bi}
+      <BlockView
+        block={b}
+        hls={sliceRanges(hls, nestedWindows[bi]!.start, nestedWindows[bi]!.len)}
+        {onnote}
+      />
     {/each}
   </blockquote>
 {/if}

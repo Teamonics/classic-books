@@ -1,10 +1,12 @@
 import type { Mark } from "./types";
+import type { HlRange } from "./blocktext";
 
 export interface Segment {
   text: string;
   em?: boolean;
   strong?: boolean;
   smallcaps?: boolean;
+  hl?: { color: string; id: string };
 }
 
 export interface NotePoint {
@@ -13,16 +15,25 @@ export interface NotePoint {
 }
 
 // Split text into styled segments; zero-width note marks become NotePoints.
-export function segment(text: string, marks: Mark[] | undefined): { segments: (Segment | NotePoint)[]; hasNotes: boolean } {
-  if (!marks?.length) return { segments: [{ text }], hasNotes: false };
+// Highlight ranges cut segments too and tag them with color + id.
+export function segment(
+  text: string,
+  marks: Mark[] | undefined,
+  hls?: HlRange[],
+): { segments: (Segment | NotePoint)[]; hasNotes: boolean } {
+  if (!marks?.length && !hls?.length) return { segments: [{ text }], hasNotes: false };
 
-  const notes = marks.filter((m) => m.k === "note");
-  const spans = marks.filter((m) => m.k !== "note" && m.e > m.s);
+  const notes = (marks ?? []).filter((m) => m.k === "note");
+  const spans = (marks ?? []).filter((m) => m.k !== "note" && m.e > m.s);
 
   const cuts = new Set<number>([0, text.length]);
   for (const m of spans) {
     cuts.add(m.s);
     cuts.add(m.e);
+  }
+  for (const h of hls ?? []) {
+    cuts.add(Math.max(0, Math.min(h.s, text.length)));
+    cuts.add(Math.max(0, Math.min(h.e, text.length)));
   }
   for (const n of notes) cuts.add(n.s);
   const points = [...cuts].sort((a, b) => a - b);
@@ -40,6 +51,9 @@ export function segment(text: string, marks: Mark[] | undefined): { segments: (S
         else if (m.k === "strong") seg.strong = true;
         else if (m.k === "smallcaps") seg.smallcaps = true;
       }
+    }
+    for (const h of hls ?? []) {
+      if (h.s <= s && h.e >= e) seg.hl = { color: h.color, id: h.id };
     }
     out.push(seg);
   }

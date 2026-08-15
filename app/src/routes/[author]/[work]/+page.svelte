@@ -2,9 +2,29 @@
   import { page } from "$app/state";
   import { getWork } from "$lib/data";
   import { getPosition, getReadRefs, progressLabel } from "$lib/progress.svelte";
+  import {
+    highlightsFor,
+    bookmarksFor,
+    removeBookmark,
+    exportJson,
+    exportMarkdown,
+    download,
+  } from "$lib/annotations.svelte";
+  import type { Manifest } from "$lib/types";
 
   const slug = $derived(page.params.work!);
   const author = $derived(page.params.author!);
+  const hls = $derived(highlightsFor(slug));
+  const bms = $derived(bookmarksFor(slug));
+
+  function doExport(manifest: Manifest, kind: "json" | "md") {
+    if (kind === "json") download(`${slug}-annotations.json`, exportJson(manifest), "application/json");
+    else download(`${slug}-annotations.md`, exportMarkdown(manifest), "text/markdown");
+  }
+
+  function chunkTitle(manifest: Manifest, ref: string): string {
+    return manifest.toc.find((t) => t.ref === ref)?.title ?? ref;
+  }
 </script>
 
 <main>
@@ -31,6 +51,40 @@
         </p>
       {/if}
     </header>
+    {#if bms.length || hls.length}
+      <section class="annots">
+        <div class="annhead">
+          <h2 class="ui">Your annotations</h2>
+          <span class="grow"></span>
+          <button class="exp ui" onclick={() => doExport(manifest, "md")}>Export Markdown</button>
+          <button class="exp ui" onclick={() => doExport(manifest, "json")}>Export JSON</button>
+        </div>
+        {#if bms.length}
+          <ul class="bml">
+            {#each bms as b (b.id)}
+              <li>
+                <a href={`/${author}/${slug}/${b.ref}`}>🔖 {b.label}</a>
+                <button class="del ui" aria-label="Remove bookmark" onclick={() => removeBookmark(slug, b.id)}>×</button>
+              </li>
+            {/each}
+          </ul>
+        {/if}
+        {#if hls.length}
+          <ul class="hll">
+            {#each hls as h (h.id)}
+              <li>
+                <a href={`/${author}/${slug}/${h.ref}`}>
+                  <span class={`swatch sw-${h.color}`} class:orphan={h.orphaned}></span>
+                  <span class="hlq">“{h.quote.exact.length > 90 ? h.quote.exact.slice(0, 90) + "…" : h.quote.exact}”</span>
+                  <span class="hlwhere ui">{chunkTitle(manifest, h.ref)}{h.orphaned ? " · unanchored" : ""}</span>
+                </a>
+                {#if h.note}<p class="hlnote">{h.note}</p>{/if}
+              </li>
+            {/each}
+          </ul>
+        {/if}
+      </section>
+    {/if}
     <ol class="toc">
       {#each manifest.toc as t}
         <li class:read={read.has(t.ref)} class:current={pos?.ref === t.ref}>
@@ -115,5 +169,110 @@
     color: var(--muted);
     font-size: 0.75rem;
     flex: none;
+  }
+  .annots {
+    margin-top: 2rem;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    background: var(--raised);
+  }
+  .annhead {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .annhead h2 {
+    font-size: 0.9rem;
+    margin: 0;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .grow {
+    flex: 1;
+  }
+  .exp {
+    border: 1px solid var(--rule);
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+  }
+  .bml,
+  .hll {
+    list-style: none;
+    margin: 0.8rem 0 0;
+    padding: 0;
+  }
+  .bml li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+  }
+  .bml a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9rem;
+    padding: 0.25rem 0;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .del {
+    border: none;
+    background: none;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .hll li {
+    margin: 0.55rem 0;
+  }
+  .hll a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  .swatch {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 3px;
+    flex: none;
+    align-self: center;
+  }
+  .swatch.orphan {
+    opacity: 0.4;
+  }
+  .sw-amber {
+    background: #e8b229;
+  }
+  .sw-green {
+    background: #5cb85c;
+  }
+  .sw-blue {
+    background: #4f9dd0;
+  }
+  .sw-rose {
+    background: #d06079;
+  }
+  .hlq {
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .hlwhere {
+    color: var(--muted);
+    font-size: 0.72rem;
+    flex: none;
+  }
+  .hlnote {
+    margin: 0.15rem 0 0 1.2rem;
+    color: var(--muted);
+    font-size: 0.85rem;
   }
 </style>

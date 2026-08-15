@@ -6,6 +6,11 @@
   import { savePosition, getPosition, markRead } from "$lib/progress.svelte";
   import BlockView from "$lib/components/BlockView.svelte";
   import SettingsPanel from "$lib/components/SettingsPanel.svelte";
+  import SelectionMenu from "$lib/components/SelectionMenu.svelte";
+  import AnnotationEditor from "$lib/components/AnnotationEditor.svelte";
+  import { highlightsFor, repairAnchors, addBookmark, newId } from "$lib/annotations.svelte";
+  import { anchorSnippet } from "$lib/cite";
+  import type { HlRange } from "$lib/blocktext";
   import type { Chunk, Manifest, Note } from "$lib/types";
 
   const author = $derived(page.params.author!);
@@ -20,7 +25,24 @@
   let container = $state<HTMLElement | null>(null);
   let sentinel = $state<HTMLElement | null>(null);
   let currentRef = $state<string>("");
+  let editingHl = $state<string | null>(null);
+  let bookmarked = $state(false);
   let loading = false;
+
+  // Highlight ranges grouped chunk ref -> blockIndex -> ranges.
+  const hlByBlock = $derived.by(() => {
+    const all = highlightsFor(slug);
+    const map = new Map<string, Map<number, HlRange[]>>();
+    for (const h of all) {
+      if (h.orphaned) continue;
+      let m = map.get(h.ref);
+      if (!m) map.set(h.ref, (m = new Map()));
+      let arr = m.get(h.blockIndex);
+      if (!arr) m.set(h.blockIndex, (arr = []));
+      arr.push({ s: h.start, e: h.end, color: h.color, id: h.id });
+    }
+    return map;
+  });
 
   // (Re)load when the route changes to a ref we don't already have on screen.
   $effect(() => {
@@ -37,6 +59,7 @@
       manifest = m;
       const resolved = resolveRef(m, target) ?? { chunkRef: m.toc[0]!.ref };
       const chunk = await getChunk(m, resolved.chunkRef);
+      repairAnchors(chunk);
       chunks = [chunk];
       currentRef = chunk.ref;
       prefetchChunk(m, chunk.next);
@@ -76,6 +99,7 @@
     loading = true;
     try {
       const next = await getChunk(manifest, last.next);
+      repairAnchors(next);
       chunks = [...chunks, next];
       prefetchChunk(manifest, next.next);
     } finally {
@@ -149,8 +173,25 @@
     void load(ref);
   }
 
+  function bookmarkHere() {
+    const chunk = chunks.find((c) => c.ref === currentRef) ?? chunks[0];
+    if (!chunk) return;
+    const pos = getPosition(slug);
+    const blockIndex = pos?.ref === chunk.ref ? pos.blockIndex : 0;
+    addBookmark({
+      id: newId(),
+      work: slug,
+      ref: chunk.ref,
+      blockIndex,
+      label: `${chunk.title} — ${anchorSnippet(chunk, blockIndex)}`,
+      createdAt: new Date().toISOString(),
+    });
+    bookmarked = true;
+    setTimeout(() => (bookmarked = false), 1200);
+  }
+
   function onkeydown(e: KeyboardEvent) {
-    if (e.target instanceof HTMLInputElement) return;
+    if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
     if (e.key === "ArrowRight") void gotoRef(chunks[chunks.length - 1]?.next);
     else if (e.key === "ArrowLeft") void gotoRef(chunks[0]?.prev);
     else if (e.key === "s") settingsOpen = !settingsOpen;
@@ -174,12 +215,25 @@
 <div class="bar ui">
   <a class="back" href={`/${author}/${slug}`} aria-label="Table of contents">☰ <span class="bartitle">{manifest?.title}</span></a>
   <span class="chunktitle">{currentTitle}</span>
+  <button class="gear" aria-label="Bookmark this position" onclick={bookmarkHere}>
+    {bookmarked ? "✓" : "🔖"}
+  </button>
   <button class="gear" aria-label="Reading settings" onclick={() => (settingsOpen = !settingsOpen)}>Aa</button>
 </div>
 
 <SettingsPanel bind:open={settingsOpen} />
 
-<main bind:this={container}>
+<!-- Delegated pointer affordance for highlight marks; full keyboard access
+     to highlights lives in the work page's annotation list. -->
+<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<main
+  bind:this={container}
+  onclick={(e) => {
+    const m = (e.target as Element).closest?.("[data-hlid]");
+    if (m) editingHl = m.getAttribute("data-hlid");
+  }}
+>
   {#if error}
     <p class="ui err">Could not load: {error}</p>
   {/if}
@@ -187,7 +241,12 @@
     <section class="chunk" data-ref={chunk.ref}>
       <h2 class="chunkhead">{chunk.title}</h2>
       {#each chunk.blocks as block, i}
-        <BlockView {block} index={i} {onnote} />
+        <BlockView
+          {block}
+          index={i}
+          hls={hlByBlock.get(chunk.ref)?.get(i)}
+          {onnote}
+        />
       {/each}
     </section>
   {/each}
@@ -204,6 +263,12 @@
     </nav>
   {/if}
 </main>
+
+<SelectionMenu {manifest} {chunks} onnotecreated={(id) => (editingHl = id)} />
+
+{#if editingHl}
+  <AnnotationEditor work={slug} id={editingHl} {manifest} onclose={() => (editingHl = null)} />
+{/if}
 
 {#if openNote}
   <div class="note ui" role="dialog" aria-label="Translator's note">
