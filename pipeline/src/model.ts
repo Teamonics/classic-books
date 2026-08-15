@@ -133,6 +133,8 @@ export interface WorkConfig {
   rawDir: string; // relative to repo root
   translator: string | null;
   refScheme: RefScheme;
+  skipFiles?: string[]; // extra source files to skip (adapter-specific)
+  expectDivisions?: number; // golden check: exact division count
 }
 
 export interface Manifest {

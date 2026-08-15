@@ -1,0 +1,67 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+@namespace xml "http://www.w3.org/XML/1998/namespace";
+
+#dedication header + p{
+	font-variant: small-caps;
+}
+
+#dedication header + p + p{
+	text-indent: 0;
+}
+
+section[epub|type~="dedication"] > header > p:first-of-type{
+	font-size: 1.5em;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin: 3em 0;
+	text-align: center;
+}
+
+section[epub|type~="dedication"] > header + *{
+	margin-top: 0;
+}
+
+section[epub|type~="dedication"] footer p:last-child{
+	margin-top: 1em;
+}
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+blockquote[xml|lang]{
+	font-style: italic;
+}
+
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+figure{
+	break-inside: avoid;
+	margin: 1em 2.5em;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-height: 100vh;
+	max-width: 100%;
+}
+
+ol{
+	list-style-type: upper-roman;
+}

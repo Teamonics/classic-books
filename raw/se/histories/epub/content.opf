@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/herodotus/histories/g-c-macaulay</dc:identifier>
+		<dc:date>2024-07-06T01:45:21Z</dc:date>
+		<meta property="dcterms:modified">2024-07-06T01:45:21Z</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
+		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
+		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
+		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">Histories</dc:title>
+		<meta property="file-as" refines="#title">Histories</meta>
+		<dc:subject id="subject-1">History, Ancient</dc:subject>
+		<dc:subject id="subject-2">Greece -- History -- To 146 B.C.</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">sh85061232</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">sh85057074</meta>
+		<meta property="schema:genre">Nonfiction</meta>
+		<meta id="collection-1" property="belongs-to-collection">Encyclopædia Britannica’s Great Books of the Western World</meta>
+		<meta property="collection-type" refines="#collection-1">set</meta>
+		<meta property="schema:abstract">Herodotus recounts the history and geography of the ancient world.</meta>
+		<dc:description>
+			&lt;p&gt;Written in the fifth century BC, the &lt;i&gt;Histories&lt;/i&gt; is considered to be the founding work of history in the Western canon, and one of the foundational works of Western literature in general. The narrative centers on the wars between the Greeks and the Persians, and is an important source of information about the peoples, locations, and events of the ancient Greek world and the Persian empire.&lt;/p&gt;
+			&lt;p&gt;This work is an early source on the lives of significant historical figures and events, such as the defeat of the kingdom of Lydia, the foundation of the first Persian empire, Cyrus the Great’s ill-fated invasion of Scythia, and Leonidas’ defense, and ultimate demise, alongside his 300 warriors at the Battle of Thermopylae.&lt;/p&gt;
+			&lt;p&gt;&lt;a href="https://standardebooks.org/ebooks/herodotus"&gt;Herodotus&lt;/a&gt; wrote his history in order to preserve the knowledge of the actions of Greeks and “barbarians.” He is the first (and sometimes only) source for many of the names of locations and people featured in the book.&lt;/p&gt;
+			&lt;p&gt;Before the &lt;i&gt;Histories&lt;/i&gt;, the transmission of history existed primarily via oral storytelling and the occasional written chronicle; Herodotus can therefore be credited as the first person to treat the past in a more objective and scholarly manner, even if the &lt;i&gt;Histories&lt;/i&gt; cannot be considered an unbiased or primary source by modern standards. Although it contains some inaccurate—and sometimes even absurd—claims, it remains an important work both as a historical source and as classic literature.&lt;/p&gt;
+			&lt;p&gt;The &lt;i&gt;Histories&lt;/i&gt; was widely read in the ancient world, and its popularity led to Herodotus being called both “The Father of History” by &lt;a href="https://standardebooks.org/ebooks/cicero"&gt;Cicero&lt;/a&gt; and “The Father of Lies” by Plutarch.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>https://www.gutenberg.org/ebooks/2707</dc:source>
+		<dc:source>https://www.gutenberg.org/ebooks/2456</dc:source>
+		<dc:source>https://archive.org/details/historyofherodot0001geor_k1m8</dc:source>
+		<dc:source>https://archive.org/details/1914historyofhe02hero</dc:source>
+		<meta property="schema:wordCount">287977</meta>
+		<meta property="schema:educationalLevel">43.33</meta>
+		<link href="https://en.wikipedia.org/wiki/Histories" rel="schema:sameAs"/>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/herodotus_histories_g-c-macaulay" refines="#vcs-repository" rel="schema:codeRepository"/>
+		<dc:creator id="author">Herodotus</dc:creator>
+		<meta property="file-as" refines="#author">Herodotus</meta>
+		<meta property="alternate-script" refines="#author">Ἡρόδοτος</meta>
+		<link href="https://en.wikipedia.org/wiki/Herodotus" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79086888.html" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<dc:contributor id="translator">G. C. Macaulay</dc:contributor>
+		<meta property="file-as" refines="#translator">Macaulay, G. C.</meta>
+		<meta property="schema:alternateName" refines="#translator">George Campbell Macaulay</meta>
+		<link href="https://en.wikipedia.org/wiki/G._C._Macaulay" refines="#translator" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/nr96031669.html" refines="#translator" rel="schema:sameAs"/>
+		<meta property="role" refines="#translator" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#translator" scheme="marc:relators">trl</meta>
+		<meta property="role" refines="#translator" scheme="marc:relators">wpr</meta>
+		<dc:contributor id="artist">John Collier</dc:contributor>
+		<meta property="file-as" refines="#artist">Collier, John</meta>
+		<meta property="schema:alternateName" refines="#artist">John Maler Collier</meta>
+		<link href="https://en.wikipedia.org/wiki/John_Collier_(painter)" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/no90006902.html" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="transcriber-1">John Bickers</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Bickers, John</meta>
+		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-2">Dagny</dc:contributor>
+		<meta property="file-as" refines="#transcriber-2">Dagny</meta>
+		<meta property="role" refines="#transcriber-2" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-3">David Wigger</dc:contributor>
+		<meta property="file-as" refines="#transcriber-3">Wigger, David</meta>
+		<meta property="role" refines="#transcriber-3" scheme="marc:relators">trc</meta>
+		<dc:contributor id="producer-1">Hendrik Kaiber</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Kaiber, Hendrik</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<dc:contributor id="producer-2">Weijia Cheng</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Cheng, Weijia</meta>
+		<link href="https://weijiarhymeswith.asia/" refines="#producer-2" rel="schema:url"/>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/book-1.xhtml" id="book-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-2.xhtml" id="book-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-3.xhtml" id="book-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-4.xhtml" id="book-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-5.xhtml" id="book-5.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-6.xhtml" id="book-6.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-7.xhtml" id="book-7.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-8.xhtml" id="book-8.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/book-9.xhtml" id="book-9.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/preface.xhtml" id="preface.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="imprint.xhtml"/>
+		<itemref idref="preface.xhtml"/>
+		<itemref idref="halftitlepage.xhtml"/>
+		<itemref idref="book-1.xhtml"/>
+		<itemref idref="book-2.xhtml"/>
+		<itemref idref="book-3.xhtml"/>
+		<itemref idref="book-4.xhtml"/>
+		<itemref idref="book-5.xhtml"/>
+		<itemref idref="book-6.xhtml"/>
+		<itemref idref="book-7.xhtml"/>
+		<itemref idref="book-8.xhtml"/>
+		<itemref idref="book-9.xhtml"/>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
+</package>

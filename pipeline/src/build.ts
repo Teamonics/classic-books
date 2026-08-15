@@ -8,14 +8,16 @@ import { buildIndex, validateIndex } from "./search/index.ts";
 import { adapt as adaptDante } from "./adapters/se-divine-comedy.ts";
 import { adapt as adaptIliad } from "./adapters/pg-the-iliad.ts";
 import { adapt as adaptFrogs } from "./adapters/pg-the-frogs.ts";
+import { adapt as adaptSeProse } from "./adapters/se-prose.ts";
 
 const ROOT = resolve(import.meta.dirname, "..", "..");
 const BUILD = join(ROOT, "build");
 
-const adapters: Record<string, (rawDir: string) => WorkIR> = {
+const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[] }) => WorkIR> = {
   "se-divine-comedy": adaptDante,
   "pg-the-iliad": adaptIliad,
   "pg-the-frogs": adaptFrogs,
+  "se-prose": adaptSeProse,
 };
 
 // Golden facts checked on every build; extend per work as they are ingested.
@@ -54,8 +56,13 @@ const goldens: Record<string, (ir: WorkIR) => string[]> = {
 function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
   const adapter = adapters[cfg.adapter];
   if (!adapter) throw new Error(`no adapter: ${cfg.adapter}`);
-  const ir = adapter(join(ROOT, cfg.rawDir));
+  const ir = adapter(join(ROOT, cfg.rawDir), { skipFiles: cfg.skipFiles });
 
+  if (cfg.expectDivisions !== undefined && ir.divisions.length !== cfg.expectDivisions) {
+    throw new Error(
+      `${cfg.slug}: ${ir.divisions.length} divisions, expected ${cfg.expectDivisions} — refs: ${ir.divisions.map((d) => d.ref).join(", ").slice(0, 300)}`,
+    );
+  }
   const goldenErrors = goldens[cfg.slug]?.(ir) ?? [];
   if (goldenErrors.length) throw new Error(`golden check failed:\n  ${goldenErrors.join("\n  ")}`);
 

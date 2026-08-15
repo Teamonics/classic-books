@@ -6,7 +6,12 @@
   const eraColors: Record<string, string> = {
     "archaic-greece": "#7d5ba6",
     "classical-greece": "#3a6ea5",
+    "imperial-rome": "#a63d40",
     medieval: "#8a4b24",
+    renaissance: "#b0803c",
+    "early-modern": "#4a7c59",
+    "eighteenth-century": "#3d7068",
+    "nineteenth-century": "#54577c",
   };
 
   function yearLabel(y: number): string {

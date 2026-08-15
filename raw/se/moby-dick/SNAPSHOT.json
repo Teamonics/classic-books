@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/herman-melville_moby-dick",
+  "commit": "4f8ebb014e17dc353ce30dbcba6c11ac4a486016",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1851,
+  "licenseBasis": "SE CC0; original English work"
+}

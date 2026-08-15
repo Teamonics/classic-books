@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/thomas-hobbes_leviathan",
+  "commit": "02b96b7c886d60b0b860044162f2490a221ee6f1",
+  "retrieved": "2026-08-15",
+  "translator": null,
+  "translatorDied": null,
+  "translationPublished": 1651,
+  "licenseBasis": "SE CC0; original English work"
+}

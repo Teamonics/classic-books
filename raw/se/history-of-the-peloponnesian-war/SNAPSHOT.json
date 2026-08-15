@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/thucydides_history-of-the-peloponnesian-war_richard-crawley",
+  "commit": "ad37c14c264410697c6cba88dbae9037a5b4119e",
+  "retrieved": "2026-08-15",
+  "translator": "Richard Crawley",
+  "translatorDied": 1893,
+  "translationPublished": 1874,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1893; unrevised Crawley, pre-Feetham"
+}

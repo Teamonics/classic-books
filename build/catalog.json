@@ -12,6 +12,18 @@
     "words": 152638
   },
   {
+    "slug": "histories",
+    "author": "herodotus",
+    "authorName": "Herodotus",
+    "title": "Histories",
+    "composedYear": -430,
+    "era": "classical-greece",
+    "translator": "G. C. Macaulay",
+    "manifestFile": "manifest.5ad27d550770.json",
+    "chunks": 10,
+    "words": 285975
+  },
+  {
     "slug": "the-frogs",
     "author": "aristophanes",
     "authorName": "Aristophanes",
@@ -24,6 +36,30 @@
     "words": 13175
   },
   {
+    "slug": "history-of-the-peloponnesian-war",
+    "author": "thucydides",
+    "authorName": "Thucydides",
+    "title": "History of the Peloponnesian War",
+    "composedYear": -400,
+    "era": "classical-greece",
+    "translator": "Richard Crawley",
+    "manifestFile": "manifest.371a5ae22b95.json",
+    "chunks": 27,
+    "words": 201818
+  },
+  {
+    "slug": "meditations",
+    "author": "marcus-aurelius",
+    "authorName": "Marcus Aurelius",
+    "title": "Meditations",
+    "composedYear": 175,
+    "era": "imperial-rome",
+    "translator": "George Long",
+    "manifestFile": "manifest.f9ea6f95761e.json",
+    "chunks": 12,
+    "words": 45360
+  },
+  {
     "slug": "the-divine-comedy",
     "author": "dante-alighieri",
     "authorName": "Dante Alighieri",
@@ -34,5 +70,41 @@
     "manifestFile": "manifest.5b6b5f5c9a2b.json",
     "chunks": 103,
     "words": 112563
+  },
+  {
+    "slug": "the-prince",
+    "author": "niccolo-machiavelli",
+    "authorName": "Niccolò Machiavelli",
+    "title": "The Prince",
+    "composedYear": 1513,
+    "era": "renaissance",
+    "translator": "W. K. Marriott",
+    "manifestFile": "manifest.c5b7e3f94524.json",
+    "chunks": 29,
+    "words": 34610
+  },
+  {
+    "slug": "leviathan",
+    "author": "thomas-hobbes",
+    "authorName": "Thomas Hobbes",
+    "title": "Leviathan",
+    "composedYear": 1651,
+    "era": "early-modern",
+    "translator": null,
+    "manifestFile": "manifest.45b827b68fca.json",
+    "chunks": 50,
+    "words": 206694
+  },
+  {
+    "slug": "moby-dick",
+    "author": "herman-melville",
+    "authorName": "Herman Melville",
+    "title": "Moby-Dick",
+    "composedYear": 1851,
+    "era": "nineteenth-century",
+    "translator": null,
+    "manifestFile": "manifest.3d3f63ba1404.json",
+    "chunks": 139,
+    "words": 208885
   }
 ]

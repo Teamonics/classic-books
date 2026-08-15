@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/marcus-aurelius_meditations_george-long",
+  "commit": "419c4faaa7a83b2a37988f1a516c84afefde579c",
+  "retrieved": "2026-08-15",
+  "translator": "George Long",
+  "translatorDied": 1879,
+  "translationPublished": 1862,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1879"
+}

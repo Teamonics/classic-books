@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/niccolo-machiavelli_the-prince_w-k-marriott",
+  "commit": "25742ea76e27337369abe273447519c1b6eb9d3c",
+  "retrieved": "2026-08-15",
+  "translator": "W. K. Marriott",
+  "translatorDied": 1927,
+  "translationPublished": 1908,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1927"
+}

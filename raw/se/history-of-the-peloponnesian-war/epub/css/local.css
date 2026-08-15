@@ -1,0 +1,108 @@
+@charset "utf-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+/* bridgeheads */
+[epub|type~="se:bridgehead"]{
+	display: inline-block;
+	font-style: italic;
+	max-width: 60%;
+	text-align: justify;
+	text-indent: 0;
+}
+/* end of bridgeheads */
+
+/* all dedications */
+section[epub|type~="dedication"]{
+	text-align: center;
+}
+
+section[epub|type~="dedication"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+}
+
+@supports(display: flex){
+	section[epub|type~="dedication"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	section[epub|type~="dedication"] > *{
+		margin: 0;
+	}
+}
+/* end of all dedications */
+
+/* images */
+figure{
+	break-inside: avoid;
+	margin: 1em 2.5em;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-height: 100vh;
+	max-width: 100%;
+}
+
+figcaption{
+	font-size: smaller;
+	font-style: italic;
+	margin: 1em;
+	text-align: center;
+}
+
+figure.full-page{
+	break-after: page;
+	break-before: page;
+}
+/* end of images */
+
+/* poem/verse/song */
+[epub|type~="z3998:hymn"] p,
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:hymn"] p > span,
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:hymn"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+/* end of poem/verse/song */
+
+/* custom */
+#chapter-14 blockquote:nth-of-type(4) > p:nth-child(3){
+	text-align: center;
+	text-indent: 0;
+}
+
+#chapter-16 blockquote blockquote{
+	font-variant: small-caps;
+}
+
+#illustration-2 figcaption header{
+	font-variant: small-caps;
+	margin-bottom: .5em;
+}
+
+#illustration-2 ol{
+	columns: 2;
+	list-style-type: upper-alpha;
+}
+/* end of custom */

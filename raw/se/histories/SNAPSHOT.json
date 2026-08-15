@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/herodotus_histories_g-c-macaulay",
+  "commit": "c9ad1d4543362286fd64b4d1ed1e30376a8e2bf0",
+  "retrieved": "2026-08-15",
+  "translator": "G. C. Macaulay",
+  "translatorDied": 1915,
+  "translationPublished": 1890,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1915"
+}

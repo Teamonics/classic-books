@@ -13,6 +13,19 @@
     "licenseBasis": "US PD (1898) + translator d. 1902; PG boilerplate stripped at build"
   },
   {
+    "slug": "histories",
+    "title": "Histories",
+    "translator": "G. C. Macaulay",
+    "manifestFile": "manifest.5ad27d550770.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/herodotus_histories_g-c-macaulay",
+    "commit": "c9ad1d4543362286fd64b4d1ed1e30376a8e2bf0",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1915,
+    "translationPublished": 1890,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1915"
+  },
+  {
     "slug": "the-frogs",
     "title": "The Frogs",
     "translator": "Benjamin Bickley Rogers",
@@ -26,6 +39,32 @@
     "licenseBasis": "US PD + translator d. 1919; PG boilerplate stripped at build"
   },
   {
+    "slug": "history-of-the-peloponnesian-war",
+    "title": "History of the Peloponnesian War",
+    "translator": "Richard Crawley",
+    "manifestFile": "manifest.371a5ae22b95.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/thucydides_history-of-the-peloponnesian-war_richard-crawley",
+    "commit": "ad37c14c264410697c6cba88dbae9037a5b4119e",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1893,
+    "translationPublished": 1874,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1893; unrevised Crawley, pre-Feetham"
+  },
+  {
+    "slug": "meditations",
+    "title": "Meditations",
+    "translator": "George Long",
+    "manifestFile": "manifest.f9ea6f95761e.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/marcus-aurelius_meditations_george-long",
+    "commit": "419c4faaa7a83b2a37988f1a516c84afefde579c",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1879,
+    "translationPublished": 1862,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1879"
+  },
+  {
     "slug": "the-divine-comedy",
     "title": "The Divine Comedy",
     "translator": "Henry Wadsworth Longfellow",
@@ -37,5 +76,44 @@
     "translatorDied": 1882,
     "translationPublished": 1867,
     "licenseBasis": "SE CC0; translation US PD + translator d. 1882"
+  },
+  {
+    "slug": "the-prince",
+    "title": "The Prince",
+    "translator": "W. K. Marriott",
+    "manifestFile": "manifest.c5b7e3f94524.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/niccolo-machiavelli_the-prince_w-k-marriott",
+    "commit": "25742ea76e27337369abe273447519c1b6eb9d3c",
+    "retrieved": "2026-08-15",
+    "translatorDied": 1927,
+    "translationPublished": 1908,
+    "licenseBasis": "SE CC0; translation US PD + translator d. 1927"
+  },
+  {
+    "slug": "leviathan",
+    "title": "Leviathan",
+    "translator": null,
+    "manifestFile": "manifest.45b827b68fca.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/thomas-hobbes_leviathan",
+    "commit": "02b96b7c886d60b0b860044162f2490a221ee6f1",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1651,
+    "licenseBasis": "SE CC0; original English work"
+  },
+  {
+    "slug": "moby-dick",
+    "title": "Moby-Dick",
+    "translator": null,
+    "manifestFile": "manifest.3d3f63ba1404.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/herman-melville_moby-dick",
+    "commit": "4f8ebb014e17dc353ce30dbcba6c11ac4a486016",
+    "retrieved": "2026-08-15",
+    "translatorDied": null,
+    "translationPublished": 1851,
+    "licenseBasis": "SE CC0; original English work"
   }
 ]
