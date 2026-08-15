@@ -7,7 +7,7 @@
     "composedYear": -750,
     "era": "archaic-greece",
     "translator": "Samuel Butler",
-    "manifestFile": "manifest.ca1e35158ad1.json",
+    "manifestFile": "manifest.ee6b5e7027fe.json",
     "chunks": 24,
     "words": 152638
   },
@@ -19,7 +19,7 @@
     "composedYear": -430,
     "era": "classical-greece",
     "translator": "G. C. Macaulay",
-    "manifestFile": "manifest.5ad27d550770.json",
+    "manifestFile": "manifest.9e4efb838aff.json",
     "chunks": 10,
     "words": 285975
   },
@@ -31,7 +31,7 @@
     "composedYear": -405,
     "era": "classical-greece",
     "translator": "Benjamin Bickley Rogers",
-    "manifestFile": "manifest.a9b5bd236cc6.json",
+    "manifestFile": "manifest.7d33d1cba854.json",
     "chunks": 1,
     "words": 13175
   },
@@ -43,7 +43,7 @@
     "composedYear": -400,
     "era": "classical-greece",
     "translator": "Richard Crawley",
-    "manifestFile": "manifest.371a5ae22b95.json",
+    "manifestFile": "manifest.0b1bda684fb4.json",
     "chunks": 27,
     "words": 201818
   },
@@ -55,7 +55,7 @@
     "composedYear": 108,
     "era": "imperial-rome",
     "translator": "George Long",
-    "manifestFile": "manifest.b770e744d709.json",
+    "manifestFile": "manifest.4fb77340a700.json",
     "chunks": 6,
     "words": 120159
   },
@@ -67,7 +67,7 @@
     "composedYear": 175,
     "era": "imperial-rome",
     "translator": "George Long",
-    "manifestFile": "manifest.f9ea6f95761e.json",
+    "manifestFile": "manifest.f916e519739b.json",
     "chunks": 12,
     "words": 45360
   },
@@ -79,7 +79,7 @@
     "composedYear": 426,
     "era": "late-antiquity",
     "translator": "Marcus Dods et al.",
-    "manifestFile": "manifest.7d33662df937.json",
+    "manifestFile": "manifest.52778013f6d3.json",
     "chunks": 23,
     "words": 441275
   },
@@ -91,7 +91,7 @@
     "composedYear": 1320,
     "era": "medieval",
     "translator": "Henry Wadsworth Longfellow",
-    "manifestFile": "manifest.5b6b5f5c9a2b.json",
+    "manifestFile": "manifest.d4c51e2a834f.json",
     "chunks": 103,
     "words": 112563
   },
@@ -103,7 +103,7 @@
     "composedYear": 1513,
     "era": "renaissance",
     "translator": "W. K. Marriott",
-    "manifestFile": "manifest.c5b7e3f94524.json",
+    "manifestFile": "manifest.67397b758d9a.json",
     "chunks": 29,
     "words": 34610
   },
@@ -115,7 +115,7 @@
     "composedYear": 1615,
     "era": "renaissance",
     "translator": "John Ormsby",
-    "manifestFile": "manifest.0a1be23e76ed.json",
+    "manifestFile": "manifest.9f5ee0d2e32d.json",
     "chunks": 132,
     "words": 422013
   },
@@ -127,7 +127,7 @@
     "composedYear": 1651,
     "era": "early-modern",
     "translator": null,
-    "manifestFile": "manifest.45b827b68fca.json",
+    "manifestFile": "manifest.eb7c4eb7512f.json",
     "chunks": 50,
     "words": 206694
   },
@@ -139,7 +139,7 @@
     "composedYear": 1726,
     "era": "eighteenth-century",
     "translator": null,
-    "manifestFile": "manifest.709426ddb3dc.json",
+    "manifestFile": "manifest.45873de57e5f.json",
     "chunks": 41,
     "words": 103945
   },
@@ -151,7 +151,7 @@
     "composedYear": 1776,
     "era": "eighteenth-century",
     "translator": null,
-    "manifestFile": "manifest.a637be22e0a3.json",
+    "manifestFile": "manifest.618d03132756.json",
     "chunks": 42,
     "words": 389140
   },
@@ -163,7 +163,7 @@
     "composedYear": 1788,
     "era": "eighteenth-century",
     "translator": null,
-    "manifestFile": "manifest.18a19dd2eb9e.json",
+    "manifestFile": "manifest.c739bb9cf22e.json",
     "chunks": 87,
     "words": 194189
   },
@@ -175,7 +175,7 @@
     "composedYear": 1789,
     "era": "eighteenth-century",
     "translator": null,
-    "manifestFile": "manifest.4a5181fccca7.json",
+    "manifestFile": "manifest.1b558fdb7aea.json",
     "chunks": 76,
     "words": 1095714
   },
@@ -187,7 +187,7 @@
     "composedYear": 1851,
     "era": "nineteenth-century",
     "translator": null,
-    "manifestFile": "manifest.3d3f63ba1404.json",
+    "manifestFile": "manifest.7c1c06e71e01.json",
     "chunks": 139,
     "words": 208885
   },
@@ -199,7 +199,7 @@
     "composedYear": 1859,
     "era": "nineteenth-century",
     "translator": null,
-    "manifestFile": "manifest.4d76da55703b.json",
+    "manifestFile": "manifest.e96312c81e29.json",
     "chunks": 8,
     "words": 50720
   },
@@ -211,7 +211,7 @@
     "composedYear": 1869,
     "era": "nineteenth-century",
     "translator": "Louise and Aylmer Maude",
-    "manifestFile": "manifest.25b44a1fe620.json",
+    "manifestFile": "manifest.3f063b3bc191.json",
     "chunks": 365,
     "words": 562661
   },
@@ -223,7 +223,7 @@
     "composedYear": 1880,
     "era": "nineteenth-century",
     "translator": "Constance Garnett",
-    "manifestFile": "manifest.16728175dd5b.json",
+    "manifestFile": "manifest.41bc28f86db2.json",
     "chunks": 97,
     "words": 349434
   }

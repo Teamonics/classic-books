@@ -4,21 +4,20 @@ import type { Manifest, SearchIndex } from "./types";
 
 const groupOf = buildGroupLookup(synonyms as Record<string, string[]>);
 
-const indexCache = new Map<string, Promise<SearchIndex>>();
+const shardCache = new Map<string, Promise<SearchIndex>>();
 
-export function loadIndex(manifest: Manifest): Promise<SearchIndex> {
-  if (!manifest.search) return Promise.reject(new Error("no search index"));
-  const key = manifest.slug;
-  if (!indexCache.has(key)) {
-    indexCache.set(
+function loadShard(manifest: Manifest, file: string): Promise<SearchIndex> {
+  const key = `${manifest.slug}/${file}`;
+  if (!shardCache.has(key)) {
+    shardCache.set(
       key,
-      fetch(`/data/works/${manifest.slug}/${manifest.search}`).then((r) => {
+      fetch(`/data/works/${manifest.slug}/${file}`).then((r) => {
         if (!r.ok) throw new Error(`${r.status} loading search index`);
         return r.json();
       }),
     );
   }
-  return indexCache.get(key)!;
+  return shardCache.get(key)!;
 }
 
 function postingsFor(index: SearchIndex, term: string): number[] | null {
@@ -41,20 +40,21 @@ export interface SearchHit {
   score: number; // number of query tokens matched in this block
 }
 
-export function query(index: SearchIndex, q: string): { hits: SearchHit[]; tokens: string[] } {
-  const tokens = tokenize(q);
-  if (!tokens.length) return { hits: [], tokens: [] };
+function expansionsFor(tok: string): Set<string> {
+  const out = new Set<string>([stem(tok)]);
+  const g = groupOf(tok) ?? (tok.endsWith("s") ? groupOf(tok.slice(0, -1)) : undefined);
+  if (g) out.add("@" + g);
+  return out;
+}
 
-  // per block key -> set of matched token positions
+export function queryShard(index: SearchIndex, tokens: string[]): SearchHit[] {
+  if (!tokens.length) return [];
   const matches = new Map<number, number>();
   const KEY = (c: number, b: number) => c * 100000 + b;
 
   tokens.forEach((tok: string, ti: number) => {
-    const expansions = new Set<string>([stem(tok)]);
-    const g = groupOf(tok) ?? (tok.endsWith("s") ? groupOf(tok.slice(0, -1)) : undefined);
-    if (g) expansions.add("@" + g);
     const seen = new Set<number>();
-    for (const term of expansions) {
+    for (const term of expansionsFor(tok)) {
       const p = postingsFor(index, term);
       if (!p) continue;
       for (let j = 0; j < p.length; j += 2) {
@@ -72,9 +72,25 @@ export function query(index: SearchIndex, q: string): { hits: SearchHit[]; token
     for (let i = 0; i < tokens.length; i++) if (bits & (1 << i)) score++;
     hits.push({ chunkIdx: Math.floor(key / 100000), blockIdx: key % 100000, score });
   }
-  // all-token matches first, then document order
   hits.sort((a, b) => b.score - a.score || a.chunkIdx - b.chunkIdx || a.blockIdx - b.blockIdx);
-  return { hits, tokens };
+  return hits;
+}
+
+// Search a work shard by shard, yielding after each so results appear in
+// document order while later shards are still downloading.
+export async function* search(
+  manifest: Manifest,
+  q: string,
+  signal?: { cancelled: boolean },
+): AsyncGenerator<{ hits: SearchHit[]; shard: number; shards: number }> {
+  const tokens = tokenize(q);
+  const files = manifest.search ?? [];
+  if (!tokens.length || !files.length) return;
+  for (let i = 0; i < files.length; i++) {
+    const index = await loadShard(manifest, files[i]!);
+    if (signal?.cancelled) return;
+    yield { hits: queryShard(index, tokens), shard: i + 1, shards: files.length };
+  }
 }
 
 // Words to visually mark in snippets: the query tokens plus every synonym

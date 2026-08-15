@@ -1,7 +1,7 @@
 <script lang="ts">
   import { getChunk } from "$lib/data";
   import { blockText } from "$lib/blocktext";
-  import { loadIndex, query, highlightWords, makeSnippet, type SearchHit } from "$lib/search";
+  import { search, highlightWords, makeSnippet, type SearchHit } from "$lib/search";
   import { lineAt } from "$lib/cite";
   import type { Chunk, Manifest } from "$lib/types";
 
@@ -11,6 +11,7 @@
   let hits = $state<SearchHit[]>([]);
   let searched = $state(false);
   let busy = $state(false);
+  let progress = $state<string | null>(null);
   let error = $state<string | null>(null);
   let shown = $state(30);
   let input = $state<HTMLInputElement | null>(null);
@@ -21,24 +22,38 @@
     timer = setTimeout(run, 250);
   }
 
+  let active: { cancelled: boolean } | null = null;
+
   async function run() {
     const term = q.trim();
     shown = 30;
+    if (active) active.cancelled = true; // supersede an in-flight search
     if (term.length < 2) {
       hits = [];
       searched = false;
+      progress = null;
       return;
     }
+    const signal = { cancelled: false };
+    active = signal;
     busy = true;
     error = null;
+    hits = [];
     try {
-      const index = await loadIndex(manifest);
-      hits = query(index, term).hits;
+      // Shards stream in document order, so early results render while the
+      // rest of a long work (Gibbon: 5 shards) is still downloading.
+      for await (const batch of search(manifest, term, signal)) {
+        if (signal.cancelled) return;
+        hits = [...hits, ...batch.hits];
+        searched = true;
+        progress = batch.shards > 1 && batch.shard < batch.shards ? `${batch.shard} of ${batch.shards}` : null;
+      }
       searched = true;
+      progress = null;
     } catch (e) {
-      error = e instanceof Error ? e.message : String(e);
+      if (!signal.cancelled) error = e instanceof Error ? e.message : String(e);
     } finally {
-      busy = false;
+      if (!signal.cancelled) busy = false;
     }
   }
 
@@ -84,7 +99,7 @@
     aria-label={`Search ${manifest.title}`}
   />
   {#if busy}
-    <p class="stat">Searching…</p>
+    <p class="stat">Searching{progress ? ` — part ${progress}` : ""}…</p>
   {:else if error}
     <p class="stat">Search unavailable: {error}</p>
   {:else if searched}

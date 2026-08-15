@@ -10,7 +10,7 @@ export function offlineSupported(): boolean {
 export function workUrls(manifest: Manifest): string[] {
   const base = `/data/works/${manifest.slug}`;
   const urls = Object.values(manifest.chunkFiles).map((f) => `${base}/chunks/${f}`);
-  if (manifest.search) urls.push(`${base}/${manifest.search}`);
+  for (const shard of manifest.search ?? []) urls.push(`${base}/${shard}`);
   return urls;
 }
 

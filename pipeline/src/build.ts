@@ -4,7 +4,7 @@ import type { Chunk, Manifest, WorkConfig, WorkIR } from "./model.ts";
 import { works } from "./works.config.ts";
 import { contentHash, stableJson, wordCount } from "./util.ts";
 import { validateWork } from "./validate.ts";
-import { buildIndex, validateIndex } from "./search/index.ts";
+import { buildIndexes, validateIndexes } from "./search/index.ts";
 import { adapt as adaptDante } from "./adapters/se-divine-comedy.ts";
 import { adapt as adaptIliad } from "./adapters/pg-the-iliad.ts";
 import { adapt as adaptFrogs } from "./adapters/pg-the-frogs.ts";
@@ -89,12 +89,15 @@ function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
     writeFileSync(join(workDir, "chunks", name), json);
   }
 
-  const index = buildIndex(cfg.slug, ir.divisions);
-  const indexErrors = validateIndex(index, ir.divisions);
+  const indexes = buildIndexes(cfg.slug, ir.divisions);
+  const indexErrors = validateIndexes(indexes, ir.divisions);
   if (indexErrors.length) throw new Error(`search index invalid for ${cfg.slug}:\n  ${indexErrors.slice(0, 10).join("\n  ")}`);
-  const indexJson = stableJson(index);
-  const indexName = `search.${contentHash(indexJson)}.json`;
-  writeFileSync(join(workDir, indexName), indexJson);
+  const indexNames = indexes.map((index, i) => {
+    const json = stableJson(index);
+    const name = `search-${i}.${contentHash(json)}.json`;
+    writeFileSync(join(workDir, name), json);
+    return name;
+  });
 
   const manifest: Manifest = {
     schema: 1,
@@ -108,7 +111,7 @@ function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
     refScheme: cfg.refScheme,
     toc: ir.divisions.map((d) => ({ ref: d.ref, title: d.title, words: wordCount(d.blocks) })),
     chunkFiles,
-    search: indexName,
+    search: indexNames,
   };
 
   const errors = validateWork(manifest, chunks);
