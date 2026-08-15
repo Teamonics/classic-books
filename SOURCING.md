@@ -1,5 +1,11 @@
 # Classic Books — Sourcing Decisions
 
+**Status as built: 165 works, 14,860,404 words, 43 authors.**
+Every Phase 1 title from the brief is either shipped or listed under
+"OUT for now" below with its reason. Provenance for each work — source,
+snapshot commit or PG id or wiki revision, translator, retrieval date, and
+the public-domain basis — is in build/sources.json and shown on /about.
+
 Date: 2026-08-15. Every claim below was verified today against the named
 source (SE = Standard Ebooks released catalog, PG = Project Gutenberg ebook
 number, WS = English Wikisource, MIA = marxists.org). Companion to PLAN.md.
@@ -119,6 +125,19 @@ nothing. Way's edition prints the canonical Greek line numbers, so those
 plays carry real citation refs (`/euripides/medea/1:250` = Medea 250).
 Coleridge's three are prose and use paragraph refs. *Cyclops* remains out —
 neither translator has it transcribed on Wikisource.
+
+## Remaining gaps (deliberate)
+
+- **Summa Theologica Supplement** — the four main parts are in; the
+  posthumous Supplement is a separate PG volume, not yet ingested.
+- **Aristophanes** — the nine plays added here use the Athenian Society's
+  1912 prose. Rogers' verse (the 1952 set's choice) exists only as page
+  scans for the other ten; his *Frogs* is shipped. A per-play upgrade from
+  Internet Archive scans remains possible.
+- **Herodotus** — shipped in Macaulay from SE; Rawlinson is complete on
+  Wikisource and is a clean swap when wanted.
+- **Wealth of Nations** — eight statistical tables in Book I ch. 11 are
+  dropped; the block model has no table type.
 
 ## Verification debt (resolve at ingest, recorded in sources.json)
 
