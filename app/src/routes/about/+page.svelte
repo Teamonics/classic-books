@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   interface SourceEntry {
     slug: string;
     title: string;
@@ -15,7 +16,7 @@
   }
 
   async function getSources(): Promise<SourceEntry[]> {
-    const res = await fetch("/data/sources.json");
+    const res = await fetch(`${base}/data/sources.json`);
     if (!res.ok) throw new Error(String(res.status));
     return res.json();
   }
@@ -36,7 +37,7 @@
 </svelte:head>
 
 <main>
-  <nav class="crumbs ui"><a href="/">← Bookshelf</a></nav>
+  <nav class="crumbs ui"><a href={`${base}/`}>← Bookshelf</a></nav>
   <h1>About</h1>
   <p>
     A free reader for the classics of Western literature, history, and philosophy, in

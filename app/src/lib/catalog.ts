@@ -1,3 +1,4 @@
+import { base } from "$app/paths";
 import type { CatalogEntry } from "./types";
 
 export interface Era {
@@ -35,7 +36,7 @@ export interface Catalog {
 let catalogPromise: Promise<Catalog> | null = null;
 
 export function getCatalog(): Promise<Catalog> {
-  catalogPromise ??= fetch("/data/catalog.json").then((r) => {
+  catalogPromise ??= fetch(`${base}/data/catalog.json`).then((r) => {
     if (!r.ok) throw new Error(`${r.status} loading catalog`);
     return r.json();
   });

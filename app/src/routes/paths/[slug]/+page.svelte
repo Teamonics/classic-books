@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from "$app/state";
+  import { base } from "$app/paths";
   import { getCatalog } from "$lib/catalog";
   import { getReadRefs } from "$lib/progress.svelte";
 
@@ -24,7 +25,7 @@
   {#await getPath(slug)}
     <p class="ui muted">Loading…</p>
   {:then path}
-    <nav class="crumbs ui"><a href="/">← Bookshelf</a></nav>
+    <nav class="crumbs ui"><a href={`${base}/`}>← Bookshelf</a></nav>
     <header>
       <h1>{path.title}</h1>
       <p class="blurb">{path.blurb}</p>
@@ -34,7 +35,7 @@
       {#each path.steps as step, i}
         {@const done = getReadRefs(step.work).has(step.ref)}
         <li class:done>
-          <a href={`/${step.author}/${step.work}/${step.ref}`}>
+          <a href={`${base}/${step.author}/${step.work}/${step.ref}`}>
             <span class="num ui" aria-hidden="true">{done ? "✓" : i + 1}</span>
             <span class="body">
               <span class="label">{step.label}</span>

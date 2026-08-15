@@ -1,3 +1,4 @@
+import { base } from "$app/paths";
 import { getCatalog } from "./catalog";
 import type { CatalogEntry, Chunk, Manifest } from "./types";
 
@@ -14,7 +15,7 @@ async function getJson<T>(url: string): Promise<T> {
 // Work data lives under /data/works/<author>/<slug>/ so two authors can
 // share a title (Sophocles and Euripides both wrote an Electra).
 export function workDir(m: { author: string; slug: string }): string {
-  return `/data/works/${m.author}/${m.slug}`;
+  return `${base}/data/works/${m.author}/${m.slug}`;
 }
 
 export async function getWork(

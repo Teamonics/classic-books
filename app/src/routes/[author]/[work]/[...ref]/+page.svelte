@@ -1,6 +1,7 @@
 <script lang="ts">
   import { tick } from "svelte";
   import { page } from "$app/state";
+  import { base } from "$app/paths";
   import { replaceState } from "$app/navigation";
   import { getWork, getChunk, prefetchChunk, resolveRef } from "$lib/data";
   import { savePosition, getPosition, markRead } from "$lib/progress.svelte";
@@ -137,7 +138,7 @@
             if (ref) {
               currentRef = ref;
               savePosition(slug, { ref, blockIndex: Number(el.getAttribute("data-block")) });
-              const want = `/${author}/${slug}/${ref}`;
+              const want = `${base}/${author}/${slug}/${ref}`;
               if (location.pathname !== want) replaceState(want, {});
               // Reaching the last block of a chunk marks it read.
               const sectBlocks = sect!.querySelectorAll("[data-block]");
@@ -169,7 +170,7 @@
     if (!ref || !manifest) return;
     chunks = [];
     await tick();
-    history.pushState({}, "", `/${author}/${slug}/${ref}`);
+    history.pushState({}, "", `${base}/${author}/${slug}/${ref}`);
     void load(ref);
   }
 
@@ -213,7 +214,7 @@
 </svelte:head>
 
 <div class="bar ui">
-  <a class="back" href={`/${author}/${slug}`} aria-label="Table of contents">☰ <span class="bartitle">{manifest?.title}</span></a>
+  <a class="back" href={`${base}/${author}/${slug}`} aria-label="Table of contents">☰ <span class="bartitle">{manifest?.title}</span></a>
   <span class="chunktitle">{currentTitle}</span>
   <button class="gear" aria-label="Bookmark this position" onclick={bookmarkHere}>
     {bookmarked ? "✓" : "🔖"}
@@ -258,7 +259,7 @@
         <button onclick={() => appendNext()}>Continue: {manifest?.toc.find((t) => t.ref === last.next)?.title}</button>
       {:else}
         <p class="fin">The End</p>
-        <a href={`/${author}/${slug}`}>Back to contents</a>
+        <a href={`${base}/${author}/${slug}`}>Back to contents</a>
       {/if}
     </nav>
   {/if}

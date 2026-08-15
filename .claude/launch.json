@@ -4,8 +4,29 @@
     {
       "name": "reader",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "app", "run", "preview", "--", "--port", "4173", "--strictPort"],
+      "runtimeArgs": [
+        "--prefix",
+        "app",
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4173",
+        "--strictPort"
+      ],
       "port": 4173
+    },
+    {
+      "name": "pages-subpath",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "scripts/serve-like-pages.py",
+        "/tmp/gh-pages-test",
+        "4180",
+        "--site=classic-books"
+      ],
+      "port": 4180,
+      "url": "http://localhost:4180"
     }
   ]
 }

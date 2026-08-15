@@ -1,7 +1,7 @@
 /// <reference types="@sveltejs/kit" />
 /// <reference lib="webworker" />
 
-import { build, files, version } from "$service-worker";
+import { base, build, files, version } from "$service-worker";
 
 const sw = self as unknown as ServiceWorkerGlobalScope;
 
@@ -10,12 +10,12 @@ const DATA = "cb-data-v1";
 
 // App shell: generated assets + static files, excluding the text corpus
 // (cached on demand or via explicit per-work download).
-const shellAssets = [...build, ...files.filter((f) => !f.startsWith("/data/"))];
+const shellAssets = [...build, ...files.filter((f) => !f.startsWith(`${base}/data/`))];
 
 const isHashedData = (url: URL) =>
-  url.pathname.startsWith("/data/") && /\.[0-9a-f]{12}\.json$/.test(url.pathname);
+  url.pathname.startsWith(`${base}/data/`) && /\.[0-9a-f]{12}\.json$/.test(url.pathname);
 const isMutableData = (url: URL) =>
-  url.pathname === "/data/catalog.json" || url.pathname === "/data/sources.json";
+  url.pathname === `${base}/data/catalog.json` || url.pathname === `${base}/data/sources.json`;
 
 sw.addEventListener("install", (event) => {
   event.waitUntil(
@@ -24,8 +24,8 @@ sw.addEventListener("install", (event) => {
       await cache.addAll(shellAssets);
       // the SPA fallback document, used for every navigation when offline
       try {
-        const res = await fetch("/");
-        if (res.ok) await cache.put("/", res);
+        const res = await fetch(`${base}/`);
+        if (res.ok) await cache.put(`${base}/`, res);
       } catch {
         /* offline install */
       }
@@ -58,7 +58,7 @@ sw.addEventListener("fetch", (event) => {
         try {
           return await fetch(req);
         } catch {
-          const cached = await caches.match("/");
+          const cached = await caches.match(`${base}/`);
           return cached ?? Response.error();
         }
       })(),
@@ -67,7 +67,7 @@ sw.addEventListener("fetch", (event) => {
   }
 
   // Immutable content: cache-first, populate on first fetch.
-  if (isHashedData(url) || url.pathname.startsWith("/_app/immutable/")) {
+  if (isHashedData(url) || url.pathname.startsWith(`${base}/_app/immutable/`)) {
     event.respondWith(
       (async () => {
         const cacheName = isHashedData(url) ? DATA : SHELL;

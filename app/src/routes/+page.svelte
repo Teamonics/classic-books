@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import { getCatalog, shelfByEra, type ShelfAuthorGroup } from "$lib/catalog";
   import { getPosition } from "$lib/progress.svelte";
   import type { CatalogEntry } from "$lib/types";
@@ -48,7 +49,7 @@
         <ul class="pathlist">
           {#each catalog.paths as p}
             <li>
-              <a href={`/paths/${p.slug}`}>
+              <a href={`${base}/paths/${p.slug}`}>
                 <span class="ptitle">{p.title}</span>
                 <span class="pblurb">{p.blurb}</span>
                 <span class="pmeta ui">{p.steps.length} readings · {p.works} works</span>
@@ -69,7 +70,7 @@
             <li class:wide={!single}>
               {#if single}
                 {@const w = g.works[0]!}
-                <a class="book" href={`/${w.author}/${w.slug}`} style:--era={eraColors[era.id] ?? "var(--accent)"}>
+                <a class="book" href={`${base}/${w.author}/${w.slug}`} style:--era={eraColors[era.id] ?? "var(--accent)"}>
                   <span class="band" aria-hidden="true"></span>
                   <span class="meta">
                     <span class="title">{w.title}</span>
@@ -88,7 +89,7 @@
                     <span class="detail ui">{g.works.length} works · {spanLabel(g.works)}</span>
                     {#if resumed(g.works)}
                       {@const r = resumed(g.works)!}
-                      <a class="continue ui" href={`/${r.author}/${r.slug}`}>Continue {r.title} →</a>
+                      <a class="continue ui" href={`${base}/${r.author}/${r.slug}`}>Continue {r.title} →</a>
                     {/if}
                     <button
                       class="expand ui"
@@ -101,7 +102,7 @@
                       <ul class="sublist">
                         {#each g.works as w}
                           <li>
-                            <a href={`/${w.author}/${w.slug}`}>
+                            <a href={`${base}/${w.author}/${w.slug}`}>
                               {w.title}
                               <span class="subyear ui">{yearLabel(w.composedYear)}</span>
                             </a>
@@ -122,7 +123,7 @@
   {/await}
 
   <footer class="ui">
-    <a href="/about">About &amp; sources</a>
+    <a href={`${base}/about`}>About &amp; sources</a>
   </footer>
 </main>
 

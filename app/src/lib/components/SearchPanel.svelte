@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import { getChunk } from "$lib/data";
   import { blockText } from "$lib/blocktext";
   import { search, highlightWords, makeSnippet, type SearchHit } from "$lib/search";
@@ -72,7 +73,7 @@
     if (line !== undefined && (scheme.includes(":line") || scheme === "line")) fineRef = `${ref}:${line}`;
     else if (block.type === "para" && block.n !== undefined && scheme.includes("paragraph"))
       fineRef = `${ref}.${block.n}`;
-    return { href: `/${author}/${manifest.slug}/${fineRef}`, title: manifest.toc[hit.chunkIdx]!.title, snippet };
+    return { href: `${base}/${author}/${manifest.slug}/${fineRef}`, title: manifest.toc[hit.chunkIdx]!.title, snippet };
   }
 
   export function focus() {

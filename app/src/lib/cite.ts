@@ -1,3 +1,4 @@
+import { base } from "$app/paths";
 import type { Block, Chunk, Manifest } from "./types";
 import { blockText } from "./blocktext";
 
@@ -55,7 +56,7 @@ export function citationText(
   target: CiteTarget,
   quote: string | null,
 ): string {
-  const url = `${location.origin}/${manifest.author}/${manifest.slug}/${target.fineRef}`;
+  const url = `${location.origin}${base}/${manifest.author}/${manifest.slug}/${target.fineRef}`;
   const src = `${manifest.authorName}, ${manifest.title}, ${target.locator}${manifest.translator ? ` (tr. ${manifest.translator})` : ""}`;
   const q = quote ? `“${quote.length > 300 ? quote.slice(0, 300) + "…" : quote}”\n— ` : "";
   return `${q}${src}\n${url}`;

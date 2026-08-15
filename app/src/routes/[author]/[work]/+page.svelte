@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from "$app/state";
+  import { base } from "$app/paths";
   import { getWork } from "$lib/data";
   import { getPosition, getReadRefs, progressLabel } from "$lib/progress.svelte";
   import {
@@ -93,7 +94,7 @@
   {:then { manifest }}
     {@const pos = getPosition(slug)}
     {@const read = getReadRefs(slug)}
-    <nav class="crumbs ui"><a href="/">← Bookshelf</a></nav>
+    <nav class="crumbs ui"><a href={`${base}/`}>← Bookshelf</a></nav>
     <header>
       <h1>{manifest.title}</h1>
       <p class="byline ui">
@@ -101,11 +102,11 @@
       </p>
       <p class="resume ui">
         {#if pos}
-          <a class="button" href={`/${author}/${slug}/${pos.ref}`}>
+          <a class="button" href={`${base}/${author}/${slug}/${pos.ref}`}>
             Continue — {progressLabel(manifest, slug)}
           </a>
         {:else}
-          <a class="button" href={`/${author}/${slug}/${manifest.toc[0]!.ref}`}>Start reading</a>
+          <a class="button" href={`${base}/${author}/${slug}/${manifest.toc[0]!.ref}`}>Start reading</a>
         {/if}
         {#if offlineSupported()}
           <button class="offline" onclick={() => toggleDownload(manifest)} disabled={downloading || dl === null}>
@@ -153,7 +154,7 @@
           <ul class="bml">
             {#each bms as b (b.id)}
               <li>
-                <a href={`/${author}/${slug}/${b.ref}`}>🔖 {b.label}</a>
+                <a href={`${base}/${author}/${slug}/${b.ref}`}>🔖 {b.label}</a>
                 <button class="del ui" aria-label="Remove bookmark" onclick={() => removeBookmark(slug, b.id)}>×</button>
               </li>
             {/each}
@@ -163,7 +164,7 @@
           <ul class="hll">
             {#each hls as h (h.id)}
               <li>
-                <a href={`/${author}/${slug}/${h.ref}`}>
+                <a href={`${base}/${author}/${slug}/${h.ref}`}>
                   <span class={`swatch sw-${h.color}`} class:orphan={h.orphaned}></span>
                   <span class="hlq">“{h.quote.exact.length > 90 ? h.quote.exact.slice(0, 90) + "…" : h.quote.exact}”</span>
                   <span class="hlwhere ui">{chunkTitle(manifest, h.ref)}{h.orphaned ? " · unanchored" : ""}</span>
@@ -178,7 +179,7 @@
     <ol class="toc">
       {#each manifest.toc as t}
         <li class:read={read.has(t.ref)} class:current={pos?.ref === t.ref}>
-          <a href={`/${author}/${slug}/${t.ref}`}>
+          <a href={`${base}/${author}/${slug}/${t.ref}`}>
             <span>{t.title}</span>
             <span class="words ui">{Math.round(t.words / 100) / 10}k words</span>
           </a>
