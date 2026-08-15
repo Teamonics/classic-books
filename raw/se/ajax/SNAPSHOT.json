@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/sophocles_ajax_francis-storr",
+  "commit": "f3b323b555a20c4ecfce4ddf61537482317cecf8",
+  "retrieved": "2026-08-15",
+  "translator": "Francis Storr",
+  "translatorDied": 1919,
+  "translationPublished": 1912,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
+}

@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/sophocles_antigone_francis-storr",
+  "commit": "84fd39cfc35c123d14fa7f913e712cec568fedc3",
+  "retrieved": "2026-08-15",
+  "translator": "Francis Storr",
+  "translatorDied": 1919,
+  "translationPublished": 1912,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
+}

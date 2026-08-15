@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/sophocles_oedipus-rex_francis-storr",
+  "commit": "b8e66454af7251de70a246c37479d2b81d976fab",
+  "retrieved": "2026-08-15",
+  "translator": "Francis Storr",
+  "translatorDied": 1919,
+  "translationPublished": 1912,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
+}

@@ -13,6 +13,42 @@
       "words": 152638
     },
     {
+      "slug": "the-odyssey",
+      "author": "homer",
+      "authorName": "Homer",
+      "title": "The Odyssey",
+      "composedYear": -725,
+      "era": "archaic-greece",
+      "translator": "Samuel Butler",
+      "manifestFile": "manifest.f836068e6461.json",
+      "chunks": 28,
+      "words": 129433
+    },
+    {
+      "slug": "ajax",
+      "author": "sophocles",
+      "authorName": "Sophocles",
+      "title": "Ajax",
+      "composedYear": -445,
+      "era": "classical-greece",
+      "translator": "Francis Storr",
+      "manifestFile": "manifest.5575288dffb6.json",
+      "chunks": 3,
+      "words": 11325
+    },
+    {
+      "slug": "antigone",
+      "author": "sophocles",
+      "authorName": "Sophocles",
+      "title": "Antigone",
+      "composedYear": -441,
+      "era": "classical-greece",
+      "translator": "Francis Storr",
+      "manifestFile": "manifest.ee53e51814c9.json",
+      "chunks": 2,
+      "words": 9977
+    },
+    {
       "slug": "histories",
       "author": "herodotus",
       "authorName": "Herodotus",
@@ -25,6 +61,54 @@
       "words": 285975
     },
     {
+      "slug": "oedipus-rex",
+      "author": "sophocles",
+      "authorName": "Sophocles",
+      "title": "Oedipus Rex",
+      "composedYear": -429,
+      "era": "classical-greece",
+      "translator": "Francis Storr",
+      "manifestFile": "manifest.27f9b6e81aa4.json",
+      "chunks": 3,
+      "words": 12389
+    },
+    {
+      "slug": "the-trachiniae",
+      "author": "sophocles",
+      "authorName": "Sophocles",
+      "title": "The Trachiniae",
+      "composedYear": -425,
+      "era": "classical-greece",
+      "translator": "Francis Storr",
+      "manifestFile": "manifest.39a4bb59d15d.json",
+      "chunks": 3,
+      "words": 10116
+    },
+    {
+      "slug": "electra",
+      "author": "sophocles",
+      "authorName": "Sophocles",
+      "title": "Electra",
+      "composedYear": -410,
+      "era": "classical-greece",
+      "translator": "Francis Storr",
+      "manifestFile": "manifest.ddd7d09b7e3c.json",
+      "chunks": 3,
+      "words": 11693
+    },
+    {
+      "slug": "philoctetes",
+      "author": "sophocles",
+      "authorName": "Sophocles",
+      "title": "Philoctetes",
+      "composedYear": -409,
+      "era": "classical-greece",
+      "translator": "Francis Storr",
+      "manifestFile": "manifest.5bc781f39135.json",
+      "chunks": 3,
+      "words": 11951
+    },
+    {
       "slug": "the-frogs",
       "author": "aristophanes",
       "authorName": "Aristophanes",
@@ -35,6 +119,18 @@
       "manifestFile": "manifest.7d33d1cba854.json",
       "chunks": 1,
       "words": 13175
+    },
+    {
+      "slug": "oedipus-at-colonus",
+      "author": "sophocles",
+      "authorName": "Sophocles",
+      "title": "Oedipus at Colonus",
+      "composedYear": -401,
+      "era": "classical-greece",
+      "translator": "Francis Storr",
+      "manifestFile": "manifest.5092dcae7547.json",
+      "chunks": 3,
+      "words": 13441
     },
     {
       "slug": "history-of-the-peloponnesian-war",
@@ -404,7 +500,7 @@
       "composedYear": 1590,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.120f6c66c088.json",
+      "manifestFile": "manifest.7f0de76b229f.json",
       "chunks": 21,
       "words": 17112
     },
@@ -416,7 +512,7 @@
       "composedYear": 1591,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.0a690e63bb3c.json",
+      "manifestFile": "manifest.e67db2d184ed.json",
       "chunks": 13,
       "words": 18409
     },
@@ -428,7 +524,7 @@
       "composedYear": 1591,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.eb8a2e3a4b88.json",
+      "manifestFile": "manifest.92ededf7accf.json",
       "chunks": 25,
       "words": 25546
     },
@@ -440,7 +536,7 @@
       "composedYear": 1591,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.d50b5d25bb5b.json",
+      "manifestFile": "manifest.184cf85e2b2d.json",
       "chunks": 29,
       "words": 24410
     },
@@ -452,7 +548,7 @@
       "composedYear": 1592,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.c6af890192c1.json",
+      "manifestFile": "manifest.eb67dc558510.json",
       "chunks": 28,
       "words": 21482
     },
@@ -464,7 +560,7 @@
       "composedYear": 1592,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.e9dc9f92baf5.json",
+      "manifestFile": "manifest.83c07233cfb5.json",
       "chunks": 15,
       "words": 20743
     },
@@ -476,7 +572,7 @@
       "composedYear": 1593,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.a231aa6fd439.json",
+      "manifestFile": "manifest.ab6d2c9c5118.json",
       "chunks": 26,
       "words": 28836
     },
@@ -488,7 +584,7 @@
       "composedYear": 1593,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.c8277dbf31b0.json",
+      "manifestFile": "manifest.837da879a224.json",
       "chunks": 18,
       "words": 19942
     },
@@ -500,7 +596,7 @@
       "composedYear": 1594,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.b22326c6a3d7.json",
+      "manifestFile": "manifest.25bd3610df20.json",
       "chunks": 12,
       "words": 14746
     },
@@ -512,7 +608,7 @@
       "composedYear": 1595,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.4439d32efafc.json",
+      "manifestFile": "manifest.3a2e02e4f0a3.json",
       "chunks": 10,
       "words": 21116
     },
@@ -524,7 +620,7 @@
       "composedYear": 1595,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.1e436fff7b88.json",
+      "manifestFile": "manifest.f24bc8c18fad.json",
       "chunks": 20,
       "words": 22236
     },
@@ -536,7 +632,7 @@
       "composedYear": 1595,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.28e4d0ea5ba1.json",
+      "manifestFile": "manifest.69e0ffde96f4.json",
       "chunks": 27,
       "words": 24567
     },
@@ -548,7 +644,7 @@
       "composedYear": 1595,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.b25951c1aab9.json",
+      "manifestFile": "manifest.fe9f68139f21.json",
       "chunks": 10,
       "words": 16457
     },
@@ -560,7 +656,7 @@
       "composedYear": 1596,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.57b800c47ad2.json",
+      "manifestFile": "manifest.48948a7db5d4.json",
       "chunks": 17,
       "words": 20837
     },
@@ -572,7 +668,7 @@
       "composedYear": 1596,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.7bc79ccf1fae.json",
+      "manifestFile": "manifest.727a8adc0adf.json",
       "chunks": 21,
       "words": 21142
     },
@@ -584,7 +680,7 @@
       "composedYear": 1597,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.fd543bb77220.json",
+      "manifestFile": "manifest.0e256d490850.json",
       "chunks": 20,
       "words": 24642
     },
@@ -596,7 +692,7 @@
       "composedYear": 1597,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.36e33dbf2dfb.json",
+      "manifestFile": "manifest.296b9d94bb43.json",
       "chunks": 24,
       "words": 22540
     },
@@ -608,7 +704,7 @@
       "composedYear": 1598,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.46d5c9b3c59c.json",
+      "manifestFile": "manifest.58437bb4c822.json",
       "chunks": 22,
       "words": 26342
     },
@@ -620,7 +716,7 @@
       "composedYear": 1598,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.b693fc18826a.json",
+      "manifestFile": "manifest.8625d6f585f0.json",
       "chunks": 18,
       "words": 21181
     },
@@ -632,7 +728,7 @@
       "composedYear": 1599,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.d269cd77f472.json",
+      "manifestFile": "manifest.839a42e916e3.json",
       "chunks": 30,
       "words": 26185
     },
@@ -644,7 +740,7 @@
       "composedYear": 1599,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.fbf550ecaa39.json",
+      "manifestFile": "manifest.182950b0b150.json",
       "chunks": 19,
       "words": 19609
     },
@@ -656,7 +752,7 @@
       "composedYear": 1599,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.8cf81f1ac8d5.json",
+      "manifestFile": "manifest.a58586d378ad.json",
       "chunks": 24,
       "words": 21807
     },
@@ -668,7 +764,7 @@
       "composedYear": 1601,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.8679ad77be58.json",
+      "manifestFile": "manifest.5b9b59d8d1fa.json",
       "chunks": 21,
       "words": 30198
     },
@@ -680,7 +776,7 @@
       "composedYear": 1601,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.b1af0b10993b.json",
+      "manifestFile": "manifest.80283e981113.json",
       "chunks": 19,
       "words": 19849
     },
@@ -692,7 +788,7 @@
       "composedYear": 1602,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.1b1b91df0272.json",
+      "manifestFile": "manifest.4ec58e81ecb3.json",
       "chunks": 26,
       "words": 26178
     },
@@ -704,7 +800,7 @@
       "composedYear": 1604,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.0c4f80525eca.json",
+      "manifestFile": "manifest.51f6cf018ee6.json",
       "chunks": 18,
       "words": 21814
     },
@@ -716,7 +812,7 @@
       "composedYear": 1604,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.3cdc6241858b.json",
+      "manifestFile": "manifest.0eccf2c7d3e5.json",
       "chunks": 16,
       "words": 26407
     },
@@ -728,7 +824,7 @@
       "composedYear": 1605,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.5e6d270e4fae.json",
+      "manifestFile": "manifest.9c928f20562a.json",
       "chunks": 25,
       "words": 22936
     },
@@ -740,7 +836,7 @@
       "composedYear": 1605,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.b195a7dab334.json",
+      "manifestFile": "manifest.228f9f382cd5.json",
       "chunks": 27,
       "words": 26009
     },
@@ -752,7 +848,7 @@
       "composedYear": 1606,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.a0e44b71a944.json",
+      "manifestFile": "manifest.7491be5494db.json",
       "chunks": 29,
       "words": 17166
     },
@@ -764,7 +860,7 @@
       "composedYear": 1606,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.5afcf5749bb0.json",
+      "manifestFile": "manifest.b42d3de0bcba.json",
       "chunks": 43,
       "words": 24822
     },
@@ -776,7 +872,7 @@
       "composedYear": 1608,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.fde1638f72df.json",
+      "manifestFile": "manifest.93f316a3ed30.json",
       "chunks": 30,
       "words": 27571
     },
@@ -788,7 +884,7 @@
       "composedYear": 1608,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.f3eea9a5ff87.json",
+      "manifestFile": "manifest.0c53d253a9a2.json",
       "chunks": 18,
       "words": 18374
     },
@@ -800,7 +896,7 @@
       "composedYear": 1608,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.c2e9fb43a89a.json",
+      "manifestFile": "manifest.f4de9b7701bc.json",
       "chunks": 28,
       "words": 17474
     },
@@ -812,7 +908,7 @@
       "composedYear": 1610,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.45aaae9af73f.json",
+      "manifestFile": "manifest.f57968ec2427.json",
       "chunks": 28,
       "words": 27504
     },
@@ -824,7 +920,7 @@
       "composedYear": 1611,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.af2dd0536a6f.json",
+      "manifestFile": "manifest.d27fd0f42e4d.json",
       "chunks": 16,
       "words": 24922
     },
@@ -836,7 +932,7 @@
       "composedYear": 1611,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.20df0efa6bef.json",
+      "manifestFile": "manifest.c4a95fd0e3fc.json",
       "chunks": 11,
       "words": 16444
     },
@@ -848,7 +944,7 @@
       "composedYear": 1613,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.4665d8ef36d4.json",
+      "manifestFile": "manifest.ff67ffde7c5b.json",
       "chunks": 20,
       "words": 24505
     },
@@ -860,7 +956,7 @@
       "composedYear": 1613,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.1be1939f2938.json",
+      "manifestFile": "manifest.9a73d80ab12e.json",
       "chunks": 27,
       "words": 23627
     },

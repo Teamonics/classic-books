@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/sophocles/the-trachiniae/francis-storr</dc:identifier>
+		<dc:date>2025-03-31T01:55:50Z</dc:date>
+		<meta property="dcterms:modified">2025-03-31T01:55:50Z</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
+		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
+		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
+		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">The Trachiniae</dc:title>
+		<meta property="file-as" refines="#title">Trachiniae, The</meta>
+		<meta property="dcterms:alternative" refines="#title">The Women of Trachis</meta>
+		<dc:subject id="subject-1">Tragedies</dc:subject>
+		<dc:subject id="subject-2">Heracles (Greek mythological character)--Drama</dc:subject>
+		<dc:subject id="subject-3">Greek drama (Tragedy) -- Translations into English</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">sh2001009136</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">Unknown</meta>
+		<meta property="authority" refines="#subject-3">LCSH</meta>
+		<meta property="term" refines="#subject-3">sh2008118391</meta>
+		<meta property="schema:genre">Drama</meta>
+		<meta id="collection-1" property="belongs-to-collection">Encyclopædia Britannica’s Great Books of the Western World</meta>
+		<meta property="collection-type" refines="#collection-1">set</meta>
+		<meta property="schema:abstract">A woman unintentionally kills her demigod husband with a poisoned robe in a desperate attempt to reclaim his love.</meta>
+		<dc:description>
+			&lt;p&gt;&lt;i&gt;The Trachiniae&lt;/i&gt; is one of &lt;a href="https://standardebooks.org/ebooks/sophocles"&gt;Sophocles’&lt;/a&gt; lesser-known plays, yet it remains a powerful exploration of fate, suffering, and human fallibility. Though its exact date of composition is uncertain, scholars often place it later in the playwright’s career, possibly between 450 and 425 BCE. The play’s title refers to the women of Trachis, the chorus who witness and reflect on the unfolding catastrophe.&lt;/p&gt;
+			&lt;p&gt;The play begins with Deianeira, wife of the absent hero Heracles, expressing her fears about his long absence and possible infidelity. Her anxieties are confirmed when she learns that Heracles has sacked a city to claim the young princess Iole as his concubine. Desperate to regain his love, Deianeira sends Heracles a robe anointed with what she believes is a love charm—a potion given to her years earlier by the dying centaur Nessus, who deceitfully claimed it would ensure Heracles’ fidelity. But unbeknownst to her, the potion is actually a deadly poison that sears Heracles’ flesh, subjecting him to unbearable agony.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>https://archive.org/details/sophocleswitheng02soph</dc:source>
+		<meta property="schema:wordCount">10437</meta>
+		<meta property="schema:educationalLevel">79.4</meta>
+		<link href="https://en.wikipedia.org/wiki/Women_of_Trachis" rel="schema:sameAs"/>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/sophocles_the-trachiniae_francis-storr" refines="#vcs-repository" rel="schema:codeRepository"/>
+		<dc:creator id="author">Sophocles</dc:creator>
+		<meta property="file-as" refines="#author">Sophocles</meta>
+		<meta property="alternate-script" refines="#author">Σοφοκλῆς</meta>
+		<link href="https://en.wikipedia.org/wiki/Sophocles" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79127755.html" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<dc:contributor id="translator">Francis Storr</dc:contributor>
+		<meta property="file-as" refines="#translator">Storr, Francis</meta>
+		<link href="https://id.loc.gov/authorities/names/n83130003.html" refines="#translator" rel="schema:sameAs"/>
+		<meta property="role" refines="#translator" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#translator" scheme="marc:relators">trl</meta>
+		<meta property="role" refines="#translator" scheme="marc:relators">win</meta>
+		<dc:contributor id="artist">Alphonse Osbert</dc:contributor>
+		<meta property="file-as" refines="#artist">Osbert, Alphonse</meta>
+		<link href="https://en.wikipedia.org/wiki/Alphonse_Osbert" refines="#artist" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n80114828.html" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="producer-1">Emma Sweeney</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Sweeney, Emma</meta>
+		<link href="https://www.linkedin.com/in/emma-sweeney-554927190/" refines="#producer-1" rel="schema:url"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">trc</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<dc:contributor id="producer-2">Robin Whittleton</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Whittleton, Robin</meta>
+		<link href="https://www.robinwhittleton.com/" refines="#producer-2" rel="schema:url"/>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/dramatis-personae.xhtml" id="dramatis-personae.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/introduction.xhtml" id="introduction.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/the-trachiniae.xhtml" id="the-trachiniae.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="imprint.xhtml"/>
+		<itemref idref="introduction.xhtml"/>
+		<itemref idref="dramatis-personae.xhtml"/>
+		<itemref idref="halftitlepage.xhtml"/>
+		<itemref idref="the-trachiniae.xhtml"/>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
+</package>

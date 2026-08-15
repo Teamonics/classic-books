@@ -7,7 +7,7 @@ import { validateWork } from "./validate.ts";
 import { buildIndexes, validateIndexes } from "./search/index.ts";
 import { buildPaths } from "./paths.ts";
 import { adapt as adaptDante } from "./adapters/se-divine-comedy.ts";
-import { adapt as adaptIliad } from "./adapters/pg-the-iliad.ts";
+import { adapt as adaptButlerHomer } from "./adapters/pg-butler-homer.ts";
 import { adapt as adaptFrogs } from "./adapters/pg-the-frogs.ts";
 import { adapt as adaptSeProse } from "./adapters/se-prose.ts";
 import { adapt as adaptSeDrama } from "./adapters/se-drama.ts";
@@ -18,7 +18,7 @@ const BUILD = join(ROOT, "build");
 
 const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[]; sourceFile?: string }) => WorkIR> = {
   "se-divine-comedy": adaptDante,
-  "pg-the-iliad": adaptIliad,
+  "pg-butler-homer": adaptButlerHomer,
   "pg-the-frogs": adaptFrogs,
   "se-prose": adaptSeProse,
   "se-drama": adaptSeDrama,

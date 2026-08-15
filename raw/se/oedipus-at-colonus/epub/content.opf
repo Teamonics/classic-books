@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" dir="ltr" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#" unique-identifier="uid" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uid">https://standardebooks.org/ebooks/sophocles/oedipus-at-colonus/francis-storr</dc:identifier>
+		<dc:date>2025-01-07T20:31:14Z</dc:date>
+		<meta property="dcterms:modified">2025-01-07T20:31:14Z</meta>
+		<dc:rights>The source text and artwork in this ebook are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<meta property="rdf:type">http://schema.org/Book</meta>
+		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<meta property="file-as" refines="#publisher">Standard Ebooks</meta>
+		<link href="https://standardebooks.org/" refines="#publisher" rel="schema:url"/>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
+		<dc:contributor id="type-designer">The League of Moveable Type</dc:contributor>
+		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
+		<link href="https://www.theleagueofmoveabletype.com/" refines="#type-designer" rel="schema:url"/>
+		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
+		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
+		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">unlocked</meta>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
+		<dc:title id="title">Oedipus at Colonus</dc:title>
+		<meta property="file-as" refines="#title">Oedipus at Colonus</meta>
+		<dc:subject id="subject-1">Tragedies</dc:subject>
+		<dc:subject id="subject-2">Antigone (Mythological character) -- Drama</dc:subject>
+		<dc:subject id="subject-3">Oedipus (Greek mythological figure) -- Drama</dc:subject>
+		<dc:subject id="subject-4">Greek drama (Tragedy) -- Translations into English</dc:subject>
+		<meta property="authority" refines="#subject-1">LCSH</meta>
+		<meta property="term" refines="#subject-1">sh2001009136</meta>
+		<meta property="authority" refines="#subject-2">LCSH</meta>
+		<meta property="term" refines="#subject-2">Unknown</meta>
+		<meta property="authority" refines="#subject-3">LCSH</meta>
+		<meta property="term" refines="#subject-3">Unknown</meta>
+		<meta property="authority" refines="#subject-4">LCSH</meta>
+		<meta property="term" refines="#subject-4">sh2008118391</meta>
+		<meta property="schema:genre">Drama</meta>
+		<meta id="collection-1" property="belongs-to-collection">The Theban Plays</meta>
+		<meta property="collection-type" refines="#collection-1">set</meta>
+		<meta property="group-position" refines="#collection-1">2</meta>
+		<meta id="collection-2" property="belongs-to-collection">Encyclopædia Britannica’s Great Books of the Western World</meta>
+		<meta property="collection-type" refines="#collection-2">set</meta>
+		<meta property="schema:abstract">A prophecy is fulfilled when an exiled king dies, providing protection to Athens.</meta>
+		<dc:description>
+			&lt;p&gt;The once-powerful King Oedipus, now blind and broken, arrives at the sacred grove of Colonus near Athens, searching for a place to rest. Having suffered the tragic consequences of his unintentional crimes—killing his father and marrying his mother—Oedipus reflects on his anguish and the curse that has haunted his life. With the support of his daughters, Antigone and Ismene, he seeks solace and a final resting place.&lt;/p&gt;
+			&lt;p&gt;Although &lt;i&gt;Oedipus at Colonus&lt;/i&gt; is the second of the &lt;a href="https://standardebooks.org/collections/the-theban-plays"&gt;Theban Plays&lt;/a&gt;, it was actually the last to be written, around 406 BCE, near the end of &lt;a href="https://standardebooks.org/ebooks/sophocles"&gt;Sophocles’&lt;/a&gt; life. The play was first performed in 401 BCE, when the playwright’s son, Iophon, presented it at a dramatic competition.&lt;/p&gt;
+		</dc:description>
+		<dc:language>en-GB</dc:language>
+		<dc:source>https://www.gutenberg.org/ebooks/31</dc:source>
+		<dc:source>https://archive.org/details/sophoclesstor01sophuoft</dc:source>
+		<meta property="schema:wordCount">14083</meta>
+		<meta property="schema:educationalLevel">81.02</meta>
+		<link href="https://en.wikipedia.org/wiki/Oedipus_at_Colonus" rel="schema:sameAs"/>
+		<meta id="vcs-repository" property="schema:workExample">schema:workExample</meta>
+		<meta property="rdf:type" refines="#vcs-repository">http://schema.org/SoftwareSourceCode</meta>
+		<link href="https://github.com/standardebooks/sophocles_oedipus-at-colonus_francis-storr" refines="#vcs-repository" rel="schema:codeRepository"/>
+		<dc:creator id="author">Sophocles</dc:creator>
+		<meta property="file-as" refines="#author">Sophocles</meta>
+		<link href="https://en.wikipedia.org/wiki/Sophocles" refines="#author" rel="schema:sameAs"/>
+		<link href="https://id.loc.gov/authorities/names/n79127755.html" refines="#author" rel="schema:sameAs"/>
+		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<dc:contributor id="translator">Francis Storr</dc:contributor>
+		<meta property="file-as" refines="#translator">Storr, Francis</meta>
+		<link href="https://id.loc.gov/authorities/names/n83130003.html" refines="#translator" rel="schema:sameAs"/>
+		<meta property="role" refines="#translator" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#translator" scheme="marc:relators">trl</meta>
+		<meta property="role" refines="#translator" scheme="marc:relators">win</meta>
+		<dc:contributor id="artist">Fulchran-Jean Harriet</dc:contributor>
+		<meta property="file-as" refines="#artist">Harriet, Fulchran-Jean</meta>
+		<link href="https://en.wikipedia.org/wiki/Fulchran-Jean_Harriet" refines="#artist" rel="schema:sameAs"/>
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<dc:contributor id="transcriber-1">Anonymous</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Anonymous</meta>
+		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-2">David Widger</dc:contributor>
+		<meta property="file-as" refines="#transcriber-2">Widger, David</meta>
+		<meta property="role" refines="#transcriber-2" scheme="marc:relators">trc</meta>
+		<dc:contributor id="transcriber-3">Distributed Proofreaders</dc:contributor>
+		<meta property="file-as" refines="#transcriber-3">Distributed Proofreaders</meta>
+		<link href="https://www.pgdp.net/" refines="#transcriber-3" rel="schema:url"/>
+		<meta property="role" refines="#transcriber-3" scheme="marc:relators">trc</meta>
+		<dc:contributor id="producer-1">Emma Sweeney</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Sweeney, Emma</meta>
+		<link href="https://www.linkedin.com/in/emma-sweeney-554927190/" refines="#producer-1" rel="schema:url"/>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<dc:contributor id="producer-2">David Reimer</dc:contributor>
+		<meta property="file-as" refines="#producer-2">Reimer, David</meta>
+		<link href="https://github.com/dajare" refines="#producer-2" rel="schema:url"/>
+		<link href="https://id.loc.gov/authorities/names/n92075987.html" refines="#producer-2" rel="schema:sameAs"/>
+		<meta property="role" refines="#producer-2" scheme="marc:relators">pfr</meta>
+	</metadata>
+	<manifest>
+		<item href="css/core.css" id="core.css" media-type="text/css"/>
+		<item href="css/local.css" id="local.css" media-type="text/css"/>
+		<item href="css/se.css" id="se.css" media-type="text/css"/>
+		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
+		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/dramatis-personae.xhtml" id="dramatis-personae.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/endnotes.xhtml" id="endnotes.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/halftitlepage.xhtml" id="halftitlepage.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/introduction.xhtml" id="introduction.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/oedipus-at-colonus.xhtml" id="oedipus-at-colonus.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+	</manifest>
+	<spine>
+		<itemref idref="titlepage.xhtml"/>
+		<itemref idref="imprint.xhtml"/>
+		<itemref idref="introduction.xhtml"/>
+		<itemref idref="dramatis-personae.xhtml"/>
+		<itemref idref="halftitlepage.xhtml"/>
+		<itemref idref="oedipus-at-colonus.xhtml"/>
+		<itemref idref="endnotes.xhtml"/>
+		<itemref idref="colophon.xhtml"/>
+		<itemref idref="uncopyright.xhtml"/>
+	</spine>
+</package>

@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/sophocles_electra_francis-storr",
+  "commit": "9c8805d89a35a5c27d9b592da6ab15a7ccb39efc",
+  "retrieved": "2026-08-15",
+  "translator": "Francis Storr",
+  "translatorDied": 1919,
+  "translationPublished": 1912,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
+}

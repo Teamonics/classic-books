@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/sophocles_philoctetes_francis-storr",
+  "commit": "f86868ccf7d7bd1bb5d80632059edf85019a7197",
+  "retrieved": "2026-08-15",
+  "translator": "Francis Storr",
+  "translatorDied": 1919,
+  "translationPublished": 1912,
+  "licenseBasis": "SE CC0; translation US PD + translator d. 1919"
+}

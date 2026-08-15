@@ -146,9 +146,17 @@ export function adapt(rawDir: string, opts: { skipFiles?: string[] } = {}): Work
     divisions.push({ ref: refBase, title, blocks, ...(notes.length ? { notes } : {}) });
   };
 
-  for (const file of spineFiles(epubDir)) {
-    if (skip.has(file)) continue;
-    const { document } = parseHTML(readFileSync(join(epubDir, "text", file), "utf-8"));
+  const files = spineFiles(epubDir).filter((f) => !skip.has(f));
+  const docs = files.map((file) => ({
+    file,
+    document: parseHTML(readFileSync(join(epubDir, "text", file), "utf-8")).document,
+  }));
+  // Greek tragedy is one continuous scene with no acts; Shakespeare has acts
+  // plus inductions, prologues and epilogues. Only the former gets the
+  // "the play is division 1" treatment.
+  const hasActs = docs.some((d) => d.document.querySelector('body > section[id^="act-"]'));
+
+  for (const { file, document } of docs) {
     for (const section of document.querySelectorAll("body > section")) {
       const id = section.getAttribute("id") ?? file.replace(/\.xhtml$/, "");
       const actNum = /^act-\d+$/.test(id) ? ordinal(section.querySelector(":scope > h2")) : null;
@@ -174,9 +182,16 @@ export function adapt(rawDir: string, opts: { skipFiles?: string[] } = {}): Work
       } else if (actNum !== null) {
         buildScene(section, String(actNum), `Act ${actNum}`);
       } else {
+        // Greek tragedy has no act divisions: the play is one continuous
+        // scene, preceded by a translator's introduction and a cast list.
         const h = section.querySelector(":scope > h2, :scope > h3");
         const title = collapseWs(h?.textContent ?? "") || id.replace(/-/g, " ");
-        buildScene(section, id, title.replace(/\b\w/g, (c) => c.toUpperCase()));
+        let ref = id;
+        if (/dramatis-personae/.test(id) || /dramatis-personae/.test(file)) ref = "persons";
+        else if (/introduction/.test(id) || /introduction/.test(file)) ref = "introduction";
+        else if (/preface/.test(id) || /preface/.test(file)) ref = "preface";
+        else if (!hasActs) ref = "1";
+        buildScene(section, ref, title.replace(/\b\w/g, (c) => c.toUpperCase()));
       }
     }
   }
