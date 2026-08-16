@@ -1,6 +1,6 @@
 <script lang="ts">
   import { base } from "$app/paths";
-  import { getCatalog, shelfByEra, type ShelfAuthorGroup } from "$lib/catalog";
+  import { getCatalog, getPassages, shelfByEra, type Passage, type ShelfAuthorGroup } from "$lib/catalog";
   import { getPosition } from "$lib/progress.svelte";
   import type { CatalogEntry } from "$lib/types";
 
@@ -32,6 +32,17 @@
   }
 
   let expanded = $state<Record<string, boolean>>({});
+
+  // Three passages, drawn fresh each visit, so the front page shows a
+  // different corner of the shelf rather than always the oldest three.
+  async function sample(n: number): Promise<Passage[]> {
+    const all = [...(await getPassages())];
+    for (let i = all.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [all[i]!, all[j]!] = [all[j]!, all[i]!];
+    }
+    return all.slice(0, n);
+  }
 </script>
 
 <main>
@@ -43,20 +54,24 @@
   {#await getCatalog()}
     <p class="ui center">Loading the shelf…</p>
   {:then catalog}
-    {#if catalog.paths?.length}
-      <section class="paths">
-        <h2 class="ui sectionhead">Where to begin</h2>
-        <ul class="pathlist">
-          {#each catalog.paths as p}
-            <li>
-              <a href={`${base}/paths/${p.slug}`}>
-                <span class="ptitle">{p.title}</span>
-                <span class="pblurb">{p.blurb}</span>
-                <span class="pmeta ui">{p.steps.length} readings · {p.works} works</span>
-              </a>
-            </li>
-          {/each}
-        </ul>
+    {#if catalog.passages}
+      <section class="passages">
+        <h2 class="ui sectionhead">Popular passages</h2>
+        {#await sample(3) then picks}
+          <ul class="passagelist">
+            {#each picks as p}
+              <li>
+                <a href={`${base}/${p.author}/${p.work}/${p.ref}`}>
+                  <blockquote class:verse={p.kind === "verse"}>{p.excerpt}</blockquote>
+                  <span class="pcite ui">{p.title} · {p.authorName}, {p.workTitle}</span>
+                </a>
+              </li>
+            {/each}
+          </ul>
+        {/await}
+        <p class="morelink ui">
+          <a href={`${base}/passages`}>All {catalog.passages} passages →</a>
+        </p>
       </section>
     {/if}
 
@@ -118,6 +133,22 @@
         </ol>
       </section>
     {/each}
+    {#if catalog.paths?.length}
+      <section class="paths">
+        <h2 class="ui sectionhead">Reading paths</h2>
+        <ul class="pathlist">
+          {#each catalog.paths as p}
+            <li>
+              <a href={`${base}/paths/${p.slug}`}>
+                <span class="ptitle">{p.title}</span>
+                <span class="pblurb">{p.blurb}</span>
+                <span class="pmeta ui">{p.steps.length} readings · {p.works} works</span>
+              </a>
+            </li>
+          {/each}
+        </ul>
+      </section>
+    {/if}
   {:catch e}
     <p class="ui center">Could not load the catalog: {e.message}</p>
   {/await}
@@ -160,6 +191,50 @@
     margin: 2.2rem 0 0.9rem;
     padding-bottom: 0.4rem;
     border-bottom: 1px solid var(--rule);
+  }
+  .passagelist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 0.9rem;
+  }
+  .passagelist a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    background: var(--raised);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+  }
+  .passagelist a:hover {
+    border-color: var(--accent);
+  }
+  .passagelist blockquote {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  /* Verse keeps the line breaks it was built with. */
+  .passagelist blockquote.verse {
+    white-space: pre-line;
+  }
+  .pcite {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: auto;
+  }
+  .morelink {
+    font-size: 0.82rem;
+    margin: 0.9rem 0 0;
+  }
+  .morelink a {
+    text-decoration: none;
   }
   .pathlist {
     list-style: none;

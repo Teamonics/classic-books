@@ -6,6 +6,7 @@ import { contentHash, stableJson, wordCount } from "./util.ts";
 import { validateWork } from "./validate.ts";
 import { buildIndexes, validateIndexes } from "./search/index.ts";
 import { buildPaths } from "./paths.ts";
+import { buildPassages } from "./passages.ts";
 import { adapt as adaptDante } from "./adapters/se-divine-comedy.ts";
 import { adapt as adaptButlerHomer } from "./adapters/pg-butler-homer.ts";
 import { adapt as adaptFrogs } from "./adapters/pg-the-frogs.ts";
@@ -240,12 +241,22 @@ function main() {
     if (!ERAS.some((e) => e.id === era)) throw new Error(`unlabelled era: ${era}`);
   }
   const paths = buildPaths(join(ROOT, "paths"), manifests);
+  // Passages carry their own excerpts, so they ride in a separate file rather
+  // than weighing down the catalog every visitor loads.
+  const passages = buildPassages(join(ROOT, "passages"), manifests, join(BUILD, "works"));
+  writeFileSync(join(BUILD, "passages.json"), JSON.stringify(passages, null, 2));
   writeFileSync(
     join(BUILD, "catalog.json"),
-    JSON.stringify({ works: catalog, eras: ERAS.filter((e) => usedEras.has(e.id)), paths }, null, 2),
+    JSON.stringify(
+      { works: catalog, eras: ERAS.filter((e) => usedEras.has(e.id)), paths, passages: passages.length },
+      null,
+      2,
+    ),
   );
   writeFileSync(join(BUILD, "sources.json"), JSON.stringify(sources, null, 2));
-  console.log(`build complete: ${catalog.length} works, ${paths.length} reading paths`);
+  console.log(
+    `build complete: ${catalog.length} works, ${passages.length} passages, ${paths.length} reading paths`,
+  );
 }
 
 main();

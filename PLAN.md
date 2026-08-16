@@ -174,7 +174,8 @@ classic-books/
 │   ├── sources.json
 │   └── catalog.<hash>.json       # bookshelf: all works, era, ordering, cover data
 ├── app/                          # SvelteKit reader (details §5)
-└── paths/                        # curated reading paths, authored YAML → built into catalog
+├── paths/                        # curated reading paths, authored YAML → built into catalog
+└── passages/                     # famous passages: locator + note; excerpts read back from the built text
 ```
 
 - Work granularity: **one work = one reader unit**, not one SE repo. SE's
@@ -318,6 +319,7 @@ plan is framework-agnostic — say so and I'll swap this section.)
 
 ```
 /                                bookshelf (prerendered)
+/passages                        famous passages, chronological (prerendered)
 /paths, /paths/<slug>            curated paths (prerendered)
 /<author>/<work>                 landing + TOC + progress (prerendered)
 /<author>/<work>/<ref>           reader; chunk-level refs prerendered as shells,

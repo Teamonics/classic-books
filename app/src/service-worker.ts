@@ -15,7 +15,9 @@ const shellAssets = [...build, ...files.filter((f) => !f.startsWith(`${base}/dat
 const isHashedData = (url: URL) =>
   url.pathname.startsWith(`${base}/data/`) && /\.[0-9a-f]{12}\.json$/.test(url.pathname);
 const isMutableData = (url: URL) =>
-  url.pathname === `${base}/data/catalog.json` || url.pathname === `${base}/data/sources.json`;
+  url.pathname === `${base}/data/catalog.json` ||
+  url.pathname === `${base}/data/sources.json` ||
+  url.pathname === `${base}/data/passages.json`;
 
 sw.addEventListener("install", (event) => {
   event.waitUntil(

@@ -1,0 +1,163 @@
+[
+  {
+    "work": "the-divine-comedy",
+    "find": "Midway upon the journey of our life",
+    "title": "Midway upon the journey of our life",
+    "note": "The poem begins with a man of thirty-five lost in a wood, and the pronoun is \"our\".",
+    "lines": 6
+  },
+  {
+    "work": "the-divine-comedy",
+    "find": "All hope abandon, ye who enter in",
+    "title": "The gate of Hell",
+    "note": "The inscription over the gate, in Longfellow's rendering — the last line of it is the one everybody knows.",
+    "lines": 5
+  },
+  {
+    "work": "the-canterbury-tales",
+    "find": "When that Aprilis, with his showers swoot",
+    "title": "When April comes",
+    "note": "Spring makes people restless, says Chaucer, and restless people go on pilgrimage. The frame for everything that follows.",
+    "lines": 8
+  },
+  {
+    "work": "the-prince",
+    "find": "it is much safer to be feared than loved",
+    "title": "Better feared than loved",
+    "note": "Machiavelli's most quoted sentence, with the qualification that is usually dropped from the quotation.",
+    "chars": 380
+  },
+  {
+    "work": "essays",
+    "find": "What do I know?",
+    "title": "What do I know?",
+    "note": "Montaigne's motto, struck on a medal with a pair of scales — a question, not a position.",
+    "chars": 300
+  },
+  {
+    "work": "gargantua-and-pantagruel",
+    "find": "because men that are free, well-born, well-bred",
+    "title": "The rule of the Abbey of Thélème",
+    "note": "Rabelais' imaginary abbey has one rule — Do What Thou Wilt — on the theory that well-made people need no others.",
+    "chars": 300
+  },
+  {
+    "work": "don-quixote",
+    "find": "In a village of La Mancha",
+    "title": "In a village of La Mancha",
+    "note": "The first paragraph of the first modern novel, which begins by refusing to remember where it is set.",
+    "chars": 360
+  },
+  {
+    "work": "richard-iii",
+    "find": "Now is the winter of our discontent",
+    "title": "Now is the winter of our discontent",
+    "note": "Richard opens the play by telling the audience exactly what he intends to do, and then does it.",
+    "lines": 6
+  },
+  {
+    "work": "romeo-and-juliet",
+    "find": "But, soft! what light through yonder window breaks",
+    "title": "The balcony scene",
+    "note": "Romeo, in the dark, watching a window. Neither of them knows the other is listening.",
+    "lines": 6
+  },
+  {
+    "work": "the-merchant-of-venice",
+    "find": "The quality of mercy is not strain’d",
+    "title": "The quality of mercy",
+    "note": "Portia, disguised as a lawyer, argues for mercy — and then wins the case on the strictest possible reading of the law.",
+    "lines": 7
+  },
+  {
+    "work": "henry-v",
+    "find": "We few, we happy few, we band of brothers",
+    "title": "We band of brothers",
+    "note": "The English are outnumbered and ill; the king turns that into the reason to be glad they came.",
+    "lines": 6
+  },
+  {
+    "work": "julius-caesar",
+    "find": "Friends, Romans, countrymen, lend me your ears",
+    "title": "Friends, Romans, countrymen",
+    "note": "Antony has been forbidden to blame the conspirators, and spends the speech obeying that instruction.",
+    "lines": 8
+  },
+  {
+    "work": "as-you-like-it",
+    "find": "All the world’s a stage",
+    "title": "The seven ages of man",
+    "note": "Jaques divides a life into seven parts, and finds the last one no better than the first.",
+    "lines": 8
+  },
+  {
+    "work": "twelfth-night",
+    "find": "If music be the food of love, play on",
+    "title": "If music be the food of love",
+    "note": "A duke in love with being in love, which the rest of the play will not let him get away with.",
+    "lines": 6
+  },
+  {
+    "work": "hamlet",
+    "find": "To be, or not to be: that is the question",
+    "title": "To be, or not to be",
+    "note": "Not a soliloquy about revenge but about whether to go on living, spoken while he is being watched.",
+    "lines": 8
+  },
+  {
+    "work": "hamlet",
+    "find": "What a piece of work is a man",
+    "title": "What a piece of work is a man",
+    "note": "The Renaissance case for human greatness, recited by someone who has stopped believing it.",
+    "chars": 400
+  },
+  {
+    "work": "othello",
+    "find": "Put out the light, and then put out the light",
+    "title": "Put out the light",
+    "note": "Othello talks himself into it in the language of someone performing a duty.",
+    "lines": 6
+  },
+  {
+    "work": "king-lear",
+    "find": "As flies to wanton boys, are we to the gods",
+    "title": "As flies to wanton boys",
+    "note": "Gloucester, blinded, states the bleakest theology in Shakespeare.",
+    "lines": 4
+  },
+  {
+    "work": "macbeth",
+    "find": "Is this a dagger which I see before me",
+    "title": "Is this a dagger",
+    "note": "The murder has not happened yet. Macbeth is already seeing things.",
+    "lines": 6
+  },
+  {
+    "work": "macbeth",
+    "find": "To-morrow, and to-morrow, and to-morrow",
+    "title": "To-morrow, and to-morrow",
+    "note": "His wife is dead and the army is at the gate; what he produces is a statement about time.",
+    "lines": 8
+  },
+  {
+    "work": "the-tempest",
+    "find": "Our revels now are ended",
+    "title": "Our revels now are ended",
+    "note": "Prospero breaks off a masque to say that the world will end the same way the show did.",
+    "lines": 8
+  },
+  {
+    "work": "shakespeare-poetry",
+    "find": "Shall I compare thee to a summer’s day?",
+    "title": "Sonnet 18",
+    "note": "The argument is not that the beloved is beautiful but that the poem will outlast them both.",
+    "lines": 8
+  },
+  {
+    "work": "shakespeare-poetry",
+    "find": "Let me not to the marriage of true minds",
+    "title": "Sonnet 116",
+    "note": "A definition of love written entirely as a list of what it does not do.",
+    "lines": 8
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "work": "areopagitica",
+    "find": "kill a good book",
+    "title": "Who kills a good book",
+    "note": "Milton's argument against licensing the press, written for a Parliament that ignored it.",
+    "chars": 380
+  },
+  {
+    "work": "leviathan",
+    "find": "solitary, poor, nasty, brutish, and short",
+    "title": "Nasty, brutish, and short",
+    "note": "Life without a common power to keep everyone in awe — Hobbes' reason for accepting almost any government.",
+    "chars": 360
+  },
+  {
+    "work": "paradise-lost",
+    "find": "Of Man’s first disobedience",
+    "title": "Of Man's first disobedience",
+    "note": "Milton states his subject and his aim: to justify the ways of God to men.",
+    "lines": 8
+  },
+  {
+    "work": "paradise-lost",
+    "find": "Better to reign in Hell, than serve in Heaven",
+    "title": "Better to reign in Hell",
+    "note": "Satan, newly defeated, decides what to make of the place he has been thrown into.",
+    "lines": 5
+  },
+  {
+    "work": "essay-concerning-human-understanding",
+    "find": "Let us then suppose the mind to be, as we say, white paper",
+    "title": "The mind as white paper",
+    "note": "Locke's answer to innate ideas, and the sentence empiricism is usually summarised by.",
+    "chars": 380
+  },
+  {
+    "work": "principles-of-human-knowledge",
+    "find": "Their ESSE is PERCIPI",
+    "title": "To be is to be perceived",
+    "note": "Berkeley's claim that unperceived matter is not merely unknown but unintelligible.",
+    "chars": 340
+  },
+  {
+    "work": "a-treatise-of-human-nature",
+    "find": "Reason is, and ought only to be the slave of the passions",
+    "title": "The slave of the passions",
+    "note": "Hume detaches reason from motivation, and most of modern moral philosophy starts arguing here.",
+    "chars": 360
+  },
+  {
+    "work": "enquiry-human-understanding",
+    "find": "Commit it then to the flames",
+    "title": "Commit it then to the flames",
+    "note": "The closing paragraph, disposing of every book that survives neither mathematics nor experience.",
+    "chars": 360
+  },
+  {
+    "work": "theory-of-moral-sentiments",
+    "find": "How selfish soever man may be supposed",
+    "title": "How selfish soever",
+    "note": "The opening of Adam Smith's other book, which begins with fellow feeling rather than self-interest.",
+    "chars": 380
+  },
+  {
+    "work": "the-wealth-of-nations",
+    "find": "the brewer, or the baker, that we expect our dinner",
+    "title": "The butcher, the brewer, the baker",
+    "note": "Smith's account of why an economy works without anyone intending it to.",
+    "chars": 380
+  },
+  {
+    "work": "the-wealth-of-nations",
+    "find": "led by an invisible hand to promote an end which was no part of his intention",
+    "title": "The invisible hand",
+    "note": "The phrase appears exactly once in the book, in a passage about preferring domestic industry.",
+    "chars": 380
+  },
+  {
+    "work": "critique-of-practical-reason",
+    "find": "the starry heavens above and the moral law within",
+    "title": "The starry heavens and the moral law",
+    "note": "Kant's conclusion, and the sentence carved on his grave.",
+    "chars": 380
+  },
+  {
+    "work": "the-federalist-papers",
+    "find": "If men were angels, no government would be necessary",
+    "title": "If men were angels",
+    "note": "Madison on why a constitution has to be designed for the people who will actually run it.",
+    "chars": 380
+  },
+  {
+    "work": "decline-and-fall",
+    "find": "In the second century of the Christian Era",
+    "title": "The empire at its height",
+    "note": "Gibbon opens at the top of the arc, because the whole book is about the way down.",
+    "chars": 380
+  },
+  {
+    "work": "the-communist-manifesto",
+    "find": "A specter is haunting Europe",
+    "title": "A spectre is haunting Europe",
+    "note": "The opening of the most consequential pamphlet ever written, in Samuel Moore's 1888 translation.",
+    "chars": 340
+  },
+  {
+    "work": "moby-dick",
+    "find": "Call me Ishmael",
+    "title": "Call me Ishmael",
+    "note": "Three words that decline to say whether they are the narrator's real name.",
+    "chars": 380
+  },
+  {
+    "work": "on-liberty",
+    "find": "Over himself, over his own body and mind, the individual is sovereign",
+    "title": "The harm principle",
+    "note": "Mill's one very simple principle, and the boundary he draws around it.",
+    "chars": 360
+  },
+  {
+    "work": "the-subjection-of-women",
+    "find": "the legal subordination of one sex to the other",
+    "title": "The legal subordination of one sex",
+    "note": "Mill's first sentence states the conclusion; the rest of the book argues for it.",
+    "chars": 380
+  },
+  {
+    "work": "war-and-peace",
+    "find": "Well, Prince, so Genoa and Lucca",
+    "title": "A soirée in Petersburg",
+    "note": "The novel opens at a party, in French, with gossip about Napoleon.",
+    "chars": 380
+  },
+  {
+    "work": "anna-karenina",
+    "find": "Happy families are all alike",
+    "title": "Happy families are all alike",
+    "note": "One sentence, and the rest of the novel is spent testing whether it is true.",
+    "chars": 200
+  },
+  {
+    "work": "the-brothers-karamazov",
+    "find": "We have corrected Thy work and have founded it upon miracle, mystery and authority",
+    "title": "The Grand Inquisitor",
+    "note": "Ivan's invented story: Christ returns to Seville, is arrested, and the Inquisitor explains why he is not wanted.",
+    "chars": 380
+  }
+]

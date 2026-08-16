@@ -31,6 +31,25 @@ export interface Catalog {
   works: CatalogEntry[];
   eras: Era[];
   paths: ReadingPath[];
+  passages: number; // count only; the passages themselves load separately
+}
+
+// A famous passage, its excerpt lifted from the built text at ref so the card
+// and the page it opens can never disagree.
+export interface Passage {
+  work: string;
+  workTitle: string;
+  author: string;
+  authorName: string;
+  translator?: string;
+  composedYear: number;
+  ref: string;
+  chunkTitle: string;
+  title: string;
+  note: string;
+  speaker?: string;
+  kind: "verse" | "prose";
+  excerpt: string;
 }
 
 let catalogPromise: Promise<Catalog> | null = null;
@@ -41,6 +60,16 @@ export function getCatalog(): Promise<Catalog> {
     return r.json();
   });
   return catalogPromise;
+}
+
+let passagesPromise: Promise<Passage[]> | null = null;
+
+export function getPassages(): Promise<Passage[]> {
+  passagesPromise ??= fetch(`${base}/data/passages.json`).then((r) => {
+    if (!r.ok) throw new Error(`${r.status} loading passages`);
+    return r.json();
+  });
+  return passagesPromise;
 }
 
 // Works grouped by era in chronological order, and within an era, authors

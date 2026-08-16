@@ -1,0 +1,163 @@
+[
+  {
+    "work": "the-iliad",
+    "find": "Sing, O goddess, the anger of Achilles",
+    "title": "The wrath of Achilles",
+    "note": "The first lines of European literature announce their subject: not a war, but one man's rage.",
+    "chars": 340
+  },
+  {
+    "work": "the-iliad",
+    "find": "raised to my lips the hand of him who slew my son",
+    "title": "Priam asks for the body of his son",
+    "note": "The old king of Troy kneels to the man who killed Hector. Homer ends the poem not in triumph but in a shared grief.",
+    "chars": 360
+  },
+  {
+    "work": "the-odyssey",
+    "find": "Tell me, O Muse, of that ingenious hero",
+    "title": "The man who travelled far and wide",
+    "note": "The opening invocation, and a hero defined by cunning and endurance rather than strength.",
+    "chars": 340
+  },
+  {
+    "work": "the-odyssey",
+    "find": "renowned Ulysses, honour to the Achaean name",
+    "title": "The song of the Sirens",
+    "note": "What the Sirens actually offer is not beauty but knowledge — which is why he has to be tied down.",
+    "chars": 380
+  },
+  {
+    "work": "agamemnon",
+    "find": "Men shall learn wisdom, by affliction schooled",
+    "title": "Wisdom through suffering",
+    "note": "The chorus states the law the whole trilogy will test: understanding is paid for in pain.",
+    "lines": 5
+  },
+  {
+    "work": "antigone",
+    "find": "Many wonders there be, but naught more wondrous than man",
+    "title": "Ode to man",
+    "note": "Sophocles' chorus catalogues everything humanity has mastered, and then the one thing it has not.",
+    "lines": 6
+  },
+  {
+    "work": "medea",
+    "find": "We women are of all things wretchedest",
+    "title": "Medea on the lot of women",
+    "note": "Spoken to the women of Corinth, in a play produced by men for men, in 431 BC.",
+    "lines": 6
+  },
+  {
+    "work": "the-frogs",
+    "find": "We children of the fountain and the lake",
+    "title": "The chorus of frogs",
+    "note": "Dionysus rows across the lake of the dead and is heckled by amphibians. Comedy's oldest surviving running gag.",
+    "lines": 6
+  },
+  {
+    "work": "history-of-the-peloponnesian-war",
+    "find": "the strong do what they can and the weak suffer what they must",
+    "title": "The Melian dialogue",
+    "note": "Athens explains to a small neutral island why justice is not on the table. The island refuses; Athens destroys it.",
+    "chars": 340
+  },
+  {
+    "work": "history-of-the-peloponnesian-war",
+    "find": "For heroes have the whole earth for their tomb",
+    "title": "Pericles' funeral oration",
+    "note": "The most famous speech in Greek history, delivered over the first war dead — and reported by a man who thought the war was a catastrophe.",
+    "chars": 360
+  },
+  {
+    "work": "histories",
+    "find": "no one of the living might be called happy",
+    "title": "Solon's warning to Croesus",
+    "note": "The richest king in the world asks who is the happiest man alive, and does not like the answer. He remembers it on the pyre.",
+    "chars": 360
+  },
+  {
+    "work": "apology",
+    "find": "the unexamined life is not worth living",
+    "title": "The unexamined life",
+    "note": "Socrates, on trial for his life, explains why he will not agree to stop asking questions.",
+    "chars": 340
+  },
+  {
+    "work": "phaedo",
+    "find": "Crito, I owe a cock to Asclepius",
+    "title": "The death of Socrates",
+    "note": "His last words are a reminder about a small debt. Readers have argued about what he meant ever since.",
+    "chars": 380
+  },
+  {
+    "work": "republic",
+    "find": "Behold! human beings living in a underground den",
+    "title": "The allegory of the cave",
+    "note": "Prisoners chained facing a wall have never seen anything but shadows, and would not thank you for the sun.",
+    "chars": 420
+  },
+  {
+    "work": "the-aeneid",
+    "find": "Arms, and the man I sing",
+    "title": "Arms and the man",
+    "note": "Virgil opens by naming both halves of his poem: the war of the Iliad and the wandering of the Odyssey.",
+    "lines": 6
+  },
+  {
+    "work": "on-the-nature-of-things",
+    "find": "So great the evils to which religion could prompt",
+    "title": "So great the evils",
+    "note": "Lucretius' verdict on the sacrifice of Iphigenia, and the line that made him notorious for two thousand years.",
+    "chars": 300
+  },
+  {
+    "work": "lives",
+    "find": "The die is cast",
+    "title": "Caesar crosses the Rubicon",
+    "note": "Plutarch's account of the moment a provincial governor became a civil war.",
+    "chars": 340
+  },
+  {
+    "work": "meditations",
+    "find": "Begin the morning by saying to thyself",
+    "title": "Begin the morning by saying to thyself",
+    "note": "The emperor's private note to himself about the people he is about to have to deal with.",
+    "chars": 380
+  },
+  {
+    "work": "epictetus-short-works",
+    "find": "Men are disturbed not by the things which happen",
+    "title": "Not things, but opinions about things",
+    "note": "The sentence the whole Stoic programme rests on, from a manual written by a former slave.",
+    "chars": 340
+  },
+  {
+    "work": "confessions",
+    "find": "our heart is restless, until it repose in Thee",
+    "title": "Our heart is restless",
+    "note": "The opening of the first autobiography, addressed throughout not to the reader but to God.",
+    "chars": 300
+  },
+  {
+    "work": "confessions",
+    "find": "Give me chastity and continency, only not yet",
+    "title": "Only not yet",
+    "note": "Augustine remembers the exact shape of his own reluctance, which is why the book still reads as modern.",
+    "chars": 320
+  },
+  {
+    "work": "the-city-of-god",
+    "find": "these two cities are entangled together in this world",
+    "title": "The two cities",
+    "note": "Written after Rome fell in 410, to answer Romans who blamed the Christians for it.",
+    "chars": 340
+  },
+  {
+    "work": "summa-theologica-1",
+    "find": "The existence of God can be proved in five ways",
+    "title": "The five ways",
+    "note": "Aquinas' five arguments, stated in the compressed form that made them the standard reference for centuries.",
+    "chars": 300
+  }
+]
