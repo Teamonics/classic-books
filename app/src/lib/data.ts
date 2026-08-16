@@ -48,20 +48,6 @@ export function prefetchChunk(manifest: Manifest, ref: string | null) {
   if (ref && manifest.chunkFiles[ref]) void getChunk(manifest, ref).catch(() => {});
 }
 
-// Resolve a possibly-finer-grained ref to its chunk ref plus an anchor.
-// "inferno.1:61" -> chunk inferno.1, line 61; "3.12" -> chunk 3, para 12.
-export function resolveRef(
-  manifest: Manifest,
-  ref: string,
-): { chunkRef: string; line?: number; para?: number } | null {
-  if (manifest.chunkFiles[ref]) return { chunkRef: ref };
-  const colon = ref.match(/^(.+):(\d+)$/);
-  if (colon && manifest.chunkFiles[colon[1]!]) {
-    return { chunkRef: colon[1]!, line: Number(colon[2]) };
-  }
-  const dot = ref.match(/^(.+)\.(\d+)$/);
-  if (dot && manifest.chunkFiles[dot[1]!]) {
-    return { chunkRef: dot[1]!, para: Number(dot[2]) };
-  }
-  return null;
-}
+// resolveRef lives in refs.ts, which stays free of SvelteKit imports so the
+// reader's route logic can be tested in Node; re-exported here for callers.
+export { resolveRef } from "./refs";

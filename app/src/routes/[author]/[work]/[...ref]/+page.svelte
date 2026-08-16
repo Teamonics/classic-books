@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { tick } from "svelte";
+  import { tick, untrack } from "svelte";
   import { page } from "$app/state";
   import { base } from "$app/paths";
   import { replaceState } from "$app/navigation";
   import { getWork, getChunk, prefetchChunk, resolveRef } from "$lib/data";
+  import { routeAction } from "$lib/refs";
   import { savePosition, getPosition, markRead } from "$lib/progress.svelte";
   import BlockView from "$lib/components/BlockView.svelte";
   import SettingsPanel from "$lib/components/SettingsPanel.svelte";
@@ -53,15 +54,24 @@
     return map;
   });
 
-  // (Re)load when the route changes to a ref we don't already have on screen.
+  // The effect must depend on the route and nothing else: chunks and manifest
+  // are both written by load(), so tracking either turns this into a feedback
+  // loop that reloads forever. They are read through untrack for that reason,
+  // and the decision itself lives in refs.ts where it can be tested.
+  let anchoredFor = "";
   $effect(() => {
     const target = refParam;
-    const sameWork = chunks[0]?.work === slug;
-    if (sameWork && chunks.some((c) => c.ref === target || target.startsWith(c.ref + ":"))) return;
-    void load(target);
+    const act = untrack(() => routeAction(target, manifest, chunks, slug, anchoredFor));
+    if (act.kind === "none") return;
+    anchoredFor = target;
+    if (act.kind === "anchor") void restoreOrAnchor(act.resolved);
+    else void load(target);
   });
 
+  let loadingTarget: string | null = null;
   async function load(target: string) {
+    if (loadingTarget === target) return;
+    loadingTarget = target;
     error = null;
     try {
       const { manifest: m } = await getWork(slug, author);
@@ -76,6 +86,8 @@
       await restoreOrAnchor(resolved);
     } catch (e) {
       error = e instanceof Error ? e.message : String(e);
+    } finally {
+      loadingTarget = null;
     }
   }
 
@@ -93,6 +105,7 @@
       }
     }
     if (el) {
+      container.querySelector(".anchored")?.classList.remove("anchored");
       el.scrollIntoView({ block: "start" });
       window.scrollBy(0, -80);
       el.classList.add("anchored");
