@@ -872,9 +872,9 @@
       "composedYear": -350,
       "era": "classical-greece",
       "translator": "Octavius Freire Owen",
-      "manifestFile": "manifest.be7b4e3719d3.json",
+      "manifestFile": "manifest.853580df07e8.json",
       "chunks": 73,
-      "words": 46896
+      "words": 46894
     },
     {
       "slug": "posterior-analytics",
@@ -913,6 +913,30 @@
       "words": 19708
     },
     {
+      "slug": "on-the-heavens",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "On the Heavens",
+      "composedYear": -350,
+      "era": "classical-greece",
+      "translator": "J. L. Stocks",
+      "manifestFile": "manifest.5ee8e9b74d1f.json",
+      "chunks": 40,
+      "words": 39356
+    },
+    {
+      "slug": "on-memory",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "On Memory and Reminiscence",
+      "composedYear": -350,
+      "era": "classical-greece",
+      "translator": "J. I. Beare",
+      "manifestFile": "manifest.0a8765a86f1c.json",
+      "chunks": 2,
+      "words": 4757
+    },
+    {
       "slug": "laws",
       "author": "plato",
       "authorName": "Plato",
@@ -923,6 +947,42 @@
       "manifestFile": "manifest.687a7d96c97a.json",
       "chunks": 14,
       "words": 238268
+    },
+    {
+      "slug": "parts-of-animals",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "On the Parts of Animals",
+      "composedYear": -343,
+      "era": "classical-greece",
+      "translator": "William Ogle",
+      "manifestFile": "manifest.f1347cd718f4.json",
+      "chunks": 43,
+      "words": 47789
+    },
+    {
+      "slug": "generation-of-animals",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "On the Generation of Animals",
+      "composedYear": -343,
+      "era": "classical-greece",
+      "translator": "Arthur Platt",
+      "manifestFile": "manifest.3bf9f6ec5b3c.json",
+      "chunks": 60,
+      "words": 68400
+    },
+    {
+      "slug": "history-of-animals",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "The History of Animals",
+      "composedYear": -343,
+      "era": "classical-greece",
+      "translator": "Richard Cresswell",
+      "manifestFile": "manifest.ff78217074e8.json",
+      "chunks": 196,
+      "words": 117675
     },
     {
       "slug": "nicomachean-ethics",
@@ -959,6 +1019,18 @@
       "manifestFile": "manifest.e6c826292352.json",
       "chunks": 26,
       "words": 14803
+    },
+    {
+      "slug": "rhetoric",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "Rhetoric",
+      "composedYear": -335,
+      "era": "classical-greece",
+      "translator": "J. H. Freese",
+      "manifestFile": "manifest.7bf00d38e23c.json",
+      "chunks": 60,
+      "words": 62901
     },
     {
       "slug": "athenian-constitution",

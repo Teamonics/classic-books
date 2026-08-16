@@ -2547,7 +2547,7 @@
     "slug": "prior-analytics",
     "title": "Prior Analytics",
     "translator": "Octavius Freire Owen",
-    "manifestFile": "manifest.be7b4e3719d3.json",
+    "manifestFile": "manifest.853580df07e8.json",
     "source": "wikisource",
     "url": "https://en.wikisource.org/",
     "retrieved": "2026-08-16",
@@ -2653,6 +2653,53 @@
     ]
   },
   {
+    "slug": "on-the-heavens",
+    "title": "On the Heavens",
+    "translator": "J. L. Stocks",
+    "manifestFile": "manifest.5ee8e9b74d1f.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-16",
+    "pages": [
+      {
+        "title": "On the Heavens/Book I",
+        "file": "book-i.html",
+        "revid": 5264621
+      },
+      {
+        "title": "On the Heavens/Book II",
+        "file": "book-ii.html",
+        "revid": 10195955
+      },
+      {
+        "title": "On the Heavens/Book III",
+        "file": "book-iii.html",
+        "revid": 9170610
+      },
+      {
+        "title": "On the Heavens/Book IV",
+        "file": "book-iv.html",
+        "revid": 5264644
+      }
+    ]
+  },
+  {
+    "slug": "on-memory",
+    "title": "On Memory and Reminiscence",
+    "translator": "J. I. Beare",
+    "manifestFile": "manifest.0a8765a86f1c.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-16",
+    "pages": [
+      {
+        "title": "On Memory and Reminiscence",
+        "file": "on-memory-and-reminiscence.html",
+        "revid": 15693682
+      }
+    ]
+  },
+  {
     "slug": "laws",
     "title": "Laws",
     "translator": "Benjamin Jowett",
@@ -2664,6 +2711,86 @@
     "translatorDied": 1893,
     "translationPublished": 1871,
     "licenseBasis": "SE CC0; translation US PD + translator d. 1893"
+  },
+  {
+    "slug": "parts-of-animals",
+    "title": "On the Parts of Animals",
+    "translator": "William Ogle",
+    "manifestFile": "manifest.f1347cd718f4.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-16",
+    "pages": [
+      {
+        "title": "On the Parts of Animals/Book I",
+        "file": "book-i.html",
+        "revid": 14716972
+      },
+      {
+        "title": "On the Parts of Animals/Book II",
+        "file": "book-ii.html",
+        "revid": 7157018
+      },
+      {
+        "title": "On the Parts of Animals/Book III",
+        "file": "book-iii.html",
+        "revid": 3450793
+      },
+      {
+        "title": "On the Parts of Animals/Book IV",
+        "file": "book-iv.html",
+        "revid": 3450792
+      }
+    ]
+  },
+  {
+    "slug": "generation-of-animals",
+    "title": "On the Generation of Animals",
+    "translator": "Arthur Platt",
+    "manifestFile": "manifest.3bf9f6ec5b3c.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-16",
+    "pages": [
+      {
+        "title": "On the Generation of Animals/Book I",
+        "file": "book-i.html",
+        "revid": 3450790
+      },
+      {
+        "title": "On the Generation of Animals/Book II",
+        "file": "book-ii.html",
+        "revid": 3450789
+      },
+      {
+        "title": "On the Generation of Animals/Book III",
+        "file": "book-iii.html",
+        "revid": 3450788
+      },
+      {
+        "title": "On the Generation of Animals/Book IV",
+        "file": "book-iv.html",
+        "revid": 3450787
+      },
+      {
+        "title": "On the Generation of Animals/Book V",
+        "file": "book-v.html",
+        "revid": 3450786
+      }
+    ]
+  },
+  {
+    "slug": "history-of-animals",
+    "title": "The History of Animals",
+    "translator": "William Ellis (Politics) ; S. H. Butcher (Poetics) ; Frederic G. Kenyon (Athenian Constitution)",
+    "manifestFile": "manifest.ff78217074e8.json",
+    "source": "project-gutenberg",
+    "pgId": "6762 (Politics) ; 1974 (Poetics) ; 26095 (Athenian Constitution)",
+    "url": "https://www.gutenberg.org/ebooks/6762 ; https://www.gutenberg.org/ebooks/1974 ; https://www.gutenberg.org/ebooks/26095",
+    "retrieved": "2026-08-16",
+    "translatorDied": null,
+    "translationPublished": 1776,
+    "licenseBasis": "US PD. Ellis's Politics 1776; Butcher d. 1910; Kenyon d. 1952 (life+70 cleared 2023). PG boilerplate stripped at build."
   },
   {
     "slug": "nicomachean-ethics",
@@ -2703,6 +2830,32 @@
     "translatorDied": null,
     "translationPublished": 1776,
     "licenseBasis": "US PD. Ellis's Politics 1776; Butcher d. 1910; Kenyon d. 1952 (life+70 cleared 2023). PG boilerplate stripped at build."
+  },
+  {
+    "slug": "rhetoric",
+    "title": "Rhetoric",
+    "translator": "J. H. Freese",
+    "manifestFile": "manifest.7bf00d38e23c.json",
+    "source": "wikisource",
+    "url": "https://en.wikisource.org/",
+    "retrieved": "2026-08-16",
+    "pages": [
+      {
+        "title": "Rhetoric (Freese)/Book 1",
+        "file": "book-1.html",
+        "revid": 15169893
+      },
+      {
+        "title": "Rhetoric (Freese)/Book 2",
+        "file": "book-2.html",
+        "revid": 1860999
+      },
+      {
+        "title": "Rhetoric (Freese)/Book 3",
+        "file": "book-3.html",
+        "revid": 3515996
+      }
+    ]
   },
   {
     "slug": "athenian-constitution",

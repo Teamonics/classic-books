@@ -115,8 +115,35 @@ Skeat's Middle English.
 | **Rousseau** | Cole (their pick and SE's) d. 1959 → protected until 2030. Tozer alternative exists only as page scans. Revisit 2030 or when a clean Tozer text appears. |
 | **Montesquieu, Spirit of Laws** | Nugent translation is PD but not on PG/WS as clean text — scan-only. Revisit. |
 | **Pascal, Pensées** | PG #18269 carries no translator attribution in the file; it is believed to be W. F. Trotter (their pick) but his death date is unverified. Do not ship until attribution + death date are confirmed. |
-| Aristotle, Hegel, Goethe, Boswell | Already deferred in the brief (Ross EU-protected; Priest's Faust 1941 is US-protected to 2037; substitutes are later work). |
+| **Aristotle: Physics, Metaphysics, On the Soul, Meteorology, On Generation and Corruption, most of the Parva Naturalia** | Clear of copyright, but no clean transcription exists. Hardie & Gaye's Physics (both dead well before 1955), Hicks's De Anima and Webster's Meteorology survive only as page scans; Wikisource's Metaphysics is Ross's, protected to 2042, and M'Mahon's 1857 is not transcribed. Revisit if a transcription appears. |
+| **Aristotle: Eudemian Ethics, Magna Moralia** | Solomon and St. George Stock, Oxford 1915. Neither death date is findable — Stock's own catalogue entry reads "1850–" with the year blank. A 1915 translator outliving 1955 is entirely ordinary, so rule 2 applies. |
+| Hegel, Goethe, Boswell | Deferred in the brief (Priest's Faust 1941 is US-protected to 2037; substitutes are later work). |
 | All mathematics & natural science | Deferred per brief (second rendering path). |
+
+## Aristotle as built
+
+The brief deferred Aristotle because "Ross is EU-protected". Ross *edited* the
+Oxford translation; he personally translated the Metaphysics and the Ethics,
+and about eighteen other scholars did the rest. Sixteen works are clear in
+both jurisdictions and built.
+
+| Work(s) | Translation | Basis |
+|---|---|---|
+| Organon: Categories, On Interpretation, Prior & Posterior Analytics, Topics, Sophistical Refutations | O. F. Owen, 1853 (Bohn) | Owen d. 1873. One translator across all six, where the Oxford Posterior Analytics is Mure's (d. 1979, protected to 2050) |
+| Nicomachean Ethics | F. H. Peters, 1881 | Standard Ebooks, CC0. Peters' death date is not findable, but a translator publishing in 1881 would have to reach ~105 for life+70 to still run |
+| Politics | William Ellis, 1776 | Jowett would have matched our Plato, but Wikisource has only Book I of it |
+| Rhetoric | J. H. Freese, 1926 | Freese d. 1930 |
+| Poetics | S. H. Butcher | d. 1910 |
+| The Athenian Constitution | F. G. Kenyon, 1891 | d. 1952 — cleared life+70 in 2023 |
+| On the Heavens | J. L. Stocks, 1922 | d. 1937 |
+| History of Animals | Richard Cresswell, 1883 | d. 1882 |
+| On the Parts of Animals | William Ogle, 1912 | d. 1912 |
+| On the Generation of Animals | Arthur Platt, 1912 | d. 1925 |
+| On Memory and Reminiscence | J. I. Beare, 1908 | d. 1918 |
+
+Not Bekker-numbered: none of these sources carries Bekker numbers as data.
+Ellis's Politics prints exactly one, "[Bekker 1252a]", in its opening
+sentence and never again — a stray, stripped at build.
 
 ## Euripides as built
 

@@ -1,0 +1,27 @@
+{
+  "source": "wikisource",
+  "url": "https://en.wikisource.org/",
+  "retrieved": "2026-08-16",
+  "pages": [
+    {
+      "title": "On the Parts of Animals/Book I",
+      "file": "book-i.html",
+      "revid": 14716972
+    },
+    {
+      "title": "On the Parts of Animals/Book II",
+      "file": "book-ii.html",
+      "revid": 7157018
+    },
+    {
+      "title": "On the Parts of Animals/Book III",
+      "file": "book-iii.html",
+      "revid": 3450793
+    },
+    {
+      "title": "On the Parts of Animals/Book IV",
+      "file": "book-iv.html",
+      "revid": 3450792
+    }
+  ]
+}

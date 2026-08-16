@@ -1,0 +1,27 @@
+{
+  "source": "wikisource",
+  "url": "https://en.wikisource.org/",
+  "retrieved": "2026-08-16",
+  "pages": [
+    {
+      "title": "On the Heavens/Book I",
+      "file": "book-i.html",
+      "revid": 5264621
+    },
+    {
+      "title": "On the Heavens/Book II",
+      "file": "book-ii.html",
+      "revid": 10195955
+    },
+    {
+      "title": "On the Heavens/Book III",
+      "file": "book-iii.html",
+      "revid": 9170610
+    },
+    {
+      "title": "On the Heavens/Book IV",
+      "file": "book-iv.html",
+      "revid": 5264644
+    }
+  ]
+}

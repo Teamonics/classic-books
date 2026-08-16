@@ -1,0 +1,22 @@
+{
+  "source": "wikisource",
+  "url": "https://en.wikisource.org/",
+  "retrieved": "2026-08-16",
+  "pages": [
+    {
+      "title": "Rhetoric (Freese)/Book 1",
+      "file": "book-1.html",
+      "revid": 15169893
+    },
+    {
+      "title": "Rhetoric (Freese)/Book 2",
+      "file": "book-2.html",
+      "revid": 1860999
+    },
+    {
+      "title": "Rhetoric (Freese)/Book 3",
+      "file": "book-3.html",
+      "revid": 3515996
+    }
+  ]
+}
