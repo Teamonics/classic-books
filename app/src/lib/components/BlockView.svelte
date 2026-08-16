@@ -165,9 +165,13 @@
   @media (max-width: 40rem) {
     .ln,
     .pn {
-      left: -2.1rem;
-      width: 1.6rem;
-      font-size: 0.62rem;
+      /* Hard against the screen edge: left-aligned rather than ranged right
+         against the text, which is what keeps them out of the reading column
+         entirely on a narrow screen. */
+      left: -1.65rem;
+      width: 1.4rem;
+      font-size: 0.6rem;
+      text-align: left;
     }
     .line {
       padding-left: 1.1em;

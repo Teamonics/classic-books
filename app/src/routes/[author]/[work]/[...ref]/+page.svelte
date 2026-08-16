@@ -400,7 +400,7 @@
      the numbers actually need, and the text starts near the screen edge. */
   @media (max-width: 40rem) {
     main {
-      padding: 4.2rem 0.9rem 5rem 2.5rem;
+      padding: 4.2rem 0.8rem 5rem 1.7rem;
     }
   }
 </style>
