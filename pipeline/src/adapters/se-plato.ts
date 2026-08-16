@@ -53,6 +53,47 @@ export function adapt(rawDir: string, opts: { sourceFile?: string } = {}): WorkI
             paraNo += 1;
             blocks.push({ type: "para", n: paraNo, text, ...(marks.length ? { marks } : {}) });
           }
+        } else if (tag === "table") {
+          // Half the dialogues are typed z3998:drama and set as a table of
+          // persona/speech rows — the same markup Shakespeare uses. Without
+          // this, Crito, Meno, Gorgias, Phaedrus and nine others kept only
+          // Jowett's introduction and lost the dialogue itself.
+          for (const tr of child.querySelectorAll("tr")) {
+            const cells = [...tr.querySelectorAll(":scope > td")];
+            if (!cells.length) continue;
+            const personaCell = cells.find((c: any) =>
+              (c.getAttribute("epub:type") ?? "").includes("persona"),
+            );
+            const contentCell = cells[cells.length - 1];
+            if (!contentCell) continue;
+
+            const inner: Block[] = [];
+            const verseSpans = [...contentCell.querySelectorAll(":scope > p > span, :scope > span")];
+            if (verseSpans.length) {
+              const lines = [];
+              for (const span of verseSpans) {
+                const { text, marks } = inlineText(span);
+                if (text) lines.push({ text, ...(marks.length ? { marks } : {}) });
+              }
+              if (lines.length) inner.push({ type: "verse", lines });
+            } else {
+              const { text, marks } = inlineText(contentCell);
+              if (text) {
+                paraNo += 1;
+                inner.push({ type: "para", n: paraNo, text, ...(marks.length ? { marks } : {}) });
+              }
+            }
+            if (!inner.length) continue;
+
+            if (!personaCell) {
+              blocks.push(...inner); // a stage direction or unattributed line
+              continue;
+            }
+            const speaker = collapseWs(personaCell.textContent ?? "");
+            blocks.push(
+              speaker ? { type: "speech", speaker, blocks: inner } : inner[0]!,
+            );
+          }
         } else if (tag === "section" || tag === "div") {
           const h = child.querySelector(":scope > h3, :scope > h4, :scope > h5");
           const label = collapseWs(h?.textContent ?? "");

@@ -560,9 +560,9 @@
       "composedYear": -399,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.5a42c9661e79.json",
+      "manifestFile": "manifest.515407daf6b4.json",
       "chunks": 2,
-      "words": 1220
+      "words": 6452
     },
     {
       "slug": "euthyphro",
@@ -572,9 +572,9 @@
       "composedYear": -399,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.0a2667cf2c60.json",
+      "manifestFile": "manifest.2262ecc4de84.json",
       "chunks": 2,
-      "words": 2474
+      "words": 8985
     },
     {
       "slug": "ion",
@@ -584,9 +584,9 @@
       "composedYear": -399,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.b0b1f7f13a20.json",
+      "manifestFile": "manifest.8e881c5fffc8.json",
       "chunks": 2,
-      "words": 1390
+      "words": 6354
     },
     {
       "slug": "charmides",
@@ -608,9 +608,9 @@
       "composedYear": -395,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.bdff7b908589.json",
+      "manifestFile": "manifest.04ae457804c4.json",
       "chunks": 2,
-      "words": 2005
+      "words": 11974
     },
     {
       "slug": "lysis",
@@ -668,9 +668,9 @@
       "composedYear": -387,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.5a4b13b2ef3a.json",
+      "manifestFile": "manifest.b190d3ec3143.json",
       "chunks": 2,
-      "words": 23611
+      "words": 58203
     },
     {
       "slug": "meno",
@@ -680,9 +680,9 @@
       "composedYear": -385,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.b4184db0a62f.json",
+      "manifestFile": "manifest.088e63c8eaa7.json",
       "chunks": 2,
-      "words": 9510
+      "words": 21656
     },
     {
       "slug": "symposium",
@@ -716,9 +716,9 @@
       "composedYear": -383,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.8675f6a6bc21.json",
+      "manifestFile": "manifest.895dc1eb96a5.json",
       "chunks": 2,
-      "words": 28592
+      "words": 51445
     },
     {
       "slug": "phaedo",
@@ -752,9 +752,9 @@
       "composedYear": -370,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.5117ddb0b2cc.json",
+      "manifestFile": "manifest.39d39a111a46.json",
       "chunks": 2,
-      "words": 15154
+      "words": 37680
     },
     {
       "slug": "parmenides",
@@ -776,9 +776,9 @@
       "composedYear": -369,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.477272ce6594.json",
+      "manifestFile": "manifest.daa6810dce5d.json",
       "chunks": 2,
-      "words": 34608
+      "words": 64723
     },
     {
       "slug": "sophist",
@@ -788,9 +788,9 @@
       "composedYear": -360,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.a5fae5e36054.json",
+      "manifestFile": "manifest.82c750b7ab6e.json",
       "chunks": 2,
-      "words": 23248
+      "words": 44065
     },
     {
       "slug": "statesman",
@@ -800,9 +800,9 @@
       "composedYear": -360,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.498895bbe23e.json",
+      "manifestFile": "manifest.ad116f3564be.json",
       "chunks": 2,
-      "words": 16702
+      "words": 38733
     },
     {
       "slug": "timaeus",
@@ -836,9 +836,9 @@
       "composedYear": -355,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.8288976657a3.json",
+      "manifestFile": "manifest.377e99e655b4.json",
       "chunks": 2,
-      "words": 22346
+      "words": 44484
     },
     {
       "slug": "laws",
@@ -848,9 +848,9 @@
       "composedYear": -348,
       "era": "classical-greece",
       "translator": "Benjamin Jowett",
-      "manifestFile": "manifest.d17bc8970c6f.json",
-      "chunks": 2,
-      "words": 100049
+      "manifestFile": "manifest.687a7d96c97a.json",
+      "chunks": 14,
+      "words": 238268
     },
     {
       "slug": "on-the-nature-of-things",
@@ -2045,7 +2045,7 @@
           "author": "plato",
           "authorName": "Plato",
           "chunkTitle": "Crito",
-          "words": 11
+          "words": 5243
         },
         {
           "work": "meditations",
@@ -2104,7 +2104,7 @@
         }
       ],
       "works": 7,
-      "words": 22325
+      "words": 27557
     },
     {
       "slug": "stoicism-30-days",
