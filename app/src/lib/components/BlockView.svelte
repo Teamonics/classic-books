@@ -165,13 +165,13 @@
   @media (max-width: 40rem) {
     .ln,
     .pn {
-      /* Hard against the screen edge: left-aligned rather than ranged right
-         against the text, which is what keeps them out of the reading column
-         entirely on a narrow screen. */
-      left: -1.65rem;
-      width: 1.4rem;
+      /* Ranged right so the digits sit a consistent hair from the text
+         whatever their length, clear of the screen edge but out of the
+         reading column. */
+      left: -1.35rem;
+      width: 1.05rem;
       font-size: 0.6rem;
-      text-align: left;
+      text-align: right;
     }
     .line {
       padding-left: 1.1em;
