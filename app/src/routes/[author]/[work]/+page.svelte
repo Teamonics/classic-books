@@ -220,6 +220,14 @@
   .muted {
     color: var(--muted);
   }
+  /* Inline-blocks on a wrapped line sit tight against each other, so these
+     two buttons touched once the row wrapped on a narrow screen. */
+  .resume {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
   .button {
     display: inline-block;
     background: var(--accent);
@@ -231,7 +239,6 @@
     font-size: 0.9rem;
   }
   .offline {
-    margin-left: 0.6rem;
     border: 1px solid var(--rule);
     background: var(--raised);
     border-radius: 8px;
