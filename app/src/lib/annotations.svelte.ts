@@ -200,7 +200,7 @@ export function exportMarkdown(manifest: Manifest): string {
     lines.push(`## ${t.title}`);
     for (const b of bmsIn) {
       lines.push("");
-      lines.push(`🔖 **${b.label}**`);
+      lines.push(`**Bookmark —** ${b.label}`);
     }
     for (const h of inChunk) {
       lines.push("");

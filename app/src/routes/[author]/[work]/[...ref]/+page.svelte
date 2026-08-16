@@ -7,6 +7,7 @@
   import { savePosition, getPosition, markRead } from "$lib/progress.svelte";
   import BlockView from "$lib/components/BlockView.svelte";
   import SettingsPanel from "$lib/components/SettingsPanel.svelte";
+  import BookmarkIcon from "$lib/components/BookmarkIcon.svelte";
   import SelectionMenu from "$lib/components/SelectionMenu.svelte";
   import AnnotationEditor from "$lib/components/AnnotationEditor.svelte";
   import {
@@ -241,16 +242,7 @@
     aria-label={isBookmarked ? "Remove bookmark" : "Bookmark this position"}
     onclick={toggleBookmark}
   >
-    <!-- a plain ribbon bookmark: fills once the page is saved -->
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path
-        d="M6.5 3h11a1 1 0 0 1 1 1v16.6a.5.5 0 0 1-.77.42L12 17.3l-5.73 3.72a.5.5 0 0 1-.77-.42V4a1 1 0 0 1 1-1z"
-        fill={isBookmarked ? "currentColor" : "none"}
-        stroke="currentColor"
-        stroke-width="1.6"
-        stroke-linejoin="round"
-      />
-    </svg>
+    <BookmarkIcon filled={isBookmarked} />
   </button>
   <button class="gear" aria-label="Reading settings" onclick={() => (settingsOpen = !settingsOpen)}>Aa</button>
 </div>
@@ -360,11 +352,6 @@
     justify-content: center;
     padding: 0.28rem 0.5rem;
     color: var(--muted);
-  }
-  .gear.icon svg {
-    width: 1.05rem;
-    height: 1.05rem;
-    display: block;
   }
   .gear.icon.saved {
     color: var(--accent);

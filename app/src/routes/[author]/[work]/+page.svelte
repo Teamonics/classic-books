@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from "$app/state";
+  import BookmarkIcon from "$lib/components/BookmarkIcon.svelte";
   import { base } from "$app/paths";
   import { getWork } from "$lib/data";
   import { getPosition, getReadRefs, progressLabel } from "$lib/progress.svelte";
@@ -154,7 +155,10 @@
           <ul class="bml">
             {#each bms as b (b.id)}
               <li>
-                <a href={`${base}/${author}/${slug}/${b.ref}`}>🔖 {b.label}</a>
+                <a href={`${base}/${author}/${slug}/${b.ref}`}>
+                  <span class="bmi"><BookmarkIcon filled size="0.85rem" /></span>
+                  <span class="bmlabel">{b.label}</span>
+                </a>
                 <button class="del ui" aria-label="Remove bookmark" onclick={() => removeBookmark(slug, b.id)}>×</button>
               </li>
             {/each}
@@ -329,18 +333,28 @@
   }
   .bml li {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 0.4rem;
+  }
+  .bmi {
+    display: inline-flex;
+    color: var(--accent);
+  }
+  .bmlabel {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .bml a {
     text-decoration: none;
     color: inherit;
     font-size: 0.9rem;
     padding: 0.25rem 0;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    min-width: 0;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
   .del {
     border: none;
