@@ -14,6 +14,7 @@
     repairAnchors,
     addBookmark,
     bookmarksFor,
+    removeBookmark,
     annotationsRevision,
     newId,
   } from "$lib/annotations.svelte";
@@ -34,7 +35,6 @@
   let sentinel = $state<HTMLElement | null>(null);
   let currentRef = $state<string>("");
   let editingHl = $state<string | null>(null);
-  let bookmarked = $state(false);
   let loading = false;
 
   // Highlight ranges grouped chunk ref -> blockIndex -> ranges.
@@ -181,9 +181,16 @@
     void load(ref);
   }
 
-  function bookmarkHere() {
+  // One bookmark per division: tapping again clears it. Several marks in a
+  // single chapter is what highlights are for.
+  function toggleBookmark() {
     const chunk = chunks.find((c) => c.ref === currentRef) ?? chunks[0];
     if (!chunk) return;
+    const existing = bookmarksFor(slug).filter((b) => b.ref === chunk.ref);
+    if (existing.length) {
+      for (const b of existing) removeBookmark(slug, b.id);
+      return;
+    }
     const pos = getPosition(slug);
     const blockIndex = pos?.ref === chunk.ref ? pos.blockIndex : 0;
     addBookmark({
@@ -194,8 +201,6 @@
       label: `${chunk.title} — ${anchorSnippet(chunk, blockIndex)}`,
       createdAt: new Date().toISOString(),
     });
-    bookmarked = true;
-    setTimeout(() => (bookmarked = false), 1200);
   }
 
   function onkeydown(e: KeyboardEvent) {
@@ -231,15 +236,16 @@
   <span class="chunktitle">{currentTitle}</span>
   <button
     class="gear icon"
-    class:saved={isBookmarked || bookmarked}
-    aria-label={isBookmarked ? "Bookmarked; save another here" : "Bookmark this position"}
-    onclick={bookmarkHere}
+    class:saved={isBookmarked}
+    aria-pressed={isBookmarked}
+    aria-label={isBookmarked ? "Remove bookmark" : "Bookmark this position"}
+    onclick={toggleBookmark}
   >
     <!-- a plain ribbon bookmark: fills once the page is saved -->
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <path
         d="M6.5 3h11a1 1 0 0 1 1 1v16.6a.5.5 0 0 1-.77.42L12 17.3l-5.73 3.72a.5.5 0 0 1-.77-.42V4a1 1 0 0 1 1-1z"
-        fill={isBookmarked || bookmarked ? "currentColor" : "none"}
+        fill={isBookmarked ? "currentColor" : "none"}
         stroke="currentColor"
         stroke-width="1.6"
         stroke-linejoin="round"
