@@ -16,7 +16,10 @@ import { collapseWs, inlineText } from "../util.ts";
 // Both are handled here; a paragraph's first <br>-delimited segment is
 // treated as a speaker when it is all-caps or bold.
 
-const VERSE_CLASSES = new Set(["drama", "noindent", "pfirst", "poem", ""]);
+// "letter" is #8714's class for the four cast lists — it appears nowhere else
+// in that volume. Without it the dramatis personae under each heading was
+// dropped, taking the personae set with it.
+const VERSE_CLASSES = new Set(["drama", "noindent", "pfirst", "poem", "letter", ""]);
 const STAGE_CLASSES = new Set(["right", "scenedesc", "center"]);
 
 // Single capitals that stand alone as words: a dropcap "I" is followed by a
