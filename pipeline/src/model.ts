@@ -143,6 +143,10 @@ export interface WorkConfig {
   mode?: "verse" | "prose"; // whether the translation is verse or prose
   pg?: Record<string, unknown>; // pg-generic per-work parsing options
   expectDivisions?: number; // golden check: exact division count
+  // Some authors really do write divisions of a dozen words — Sterne's
+  // chapters are a running joke about it. Exempt a work from the thin-
+  // division guard only after checking the source says the same.
+  allowShortDivisions?: boolean;
 }
 
 export interface Manifest {

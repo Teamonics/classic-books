@@ -99,7 +99,43 @@ export function adapt(rawDir: string, opts: { skipFiles?: string[] } = {}): Work
             paraNo += 1;
             blocks.push({ type: "para", n: paraNo, text, ...(marks.length ? { marks } : {}) });
           }
-        } else if (tag === "figure" || tag === "img" || tag === "table") {
+        } else if (tag === "table") {
+          // Verse dialogue — Virgil's amoebean eclogues, where shepherds
+          // answer each other — is set as persona/speech rows, the same
+          // markup Shakespeare and half the Plato dialogues use. Walking
+          // past it left Pastorals 1, 3, 5, 7 and 9 as bare headnotes.
+          for (const tr of child.querySelectorAll("tr")) {
+            const cells = [...tr.querySelectorAll(":scope > td")];
+            if (!cells.length) continue;
+            const personaCell = cells.find((c: any) =>
+              (c.getAttribute("epub:type") ?? "").includes("persona"),
+            );
+            const contentCell = cells[cells.length - 1];
+            if (!contentCell) continue;
+
+            const inner: Block[] = [];
+            const spans = [...contentCell.querySelectorAll(":scope > p > span, :scope > span")];
+            if (spans.length) {
+              const lines: VerseLine[] = [];
+              for (const span of spans) {
+                const { text, marks } = inlineText(span);
+                if (!text) continue;
+                lineNo += 1;
+                lines.push({ n: lineNo, text, ...(marks.length ? { marks } : {}) });
+              }
+              if (lines.length) inner.push({ type: "verse", lines });
+            } else {
+              const { text, marks } = inlineText(contentCell);
+              if (text) {
+                lineNo += 1;
+                inner.push({ type: "verse", lines: [{ n: lineNo, text, ...(marks.length ? { marks } : {}) }] });
+              }
+            }
+            if (!inner.length) continue;
+            const speaker = collapseWs(personaCell?.textContent ?? "");
+            blocks.push(speaker ? { type: "speech", speaker, blocks: inner } : inner[0]!);
+          }
+        } else if (tag === "figure" || tag === "img") {
           problems.push(`${file}#${ref}: dropped <${tag}>`);
         } else {
           problems.push(`${file}#${ref}: unhandled <${tag}>`);

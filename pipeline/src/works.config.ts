@@ -1616,6 +1616,8 @@ export const works: WorkConfig[] = [
     adapter: "se-prose",
     rawDir: "raw/se/tristram-shandy",
     translator: null,
+    // Sterne's chapters run to a sentence: 6.15 is sixteen words in the source
+    allowShortDivisions: true,
     refScheme: { primary: "chapter.paragraph", aliases: [], lineation: null },
   },
   {

@@ -106,9 +106,19 @@ export function adapt(rawDir: string, opts: { skipFiles?: string[] } = {}): Work
         if (!contentCell) continue;
 
         if (!personaCell) {
-          // stage direction row
-          const stageEl = contentCell.querySelector('[epub\\:type~="z3998:stage-direction"]') ?? contentCell;
-          pushStage(stageEl);
+          // A row without a speaker is either a stage direction, or speech
+          // that carries no label because a preceding direction named the
+          // speaker — Gower's choruses in Pericles work that way. Narrowing
+          // to a nested stage-direction element discarded the speech around
+          // it, so only take that path when the direction *is* the row.
+          const stageEl = contentCell.querySelector('[epub\\:type~="z3998:stage-direction"]');
+          const whole = collapseWs(contentCell.textContent ?? "");
+          const stageOnly = collapseWs(stageEl?.textContent ?? "");
+          if (stageEl && stageOnly.length >= whole.length - 2) {
+            pushStage(stageEl);
+          } else if (whole) {
+            for (const b of contentBlocks(contentCell)) blocks.push(b);
+          }
           continue;
         }
         const speaker = collapseWs(personaCell.textContent ?? "");

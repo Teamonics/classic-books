@@ -80,6 +80,36 @@ function buildWork(cfg: WorkConfig): { manifest: Manifest; sources: unknown } {
       `${cfg.slug}: ${ir.divisions.length} divisions, expected ${cfg.expectDivisions} — refs: ${ir.divisions.map((d) => d.ref).join(", ").slice(0, 300)}`,
     );
   }
+  // Two adapters once walked past <table> markup and emitted divisions that
+  // held only a headnote or a cast list — enough to look valid, so nothing
+  // failed. A division that is mostly heading, with almost no text, is now
+  // an error rather than a silent loss.
+  const isFrontMatter = (d: (typeof ir.divisions)[number]) => {
+    if (/(persons|dramatis|introduction|preface|prologue|argument|dedication|epilogue|proem|epigraph|motto|inscription|advertisement|note-to|errata)/i.test(d.ref)) return true;
+    // A cast list is legitimately short; some volumes give it its own
+    // division because they print the play's title above it.
+    const headings = d.blocks
+      .filter((b) => b.type === "heading")
+      .map((b) => (b as { text: string }).text);
+    if (headings.some((h) => /dramatis|persons of|^scene[: ]/i.test(h))) return true;
+    // A divider page with a caption: Fielding heads each book with a single
+    // line ("Containing about three weeks.") before its chapters.
+    const paras = d.blocks.filter((b) => b.type === "para");
+    return paras.length === 1 && d.blocks.length === 1 && /^(book|part|volume)\b/i.test(d.title);
+  };
+
+  const thin = cfg.allowShortDivisions
+    ? []
+    : ir.divisions.filter((d) => !isFrontMatter(d) && wordCount(d.blocks) < 40);
+  if (thin.length) {
+    throw new Error(
+      `${cfg.slug}: ${thin.length} division(s) parsed to almost no text — ` +
+        thin.slice(0, 6).map((d) => `${d.ref} (${wordCount(d.blocks)}w)`).join(", ") +
+        `. A division this thin usually means the adapter walked past the markup ` +
+        `holding the text.`,
+    );
+  }
+
   const goldenErrors = goldens[cfg.slug]?.(ir) ?? [];
   if (goldenErrors.length) throw new Error(`golden check failed:\n  ${goldenErrors.join("\n  ")}`);
 

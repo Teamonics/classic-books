@@ -128,7 +128,7 @@
       "composedYear": -445,
       "era": "classical-greece",
       "translator": "Francis Storr",
-      "manifestFile": "manifest.c33896bed9c6.json",
+      "manifestFile": "manifest.4ed82b152ddb.json",
       "chunks": 3,
       "words": 11325
     },
@@ -140,7 +140,7 @@
       "composedYear": -441,
       "era": "classical-greece",
       "translator": "Francis Storr",
-      "manifestFile": "manifest.edcf914ccf2e.json",
+      "manifestFile": "manifest.2573aad770fc.json",
       "chunks": 2,
       "words": 9977
     },
@@ -200,7 +200,7 @@
       "composedYear": -429,
       "era": "classical-greece",
       "translator": "Francis Storr",
-      "manifestFile": "manifest.a1cfb2a85521.json",
+      "manifestFile": "manifest.035887000a10.json",
       "chunks": 3,
       "words": 12389
     },
@@ -224,7 +224,7 @@
       "composedYear": -425,
       "era": "classical-greece",
       "translator": "Francis Storr",
-      "manifestFile": "manifest.5d001d10eb0a.json",
+      "manifestFile": "manifest.4fe95bcaa7e8.json",
       "chunks": 3,
       "words": 10116
     },
@@ -440,9 +440,9 @@
       "composedYear": -410,
       "era": "classical-greece",
       "translator": "Francis Storr",
-      "manifestFile": "manifest.4fa0dc6c3b10.json",
+      "manifestFile": "manifest.ffc7b3401fcd.json",
       "chunks": 3,
-      "words": 11693
+      "words": 11692
     },
     {
       "slug": "the-phoenician-women",
@@ -464,7 +464,7 @@
       "composedYear": -409,
       "era": "classical-greece",
       "translator": "Francis Storr",
-      "manifestFile": "manifest.564181051c6c.json",
+      "manifestFile": "manifest.653728aab2b6.json",
       "chunks": 3,
       "words": 11951
     },
@@ -872,9 +872,9 @@
       "composedYear": -38,
       "era": "imperial-rome",
       "translator": "John Dryden",
-      "manifestFile": "manifest.a8119dad42ac.json",
+      "manifestFile": "manifest.542caa1dda03.json",
       "chunks": 10,
-      "words": 5286
+      "words": 10271
     },
     {
       "slug": "the-georgics",
@@ -1124,9 +1124,9 @@
       "composedYear": 1590,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.12f43f3f31b7.json",
+      "manifestFile": "manifest.4d1f3a3e4e72.json",
       "chunks": 21,
-      "words": 17112
+      "words": 17114
     },
     {
       "slug": "the-taming-of-the-shrew",
@@ -1136,9 +1136,9 @@
       "composedYear": 1591,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.10e5d08df8d6.json",
+      "manifestFile": "manifest.789daeddea5a.json",
       "chunks": 13,
-      "words": 18409
+      "words": 18642
     },
     {
       "slug": "henry-vi-part-ii",
@@ -1148,9 +1148,9 @@
       "composedYear": 1591,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.6b8e834320b6.json",
+      "manifestFile": "manifest.02a2606105b2.json",
       "chunks": 25,
-      "words": 25546
+      "words": 25560
     },
     {
       "slug": "henry-vi-part-iii",
@@ -1160,7 +1160,7 @@
       "composedYear": 1591,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.d227f2ed6b3d.json",
+      "manifestFile": "manifest.29ecc8a0b131.json",
       "chunks": 29,
       "words": 24410
     },
@@ -1172,9 +1172,9 @@
       "composedYear": 1592,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.914dec0a2432.json",
+      "manifestFile": "manifest.54d2e9941989.json",
       "chunks": 28,
-      "words": 21482
+      "words": 21684
     },
     {
       "slug": "titus-andronicus",
@@ -1184,7 +1184,7 @@
       "composedYear": 1592,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.dd4b876f5e42.json",
+      "manifestFile": "manifest.0f61dae917a0.json",
       "chunks": 15,
       "words": 20743
     },
@@ -1196,9 +1196,9 @@
       "composedYear": 1593,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.a30f657fed56.json",
+      "manifestFile": "manifest.32c7f36035ae.json",
       "chunks": 26,
-      "words": 28836
+      "words": 29336
     },
     {
       "slug": "edward-iii",
@@ -1208,9 +1208,9 @@
       "composedYear": 1593,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.20f1045d34db.json",
+      "manifestFile": "manifest.9e02b805a82f.json",
       "chunks": 18,
-      "words": 19942
+      "words": 20114
     },
     {
       "slug": "the-comedy-of-errors",
@@ -1220,7 +1220,7 @@
       "composedYear": 1594,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.907703483822.json",
+      "manifestFile": "manifest.a751442d8c35.json",
       "chunks": 12,
       "words": 14746
     },
@@ -1232,9 +1232,9 @@
       "composedYear": 1595,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.70ed69091ccb.json",
+      "manifestFile": "manifest.eeb559cbb0f8.json",
       "chunks": 10,
-      "words": 21116
+      "words": 21318
     },
     {
       "slug": "richard-ii",
@@ -1244,9 +1244,9 @@
       "composedYear": 1595,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.b173816cb9d4.json",
+      "manifestFile": "manifest.d685dd7ea5e8.json",
       "chunks": 20,
-      "words": 22236
+      "words": 22401
     },
     {
       "slug": "romeo-and-juliet",
@@ -1256,9 +1256,9 @@
       "composedYear": 1595,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.f997c8dae810.json",
+      "manifestFile": "manifest.3080db168b78.json",
       "chunks": 27,
-      "words": 24567
+      "words": 24596
     },
     {
       "slug": "a-midsummer-nights-dream",
@@ -1268,9 +1268,9 @@
       "composedYear": 1595,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.03636a223953.json",
+      "manifestFile": "manifest.ae8da0f992f0.json",
       "chunks": 10,
-      "words": 16457
+      "words": 16515
     },
     {
       "slug": "king-john",
@@ -1280,7 +1280,7 @@
       "composedYear": 1596,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.6607bf3b4961.json",
+      "manifestFile": "manifest.730eee8364a6.json",
       "chunks": 17,
       "words": 20837
     },
@@ -1292,9 +1292,9 @@
       "composedYear": 1596,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.2418e28451d4.json",
+      "manifestFile": "manifest.9d12d3370f9a.json",
       "chunks": 21,
-      "words": 21142
+      "words": 21179
     },
     {
       "slug": "henry-iv-part-i",
@@ -1304,7 +1304,7 @@
       "composedYear": 1597,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.93e89aa2b04c.json",
+      "manifestFile": "manifest.093b8aefcda4.json",
       "chunks": 20,
       "words": 24642
     },
@@ -1316,9 +1316,9 @@
       "composedYear": 1597,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.233a278d214a.json",
+      "manifestFile": "manifest.d09efa9ee307.json",
       "chunks": 24,
-      "words": 22540
+      "words": 22842
     },
     {
       "slug": "henry-iv-part-ii",
@@ -1328,9 +1328,9 @@
       "composedYear": 1598,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.287483a8f993.json",
+      "manifestFile": "manifest.57bce7d529d9.json",
       "chunks": 22,
-      "words": 26342
+      "words": 26358
     },
     {
       "slug": "much-ado-about-nothing",
@@ -1340,7 +1340,7 @@
       "composedYear": 1598,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.d68b37d84b7d.json",
+      "manifestFile": "manifest.32d60aaab220.json",
       "chunks": 18,
       "words": 21181
     },
@@ -1352,7 +1352,7 @@
       "composedYear": 1599,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.0fb10519306d.json",
+      "manifestFile": "manifest.0816db15ea45.json",
       "chunks": 30,
       "words": 26185
     },
@@ -1364,9 +1364,9 @@
       "composedYear": 1599,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.b6a92262c33d.json",
+      "manifestFile": "manifest.b3ceb064a594.json",
       "chunks": 19,
-      "words": 19609
+      "words": 19742
     },
     {
       "slug": "as-you-like-it",
@@ -1376,7 +1376,7 @@
       "composedYear": 1599,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.3eab2dec4892.json",
+      "manifestFile": "manifest.5534c38866bb.json",
       "chunks": 24,
       "words": 21807
     },
@@ -1388,9 +1388,9 @@
       "composedYear": 1601,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.5853e19d58c5.json",
+      "manifestFile": "manifest.a76303f7b557.json",
       "chunks": 21,
-      "words": 30198
+      "words": 30436
     },
     {
       "slug": "twelfth-night",
@@ -1400,9 +1400,9 @@
       "composedYear": 1601,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.be57995a43a1.json",
+      "manifestFile": "manifest.281f51011615.json",
       "chunks": 19,
-      "words": 19849
+      "words": 19866
     },
     {
       "slug": "troilus-and-cressida",
@@ -1412,7 +1412,7 @@
       "composedYear": 1602,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.f3f18373cd95.json",
+      "manifestFile": "manifest.cbceb37fbacb.json",
       "chunks": 26,
       "words": 26178
     },
@@ -1424,7 +1424,7 @@
       "composedYear": 1604,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.76bb88366bac.json",
+      "manifestFile": "manifest.9b932081fc5b.json",
       "chunks": 18,
       "words": 21814
     },
@@ -1436,9 +1436,9 @@
       "composedYear": 1604,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.42bcbd6b2f50.json",
+      "manifestFile": "manifest.056dfe2e4997.json",
       "chunks": 16,
-      "words": 26407
+      "words": 26431
     },
     {
       "slug": "alls-well-that-ends-well",
@@ -1448,9 +1448,9 @@
       "composedYear": 1605,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.1057110207a2.json",
+      "manifestFile": "manifest.c579fc8b38f1.json",
       "chunks": 25,
-      "words": 22936
+      "words": 23064
     },
     {
       "slug": "king-lear",
@@ -1460,9 +1460,9 @@
       "composedYear": 1605,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.614da167b8da.json",
+      "manifestFile": "manifest.fe2a046bbd26.json",
       "chunks": 27,
-      "words": 26009
+      "words": 26224
     },
     {
       "slug": "the-advancement-of-learning",
@@ -1484,9 +1484,9 @@
       "composedYear": 1606,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.5c481556a3c6.json",
+      "manifestFile": "manifest.bf95dbe7d8ae.json",
       "chunks": 29,
-      "words": 17166
+      "words": 17184
     },
     {
       "slug": "antony-and-cleopatra",
@@ -1496,9 +1496,9 @@
       "composedYear": 1606,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.13ca3e34701f.json",
+      "manifestFile": "manifest.1968bcc85a19.json",
       "chunks": 43,
-      "words": 24822
+      "words": 24939
     },
     {
       "slug": "coriolanus",
@@ -1508,9 +1508,9 @@
       "composedYear": 1608,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.1f803be22df9.json",
+      "manifestFile": "manifest.01bc330b9a94.json",
       "chunks": 30,
-      "words": 27571
+      "words": 27598
     },
     {
       "slug": "timon-of-athens",
@@ -1520,9 +1520,9 @@
       "composedYear": 1608,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.096ff29eb05e.json",
+      "manifestFile": "manifest.1ce8cf902fda.json",
       "chunks": 18,
-      "words": 18374
+      "words": 18446
     },
     {
       "slug": "pericles",
@@ -1532,9 +1532,9 @@
       "composedYear": 1608,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.df73ab0bbf23.json",
+      "manifestFile": "manifest.71f6265378f6.json",
       "chunks": 28,
-      "words": 17474
+      "words": 18459
     },
     {
       "slug": "shakespeare-poetry",
@@ -1556,9 +1556,9 @@
       "composedYear": 1610,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.ca001f38f566.json",
+      "manifestFile": "manifest.dee48ddda7d7.json",
       "chunks": 28,
-      "words": 27504
+      "words": 27563
     },
     {
       "slug": "the-winters-tale",
@@ -1568,7 +1568,7 @@
       "composedYear": 1611,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.4d4e95355af1.json",
+      "manifestFile": "manifest.0916076822ee.json",
       "chunks": 16,
       "words": 24922
     },
@@ -1580,9 +1580,9 @@
       "composedYear": 1611,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.0cbd662c71b6.json",
+      "manifestFile": "manifest.1762fa5f0355.json",
       "chunks": 11,
-      "words": 16444
+      "words": 16638
     },
     {
       "slug": "henry-viii",
@@ -1592,9 +1592,9 @@
       "composedYear": 1613,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.7440b6f8e603.json",
+      "manifestFile": "manifest.15a19acb5451.json",
       "chunks": 20,
-      "words": 24505
+      "words": 24741
     },
     {
       "slug": "the-two-noble-kinsmen",
@@ -1604,9 +1604,9 @@
       "composedYear": 1613,
       "era": "renaissance",
       "translator": null,
-      "manifestFile": "manifest.464085ea80c8.json",
+      "manifestFile": "manifest.9ec06832f98b.json",
       "chunks": 27,
-      "words": 23627
+      "words": 24170
     },
     {
       "slug": "don-quixote",
@@ -1856,9 +1856,9 @@
       "composedYear": 1788,
       "era": "eighteenth-century",
       "translator": "T. K. Abbott",
-      "manifestFile": "manifest.0cb19c10e106.json",
-      "chunks": 39,
-      "words": 62435
+      "manifestFile": "manifest.537c04cee089.json",
+      "chunks": 38,
+      "words": 62185
     },
     {
       "slug": "decline-and-fall",

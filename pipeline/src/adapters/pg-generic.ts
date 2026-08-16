@@ -74,7 +74,9 @@ export function adapt(
   const html = readFileSync(join(rawDir, opts.sourceFile!), "utf-8");
   const { document } = parseHTML(html);
   for (const el of document.querySelectorAll(
-    ".pg-boilerplate, #pg-machine-header, #project-gutenberg-license, .pgkilled, .toc, .fig",
+    // ".side" carries transcriber navigation ("BOOK1|CHAPTER1 ^paragraph 70")
+    // that otherwise reads as if Kant wrote it.
+    ".pg-boilerplate, #pg-machine-header, #project-gutenberg-license, .pgkilled, .toc, .fig, .side",
   )) {
     el.remove();
   }
