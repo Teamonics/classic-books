@@ -159,4 +159,32 @@
     padding-left: 1em;
     border-left: 2px solid var(--rule);
   }
+
+  /* Narrow screens: pull the margin numbers in close, and soften the hanging
+     indent so a wrapped verse line does not look like a new stanza. */
+  @media (max-width: 40rem) {
+    .ln,
+    .pn {
+      left: -2.1rem;
+      width: 1.6rem;
+      font-size: 0.62rem;
+    }
+    .line {
+      padding-left: 1.1em;
+      text-indent: -1.1em;
+    }
+    .line.i1 {
+      margin-left: 0.7em;
+    }
+    .line.i2 {
+      margin-left: 1.4em;
+    }
+    .stage {
+      padding-left: 0.8em;
+    }
+    .quote {
+      margin-left: 0.6em;
+      padding-left: 0.7em;
+    }
+  }
 </style>

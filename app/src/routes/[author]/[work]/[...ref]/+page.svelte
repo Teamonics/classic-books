@@ -396,9 +396,11 @@
       background: transparent;
     }
   }
+  /* A phone has no width to spare: the margin-number gutter shrinks to what
+     the numbers actually need, and the text starts near the screen edge. */
   @media (max-width: 40rem) {
     main {
-      padding-left: 3.4rem;
+      padding: 4.2rem 0.9rem 5rem 2.5rem;
     }
   }
 </style>
