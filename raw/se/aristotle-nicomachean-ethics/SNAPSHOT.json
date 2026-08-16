@@ -1,0 +1,10 @@
+{
+  "source": "standard-ebooks",
+  "repo": "https://github.com/standardebooks/aristotle_nicomachean-ethics_f-h-peters",
+  "commit": "0b0cf07646db5b7b0bca40898766b50831dbfb0b",
+  "retrieved": "2026-08-16",
+  "translator": "F. H. Peters",
+  "translatorDied": null,
+  "translationPublished": 1881,
+  "licenseBasis": "SE CC0; translation published 1881 (US PD). Translator's death date not independently verifiable; a translator publishing in 1881 would have had to live past 1955 for life+70 to still run."
+}

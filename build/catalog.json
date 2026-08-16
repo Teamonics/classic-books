@@ -853,6 +853,54 @@
       "words": 238268
     },
     {
+      "slug": "nicomachean-ethics",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "Nicomachean Ethics",
+      "composedYear": -340,
+      "era": "classical-greece",
+      "translator": "F. H. Peters",
+      "manifestFile": "manifest.a7729bad8cd0.json",
+      "chunks": 12,
+      "words": 91613
+    },
+    {
+      "slug": "politics",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "Politics",
+      "composedYear": -335,
+      "era": "classical-greece",
+      "translator": "William Ellis",
+      "manifestFile": "manifest.ba7b1bfbdaf8.json",
+      "chunks": 103,
+      "words": 93987
+    },
+    {
+      "slug": "poetics",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "Poetics",
+      "composedYear": -335,
+      "era": "classical-greece",
+      "translator": "S. H. Butcher",
+      "manifestFile": "manifest.e6c826292352.json",
+      "chunks": 26,
+      "words": 14803
+    },
+    {
+      "slug": "athenian-constitution",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "The Athenian Constitution",
+      "composedYear": -328,
+      "era": "classical-greece",
+      "translator": "Frederic G. Kenyon",
+      "manifestFile": "manifest.f09b49a9e26f.json",
+      "chunks": 69,
+      "words": 24560
+    },
+    {
       "slug": "on-the-nature-of-things",
       "author": "lucretius",
       "authorName": "Lucretius",

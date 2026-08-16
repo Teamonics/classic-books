@@ -1,0 +1,10 @@
+{
+  "source": "project-gutenberg",
+  "pgId": "6762 (Politics) ; 1974 (Poetics) ; 26095 (Athenian Constitution)",
+  "url": "https://www.gutenberg.org/ebooks/6762 ; https://www.gutenberg.org/ebooks/1974 ; https://www.gutenberg.org/ebooks/26095",
+  "retrieved": "2026-08-16",
+  "translator": "William Ellis (Politics) ; S. H. Butcher (Poetics) ; Frederic G. Kenyon (Athenian Constitution)",
+  "translatorDied": null,
+  "translationPublished": 1776,
+  "licenseBasis": "US PD. Ellis's Politics 1776; Butcher d. 1910; Kenyon d. 1952 (life+70 cleared 2023). PG boilerplate stripped at build."
+}

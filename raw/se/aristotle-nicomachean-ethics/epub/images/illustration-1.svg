@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1192 424">
+	<title>The first of three lines, A A′, is divided close to point A at point E. The second line is B B′, which is undivided. The third line, C C′, is extended past point C to point D by an amount equal to A E, and is divided between points C and C′ at point Z, which is as close to point C as E is to A.</title>
+	<style type="text/css">
+		path{
+			stroke: #000000;
+			stroke-opacity: 1;
+			stroke-width: 10;
+		}
+
+		text{
+			font-family: inherit, serif;
+			font-size: 64px;
+			text-align: center;
+			text-anchor: middle;
+		}
+	</style>
+	<path d="M 10,375 H 1160"/>
+	<path d="M 229,82 H 1160"/>
+	<path d="M 229,226 H 1160"/>
+	<path d="M 459,110 V 85"/>
+	<path d="M 234,405 V 375"/>
+	<path d="M 459,405 V 375"/>
+	<text x="458" y="60">E</text>
+	<text x="234" y="60">A</text>
+	<text x="1159" y="62">A′</text>
+	<text x="234" y="208">B</text>
+	<text x="1159" y="210">B′</text>
+	<text x="23" y="357">D</text>
+	<text x="234" y="357">C</text>
+	<text x="458" y="357">Z</text>
+	<text x="1159" y="359">C′</text>
+</svg>

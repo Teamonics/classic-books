@@ -37,6 +37,15 @@ export interface PgGenericOptions {
   // next one.
   sliceFrom?: string;
   sliceUntil?: string;
+  // Transcription debris to delete from the text, as a regex. Applied to text
+  // nodes before any offsets are computed, so inline marks stay aligned.
+  // Ellis's Politics carries a stray "[Bekker 1252a]" and an "Ed." in its
+  // opening sentence and nowhere else — one-offs, not a numbering system.
+  stripText?: string;
+  // Where chapters restart their numbering in every book, the chapter heading
+  // alone ("Chapter I") names eight different places. Carry the book into the
+  // title so a table of contents and a citation stay unambiguous.
+  titleWithBook?: string; // label, e.g. "Book"
 }
 
 const DEFAULT_SKIP = /^(contents?|table of contents|footnotes?|list of illustrations|index|transcriber|the full project gutenberg)/i;
@@ -73,6 +82,17 @@ export function adapt(
 
   const html = readFileSync(join(rawDir, opts.sourceFile!), "utf-8");
   const { document } = parseHTML(html);
+
+  if (cfg.stripText) {
+    const strip = new RegExp(cfg.stripText, "g");
+    const scrub = (node: any) => {
+      for (const child of [...node.childNodes]) {
+        if (child.nodeType === 3) child.nodeValue = (child.nodeValue ?? "").replace(strip, "");
+        else scrub(child);
+      }
+    };
+    scrub(document.body ?? document);
+  }
   for (const el of document.querySelectorAll(
     // ".side" carries transcriber navigation ("BOOK1|CHAPTER1 ^paragraph 70")
     // that otherwise reads as if Kant wrote it.
@@ -84,6 +104,7 @@ export function adapt(
   const divisions: Division[] = [];
   let current: Division | null = null;
   let book = 0;
+  let bookLabel = ""; // the book's own numeral, as printed
   let index = 0;
   let paraNo = 0;
   let stopped = false;
@@ -147,7 +168,11 @@ export function adapt(
     } else {
       ref = slugify(text) || String(index);
     }
-    current = { ref, title: titleCase(text), blocks: [] };
+    let title = titleCase(text);
+    if (cfg.titleWithBook && bookRe && book > 0 && !bookRe.test(text)) {
+      title = `${cfg.titleWithBook} ${bookLabel}, ${title}`;
+    }
+    current = { ref, title, blocks: [] };
     paraNo = 0;
   };
 
@@ -184,6 +209,7 @@ export function adapt(
       if (bookRe?.test(text)) {
         flush();
         book += 1;
+        bookLabel = text.match(/\b([IVXLC]+|\d+)\b/)?.[1] ?? String(book);
         index = 0;
         continue;
       }

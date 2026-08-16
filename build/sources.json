@@ -2525,6 +2525,58 @@
     "licenseBasis": "SE CC0; translation US PD + translator d. 1893"
   },
   {
+    "slug": "nicomachean-ethics",
+    "title": "Nicomachean Ethics",
+    "translator": "F. H. Peters",
+    "manifestFile": "manifest.a7729bad8cd0.json",
+    "source": "standard-ebooks",
+    "repo": "https://github.com/standardebooks/aristotle_nicomachean-ethics_f-h-peters",
+    "commit": "0b0cf07646db5b7b0bca40898766b50831dbfb0b",
+    "retrieved": "2026-08-16",
+    "translatorDied": null,
+    "translationPublished": 1881,
+    "licenseBasis": "SE CC0; translation published 1881 (US PD). Translator's death date not independently verifiable; a translator publishing in 1881 would have had to live past 1955 for life+70 to still run."
+  },
+  {
+    "slug": "politics",
+    "title": "Politics",
+    "translator": "William Ellis (Politics) ; S. H. Butcher (Poetics) ; Frederic G. Kenyon (Athenian Constitution)",
+    "manifestFile": "manifest.ba7b1bfbdaf8.json",
+    "source": "project-gutenberg",
+    "pgId": "6762 (Politics) ; 1974 (Poetics) ; 26095 (Athenian Constitution)",
+    "url": "https://www.gutenberg.org/ebooks/6762 ; https://www.gutenberg.org/ebooks/1974 ; https://www.gutenberg.org/ebooks/26095",
+    "retrieved": "2026-08-16",
+    "translatorDied": null,
+    "translationPublished": 1776,
+    "licenseBasis": "US PD. Ellis's Politics 1776; Butcher d. 1910; Kenyon d. 1952 (life+70 cleared 2023). PG boilerplate stripped at build."
+  },
+  {
+    "slug": "poetics",
+    "title": "Poetics",
+    "translator": "William Ellis (Politics) ; S. H. Butcher (Poetics) ; Frederic G. Kenyon (Athenian Constitution)",
+    "manifestFile": "manifest.e6c826292352.json",
+    "source": "project-gutenberg",
+    "pgId": "6762 (Politics) ; 1974 (Poetics) ; 26095 (Athenian Constitution)",
+    "url": "https://www.gutenberg.org/ebooks/6762 ; https://www.gutenberg.org/ebooks/1974 ; https://www.gutenberg.org/ebooks/26095",
+    "retrieved": "2026-08-16",
+    "translatorDied": null,
+    "translationPublished": 1776,
+    "licenseBasis": "US PD. Ellis's Politics 1776; Butcher d. 1910; Kenyon d. 1952 (life+70 cleared 2023). PG boilerplate stripped at build."
+  },
+  {
+    "slug": "athenian-constitution",
+    "title": "The Athenian Constitution",
+    "translator": "William Ellis (Politics) ; S. H. Butcher (Poetics) ; Frederic G. Kenyon (Athenian Constitution)",
+    "manifestFile": "manifest.f09b49a9e26f.json",
+    "source": "project-gutenberg",
+    "pgId": "6762 (Politics) ; 1974 (Poetics) ; 26095 (Athenian Constitution)",
+    "url": "https://www.gutenberg.org/ebooks/6762 ; https://www.gutenberg.org/ebooks/1974 ; https://www.gutenberg.org/ebooks/26095",
+    "retrieved": "2026-08-16",
+    "translatorDied": null,
+    "translationPublished": 1776,
+    "licenseBasis": "US PD. Ellis's Politics 1776; Butcher d. 1910; Kenyon d. 1952 (life+70 cleared 2023). PG boilerplate stripped at build."
+  },
+  {
     "slug": "on-the-nature-of-things",
     "title": "On the Nature of Things",
     "translator": "H. A. J. Munro",
