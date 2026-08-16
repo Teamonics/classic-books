@@ -43,6 +43,15 @@ function loadJson<T>(key: string, fallback: T): T {
 const hlStores = new Map<string, Highlight[]>();
 const bmStores = new Map<string, Bookmark[]>();
 
+// The per-work arrays are created lazily, which means a $derived that calls
+// highlightsFor/bookmarksFor may be the thing that creates them — and then
+// does not track later mutations. This counter is bumped on every change so
+// a derived can depend on something that certainly exists.
+let revision = $state(0);
+export function annotationsRevision(): number {
+  return revision;
+}
+
 export function highlightsFor(work: string): Highlight[] {
   const existing = hlStores.get(work);
   if (existing) return existing;
@@ -73,6 +82,7 @@ export function newId(): string {
 export function addHighlight(h: Highlight) {
   highlightsFor(h.work).push(h);
   persistHl(h.work);
+  revision += 1;
 }
 
 export function updateHighlight(work: string, id: string, patch: Partial<Highlight>) {
@@ -90,12 +100,14 @@ export function removeHighlight(work: string, id: string) {
   if (i >= 0) {
     arr.splice(i, 1);
     persistHl(work);
+    revision += 1;
   }
 }
 
 export function addBookmark(b: Bookmark) {
   bookmarksFor(b.work).push(b);
   persistBm(b.work);
+  revision += 1;
 }
 
 export function removeBookmark(work: string, id: string) {
@@ -104,6 +116,7 @@ export function removeBookmark(work: string, id: string) {
   if (i >= 0) {
     arr.splice(i, 1);
     persistBm(work);
+    revision += 1;
   }
 }
 

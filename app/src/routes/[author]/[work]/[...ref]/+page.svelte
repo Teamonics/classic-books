@@ -9,7 +9,14 @@
   import SettingsPanel from "$lib/components/SettingsPanel.svelte";
   import SelectionMenu from "$lib/components/SelectionMenu.svelte";
   import AnnotationEditor from "$lib/components/AnnotationEditor.svelte";
-  import { highlightsFor, repairAnchors, addBookmark, newId } from "$lib/annotations.svelte";
+  import {
+    highlightsFor,
+    repairAnchors,
+    addBookmark,
+    bookmarksFor,
+    annotationsRevision,
+    newId,
+  } from "$lib/annotations.svelte";
   import { anchorSnippet } from "$lib/cite";
   import type { HlRange } from "$lib/blocktext";
   import type { Chunk, Manifest, Note } from "$lib/types";
@@ -202,6 +209,12 @@
     }
   }
 
+  // Filled when this division is already bookmarked, outline when not.
+  const isBookmarked = $derived.by(() => {
+    annotationsRevision(); // re-run when a bookmark is added or removed
+    return bookmarksFor(slug).some((b) => b.ref === currentRef);
+  });
+
   const currentTitle = $derived(
     manifest?.toc.find((t) => t.ref === currentRef)?.title ?? manifest?.title ?? "",
   );
@@ -216,8 +229,22 @@
 <div class="bar ui">
   <a class="back" href={`${base}/${author}/${slug}`} aria-label="Table of contents">☰ <span class="bartitle">{manifest?.title}</span></a>
   <span class="chunktitle">{currentTitle}</span>
-  <button class="gear" aria-label="Bookmark this position" onclick={bookmarkHere}>
-    {bookmarked ? "✓" : "🔖"}
+  <button
+    class="gear icon"
+    class:saved={isBookmarked || bookmarked}
+    aria-label={isBookmarked ? "Bookmarked; save another here" : "Bookmark this position"}
+    onclick={bookmarkHere}
+  >
+    <!-- a plain ribbon bookmark: fills once the page is saved -->
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path
+        d="M6.5 3h11a1 1 0 0 1 1 1v16.6a.5.5 0 0 1-.77.42L12 17.3l-5.73 3.72a.5.5 0 0 1-.77-.42V4a1 1 0 0 1 1-1z"
+        fill={isBookmarked || bookmarked ? "currentColor" : "none"}
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linejoin="round"
+      />
+    </svg>
   </button>
   <button class="gear" aria-label="Reading settings" onclick={() => (settingsOpen = !settingsOpen)}>Aa</button>
 </div>
@@ -320,6 +347,22 @@
     padding: 0.25rem 0.6rem;
     cursor: pointer;
     font-weight: 600;
+  }
+  .gear.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.28rem 0.5rem;
+    color: var(--muted);
+  }
+  .gear.icon svg {
+    width: 1.05rem;
+    height: 1.05rem;
+    display: block;
+  }
+  .gear.icon.saved {
+    color: var(--accent);
+    border-color: var(--accent);
   }
   main {
     max-width: calc(var(--measure) + 8rem);
