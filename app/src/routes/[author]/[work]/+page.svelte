@@ -250,6 +250,38 @@
     opacity: 0.7;
     cursor: default;
   }
+  /* The native control is painted by the OS, which drew it as a solid dark
+     square. Draw it ourselves so it is an empty box in every theme, and
+     fills with the accent only once it is actually ticked. */
+  .offlinenote input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 0.95rem;
+    height: 0.95rem;
+    margin: 0 0.35rem 0 0;
+    vertical-align: -0.15rem;
+    border: 1px solid var(--muted);
+    border-radius: 3px;
+    background: var(--bg);
+    display: inline-grid;
+    place-content: center;
+    cursor: pointer;
+  }
+  .offlinenote input[type="checkbox"]::before {
+    content: "";
+    width: 0.55rem;
+    height: 0.55rem;
+    transform: scale(0);
+    background: var(--bg);
+    clip-path: polygon(14% 46%, 0 60%, 40% 100%, 100% 20%, 86% 8%, 38% 72%);
+  }
+  .offlinenote input[type="checkbox"]:checked {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .offlinenote input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
   .offlinenote {
     margin: 0.5rem 0 0;
     font-size: 0.78rem;
