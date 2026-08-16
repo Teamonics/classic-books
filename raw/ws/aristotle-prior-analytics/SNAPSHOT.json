@@ -1,0 +1,17 @@
+{
+  "source": "wikisource",
+  "url": "https://en.wikisource.org/",
+  "retrieved": "2026-08-16",
+  "pages": [
+    {
+      "title": "Organon (Owen)/Prior Analytics/Book 1",
+      "file": "book-1.html",
+      "revid": 11543740
+    },
+    {
+      "title": "Organon (Owen)/Prior Analytics/Book 2",
+      "file": "book-2.html",
+      "revid": 11543741
+    }
+  ]
+}

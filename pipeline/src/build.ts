@@ -14,6 +14,7 @@ import { adapt as adaptSeProse } from "./adapters/se-prose.ts";
 import { adapt as adaptSeDrama } from "./adapters/se-drama.ts";
 import { adapt as adaptSePlato } from "./adapters/se-plato.ts";
 import { adapt as adaptMorshead } from "./adapters/pg-morshead-aeschylus.ts";
+import { adapt as adaptOwenOrganon } from "./adapters/ws-owen-organon.ts";
 import { adapt as adaptWsEuripides } from "./adapters/ws-euripides.ts";
 import { adapt as adaptSeVerse } from "./adapters/se-verse.ts";
 import { adapt as adaptWsProse } from "./adapters/ws-prose.ts";
@@ -31,6 +32,7 @@ const adapters: Record<string, (rawDir: string, opts: { skipFiles?: string[]; so
   "se-drama": adaptSeDrama,
   "se-plato": adaptSePlato,
   "pg-morshead-aeschylus": adaptMorshead,
+  "ws-owen-organon": adaptOwenOrganon,
   "ws-euripides": adaptWsEuripides,
   "se-verse": adaptSeVerse,
   "ws-prose": adaptWsProse,

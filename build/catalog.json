@@ -841,6 +841,78 @@
       "words": 44484
     },
     {
+      "slug": "categories",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "Categories",
+      "composedYear": -350,
+      "era": "classical-greece",
+      "translator": "Octavius Freire Owen",
+      "manifestFile": "manifest.56e7d70448da.json",
+      "chunks": 15,
+      "words": 12733
+    },
+    {
+      "slug": "on-interpretation",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "On Interpretation",
+      "composedYear": -350,
+      "era": "classical-greece",
+      "translator": "Octavius Freire Owen",
+      "manifestFile": "manifest.999c831e53ba.json",
+      "chunks": 14,
+      "words": 8431
+    },
+    {
+      "slug": "prior-analytics",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "Prior Analytics",
+      "composedYear": -350,
+      "era": "classical-greece",
+      "translator": "Octavius Freire Owen",
+      "manifestFile": "manifest.be7b4e3719d3.json",
+      "chunks": 73,
+      "words": 46896
+    },
+    {
+      "slug": "posterior-analytics",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "Posterior Analytics",
+      "composedYear": -350,
+      "era": "classical-greece",
+      "translator": "Octavius Freire Owen",
+      "manifestFile": "manifest.48f61b4f7626.json",
+      "chunks": 53,
+      "words": 30817
+    },
+    {
+      "slug": "topics",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "Topics",
+      "composedYear": -350,
+      "era": "classical-greece",
+      "translator": "Octavius Freire Owen",
+      "manifestFile": "manifest.6e78e16615b8.json",
+      "chunks": 82,
+      "words": 60294
+    },
+    {
+      "slug": "sophistical-refutations",
+      "author": "aristotle",
+      "authorName": "Aristotle",
+      "title": "Sophistical Refutations",
+      "composedYear": -350,
+      "era": "classical-greece",
+      "translator": "Octavius Freire Owen",
+      "manifestFile": "manifest.e5a8ecfeaf67.json",
+      "chunks": 34,
+      "words": 19708
+    },
+    {
       "slug": "laws",
       "author": "plato",
       "authorName": "Plato",

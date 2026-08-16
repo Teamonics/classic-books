@@ -1,0 +1,47 @@
+{
+  "source": "wikisource",
+  "url": "https://en.wikisource.org/",
+  "retrieved": "2026-08-16",
+  "pages": [
+    {
+      "title": "Organon (Owen)/Topics/Book 1",
+      "file": "book-1.html",
+      "revid": 11543742
+    },
+    {
+      "title": "Organon (Owen)/Topics/Book 2",
+      "file": "book-2.html",
+      "revid": 11543743
+    },
+    {
+      "title": "Organon (Owen)/Topics/Book 3",
+      "file": "book-3.html",
+      "revid": 11538855
+    },
+    {
+      "title": "Organon (Owen)/Topics/Book 4",
+      "file": "book-4.html",
+      "revid": 11538857
+    },
+    {
+      "title": "Organon (Owen)/Topics/Book 5",
+      "file": "book-5.html",
+      "revid": 11538861
+    },
+    {
+      "title": "Organon (Owen)/Topics/Book 6",
+      "file": "book-6.html",
+      "revid": 11538864
+    },
+    {
+      "title": "Organon (Owen)/Topics/Book 7",
+      "file": "book-7.html",
+      "revid": 11544221
+    },
+    {
+      "title": "Organon (Owen)/Topics/Book 8",
+      "file": "book-8.html",
+      "revid": 11538867
+    }
+  ]
+}
