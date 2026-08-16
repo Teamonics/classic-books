@@ -5,6 +5,7 @@ export type FontId = "serif" | "sans" | "dyslexic";
 
 export interface Settings {
   theme: ThemeId;
+  numbers: boolean; // margin line and paragraph numbers
   font: FontId;
   fontSize: number; // rem multiplier applied to <html>
   measure: number; // ch, capped per PLAN (45–75)
@@ -13,6 +14,7 @@ export interface Settings {
 
 const DEFAULTS: Settings = {
   theme: "sepia",
+  numbers: true,
   font: "serif",
   fontSize: 1.0,
   measure: 66,
@@ -46,5 +48,7 @@ export function applySettings() {
   root.style.setProperty("--measure", `${settings.measure}ch`);
   root.style.setProperty("--line-height", String(settings.lineHeight));
   root.dataset.font = settings.font;
+  // Hiding the numbers also gives their gutter back to the text.
+  root.dataset.numbers = settings.numbers ? "on" : "off";
   localStorage.setItem(KEY, JSON.stringify(settings));
 }

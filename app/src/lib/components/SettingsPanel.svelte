@@ -41,6 +41,21 @@
         >
       {/each}
     </div>
+    <div class="row" role="group" aria-label="Margin numbers">
+      <span class="rowlabel">Numbers</span>
+      <button
+        class="chip"
+        class:active={settings.numbers}
+        aria-pressed={settings.numbers}
+        onclick={() => set("numbers", true)}>Shown</button
+      >
+      <button
+        class="chip"
+        class:active={!settings.numbers}
+        aria-pressed={!settings.numbers}
+        onclick={() => set("numbers", false)}>Hidden</button
+      >
+    </div>
     <label class="slider">
       <span>Text size</span>
       <input
@@ -98,6 +113,11 @@
     display: flex;
     gap: 0.4rem;
     flex-wrap: wrap;
+    align-items: center;
+  }
+  .rowlabel {
+    width: 6rem;
+    color: var(--muted);
   }
   .chip {
     border: 1px solid var(--rule);

@@ -324,7 +324,7 @@
   main {
     max-width: calc(var(--measure) + 8rem);
     margin: 0 auto;
-    padding: 5rem 1.25rem 6rem 4.5rem;
+    padding: 5rem 1.25rem 6rem var(--gutter);
   }
   .chunk {
     max-width: var(--measure);
@@ -400,7 +400,7 @@
      the numbers actually need, and the text starts near the screen edge. */
   @media (max-width: 40rem) {
     main {
-      padding: 4.2rem 1.5rem 5rem 1.7rem;
+      padding: 4.2rem 1.5rem 5rem var(--gutter-narrow);
     }
   }
 </style>

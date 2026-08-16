@@ -34,6 +34,10 @@
 }
 
 :root {
+  /* The reader's left gutter holds the margin numbers; when they are off it
+     collapses so the text is not left indented against nothing. */
+  --gutter: 4.5rem;
+  --gutter-narrow: 1.7rem;
   --measure: 66ch;
   --line-height: 1.6;
   --serif: "Iowan Old Style", "Palatino", "Charter", Georgia, serif;
@@ -46,6 +50,16 @@
 }
 :root[data-font="dyslexic"] {
   --reading-font: var(--dyslexic);
+}
+
+:root[data-numbers="off"] {
+  --gutter: 1.25rem;
+  --gutter-narrow: 0.9rem;
+}
+
+:root[data-numbers="off"] .ln,
+:root[data-numbers="off"] .pn {
+  display: none;
 }
 
 * {

@@ -13,6 +13,7 @@
         var root = document.documentElement;
         root.dataset.theme = s.theme || "sepia";
         if (s.fontSize) root.style.fontSize = s.fontSize + "rem";
+        root.dataset.numbers = s.numbers === false ? "off" : "on";
       } catch (e) {}
     </script>
     %sveltekit.head%
